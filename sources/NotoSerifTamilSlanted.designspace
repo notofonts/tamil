@@ -1,0 +1,1750 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="400">
+      <map input="100" output="28"/>
+      <map input="200" output="42"/>
+      <map input="300" output="64"/>
+      <map input="400" output="94"/>
+      <map input="500" output="110"/>
+      <map input="600" output="130"/>
+      <map input="700" output="152"/>
+      <map input="800" output="175"/>
+      <map input="900" output="194"/>
+    </axis>
+    <axis tag="wdth" name="Width" minimum="62.500000" maximum="100" default="100">
+      <map input="62.500000" output="70"/>
+      <map input="75" output="79"/>
+      <map input="87.500000" output="89"/>
+      <map input="100" output="100"/>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="NotoSerifTamilSlanted-LightItalic.ufo" name="Noto Serif Tamil Slanted Light Italic" familyname="Noto Serif Tamil Slanted" stylename="Light Italic">
+      <location>
+        <dimension name="Weight" xvalue="28"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="NotoSerifTamilSlanted-Italic.ufo" name="Noto Serif Tamil Slanted Italic" familyname="Noto Serif Tamil Slanted" stylename="Italic">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="94"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="NotoSerifTamilSlanted-SemiBoldItalic.ufo" name="Noto Serif Tamil Slanted SemiBold Italic" familyname="Noto Serif Tamil Slanted" stylename="SemiBold Italic">
+      <location>
+        <dimension name="Weight" xvalue="152"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="NotoSerifTamilSlanted-BoldItalic.ufo" name="Noto Serif Tamil Slanted Bold Italic" familyname="Noto Serif Tamil Slanted" stylename="Bold Italic">
+      <location>
+        <dimension name="Weight" xvalue="194"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="NotoSerifTamilSlanted-CondensedLightItalic.ufo" name="Noto Serif Tamil Slanted Condensed Light Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed Light Italic">
+      <location>
+        <dimension name="Weight" xvalue="28"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+    </source>
+    <source filename="NotoSerifTamilSlanted-CondensedItalic.ufo" name="Noto Serif Tamil Slanted Condensed Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed Italic">
+      <location>
+        <dimension name="Weight" xvalue="94"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+    </source>
+    <source filename="NotoSerifTamilSlanted-CondensedSemiBoldItalic.ufo" name="Noto Serif Tamil Slanted Condensed SemiBold Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed SemiBold Italic">
+      <location>
+        <dimension name="Weight" xvalue="152"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+    </source>
+    <source filename="NotoSerifTamilSlanted-CondensedBoldItalic.ufo" name="Noto Serif Tamil Slanted Condensed Bold Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed Bold Italic">
+      <location>
+        <dimension name="Weight" xvalue="194"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Noto Serif Tamil Slanted Thin" familyname="Noto Serif Tamil Slanted" stylename="Thin" filename="instance_ufos/NotoSerifTamilSlanted-Thin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="28"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-ExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="42"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>3</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraLight</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Light" familyname="Noto Serif Tamil Slanted" stylename="Light" filename="instance_ufos/NotoSerifTamilSlanted-Light.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Regular" familyname="Noto Serif Tamil Slanted" stylename="Regular" filename="instance_ufos/NotoSerifTamilSlanted-Regular.ufo" stylemapfamilyname="NotoSerifTamilSlanted" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="94"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Medium" familyname="Noto Serif Tamil Slanted" stylename="Medium" filename="instance_ufos/NotoSerifTamilSlanted-Medium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiBold" familyname="Noto Serif Tamil Slanted" stylename="SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-SemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>7</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Bold" familyname="Noto Serif Tamil Slanted" stylename="Bold" filename="instance_ufos/NotoSerifTamilSlanted-Bold.ufo" stylemapfamilyname="NotoSerifTamilSlanted" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="152"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>8</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="175"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>9</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Black" familyname="Noto Serif Tamil Slanted" stylename="Black" filename="instance_ufos/NotoSerifTamilSlanted-Black.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="194"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>10</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed Thin" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Thin" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedThin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="28"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="42"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>3</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed ExtraLight</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed Light" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Light" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensed.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="94"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed Medium" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Medium" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedMedium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed SemiBold" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedSemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>7</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed Bold" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Bold" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="152"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>8</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="175"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>9</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed ExtraBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted SemiCondensed Black" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Black" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedBlack.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="194"/>
+        <dimension name="Width" xvalue="89"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>10</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiCondensed Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed Thin" familyname="Noto Serif Tamil Slanted" stylename="Condensed Thin" filename="instance_ufos/NotoSerifTamilSlanted-CondensedThin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="28"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="Condensed ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-CondensedExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="42"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>3</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed ExtraLight</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed Light" familyname="Noto Serif Tamil Slanted" stylename="Condensed Light" filename="instance_ufos/NotoSerifTamilSlanted-CondensedLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed" familyname="Noto Serif Tamil Slanted" stylename="Condensed" filename="instance_ufos/NotoSerifTamilSlanted-Condensed.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="94"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>5</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed Medium" familyname="Noto Serif Tamil Slanted" stylename="Condensed Medium" filename="instance_ufos/NotoSerifTamilSlanted-CondensedMedium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed SemiBold" familyname="Noto Serif Tamil Slanted" stylename="Condensed SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-CondensedSemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>7</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed Bold" familyname="Noto Serif Tamil Slanted" stylename="Condensed Bold" filename="instance_ufos/NotoSerifTamilSlanted-CondensedBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="152"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>8</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="Condensed ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-CondensedExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="175"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>9</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed ExtraBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted Condensed Black" familyname="Noto Serif Tamil Slanted" stylename="Condensed Black" filename="instance_ufos/NotoSerifTamilSlanted-CondensedBlack.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="194"/>
+        <dimension name="Width" xvalue="79"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>10</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Condensed Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed Thin" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Thin" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedThin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="28"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="42"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>3</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed ExtraLight</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed Light" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Light" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensed.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="94"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>5</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed Medium" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Medium" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedMedium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="110"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed SemiBold" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedSemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>7</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed Bold" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Bold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="152"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>8</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="175"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>9</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed ExtraBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Serif Tamil Slanted ExtraCondensed Black" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Black" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedBlack.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="194"/>
+        <dimension name="Width" xvalue="70"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>10</integer>
+                <integer>6</integer>
+                <integer>6</integer>
+                <integer>5</integer>
+                <integer>5</integer>
+                <integer>2</integer>
+                <integer>2</integer>
+                <integer>4</integer>
+              </array>
+            </array>
+            <array>
+              <string>Don't use Production Names</string>
+              <true/>
+            </array>
+            <array>
+              <string>xHeight</string>
+              <string>536</string>
+            </array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Noto Serif Tamil Slanted</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraCondensed Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>4EF80F22-2859-4B6B-96B0-AD27D3E17A73</key>
+        <dict>
+          <key>HV</key>
+          <string> </string>
+        </dict>
+        <key>6FE80A45-50D2-4FF4-BE3F-8907256D2442</key>
+        <dict>
+          <key>HV</key>
+          <string> </string>
+        </dict>
+        <key>D0548234-3561-42A9-B3C3-E652CCB04E43</key>
+        <dict/>
+      </dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>iiMatra-tamil.alt01</string>
+        <string>iiMatra-tamil.alt02</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>
