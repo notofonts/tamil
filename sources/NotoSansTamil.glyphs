@@ -2,7 +2,7 @@
 .appVersion = "3109";
 .formatVersion = 3;
 DisplayStrings = (
-"ஂ"
+"◌"
 );
 axes = (
 {
@@ -108358,9 +108358,23 @@ unicode = 8208;
 },
 {
 glyphname = uni25CC;
-lastChange = "2020-03-17 13:07:53 +0000";
+lastChange = "2022-07-05 15:55:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+pos = (318,-29);
+},
+{
+name = Anchor12;
+pos = (331,-131);
+},
+{
+name = Anchor8;
+pos = (317,-29);
+}
+);
 layerId = UUID0;
 shapes = (
 {
@@ -108503,6 +108517,20 @@ nodes = (
 width = 562;
 },
 {
+anchors = (
+{
+name = Anchor10;
+pos = (312,-29);
+},
+{
+name = Anchor12;
+pos = (330,-132);
+},
+{
+name = Anchor8;
+pos = (312,-29);
+}
+);
 layerId = "4900EB3E-CEE9-4F53-85D9-05D95ABCFDBA";
 shapes = (
 {
@@ -108645,6 +108673,20 @@ nodes = (
 width = 562;
 },
 {
+anchors = (
+{
+name = Anchor10;
+pos = (304,-29);
+},
+{
+name = Anchor12;
+pos = (322,-129);
+},
+{
+name = Anchor8;
+pos = (304,-29);
+}
+);
 layerId = "4BF31C0D-0A66-4B39-96F9-ACB961E601E6";
 shapes = (
 {
@@ -108787,6 +108829,20 @@ nodes = (
 width = 562;
 },
 {
+anchors = (
+{
+name = Anchor10;
+pos = (304,-29);
+},
+{
+name = Anchor12;
+pos = (322,-129);
+},
+{
+name = Anchor8;
+pos = (304,-29);
+}
+);
 layerId = "6732FEC1-CFA6-4586-B452-175C4A015291";
 shapes = (
 {
@@ -108929,6 +108985,20 @@ nodes = (
 width = 562;
 },
 {
+anchors = (
+{
+name = Anchor10;
+pos = (321,-29);
+},
+{
+name = Anchor12;
+pos = (334,-131);
+},
+{
+name = Anchor8;
+pos = (320,-29);
+}
+);
 layerId = "960C9600-7588-48B9-A77D-42B729BBBC0C";
 shapes = (
 {
@@ -109071,6 +109141,20 @@ nodes = (
 width = 562;
 },
 {
+anchors = (
+{
+name = Anchor10;
+pos = (313,-29);
+},
+{
+name = Anchor12;
+pos = (330,-130);
+},
+{
+name = Anchor8;
+pos = (312,-29);
+}
+);
 layerId = "AA356D29-EBA3-4BA7-B11E-09F9C5534C37";
 shapes = (
 {
@@ -109213,6 +109297,20 @@ nodes = (
 width = 562;
 },
 {
+anchors = (
+{
+name = Anchor10;
+pos = (300,-29);
+},
+{
+name = Anchor12;
+pos = (318,-128);
+},
+{
+name = Anchor8;
+pos = (300,-29);
+}
+);
 layerId = "DB7E4487-AAA8-4905-9B27-B72FA6056893";
 shapes = (
 {
