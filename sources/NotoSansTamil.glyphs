@@ -34,10 +34,6 @@ name = class4;
 );
 customParameters = (
 {
-name = openTypeOS2VendorID;
-value = GOOG;
-},
-{
 name = glyphOrder;
 value = (
 .notdef,
@@ -317,6 +313,10 @@ value = 1;
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = vendorID;
+value = GOOG;
 }
 );
 date = "2017-01-23 08:42:45 +0000";
@@ -521,7 +521,6 @@ iconName = Light;
 id = UUID0;
 metricValues = (
 {
-over = 0;
 pos = 870;
 },
 {
@@ -533,14 +532,11 @@ over = 12;
 pos = 546;
 },
 {
-over = 0;
 },
 {
-over = 0;
 pos = -370;
 },
 {
-over = 0;
 }
 );
 name = Light;
@@ -571,7 +567,6 @@ size = 12;
 id = "4900EB3E-CEE9-4F53-85D9-05D95ABCFDBA";
 metricValues = (
 {
-over = 0;
 pos = 870;
 },
 {
@@ -583,14 +578,11 @@ over = 12;
 pos = 554;
 },
 {
-over = 0;
 },
 {
-over = 0;
 pos = -370;
 },
 {
-over = 0;
 }
 );
 name = Regular;
@@ -622,7 +614,6 @@ iconName = SemiBold;
 id = "4BF31C0D-0A66-4B39-96F9-ACB961E601E6";
 metricValues = (
 {
-over = 0;
 pos = 870;
 },
 {
@@ -634,14 +625,11 @@ over = 12;
 pos = 562;
 },
 {
-over = 0;
 },
 {
-over = 0;
 pos = -370;
 },
 {
-over = 0;
 }
 );
 name = SemiBold;
@@ -673,7 +661,6 @@ iconName = Bold;
 id = "6732FEC1-CFA6-4586-B452-175C4A015291";
 metricValues = (
 {
-over = 0;
 pos = 870;
 },
 {
@@ -685,14 +672,11 @@ over = 12;
 pos = 569;
 },
 {
-over = 0;
 },
 {
-over = 0;
 pos = -370;
 },
 {
-over = 0;
 }
 );
 name = Bold;
@@ -724,7 +708,6 @@ iconName = Light_Condensed;
 id = "960C9600-7588-48B9-A77D-42B729BBBC0C";
 metricValues = (
 {
-over = 0;
 pos = 870;
 },
 {
@@ -736,14 +719,11 @@ over = 12;
 pos = 546;
 },
 {
-over = 0;
 },
 {
-over = 0;
 pos = -370;
 },
 {
-over = 0;
 }
 );
 name = "Light Condensed";
@@ -775,7 +755,6 @@ iconName = Condensed;
 id = "AA356D29-EBA3-4BA7-B11E-09F9C5534C37";
 metricValues = (
 {
-over = 0;
 pos = 870;
 },
 {
@@ -787,14 +766,11 @@ over = 12;
 pos = 554;
 },
 {
-over = 0;
 },
 {
-over = 0;
 pos = -370;
 },
 {
-over = 0;
 }
 );
 name = Condensed;
@@ -826,7 +802,6 @@ iconName = Bold_Condensed;
 id = "DB7E4487-AAA8-4905-9B27-B72FA6056893";
 metricValues = (
 {
-over = 0;
 pos = 870;
 },
 {
@@ -838,14 +813,11 @@ over = 12;
 pos = 569;
 },
 {
-over = 0;
 },
 {
-over = 0;
 pos = -370;
 },
 {
-over = 0;
 }
 );
 name = "Bold Condensed";
