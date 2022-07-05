@@ -139577,7 +139577,7 @@ value = "http://www.google.com/get/noto/";
 },
 {
 key = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = descriptions;
@@ -139608,7 +139608,7 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 },
 {
 key = versionString;
-value = "Version 2.002";
+value = "Version 2.003";
 },
 {
 key = vendorID;
