@@ -313,6 +313,10 @@ value = 1;
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = "Write lastChange";
+value = 0;
 }
 );
 date = "2017-01-23 08:42:45 +0000";
@@ -829,7 +833,6 @@ stemValues = (
 glyphs = (
 {
 glyphname = .notdef;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -1003,7 +1006,6 @@ width = 600;
 },
 {
 glyphname = NULL;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -1038,7 +1040,6 @@ unicode = 0;
 },
 {
 glyphname = CR;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -1073,7 +1074,6 @@ unicode = 13;
 },
 {
 glyphname = space;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -1109,7 +1109,6 @@ unicode = 32;
 {
 category = Mark;
 glyphname = anusvaratamil;
-lastChange = "2022-02-22 17:34:07 +0000";
 layers = (
 {
 anchors = (
@@ -1439,7 +1438,6 @@ unicode = 2946;
 },
 {
 glyphname = visargatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -2202,7 +2200,6 @@ unicode = 2947;
 },
 {
 glyphname = atamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -2916,7 +2913,6 @@ unicode = 2949;
 },
 {
 glyphname = aatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -3945,7 +3941,6 @@ unicode = 2950;
 },
 {
 glyphname = itamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -4967,7 +4962,6 @@ unicode = 2951;
 },
 {
 glyphname = iitamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -5429,7 +5423,6 @@ unicode = 2952;
 },
 {
 glyphname = utamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -5989,7 +5982,6 @@ unicode = 2953;
 },
 {
 glyphname = uutamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -6976,7 +6968,6 @@ unicode = 2954;
 },
 {
 glyphname = etamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -7529,7 +7520,6 @@ unicode = 2958;
 },
 {
 glyphname = eetamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -8068,7 +8058,6 @@ unicode = 2959;
 },
 {
 glyphname = aitamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -9069,7 +9058,6 @@ unicode = 2960;
 },
 {
 glyphname = otamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -10056,7 +10044,6 @@ unicode = 2962;
 },
 {
 glyphname = ootamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -11162,7 +11149,6 @@ unicode = 2963;
 },
 {
 glyphname = autamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -11330,7 +11316,6 @@ unicode = 2964;
 },
 {
 glyphname = katamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -11911,7 +11896,6 @@ unicode = 2965;
 },
 {
 glyphname = ngatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -12408,7 +12392,6 @@ unicode = 2969;
 },
 {
 glyphname = catamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -12842,7 +12825,6 @@ unicode = 2970;
 },
 {
 glyphname = jatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -13906,7 +13888,6 @@ unicode = 2972;
 },
 {
 glyphname = nyatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -14746,7 +14727,6 @@ unicode = 2974;
 },
 {
 glyphname = ttatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -14970,7 +14950,6 @@ unicode = 2975;
 },
 {
 glyphname = nnatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -15971,7 +15950,6 @@ unicode = 2979;
 },
 {
 glyphname = tatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -16671,7 +16649,6 @@ unicode = 2980;
 },
 {
 glyphname = natamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -17280,7 +17257,6 @@ unicode = 2984;
 },
 {
 glyphname = nnnatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -18015,7 +17991,6 @@ unicode = 2985;
 },
 {
 glyphname = patamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -18253,7 +18228,6 @@ unicode = 2986;
 },
 {
 glyphname = matamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -18715,7 +18689,6 @@ unicode = 2990;
 },
 {
 glyphname = yatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -19142,7 +19115,6 @@ unicode = 2991;
 },
 {
 glyphname = ratamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -19408,7 +19380,6 @@ unicode = 2992;
 },
 {
 glyphname = rratamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -20101,7 +20072,6 @@ unicode = 2993;
 },
 {
 glyphname = latamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -20759,7 +20729,6 @@ unicode = 2994;
 },
 {
 glyphname = llatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -21326,7 +21295,6 @@ unicode = 2995;
 },
 {
 glyphname = lllatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -22215,7 +22183,6 @@ unicode = 2996;
 },
 {
 glyphname = vatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -22740,7 +22707,6 @@ unicode = 2997;
 },
 {
 glyphname = shatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -23377,7 +23343,6 @@ unicode = 2998;
 },
 {
 glyphname = ssatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -24252,7 +24217,6 @@ unicode = 2999;
 },
 {
 glyphname = satamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -25078,7 +25042,6 @@ unicode = 3000;
 },
 {
 glyphname = hatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -26136,7 +26099,6 @@ unicode = 3001;
 {
 category = Mark;
 glyphname = aavowelsigntamil;
-lastChange = "2022-02-22 17:05:03 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -26292,7 +26254,6 @@ unicode = 3006;
 {
 category = Mark;
 glyphname = ivowelsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -26574,7 +26535,6 @@ unicode = 3007;
 {
 category = Mark;
 glyphname = iivowelsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -26947,7 +26907,6 @@ unicode = 3008;
 {
 category = Mark;
 glyphname = uvowelsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -27271,7 +27230,6 @@ unicode = 3009;
 {
 category = Mark;
 glyphname = uuvowelsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -27777,7 +27735,6 @@ unicode = 3010;
 {
 category = Letter;
 glyphname = evowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -28255,7 +28212,6 @@ unicode = 3014;
 {
 category = Letter;
 glyphname = eevowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -28817,7 +28773,6 @@ unicode = 3015;
 {
 category = Letter;
 glyphname = aivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -29498,7 +29453,6 @@ unicode = 3016;
 {
 category = Letter;
 glyphname = ovowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -29626,7 +29580,6 @@ unicode = 3018;
 {
 category = Letter;
 glyphname = oovowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -29754,7 +29707,6 @@ unicode = 3019;
 {
 category = Letter;
 glyphname = auvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -29882,7 +29834,6 @@ unicode = 3020;
 {
 category = Mark;
 glyphname = viramatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -30051,7 +30002,6 @@ unicode = 3021;
 },
 {
 glyphname = ohmsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -31368,7 +31318,6 @@ unicode = 3024;
 {
 category = Mark;
 glyphname = aulengthmarktamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -31439,7 +31388,6 @@ unicode = 3031;
 },
 {
 glyphname = zerotamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -31768,7 +31716,6 @@ unicode = 3046;
 },
 {
 glyphname = onetamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -31880,7 +31827,6 @@ unicode = 3047;
 },
 {
 glyphname = twotamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -32300,7 +32246,6 @@ unicode = 3048;
 },
 {
 glyphname = threetamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -32664,7 +32609,6 @@ unicode = 3049;
 },
 {
 glyphname = fourtamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -33119,7 +33063,6 @@ unicode = 3050;
 },
 {
 glyphname = fivetamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -33644,7 +33587,6 @@ unicode = 3051;
 },
 {
 glyphname = sixtamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -34148,7 +34090,6 @@ unicode = 3052;
 },
 {
 glyphname = seventamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -34260,7 +34201,6 @@ unicode = 3053;
 },
 {
 glyphname = eighttamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -34841,7 +34781,6 @@ unicode = 3054;
 },
 {
 glyphname = ninetamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -35618,7 +35557,6 @@ unicode = 3055;
 },
 {
 glyphname = tentamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -36122,7 +36060,6 @@ unicode = 3056;
 },
 {
 glyphname = hundredtamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -36465,7 +36402,6 @@ unicode = 3057;
 },
 {
 glyphname = thousandtamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -37221,7 +37157,6 @@ unicode = 3058;
 },
 {
 glyphname = daysigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -37634,7 +37569,6 @@ unicode = 3059;
 },
 {
 glyphname = monthsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -38474,7 +38408,6 @@ unicode = 3060;
 },
 {
 glyphname = yearsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -39503,7 +39436,6 @@ unicode = 3061;
 },
 {
 glyphname = debitsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -40000,7 +39932,6 @@ unicode = 3062;
 },
 {
 glyphname = creditsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -40882,7 +40813,6 @@ unicode = 3063;
 },
 {
 glyphname = asabovesigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -41981,7 +41911,6 @@ unicode = 3064;
 },
 {
 glyphname = rupeesigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -42821,7 +42750,6 @@ unicode = 3065;
 },
 {
 glyphname = numsigntamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -43809,7 +43737,6 @@ unicode = 3066;
 {
 category = Letter;
 glyphname = tchatamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -44965,7 +44892,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = kaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -45134,7 +45060,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = ngaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -45303,7 +45228,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = caprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -45472,7 +45396,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = japrehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -45641,7 +45564,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = nyaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -45810,7 +45732,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = ttaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -45979,7 +45900,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = nnaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -46148,7 +46068,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = taprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -46317,7 +46236,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = naprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -46486,7 +46404,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = nnnaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -46655,7 +46572,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = paprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -46824,7 +46740,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = maprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -46993,7 +46908,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = yaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -47162,7 +47076,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = raprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -47331,7 +47244,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = rraprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -47500,7 +47412,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = laprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -47669,7 +47580,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = llaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -47838,7 +47748,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = lllaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -48007,7 +47916,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = vaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -48176,7 +48084,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = shaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -48345,7 +48252,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = ssaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -48514,7 +48420,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = saprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -48683,7 +48588,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = haprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -48852,7 +48756,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = tchaprehalftamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -48993,7 +48896,6 @@ subCategory = Ligature;
 {
 category = Letter;
 glyphname = kaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -49162,7 +49064,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = kauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -49793,7 +49694,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = kauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -50613,7 +50513,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ngaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -51419,7 +51318,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ngauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -51903,7 +51801,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ngauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -52765,7 +52662,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = caiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -52934,7 +52830,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = cauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -53432,7 +53327,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = cauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -54238,7 +54132,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = jaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -54407,7 +54300,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nyaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -54604,7 +54496,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nyauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -55613,7 +55504,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nyauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -56664,7 +56554,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ttaivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -57134,7 +57023,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ttaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -57681,7 +57569,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ttauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -58228,7 +58115,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ttauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -58908,7 +58794,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nnaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -59105,7 +58990,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nnauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -60422,7 +60306,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nnauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -61781,7 +61664,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = taiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -61950,7 +61832,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = tauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -62735,7 +62616,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = tauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -63562,7 +63442,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = naiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -63731,7 +63610,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -64376,7 +64254,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -65112,7 +64989,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nnnaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -65309,7 +65185,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nnnauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -66360,7 +66235,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = nnnauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -67453,7 +67327,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = paiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -67986,7 +67859,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = pauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -68239,7 +68111,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = pauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -68807,7 +68678,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = maiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -69270,7 +69140,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = mauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -69922,7 +69791,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = mauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -70707,7 +70575,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = yaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -71429,7 +71296,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = yauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -71920,7 +71786,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = yauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -72789,7 +72654,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = raiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -72958,7 +72822,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = rauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -73498,7 +73361,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = rauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -74171,7 +74033,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = rraiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -74340,7 +74201,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = rrauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -75139,7 +74999,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = rrauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -75980,7 +75839,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = laivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -76870,7 +76728,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = laiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -77851,7 +77708,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = lauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -78867,7 +78723,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = lauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -79925,7 +79780,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = llaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -80122,7 +79976,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = llauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -80977,7 +80830,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = llauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -81965,7 +81817,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = lllaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -82428,7 +82279,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = lllauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -83241,7 +83091,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = lllauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -84187,7 +84036,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = vaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -85035,7 +84883,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = vauvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -85624,7 +85471,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = vauuvowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -86591,7 +86437,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = ssaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -86788,7 +86633,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = saivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -87846,7 +87690,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = saiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -88995,7 +88838,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = haiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -89192,7 +89034,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = tchaiivowelsigntamil;
-lastChange = "2022-02-22 17:00:18 +0000";
 layers = (
 {
 anchors = (
@@ -89361,7 +89202,6 @@ subCategory = Other;
 {
 category = Letter;
 glyphname = shritamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -90468,7 +90308,6 @@ subCategory = Ligature;
 {
 category = Mark;
 glyphname = ivowelsign4tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -90749,7 +90588,6 @@ subCategory = "Spacing Combining";
 {
 category = Mark;
 glyphname = ivowelsign3tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -91030,7 +90868,6 @@ subCategory = "Spacing Combining";
 {
 category = Mark;
 glyphname = ivowelsign2tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -91311,7 +91148,6 @@ subCategory = "Spacing Combining";
 {
 category = Mark;
 glyphname = ivowelsign1tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -91592,7 +91428,6 @@ subCategory = "Spacing Combining";
 {
 category = Mark;
 glyphname = uvowelsignalttamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -91915,7 +91750,6 @@ subCategory = "Spacing Combining";
 {
 category = Mark;
 glyphname = uuvowelsignalttamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -92419,7 +92253,6 @@ subCategory = "Spacing Combining";
 },
 {
 glyphname = exclam.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -92650,7 +92483,6 @@ unicode = 33;
 },
 {
 glyphname = quotedbl.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -92825,7 +92657,6 @@ unicode = 34;
 },
 {
 glyphname = numbersign.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -93168,7 +92999,6 @@ unicode = 35;
 },
 {
 glyphname = percent.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -93756,7 +93586,6 @@ unicode = 37;
 },
 {
 glyphname = quotesingle.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -93868,7 +93697,6 @@ unicode = 39;
 },
 {
 glyphname = parenleft.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -94050,7 +93878,6 @@ unicode = 40;
 },
 {
 glyphname = parenright.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -94232,7 +94059,6 @@ unicode = 41;
 },
 {
 glyphname = asterisk.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -94421,7 +94247,6 @@ unicode = 42;
 },
 {
 glyphname = plus.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -94589,7 +94414,6 @@ unicode = 43;
 },
 {
 glyphname = comma.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -94736,7 +94560,6 @@ unicode = 44;
 },
 {
 glyphname = hyphen.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -94848,7 +94671,6 @@ unicode = 45;
 },
 {
 glyphname = period.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -95016,7 +94838,6 @@ unicode = 46;
 },
 {
 glyphname = slash.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -95128,7 +94949,6 @@ unicode = 47;
 },
 {
 glyphname = zero.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -95415,7 +95235,6 @@ unicode = 48;
 },
 {
 glyphname = one.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -95590,7 +95409,6 @@ unicode = 49;
 },
 {
 glyphname = two.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -95856,7 +95674,6 @@ unicode = 50;
 },
 {
 glyphname = three.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -96234,7 +96051,6 @@ unicode = 51;
 },
 {
 glyphname = four.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -96500,7 +96316,6 @@ unicode = 52;
 },
 {
 glyphname = five.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -96801,7 +96616,6 @@ unicode = 53;
 },
 {
 glyphname = six.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -97186,7 +97000,6 @@ unicode = 54;
 },
 {
 glyphname = seven.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -97319,7 +97132,6 @@ unicode = 55;
 },
 {
 glyphname = eight.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -97816,7 +97628,6 @@ unicode = 56;
 },
 {
 glyphname = nine.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -98201,7 +98012,6 @@ unicode = 57;
 },
 {
 glyphname = colon.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -98488,7 +98298,6 @@ unicode = 58;
 },
 {
 glyphname = semicolon.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -98754,7 +98563,6 @@ unicode = 59;
 },
 {
 glyphname = less.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -98887,7 +98695,6 @@ unicode = 60;
 },
 {
 glyphname = equal.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -99062,7 +98869,6 @@ unicode = 61;
 },
 {
 glyphname = greater.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -99195,7 +99001,6 @@ unicode = 62;
 },
 {
 glyphname = question.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -99594,7 +99399,6 @@ unicode = 63;
 },
 {
 glyphname = bracketleft.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -99734,7 +99538,6 @@ unicode = 91;
 },
 {
 glyphname = backslash.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -99846,7 +99649,6 @@ unicode = 92;
 },
 {
 glyphname = bracketright.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -99986,7 +99788,6 @@ unicode = 93;
 },
 {
 glyphname = asciicircum.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -100119,7 +99920,6 @@ unicode = 94;
 },
 {
 glyphname = underscore.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -100231,7 +100031,6 @@ unicode = 95;
 },
 {
 glyphname = braceleft.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -100539,7 +100338,6 @@ unicode = 123;
 },
 {
 glyphname = bar.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -100651,7 +100449,6 @@ unicode = 124;
 },
 {
 glyphname = braceright.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -100959,7 +100756,6 @@ unicode = 125;
 },
 {
 glyphname = asciitilde.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -101225,7 +101021,6 @@ unicode = 126;
 },
 {
 glyphname = uni00A0.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -101260,7 +101055,6 @@ unicode = 160;
 },
 {
 glyphname = sfthyphen.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -101330,7 +101124,6 @@ unicode = 173;
 },
 {
 glyphname = endash.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -101442,7 +101235,6 @@ unicode = 8211;
 },
 {
 glyphname = emdash.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -101554,7 +101346,6 @@ unicode = 8212;
 },
 {
 glyphname = quoteleft.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -101701,7 +101492,6 @@ unicode = 8216;
 },
 {
 glyphname = quoteright.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -101848,7 +101638,6 @@ unicode = 8217;
 },
 {
 glyphname = quotedblleft.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -102093,7 +101882,6 @@ unicode = 8220;
 },
 {
 glyphname = quotedblright.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -102338,7 +102126,6 @@ unicode = 8221;
 },
 {
 glyphname = ellipsis.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -102744,7 +102531,6 @@ unicode = 8230;
 },
 {
 glyphname = multiply.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -102912,7 +102698,6 @@ unicode = 215;
 },
 {
 glyphname = divide.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -103262,7 +103047,6 @@ unicode = 247;
 },
 {
 glyphname = minus.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -103374,7 +103158,6 @@ unicode = 8722;
 },
 {
 glyphname = uni20B9.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -103725,7 +103508,6 @@ unicode = 8377;
 {
 category = Mark;
 glyphname = uni0951;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -103881,7 +103663,6 @@ unicode = 2385;
 {
 category = Mark;
 glyphname = uni0952;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -104036,7 +103817,6 @@ unicode = 2386;
 },
 {
 glyphname = danda.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -104148,7 +103928,6 @@ unicode = 2404;
 },
 {
 glyphname = dbldanda.tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -104324,7 +104103,6 @@ unicode = 2405;
 {
 category = Mark;
 glyphname = uni1CDA;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -104542,7 +104320,6 @@ unicode = 7386;
 },
 {
 glyphname = uniA8F3;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -105033,7 +104810,6 @@ unicode = 43251;
 {
 category = Mark;
 glyphname = u11301;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -105462,7 +105238,6 @@ unicode = 70401;
 {
 category = Mark;
 glyphname = candrabindu_0951_tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -105610,7 +105385,6 @@ subCategory = Nonspacing;
 {
 category = Mark;
 glyphname = candrabindu_1CDA_tamil;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -105757,7 +105531,6 @@ subCategory = Nonspacing;
 },
 {
 glyphname = u11303;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -106283,7 +106056,6 @@ unicode = 70403;
 {
 category = Mark;
 glyphname = u1133B;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -106495,7 +106267,6 @@ unicode = 70459;
 {
 category = Mark;
 glyphname = u1133C;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 anchors = (
@@ -106825,7 +106596,6 @@ unicode = 70460;
 },
 {
 glyphname = uni00B2;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -107084,7 +106854,6 @@ unicode = 178;
 },
 {
 glyphname = uni00B3;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -107462,7 +107231,6 @@ unicode = 179;
 },
 {
 glyphname = uni2074;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -107721,7 +107489,6 @@ unicode = 8308;
 },
 {
 glyphname = uni2082;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -107798,7 +107565,6 @@ unicode = 8322;
 },
 {
 glyphname = uni2083;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -107875,7 +107641,6 @@ unicode = 8323;
 },
 {
 glyphname = uni2084;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -107952,7 +107717,6 @@ unicode = 8324;
 },
 {
 glyphname = uni200B;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -107987,7 +107751,6 @@ unicode = 8203;
 },
 {
 glyphname = uni200C;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -108099,7 +107862,6 @@ unicode = 8204;
 },
 {
 glyphname = uni200D;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -108288,7 +108050,6 @@ unicode = 8205;
 },
 {
 glyphname = uni2010;
-lastChange = "2020-03-17 13:07:53 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -108358,7 +108119,6 @@ unicode = 8208;
 },
 {
 glyphname = uni25CC;
-lastChange = "2022-07-05 15:55:37 +0000";
 layers = (
 {
 anchors = (
