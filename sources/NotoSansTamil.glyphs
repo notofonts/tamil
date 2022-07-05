@@ -110811,6 +110811,17 @@ instanceInterpolations = {
 UUID0 = 1;
 };
 name = Thin;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 100;
 },
 {
@@ -110884,6 +110895,17 @@ instanceInterpolations = {
 UUID0 = 0.79688;
 };
 name = ExtraLight;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 200;
 },
 {
@@ -110957,6 +110979,17 @@ instanceInterpolations = {
 UUID0 = 0.5;
 };
 name = Light;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 300;
 },
 {
@@ -111029,6 +111062,17 @@ instanceInterpolations = {
 "4900EB3E-CEE9-4F53-85D9-05D95ABCFDBA" = 1;
 };
 name = Regular;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 },
 {
 axesValues = (
@@ -111101,6 +111145,17 @@ instanceInterpolations = {
 "4BF31C0D-0A66-4B39-96F9-ACB961E601E6" = 0.29508;
 };
 name = Medium;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 500;
 },
 {
@@ -111174,6 +111229,17 @@ instanceInterpolations = {
 "4BF31C0D-0A66-4B39-96F9-ACB961E601E6" = 0.62295;
 };
 name = SemiBold;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 600;
 },
 {
@@ -111248,6 +111314,17 @@ instanceInterpolations = {
 isBold = 1;
 linkStyle = Regular;
 name = Bold;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 700;
 },
 {
@@ -111321,6 +111398,17 @@ instanceInterpolations = {
 "6732FEC1-CFA6-4586-B452-175C4A015291" = 0.46154;
 };
 name = ExtraBold;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 800;
 },
 {
@@ -111393,6 +111481,17 @@ instanceInterpolations = {
 "6732FEC1-CFA6-4586-B452-175C4A015291" = 1;
 };
 name = Black;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 900;
 },
 {
@@ -111466,6 +111565,17 @@ instanceInterpolations = {
 UUID0 = 0.63333;
 };
 name = "SemiCondensed Thin";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 100;
 widthClass = 4;
 },
@@ -111542,6 +111652,17 @@ instanceInterpolations = {
 UUID0 = 0.50469;
 };
 name = "SemiCondensed ExtraLight";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 200;
 widthClass = 4;
 },
@@ -111618,6 +111739,17 @@ instanceInterpolations = {
 UUID0 = 0.31667;
 };
 name = "SemiCondensed Light";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 300;
 widthClass = 4;
 },
@@ -111692,6 +111824,17 @@ instanceInterpolations = {
 "AA356D29-EBA3-4BA7-B11E-09F9C5534C37" = 0.36667;
 };
 name = SemiCondensed;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 widthClass = 4;
 },
 {
@@ -111767,6 +111910,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.08922;
 };
 name = "SemiCondensed Medium";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 500;
 widthClass = 4;
 },
@@ -111843,6 +111997,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.16745;
 };
 name = "SemiCondensed SemiBold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 600;
 widthClass = 4;
 },
@@ -111920,6 +112085,17 @@ instanceInterpolations = {
 isBold = 1;
 linkStyle = SemiCondensed;
 name = "SemiCondensed Bold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 700;
 widthClass = 4;
 },
@@ -111996,6 +112172,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.25484;
 };
 name = "SemiCondensed ExtraBold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 800;
 widthClass = 4;
 },
@@ -112070,6 +112257,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.36667;
 };
 name = "SemiCondensed Black";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 900;
 widthClass = 4;
 },
@@ -112144,6 +112342,17 @@ instanceInterpolations = {
 UUID0 = 0.3;
 };
 name = "Condensed Thin";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 100;
 widthClass = 3;
 },
@@ -112220,6 +112429,17 @@ instanceInterpolations = {
 UUID0 = 0.23906;
 };
 name = "Condensed ExtraLight";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 200;
 widthClass = 3;
 },
@@ -112296,6 +112516,17 @@ instanceInterpolations = {
 UUID0 = 0.15;
 };
 name = "Condensed Light";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 300;
 widthClass = 3;
 },
@@ -112370,6 +112601,17 @@ instanceInterpolations = {
 "AA356D29-EBA3-4BA7-B11E-09F9C5534C37" = 0.7;
 };
 name = Condensed;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 widthClass = 3;
 },
 {
@@ -112445,6 +112687,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.10757;
 };
 name = "Condensed Medium";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 500;
 widthClass = 3;
 },
@@ -112521,6 +112774,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.28624;
 };
 name = "Condensed SemiBold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 600;
 widthClass = 3;
 },
@@ -112598,6 +112862,17 @@ instanceInterpolations = {
 isBold = 1;
 linkStyle = Condensed;
 name = "Condensed Bold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 700;
 widthClass = 3;
 },
@@ -112674,6 +112949,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.55135;
 };
 name = "Condensed ExtraBold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 800;
 widthClass = 3;
 },
@@ -112748,6 +113034,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.7;
 };
 name = "Condensed Black";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 900;
 widthClass = 3;
 },
@@ -112821,6 +113118,17 @@ instanceInterpolations = {
 "960C9600-7588-48B9-A77D-42B729BBBC0C" = 1;
 };
 name = "ExtraCondensed Thin";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 100;
 widthClass = 2;
 },
@@ -112895,6 +113203,17 @@ instanceInterpolations = {
 "AA356D29-EBA3-4BA7-B11E-09F9C5534C37" = 0.20312;
 };
 name = "ExtraCondensed ExtraLight";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 200;
 widthClass = 2;
 },
@@ -112969,6 +113288,17 @@ instanceInterpolations = {
 "AA356D29-EBA3-4BA7-B11E-09F9C5534C37" = 0.5;
 };
 name = "ExtraCondensed Light";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 300;
 widthClass = 2;
 },
@@ -113042,6 +113372,17 @@ instanceInterpolations = {
 "AA356D29-EBA3-4BA7-B11E-09F9C5534C37" = 1;
 };
 name = ExtraCondensed;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 widthClass = 2;
 },
 {
@@ -113115,6 +113456,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.18;
 };
 name = "ExtraCondensed Medium";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 500;
 widthClass = 2;
 },
@@ -113189,6 +113541,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.38;
 };
 name = "ExtraCondensed SemiBold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 600;
 widthClass = 2;
 },
@@ -113265,6 +113628,17 @@ instanceInterpolations = {
 isBold = 1;
 linkStyle = ExtraCondensed;
 name = "ExtraCondensed Bold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 700;
 widthClass = 2;
 },
@@ -113339,6 +113713,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 0.79;
 };
 name = "ExtraCondensed ExtraBold";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 800;
 widthClass = 2;
 },
@@ -113412,6 +113797,17 @@ instanceInterpolations = {
 "DB7E4487-AAA8-4905-9B27-B72FA6056893" = 1;
 };
 name = "ExtraCondensed Black";
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Noto Sans Tamil UI";
+}
+);
+}
+);
 weightClass = 900;
 widthClass = 2;
 }
