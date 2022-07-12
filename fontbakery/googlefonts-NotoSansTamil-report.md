@@ -147,16 +147,16 @@ Noto Sans Tamil UI Thin: -293 [code: descent-mismatch]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* ngauuvowelsigntamil
-	* lllauvowelsigntamil
-	* nnnauuvowelsigntamil
-	* lauuvowelsigntamil
-	* eighttamil
-	* laivowelsigntamil
-	* atamil
-	* thousandtamil
-	* sixtamil
-	* saprehalftamil and 118 more.
+	* ttaiivowelsigntamil
+	* nnauvowelsigntamil
+	* rraiivowelsigntamil
+	* laiivowelsigntamil
+	* nauuvowelsigntamil
+	* laprehalftamil
+	* onetamil
+	* vauvowelsigntamil
+	* cauvowelsigntamil
+	* tchaiivowelsigntamil and 118 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -175,25 +175,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -290,16 +290,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* ngauuvowelsigntamil
-	* lllauvowelsigntamil
-	* nnnauuvowelsigntamil
-	* lauuvowelsigntamil
-	* eighttamil
-	* laivowelsigntamil
-	* atamil
-	* thousandtamil
-	* sixtamil
-	* saprehalftamil and 110 more.
+	* ttaiivowelsigntamil
+	* nnauvowelsigntamil
+	* rraiivowelsigntamil
+	* laiivowelsigntamil
+	* nauuvowelsigntamil
+	* onetamil
+	* vauvowelsigntamil
+	* cauvowelsigntamil
+	* tchaiivowelsigntamil
+	* eighttamil and 110 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -311,25 +311,25 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -454,16 +454,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* ngauuvowelsigntamil
-	* lllauvowelsigntamil
-	* nnnauuvowelsigntamil
-	* lauuvowelsigntamil
-	* eighttamil
-	* laivowelsigntamil
-	* atamil
-	* thousandtamil
-	* sixtamil
-	* saprehalftamil and 117 more.
+	* ttaiivowelsigntamil
+	* nnauvowelsigntamil
+	* rraiivowelsigntamil
+	* laiivowelsigntamil
+	* nauuvowelsigntamil
+	* laprehalftamil
+	* onetamil
+	* vauvowelsigntamil
+	* cauvowelsigntamil
+	* tchaiivowelsigntamil and 117 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -482,25 +482,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -596,7 +596,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
 	* tchaiivowelsigntamil
-	* tchaprehalftamil and tchatamil
+	* tchatamil and tchaprehalftamil
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -613,25 +613,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -694,16 +694,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnnauuvowelsigntamil
-	* nyauvowelsigntamil
-	* kauuvowelsigntamil
-	* asabovesigntamil
-	* itamil
-	* tauvowelsigntamil
-	* ssaprehalftamil
+	* nnauvowelsigntamil
 	* tchaiivowelsigntamil
 	* ssatamil
-	* tchaprehalftamil and 8 more.
+	* kauuvowelsigntamil
+	* tchatamil
+	* nyauuvowelsigntamil
+	* nnnauvowelsigntamil
+	* tauuvowelsigntamil
+	* ssaprehalftamil
+	* nyauvowelsigntamil and 8 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -722,25 +722,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -803,16 +803,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnnauuvowelsigntamil
-	* lauuvowelsigntamil
+	* ttaiivowelsigntamil
+	* nnauvowelsigntamil
+	* laiivowelsigntamil
+	* nauuvowelsigntamil
+	* onetamil
+	* cauvowelsigntamil
+	* tchaiivowelsigntamil
 	* eighttamil
-	* atamil
-	* thousandtamil
-	* sixtamil
-	* ttaivowelsigntamil
-	* rrauuvowelsigntamil
-	* kauvowelsigntamil
-	* ninetamil and 72 more.
+	* nnnaiivowelsigntamil
+	* saiivowelsigntamil and 72 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -831,25 +831,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -1470,16 +1470,16 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnnauuvowelsigntamil
-	* lauuvowelsigntamil
+	* nnauvowelsigntamil
+	* nauuvowelsigntamil
+	* onetamil
+	* cauvowelsigntamil
+	* tchaiivowelsigntamil
 	* eighttamil
-	* atamil
-	* thousandtamil
-	* sixtamil
-	* ttaivowelsigntamil
-	* rrauuvowelsigntamil
-	* kauvowelsigntamil
-	* ninetamil and 48 more.
+	* nnnaiivowelsigntamil
+	* haiivowelsigntamil
+	* catamil
+	* mauuvowelsigntamil and 48 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -1491,25 +1491,25 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -1572,16 +1572,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* lllauvowelsigntamil
-	* nnnauuvowelsigntamil
-	* lauuvowelsigntamil
+	* ttaiivowelsigntamil
+	* nnauvowelsigntamil
+	* laiivowelsigntamil
+	* nauuvowelsigntamil
+	* onetamil
+	* vauvowelsigntamil
+	* cauvowelsigntamil
+	* tchaiivowelsigntamil
 	* eighttamil
-	* laivowelsigntamil
-	* atamil
-	* thousandtamil
-	* sixtamil
-	* ttaivowelsigntamil
-	* llaprehalftamil and 89 more.
+	* nnnaiivowelsigntamil and 89 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -1600,25 +1600,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -1748,25 +1748,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -1853,25 +1853,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -1973,25 +1973,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -2128,25 +2128,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -2281,25 +2281,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -2402,25 +2402,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -2495,25 +2495,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -2615,25 +2615,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -2736,25 +2736,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -2891,25 +2891,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
@@ -3011,7 +3011,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to either 2 or 17, and its postScriptNameID value is set to 6. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/fvar.html#com.adobe.fonts/check/varfont/valid_default_instance_nameids">com.adobe.fonts/check/varfont/valid_default_instance_nameids</a>)</summary><div>
 
 
-* 🔥 **FAIL** 'Regular' instance has the same coordinates as the default instance; its subfamilyNameID should be either 2 or 17, instead of 311. [code: invalid-default-instance-subfamily-nameid:311]
+* 🔥 **FAIL** 'Regular' instance has the same coordinates as the default instance; its subfamilyNameID should be either 2 or 17, instead of 292. [code: invalid-default-instance-subfamily-nameid:292]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -3021,25 +3021,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- semicolon
+	- comma
 
-	- asciicircum
+	- bracketleft
 
-	- backslash
+	- braceright
+
+	- greater
+
+	- percent
+
+	- nine
 
 	- four
 
-	- equal
+	- parenright
 
-	- parenleft
+	- underscore
 
-	- braceleft
-
-	- slash
-
-	- seven
-
-	- underscore 
+	- seven 
 
 	- And 34 more.
 
