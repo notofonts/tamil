@@ -9,7 +9,9 @@
     <key>public.kern1.aa-tamil</key>
     <array>
       <string>aa-tamil</string>
+      <string>onethousand-tamil</string>
       <string>nguu-tamil</string>
+      <string>cuu-tamil</string>
       <string>puu-tamil</string>
       <string>yuu-tamil</string>
       <string>vuu-tamil</string>
@@ -27,14 +29,16 @@
       <string>four-tamil</string>
       <string>cii-tamil</string>
     </array>
-    <key>public.kern1.cu-tamil</key>
+    <key>public.kern1.colon</key>
     <array>
-      <string>cu-tamil</string>
+      <string>colon</string>
+      <string>semicolon</string>
     </array>
-    <key>public.kern1.cuu-tamil</key>
+    <key>public.kern1.comma</key>
     <array>
-      <string>onethousand-tamil</string>
-      <string>cuu-tamil</string>
+      <string>comma</string>
+      <string>period</string>
+      <string>ellipsis</string>
     </array>
     <key>public.kern1.e-tamil</key>
     <array>
@@ -52,6 +56,10 @@
       <string>nnna-tamil</string>
       <string>seven-tamil</string>
       <string>onehundred-tamil</string>
+      <string>nnii-tamil</string>
+      <string>rii-tamil</string>
+      <string>llii-tamil</string>
+      <string>nnnii-tamil</string>
       <string>nyuu-tamil</string>
       <string>nnuu-tamil</string>
       <string>tuu-tamil</string>
@@ -88,7 +96,6 @@
       <string>eMatra-tamil</string>
       <string>li-tamil</string>
       <string>si-tamil</string>
-      <string>ttu-tamil</string>
       <string>iMatra-tamil.alt01</string>
       <string>iMatra-tamil.alt02</string>
       <string>iiMatra-tamil.alt01</string>
@@ -108,19 +115,17 @@
       <string>nine-tamil</string>
       <string>credit-tamil</string>
       <string>rupee-tamil</string>
+      <string>kii-tamil</string>
+      <string>nyii-tamil</string>
       <string>ttii-tamil</string>
+      <string>tii-tamil</string>
+      <string>nii-tamil</string>
       <string>ku-tamil</string>
+      <string>cu-tamil</string>
       <string>ru-tamil</string>
       <string>llu-tamil</string>
       <string>ruu-tamil</string>
       <string>lluu-tamil</string>
-    </array>
-    <key>public.kern1.kii-tamil</key>
-    <array>
-      <string>kii-tamil</string>
-      <string>nyii-tamil</string>
-      <string>tii-tamil</string>
-      <string>nii-tamil</string>
     </array>
     <key>public.kern1.kuu-tamil</key>
     <array>
@@ -137,6 +142,8 @@
       <string>om-tamil</string>
       <string>zero-tamil</string>
       <string>year-tamil</string>
+      <string>rrii-tamil</string>
+      <string>hii-tamil</string>
     </array>
     <key>public.kern1.lii-tamil</key>
     <array>
@@ -147,17 +154,12 @@
     <array>
       <string>ma-tamil</string>
       <string>llla-tamil</string>
+      <string>mii-tamil</string>
+      <string>lllii-tamil</string>
       <string>mu-tamil</string>
       <string>lllu-tamil</string>
       <string>muu-tamil</string>
       <string>llluu-tamil</string>
-    </array>
-    <key>public.kern1.mii-tamil</key>
-    <array>
-      <string>mii-tamil</string>
-      <string>lllii-tamil</string>
-      <string>rrii-tamil</string>
-      <string>hii-tamil</string>
     </array>
     <key>public.kern1.month-tamil</key>
     <array>
@@ -204,10 +206,7 @@
       <string>ngii-tamil</string>
       <string>pii-tamil</string>
       <string>yii-tamil</string>
-    </array>
-    <key>public.kern1.question</key>
-    <array>
-      <string>question</string>
+      <string>vii-tamil</string>
     </array>
     <key>public.kern1.quoteleft</key>
     <array>
@@ -219,22 +218,10 @@
       <string>quoteright</string>
       <string>quotedblright</string>
     </array>
-    <key>public.kern1.quotesinglbase</key>
-    <array>
-      <string>comma</string>
-      <string>period</string>
-    </array>
     <key>public.kern1.quotesingle</key>
     <array>
       <string>quotedbl</string>
       <string>quotesingle</string>
-    </array>
-    <key>public.kern1.rii-tamil</key>
-    <array>
-      <string>nnii-tamil</string>
-      <string>rii-tamil</string>
-      <string>llii-tamil</string>
-      <string>nnnii-tamil</string>
     </array>
     <key>public.kern1.sha-tamil</key>
     <array>
@@ -274,7 +261,6 @@
     <array>
       <string>u-tamil</string>
       <string>two-tamil</string>
-      <string>three-tamil</string>
     </array>
     <key>public.kern1.uMatra-tamil</key>
     <array>
@@ -291,10 +277,6 @@
       <string>uuMatra-tamil</string>
       <string>uuMatra-tamil.alt01</string>
       <string>uuMatra-tamil.alt02</string>
-    </array>
-    <key>public.kern1.vii-tamil</key>
-    <array>
-      <string>vii-tamil</string>
     </array>
     <key>public.kern1.visarga-tamil</key>
     <array>
@@ -351,24 +333,24 @@
       <string>ssii-tamil</string>
       <string>sii-tamil</string>
       <string>hii-tamil</string>
-      <string>nyu-tamil</string>
       <string>nnu-tamil</string>
       <string>lu-tamil</string>
       <string>vu-tamil</string>
       <string>nnnu-tamil</string>
-      <string>nyuu-tamil</string>
       <string>nnuu-tamil</string>
       <string>luu-tamil</string>
       <string>vuu-tamil</string>
-      <string>nnnuu-tamil</string>
     </array>
     <key>public.kern2.eMatra-tamil</key>
     <array>
       <string>eMatra-tamil</string>
       <string>eeMatra-tamil</string>
       <string>oMatra-tamil</string>
-      <string>ooMatra-tamil</string>
       <string>auMatra-tamil</string>
+    </array>
+    <key>public.kern2.eeMatra-tamil</key>
+    <array>
+      <string>ooMatra-tamil</string>
     </array>
     <key>public.kern2.exclam</key>
     <array>
@@ -404,6 +386,10 @@
       <string>kuu-tamil</string>
       <string>tuu-tamil</string>
     </array>
+    <key>public.kern2.nnnuu-tamil</key>
+    <array>
+      <string>nnnuu-tamil</string>
+    </array>
     <key>public.kern2.nya-tamil</key>
     <array>
       <string>nya-tamil</string>
@@ -418,6 +404,14 @@
       <string>ruu-tamil</string>
       <string>llluu-tamil</string>
       <string>lluu-tamil</string>
+    </array>
+    <key>public.kern2.nyu-tamil</key>
+    <array>
+      <string>nyu-tamil</string>
+    </array>
+    <key>public.kern2.nyuu-tamil</key>
+    <array>
+      <string>nyuu-tamil</string>
     </array>
     <key>public.kern2.o-tamil</key>
     <array>
@@ -470,10 +464,6 @@
       <string>comma</string>
       <string>period</string>
       <string>ellipsis</string>
-    </array>
-    <key>public.kern2.question</key>
-    <array>
-      <string>question</string>
     </array>
     <key>public.kern2.quoteleft</key>
     <array>

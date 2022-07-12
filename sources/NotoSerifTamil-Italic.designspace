@@ -20,13 +20,13 @@
     </axis>
   </axes>
   <sources>
-    <source filename="NotoSerifTamilSlanted-LightItalic.ufo" name="Noto Serif Tamil Slanted Light Italic" familyname="Noto Serif Tamil Slanted" stylename="Light Italic">
+    <source filename="NotoSerifTamil-LightItalic.ufo" name="Noto Serif Tamil Light Italic" familyname="Noto Serif Tamil" stylename="Light Italic">
       <location>
         <dimension name="Weight" xvalue="28"/>
         <dimension name="Width" xvalue="100"/>
       </location>
     </source>
-    <source filename="NotoSerifTamilSlanted-Italic.ufo" name="Noto Serif Tamil Slanted Italic" familyname="Noto Serif Tamil Slanted" stylename="Italic">
+    <source filename="NotoSerifTamil-Italic.ufo" name="Noto Serif Tamil Italic" familyname="Noto Serif Tamil" stylename="Italic">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>
@@ -36,37 +36,37 @@
         <dimension name="Width" xvalue="100"/>
       </location>
     </source>
-    <source filename="NotoSerifTamilSlanted-SemiBoldItalic.ufo" name="Noto Serif Tamil Slanted SemiBold Italic" familyname="Noto Serif Tamil Slanted" stylename="SemiBold Italic">
+    <source filename="NotoSerifTamil-SemiBoldItalic.ufo" name="Noto Serif Tamil SemiBold Italic" familyname="Noto Serif Tamil" stylename="SemiBold Italic">
       <location>
         <dimension name="Weight" xvalue="152"/>
         <dimension name="Width" xvalue="100"/>
       </location>
     </source>
-    <source filename="NotoSerifTamilSlanted-BoldItalic.ufo" name="Noto Serif Tamil Slanted Bold Italic" familyname="Noto Serif Tamil Slanted" stylename="Bold Italic">
+    <source filename="NotoSerifTamil-BoldItalic.ufo" name="Noto Serif Tamil Bold Italic" familyname="Noto Serif Tamil" stylename="Bold Italic">
       <location>
         <dimension name="Weight" xvalue="194"/>
         <dimension name="Width" xvalue="100"/>
       </location>
     </source>
-    <source filename="NotoSerifTamilSlanted-CondensedLightItalic.ufo" name="Noto Serif Tamil Slanted Condensed Light Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed Light Italic">
+    <source filename="NotoSerifTamil-CondensedLightItalic.ufo" name="Noto Serif Tamil Condensed Light Italic" familyname="Noto Serif Tamil" stylename="Condensed Light Italic">
       <location>
         <dimension name="Weight" xvalue="28"/>
         <dimension name="Width" xvalue="70"/>
       </location>
     </source>
-    <source filename="NotoSerifTamilSlanted-CondensedItalic.ufo" name="Noto Serif Tamil Slanted Condensed Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed Italic">
+    <source filename="NotoSerifTamil-CondensedItalic.ufo" name="Noto Serif Tamil Condensed Italic" familyname="Noto Serif Tamil" stylename="Condensed Italic">
       <location>
         <dimension name="Weight" xvalue="94"/>
         <dimension name="Width" xvalue="70"/>
       </location>
     </source>
-    <source filename="NotoSerifTamilSlanted-CondensedSemiBoldItalic.ufo" name="Noto Serif Tamil Slanted Condensed SemiBold Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed SemiBold Italic">
+    <source filename="NotoSerifTamil-CondensedSemiBoldItalic.ufo" name="Noto Serif Tamil Condensed SemiBold Italic" familyname="Noto Serif Tamil" stylename="Condensed SemiBold Italic">
       <location>
         <dimension name="Weight" xvalue="152"/>
         <dimension name="Width" xvalue="70"/>
       </location>
     </source>
-    <source filename="NotoSerifTamilSlanted-CondensedBoldItalic.ufo" name="Noto Serif Tamil Slanted Condensed Bold Italic" familyname="Noto Serif Tamil Slanted" stylename="Condensed Bold Italic">
+    <source filename="NotoSerifTamil-CondensedBoldItalic.ufo" name="Noto Serif Tamil Condensed Bold Italic" familyname="Noto Serif Tamil" stylename="Condensed Bold Italic">
       <location>
         <dimension name="Weight" xvalue="194"/>
         <dimension name="Width" xvalue="70"/>
@@ -74,7 +74,7 @@
     </source>
   </sources>
   <instances>
-    <instance name="Noto Serif Tamil Slanted Thin" familyname="Noto Serif Tamil Slanted" stylename="Thin" filename="instance_ufos/NotoSerifTamilSlanted-Thin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Thin" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Thin Italic" familyname="Noto Serif Tamil" stylename="Thin Italic" filename="instance_ufos/NotoSerifTamil-ThinItalic.ufo" stylemapfamilyname="Noto Serif Tamil Thin" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="28"/>
         <dimension name="Width" xvalue="100"/>
@@ -110,17 +110,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Thin</string>
+              <string>Thin Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-ExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraLight" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraLight" familyname="Noto Serif Tamil" stylename="ExtraLight Italic" filename="instance_ufos/NotoSerifTamil-ExtraLightItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraLight" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="42"/>
         <dimension name="Width" xvalue="100"/>
@@ -156,17 +156,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraLight</string>
+              <string>ExtraLight Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Light" familyname="Noto Serif Tamil Slanted" stylename="Light" filename="instance_ufos/NotoSerifTamilSlanted-Light.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Light" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Light Italic" familyname="Noto Serif Tamil" stylename="Light Italic" filename="instance_ufos/NotoSerifTamil-LightItalic.ufo" stylemapfamilyname="Noto Serif Tamil Light" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="64"/>
         <dimension name="Width" xvalue="100"/>
@@ -202,17 +202,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Light</string>
+              <string>Light Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Regular" familyname="Noto Serif Tamil Slanted" stylename="Regular" filename="instance_ufos/NotoSerifTamilSlanted-Regular.ufo" stylemapfamilyname="NotoSerifTamilSlanted" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Italic" familyname="Noto Serif Tamil" stylename="Italic" filename="instance_ufos/NotoSerifTamil-Italic.ufo" stylemapfamilyname="Noto Serif Tamil" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="94"/>
         <dimension name="Width" xvalue="100"/>
@@ -248,13 +248,13 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Medium" familyname="Noto Serif Tamil Slanted" stylename="Medium" filename="instance_ufos/NotoSerifTamilSlanted-Medium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Medium" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Medium Italic" familyname="Noto Serif Tamil" stylename="Medium Italic" filename="instance_ufos/NotoSerifTamil-MediumItalic.ufo" stylemapfamilyname="Noto Serif Tamil Medium" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="110"/>
         <dimension name="Width" xvalue="100"/>
@@ -290,17 +290,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Medium</string>
+              <string>Medium Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiBold" familyname="Noto Serif Tamil Slanted" stylename="SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-SemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiBold" familyname="Noto Serif Tamil" stylename="SemiBold Italic" filename="instance_ufos/NotoSerifTamil-SemiBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="130"/>
         <dimension name="Width" xvalue="100"/>
@@ -336,17 +336,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiBold</string>
+              <string>SemiBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Bold" familyname="Noto Serif Tamil Slanted" stylename="Bold" filename="instance_ufos/NotoSerifTamilSlanted-Bold.ufo" stylemapfamilyname="NotoSerifTamilSlanted" stylemapstylename="bold">
+    <instance name="Noto Serif Tamil Bold Italic" familyname="Noto Serif Tamil" stylename="Bold Italic" filename="instance_ufos/NotoSerifTamil-BoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil" stylemapstylename="bold italic">
       <location>
         <dimension name="Weight" xvalue="152"/>
         <dimension name="Width" xvalue="100"/>
@@ -382,13 +382,13 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraBold Italic" familyname="Noto Serif Tamil" stylename="ExtraBold Italic" filename="instance_ufos/NotoSerifTamil-ExtraBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="175"/>
         <dimension name="Width" xvalue="100"/>
@@ -424,17 +424,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraBold</string>
+              <string>ExtraBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Black" familyname="Noto Serif Tamil Slanted" stylename="Black" filename="instance_ufos/NotoSerifTamilSlanted-Black.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Black" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Black" familyname="Noto Serif Tamil" stylename="Black Italic" filename="instance_ufos/NotoSerifTamil-BlackItalic.ufo" stylemapfamilyname="Noto Serif Tamil Black" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="194"/>
         <dimension name="Width" xvalue="100"/>
@@ -470,17 +470,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Black</string>
+              <string>Black Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed Thin" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Thin" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedThin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Thin" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed Thin Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed Thin Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedThinItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed Thin" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="28"/>
         <dimension name="Width" xvalue="89"/>
@@ -516,17 +516,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed Thin</string>
+              <string>SemiCondensed Thin Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed ExtraLight" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed ExtraLight Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed ExtraLight Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedExtraLightItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed ExtraLight" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="42"/>
         <dimension name="Width" xvalue="89"/>
@@ -562,17 +562,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed ExtraLight</string>
+              <string>SemiCondensed ExtraLight Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed Light" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Light" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Light" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed Light Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed Light Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedLightItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed Light" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="64"/>
         <dimension name="Width" xvalue="89"/>
@@ -608,17 +608,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed Light</string>
+              <string>SemiCondensed Light Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensed.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="94"/>
         <dimension name="Width" xvalue="89"/>
@@ -654,17 +654,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed</string>
+              <string>SemiCondensed Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed Medium" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Medium" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedMedium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Medium" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed Medium Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed Medium Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedMediumItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed Medium" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="110"/>
         <dimension name="Width" xvalue="89"/>
@@ -700,17 +700,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed Medium</string>
+              <string>SemiCondensed Medium Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed SemiBold" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedSemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed SemiBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed SemiBold Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed SemiBold Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedSemiBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed SemiBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="130"/>
         <dimension name="Width" xvalue="89"/>
@@ -746,17 +746,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed SemiBold</string>
+              <string>SemiCondensed SemiBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed Bold" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Bold" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed" stylemapstylename="bold">
+    <instance name="Noto Serif Tamil SemiCondensed Bold Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed Bold Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed" stylemapstylename="bold italic">
       <location>
         <dimension name="Weight" xvalue="152"/>
         <dimension name="Width" xvalue="89"/>
@@ -792,17 +792,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed Bold</string>
+              <string>SemiCondensed Bold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed ExtraBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed ExtraBold Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed ExtraBold Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedExtraBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed ExtraBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="175"/>
         <dimension name="Width" xvalue="89"/>
@@ -838,17 +838,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed ExtraBold</string>
+              <string>SemiCondensed ExtraBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted SemiCondensed Black" familyname="Noto Serif Tamil Slanted" stylename="SemiCondensed Black" filename="instance_ufos/NotoSerifTamilSlanted-SemiCondensedBlack.ufo" stylemapfamilyname="Noto Serif Tamil Slanted SemiCondensed Black" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil SemiCondensed Black Italic" familyname="Noto Serif Tamil" stylename="SemiCondensed Black Italic" filename="instance_ufos/NotoSerifTamil-SemiCondensedBlackItalic.ufo" stylemapfamilyname="Noto Serif Tamil SemiCondensed Black" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="194"/>
         <dimension name="Width" xvalue="89"/>
@@ -884,17 +884,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>SemiCondensed Black</string>
+              <string>SemiCondensed Black Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed Thin" familyname="Noto Serif Tamil Slanted" stylename="Condensed Thin" filename="instance_ufos/NotoSerifTamilSlanted-CondensedThin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Thin" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed Thin Italic" familyname="Noto Serif Tamil" stylename="Condensed Thin Italic" filename="instance_ufos/NotoSerifTamil-CondensedThinItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed Thin" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="28"/>
         <dimension name="Width" xvalue="79"/>
@@ -930,17 +930,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed Thin</string>
+              <string>Condensed Thin Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="Condensed ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-CondensedExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed ExtraLight" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed ExtraLight Italic" familyname="Noto Serif Tamil" stylename="Condensed ExtraLight Italic" filename="instance_ufos/NotoSerifTamil-CondensedExtraLightItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed ExtraLight" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="42"/>
         <dimension name="Width" xvalue="79"/>
@@ -976,17 +976,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed ExtraLight</string>
+              <string>Condensed ExtraLight Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed Light" familyname="Noto Serif Tamil Slanted" stylename="Condensed Light" filename="instance_ufos/NotoSerifTamilSlanted-CondensedLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Light" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed Light Italic" familyname="Noto Serif Tamil" stylename="Condensed Light Italic" filename="instance_ufos/NotoSerifTamil-CondensedLightItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed Light" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="64"/>
         <dimension name="Width" xvalue="79"/>
@@ -1022,17 +1022,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed Light</string>
+              <string>Condensed Light Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed" familyname="Noto Serif Tamil Slanted" stylename="Condensed" filename="instance_ufos/NotoSerifTamilSlanted-Condensed.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed Italic" familyname="Noto Serif Tamil" stylename="Condensed Italic" filename="instance_ufos/NotoSerifTamil-CondensedItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="94"/>
         <dimension name="Width" xvalue="79"/>
@@ -1068,17 +1068,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed</string>
+              <string>Condensed Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed Medium" familyname="Noto Serif Tamil Slanted" stylename="Condensed Medium" filename="instance_ufos/NotoSerifTamilSlanted-CondensedMedium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Medium" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed Medium Italic" familyname="Noto Serif Tamil" stylename="Condensed Medium Italic" filename="instance_ufos/NotoSerifTamil-CondensedMediumItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed Medium" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="110"/>
         <dimension name="Width" xvalue="79"/>
@@ -1114,17 +1114,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed Medium</string>
+              <string>Condensed Medium Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed SemiBold" familyname="Noto Serif Tamil Slanted" stylename="Condensed SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-CondensedSemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed SemiBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed SemiBold Italic" familyname="Noto Serif Tamil" stylename="Condensed SemiBold Italic" filename="instance_ufos/NotoSerifTamil-CondensedSemiBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed SemiBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="130"/>
         <dimension name="Width" xvalue="79"/>
@@ -1160,17 +1160,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed SemiBold</string>
+              <string>Condensed SemiBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed Bold" familyname="Noto Serif Tamil Slanted" stylename="Condensed Bold" filename="instance_ufos/NotoSerifTamilSlanted-CondensedBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed" stylemapstylename="bold">
+    <instance name="Noto Serif Tamil Condensed Bold Italic" familyname="Noto Serif Tamil" stylename="Condensed Bold Italic" filename="instance_ufos/NotoSerifTamil-CondensedBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed" stylemapstylename="bold italic">
       <location>
         <dimension name="Weight" xvalue="152"/>
         <dimension name="Width" xvalue="79"/>
@@ -1206,17 +1206,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed Bold</string>
+              <string>Condensed Bold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="Condensed ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-CondensedExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed ExtraBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed ExtraBold Italic" familyname="Noto Serif Tamil" stylename="Condensed ExtraBold Italic" filename="instance_ufos/NotoSerifTamil-CondensedExtraBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed ExtraBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="175"/>
         <dimension name="Width" xvalue="79"/>
@@ -1252,17 +1252,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed ExtraBold</string>
+              <string>Condensed ExtraBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted Condensed Black" familyname="Noto Serif Tamil Slanted" stylename="Condensed Black" filename="instance_ufos/NotoSerifTamilSlanted-CondensedBlack.ufo" stylemapfamilyname="Noto Serif Tamil Slanted Condensed Black" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil Condensed Black Italic" familyname="Noto Serif Tamil" stylename="Condensed Black Italic" filename="instance_ufos/NotoSerifTamil-CondensedBlackItalic.ufo" stylemapfamilyname="Noto Serif Tamil Condensed Black" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="194"/>
         <dimension name="Width" xvalue="79"/>
@@ -1298,17 +1298,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>Condensed Black</string>
+              <string>Condensed Black Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed Thin" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Thin" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedThin.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Thin" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed Thin Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed Thin Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedThinItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed Thin" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="28"/>
         <dimension name="Width" xvalue="70"/>
@@ -1344,17 +1344,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed Thin</string>
+              <string>ExtraCondensed Thin Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed ExtraLight" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed ExtraLight" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedExtraLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed ExtraLight" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed ExtraLight Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed ExtraLight Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedExtraLightItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed ExtraLight" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="42"/>
         <dimension name="Width" xvalue="70"/>
@@ -1390,17 +1390,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed ExtraLight</string>
+              <string>ExtraCondensed ExtraLight Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed Light" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Light" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedLight.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Light" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed Light Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed Light Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedLightItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed Light" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="64"/>
         <dimension name="Width" xvalue="70"/>
@@ -1436,17 +1436,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed Light</string>
+              <string>ExtraCondensed Light Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensed.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="94"/>
         <dimension name="Width" xvalue="70"/>
@@ -1482,17 +1482,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed</string>
+              <string>ExtraCondensed Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed Medium" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Medium" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedMedium.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Medium" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed Medium Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed Medium Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedMediumItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed Medium" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="110"/>
         <dimension name="Width" xvalue="70"/>
@@ -1528,17 +1528,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed Medium</string>
+              <string>ExtraCondensed Medium Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed SemiBold" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed SemiBold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedSemiBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed SemiBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed SemiBold Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed SemiBold Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedSemiBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed SemiBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="130"/>
         <dimension name="Width" xvalue="70"/>
@@ -1574,17 +1574,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed SemiBold</string>
+              <string>ExtraCondensed SemiBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed Bold" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Bold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed" stylemapstylename="bold">
+    <instance name="Noto Serif Tamil ExtraCondensed Bold Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed Bold Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed" stylemapstylename="bold italic">
       <location>
         <dimension name="Weight" xvalue="152"/>
         <dimension name="Width" xvalue="70"/>
@@ -1620,17 +1620,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed Bold</string>
+              <string>ExtraCondensed Bold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed ExtraBold" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed ExtraBold" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedExtraBold.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed ExtraBold" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed ExtraBold Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed ExtraBold Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedExtraBoldItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed ExtraBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="175"/>
         <dimension name="Width" xvalue="70"/>
@@ -1666,17 +1666,17 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed ExtraBold</string>
+              <string>ExtraCondensed ExtraBold Italic</string>
             </array>
           </array>
         </dict>
       </lib>
     </instance>
-    <instance name="Noto Serif Tamil Slanted ExtraCondensed Black" familyname="Noto Serif Tamil Slanted" stylename="ExtraCondensed Black" filename="instance_ufos/NotoSerifTamilSlanted-ExtraCondensedBlack.ufo" stylemapfamilyname="Noto Serif Tamil Slanted ExtraCondensed Black" stylemapstylename="regular">
+    <instance name="Noto Serif Tamil ExtraCondensed Black Italic" familyname="Noto Serif Tamil" stylename="ExtraCondensed Black Italic" filename="instance_ufos/NotoSerifTamil-ExtraCondensedBlackItalic.ufo" stylemapfamilyname="Noto Serif Tamil ExtraCondensed Black" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="194"/>
         <dimension name="Width" xvalue="70"/>
@@ -1712,11 +1712,11 @@
             </array>
             <array>
               <string>preferredFamilyName</string>
-              <string>Noto Serif Tamil Slanted</string>
+              <string>Noto Serif Tamil</string>
             </array>
             <array>
               <string>preferredSubfamilyName</string>
-              <string>ExtraCondensed Black</string>
+              <string>ExtraCondensed Black Italic</string>
             </array>
           </array>
         </dict>

@@ -3,15 +3,15 @@
 <plist version="1.0">
   <dict>
     <key>ascender</key>
-    <integer>1178</integer>
+    <integer>1086</integer>
     <key>capHeight</key>
-    <integer>875</integer>
+    <integer>771</integer>
     <key>copyright</key>
     <string>Copyright 2018 Google Inc. All Rights Reserved.</string>
     <key>descender</key>
-    <integer>-635</integer>
+    <integer>-438</integer>
     <key>familyName</key>
-    <string>NotoSerifTamilSlanted</string>
+    <string>Noto Serif Tamil</string>
     <key>italicAngle</key>
     <integer>-12</integer>
     <key>openTypeHeadCreated</key>
@@ -46,8 +46,8 @@
     <array>
       <integer>2</integer>
       <integer>2</integer>
-      <integer>10</integer>
       <integer>2</integer>
+      <integer>6</integer>
       <integer>6</integer>
       <integer>5</integer>
       <integer>5</integer>
@@ -90,38 +90,37 @@
     <array>
       <integer>-15</integer>
       <integer>0</integer>
-      <integer>584</integer>
-      <integer>599</integer>
-      <integer>875</integer>
-      <integer>890</integer>
-      <integer>1178</integer>
-      <integer>1193</integer>
+      <integer>542</integer>
+      <integer>557</integer>
+      <integer>771</integer>
+      <integer>786</integer>
+      <integer>1086</integer>
+      <integer>1101</integer>
     </array>
     <key>postscriptOtherBlues</key>
     <array>
-      <integer>-650</integer>
-      <integer>-635</integer>
+      <integer>-453</integer>
+      <integer>-438</integer>
     </array>
     <key>postscriptStemSnapH</key>
     <array>
-      <integer>69</integer>
-      <integer>157</integer>
+      <integer>23</integer>
+      <integer>30</integer>
     </array>
     <key>postscriptStemSnapV</key>
     <array>
-      <integer>86</integer>
-      <integer>197</integer>
+      <integer>29</integer>
     </array>
     <key>postscriptUnderlinePosition</key>
     <integer>-100</integer>
     <key>postscriptUnderlineThickness</key>
     <integer>50</integer>
     <key>styleMapFamilyName</key>
-    <string>NotoSerifTamilSlanted Bold</string>
+    <string>Noto Serif Tamil Condensed Light</string>
     <key>styleMapStyleName</key>
     <string>italic</string>
     <key>styleName</key>
-    <string>Bold Italic</string>
+    <string>Condensed Light Italic</string>
     <key>trademark</key>
     <string>Noto is a trademark of Google Inc.</string>
     <key>unitsPerEm</key>
@@ -131,6 +130,6 @@
     <key>versionMinor</key>
     <integer>1</integer>
     <key>xHeight</key>
-    <integer>584</integer>
+    <integer>542</integer>
   </dict>
 </plist>
