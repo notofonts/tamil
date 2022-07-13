@@ -30,6 +30,14 @@ works and how to maintain it, see [the README file of the
 notofonts.github.io
 repository](https://github.com/notofonts/notofonts.github.io/blob/main/README.md)
 
+## Changes
+
+### v2.003 (2022-06-13)
+
+* Renamed "Noto Serif Tamil Slanted" to "Noto Serif Tamil" as part of family
+* Added dotted circle anchors
+* Fixed version, copyright, vertical metrics, production names, etc. to GF standards
+
 ## License
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
