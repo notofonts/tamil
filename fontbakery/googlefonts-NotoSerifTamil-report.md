@@ -27,16 +27,16 @@ Fontbakery version: 0.8.9
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* vutamil
-	* yiitamil
-	* uni0B86
-	* nyiitamil
-	* rriitamil
-	* riitamil
-	* uni0B94
-	* uni0BF9
-	* nyutamil
-	* nguutamil and 74 more.
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
+	* kuutamil
+	* uni0BEF
+	* sitamil and 74 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -166,7 +166,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<454.0,335.0>--<295.0,336.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-BlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-BlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -175,19 +175,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* four
+	* cuutamil
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
+	* kuutamil
+	* uni0BEF and 75 more.
+
+Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -204,7 +207,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -214,7 +217,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -224,7 +227,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -232,12 +237,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -304,16 +309,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* vutamil
-	* uni0B86
-	* nyiitamil
-	* riitamil
-	* uni0BF9
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
 	* nyutamil
-	* nguutamil
-	* lluutamil
-	* nnniitamil
-	* mutamil and 53 more.
+	* uni0BF4
+	* uni0BB8 and 53 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -428,7 +433,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* h (U+0068): L<<252.0,309.0>--<253.0,118.0>> 
 
 	* And sterling (U+00A3): L<<428.0,346.0>--<270.0,347.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-BoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-BoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -437,19 +442,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* four
+	* cuutamil
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
+	* kuutamil
+	* nyutamil and 54 more.
+
+Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -459,7 +467,7 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -469,7 +477,7 @@ Use -F or --full-lists to disable shortening of long lists.
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -479,7 +487,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -487,12 +497,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -533,31 +543,31 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* ca-tamil (U+0B9A): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
+	* uni0B95 (U+0B95): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
 
-	* five-tamil (U+0BEB): L<<723.0,194.0>--<721.0,184.0>> -> L<<721.0,184.0>--<715.0,152.0>>
+	* uni0B9A (U+0B9A): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
 
-	* four-tamil (U+0BEA): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
+	* uni0BA4 (U+0BA4): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
 
-	* ka-tamil (U+0B95): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
+	* uni0BB4 (U+0BB4): L<<630.0,399.0>--<572.0,122.0>> -> L<<572.0,122.0>--<559.0,61.0>>
 
-	* llla-tamil (U+0BB4): L<<630.0,399.0>--<572.0,122.0>> -> L<<572.0,122.0>--<559.0,61.0>>
+	* uni0BE7 (U+0BE7): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
 
-	* nine-tamil (U+0BEF): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
+	* uni0BEA (U+0BEA): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
 
-	* one-tamil (U+0BE7): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
+	* uni0BEB (U+0BEB): L<<723.0,194.0>--<721.0,184.0>> -> L<<721.0,184.0>--<715.0,152.0>>
 
-	* onethousand-tamil (U+0BF2): L<<256.0,331.0>--<259.0,331.0>> -> L<<259.0,331.0>--<397.0,331.0>>
+	* uni0BEC (U+0BEC): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>>
 
-	* six-tamil (U+0BEC): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>> 
+	* uni0BEF (U+0BEF): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>> 
 
-	* And ta-tamil (U+0BA4): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>> [code: found-colinear-vectors]
+	* And uni0BF2 (U+0BF2): L<<256.0,331.0>--<259.0,331.0>> -> L<<259.0,331.0>--<397.0,331.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
-	* ai-tamil (U+0B90): B<<481.0,-212.0>-<471.0,-183.0>-<473.0,-158.0>>/B<<473.0,-158.0>-<453.0,-220.0>-<413.0,-256.5>> = 13.304775335940452
+	* uni0B90 (U+0B90): B<<481.0,-212.0>-<471.0,-183.0>-<473.0,-158.0>>/B<<473.0,-158.0>-<453.0,-220.0>-<413.0,-256.5>> = 13.304775335940452
 
 	* y (U+0079): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127
 
@@ -794,7 +804,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<399.0,334.0>--<258.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedBlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedBlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -807,14 +817,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -831,7 +833,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -841,7 +843,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -851,7 +853,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -859,12 +863,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -1036,7 +1040,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* h (U+0068): L<<223.0,312.0>--<224.0,116.0>> 
 
 	* And sterling (U+00A3): L<<375.0,337.0>--<238.0,338.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-CondensedBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -1049,14 +1053,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -1073,7 +1069,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1083,7 +1079,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -1093,7 +1089,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -1101,12 +1099,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -1147,11 +1145,11 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<322.0,61.0>--<331.0,102.0>> -> L<<331.0,102.0>--<333.0,113.0>>
+	* uni0BB4 (U+0BB4): L<<322.0,61.0>--<331.0,102.0>> -> L<<331.0,102.0>--<333.0,113.0>>
 
-	* rupee-tamil (U+0BF9): L<<603.0,187.0>--<599.0,169.0>> -> L<<599.0,169.0>--<563.0,0.0>> 
+	* uni0BB7 (U+0BB7): L<<1286.0,315.0>--<1285.0,311.0>> -> L<<1285.0,311.0>--<1284.0,308.0>> 
 
-	* And ssa-tamil (U+0BB7): L<<1286.0,315.0>--<1285.0,311.0>> -> L<<1285.0,311.0>--<1284.0,308.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<603.0,187.0>--<599.0,169.0>> -> L<<599.0,169.0>--<563.0,0.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -1284,7 +1282,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* h (U+0068): L<<241.0,308.0>--<242.0,119.0>> 
 
 	* And sterling (U+00A3): L<<388.0,335.0>--<249.0,336.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-CondensedExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -1297,14 +1295,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -1321,7 +1311,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1331,7 +1321,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -1341,7 +1331,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -1349,12 +1341,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -1395,9 +1387,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* rupee-tamil (U+0BF9): L<<612.0,175.0>--<610.0,167.0>> -> L<<610.0,167.0>--<575.0,0.0>> 
+	* uni0BF0 (U+0BF0): L<<314.0,136.0>--<325.0,185.0>> -> L<<325.0,185.0>--<407.0,572.0>> 
 
-	* And ten-tamil (U+0BF0): L<<314.0,136.0>--<325.0,185.0>> -> L<<325.0,185.0>--<407.0,572.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<612.0,175.0>--<610.0,167.0>> -> L<<610.0,167.0>--<575.0,0.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -1542,7 +1534,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* Euro (U+20AC): L<<147.0,303.0>--<301.0,302.0>> 
 
 	* And OE (U+0152): L<<422.0,359.0>--<420.0,30.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedExtraLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedExtraLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -1555,14 +1547,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -1579,7 +1563,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1589,7 +1573,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -1599,7 +1583,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -1607,12 +1593,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -1648,7 +1634,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* And 74 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-CondensedItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -1661,14 +1647,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -1685,7 +1663,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1695,7 +1673,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -1705,7 +1683,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -1713,12 +1693,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -1759,9 +1739,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<476.0,411.0>--<410.0,96.0>> -> L<<410.0,96.0>--<401.0,54.0>> 
+	* uni0BB4 (U+0BB4): L<<476.0,411.0>--<410.0,96.0>> -> L<<410.0,96.0>--<401.0,54.0>> 
 
-	* And rupee-tamil (U+0BF9): L<<559.0,210.0>--<550.0,168.0>> -> L<<550.0,168.0>--<549.0,164.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<559.0,210.0>--<550.0,168.0>> -> L<<550.0,168.0>--<549.0,164.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -1898,7 +1878,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* OE (U+0152): L<<454.0,355.0>--<453.0,38.0>> 
 
 	* And uni0BB2 (U+0BB2): L<<469.0,156.0>--<468.0,328.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-CondensedLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -1911,14 +1891,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -1935,7 +1907,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1945,7 +1917,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -1955,7 +1927,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -1963,12 +1937,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -2009,7 +1983,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<450.0,408.0>--<380.0,74.0>> -> L<<380.0,74.0>--<373.0,40.0>> [code: found-colinear-vectors]
+	* uni0BB4 (U+0BB4): L<<450.0,408.0>--<380.0,74.0>> -> L<<380.0,74.0>--<373.0,40.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -2122,7 +2096,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<354.0,334.0>--<220.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedMediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedMediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -2135,14 +2109,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -2159,7 +2125,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -2169,7 +2135,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -2179,7 +2145,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -2187,12 +2155,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -2215,9 +2183,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
 
-	* twosuperior (U+00B2): X=271.0,Y=824.0 (should be at cap-height 825?)
+	* uni00B2 (U+00B2): X=271.0,Y=824.0 (should be at cap-height 825?)
 
-	* threesuperior (U+00B3): X=278.0,Y=824.0 (should be at cap-height 825?)
+	* uni00B3 (U+00B3): X=278.0,Y=824.0 (should be at cap-height 825?)
 
 	* Atilde (U+00C3): X=268.5,Y=824.5 (should be at cap-height 825?)
 
@@ -2235,9 +2203,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* four (U+0034): B<<330.5,532.0>-<343.0,584.0>-<357.0,631.0>>/B<<357.0,631.0>-<346.0,611.0>-<331.0,587.0>> = 12.223455186045594
 
-	* fourinferior (U+2084): B<<180.5,218.5>-<187.0,243.0>-<192.0,261.0>>/B<<192.0,261.0>-<187.0,252.0>-<177.0,239.0>> = 13.530493102322872 
+	* uni2074 (U+2074): B<<269.5,703.5>-<276.0,728.0>-<281.0,746.0>>/B<<281.0,746.0>-<276.0,737.0>-<266.0,724.0>> = 13.530493102322872 
 
-	* And foursuperior (U+2074): B<<269.5,703.5>-<276.0,728.0>-<281.0,746.0>>/B<<281.0,746.0>-<276.0,737.0>-<266.0,724.0>> = 13.530493102322872 [code: found-jaggy-segments]
+	* And uni2084 (U+2084): B<<180.5,218.5>-<187.0,243.0>-<192.0,261.0>>/B<<192.0,261.0>-<187.0,252.0>-<177.0,239.0>> = 13.530493102322872 [code: found-jaggy-segments]
 </div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedSemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
@@ -2338,7 +2306,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* And 27 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-CondensedSemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedSemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -2351,14 +2319,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -2375,7 +2335,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -2385,7 +2345,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -2395,7 +2355,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -2403,12 +2365,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -2449,7 +2411,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* ten-tamil (U+0BF0): L<<287.0,140.0>--<297.0,188.0>> -> L<<297.0,188.0>--<376.0,560.0>> [code: found-colinear-vectors]
+	* uni0BF0 (U+0BF0): L<<287.0,140.0>--<297.0,188.0>> -> L<<297.0,188.0>--<376.0,560.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -2584,7 +2546,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* And 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-CondensedThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -2597,14 +2559,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -2621,7 +2575,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -2631,7 +2585,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -2641,7 +2595,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -2649,12 +2605,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -2709,16 +2665,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* vutamil
-	* uni0B86
-	* nyiitamil
-	* riitamil
-	* uni0B94
-	* uni0BF9
-	* nyutamil
-	* nguutamil
-	* lluutamil
-	* nnniitamil and 60 more.
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
+	* kuutamil
+	* uni0BEF
+	* sitamil and 60 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -2840,7 +2796,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<442.0,340.0>--<284.0,341.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -2849,19 +2805,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* four
+	* cuutamil
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
+	* kuutamil
+	* uni0BEF and 64 more.
+
+Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -2878,7 +2837,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -2888,7 +2847,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -2898,7 +2857,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -2906,12 +2867,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -2952,21 +2913,21 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* ca-tamil (U+0B9A): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
+	* uni0B95 (U+0B95): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
 
-	* four-tamil (U+0BEA): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
+	* uni0B9A (U+0B9A): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
 
-	* ka-tamil (U+0B95): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
+	* uni0BA4 (U+0BA4): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
 
-	* nine-tamil (U+0BEF): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
+	* uni0BE7 (U+0BE7): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
 
-	* one-tamil (U+0BE7): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
+	* uni0BEA (U+0BEA): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
 
-	* onethousand-tamil (U+0BF2): L<<264.0,340.0>--<264.0,340.0>> -> L<<264.0,340.0>--<401.0,340.0>>
+	* uni0BEC (U+0BEC): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>>
 
-	* six-tamil (U+0BEC): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>> 
+	* uni0BEF (U+0BEF): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>> 
 
-	* And ta-tamil (U+0BA4): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>> [code: found-colinear-vectors]
+	* And uni0BF2 (U+0BF2): L<<264.0,340.0>--<264.0,340.0>> -> L<<264.0,340.0>--<401.0,340.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -3217,7 +3178,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<375.0,334.0>--<242.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedBlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedBlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -3230,14 +3191,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -3254,7 +3207,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -3264,7 +3217,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -3274,7 +3227,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -3282,12 +3237,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -3328,7 +3283,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* five-tamil (U+0BEB): L<<589.0,174.0>--<587.0,166.0>> -> L<<587.0,166.0>--<552.0,0.0>> [code: found-colinear-vectors]
+	* uni0BEB (U+0BEB): L<<589.0,174.0>--<587.0,166.0>> -> L<<587.0,166.0>--<552.0,0.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -3485,7 +3440,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<352.0,333.0>--<224.0,334.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -3498,14 +3453,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -3522,7 +3469,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -3532,7 +3479,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -3542,7 +3489,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -3550,12 +3499,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -3596,11 +3545,11 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* five-tamil (U+0BEB): L<<559.0,187.0>--<554.0,167.0>> -> L<<554.0,167.0>--<519.0,0.0>>
+	* uni0BB4 (U+0BB4): L<<289.0,61.0>--<295.0,87.0>> -> L<<295.0,87.0>--<299.0,109.0>>
 
-	* llla-tamil (U+0BB4): L<<289.0,61.0>--<295.0,87.0>> -> L<<295.0,87.0>--<299.0,109.0>> 
+	* uni0BEB (U+0BEB): L<<559.0,187.0>--<554.0,167.0>> -> L<<554.0,167.0>--<519.0,0.0>> 
 
-	* And rupee-tamil (U+0BF9): L<<546.0,187.0>--<541.0,167.0>> -> L<<541.0,167.0>--<506.0,0.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<546.0,187.0>--<541.0,167.0>> -> L<<541.0,167.0>--<506.0,0.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -3745,7 +3694,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<365.0,334.0>--<234.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -3758,14 +3707,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -3782,7 +3723,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -3792,7 +3733,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -3802,7 +3743,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -3810,12 +3753,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -3856,7 +3799,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* five-tamil (U+0BEB): L<<575.0,180.0>--<572.0,165.0>> -> L<<572.0,165.0>--<537.0,0.0>> [code: found-colinear-vectors]
+	* uni0BEB (U+0BEB): L<<575.0,180.0>--<572.0,165.0>> -> L<<572.0,165.0>--<537.0,0.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -3868,9 +3811,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* four (U+0034): B<<312.0,519.0>-<324.0,572.0>-<337.0,618.0>>/B<<337.0,618.0>-<318.0,575.0>-<289.5,527.0>> = 8.057986873656278
 
-	* fourinferior (U+2084): B<<188.0,207.0>-<195.0,231.0>-<201.0,249.0>>/B<<201.0,249.0>-<192.0,235.0>-<181.5,222.0>> = 14.300277449185549
+	* uni2074 (U+2074): B<<287.0,692.0>-<294.0,716.0>-<300.0,734.0>>/B<<300.0,734.0>-<291.0,720.0>-<280.5,707.0>> = 14.300277449185549
 
-	* foursuperior (U+2074): B<<287.0,692.0>-<294.0,716.0>-<300.0,734.0>>/B<<300.0,734.0>-<291.0,720.0>-<280.5,707.0>> = 14.300277449185549
+	* uni2084 (U+2084): B<<188.0,207.0>-<195.0,231.0>-<201.0,249.0>>/B<<201.0,249.0>-<192.0,235.0>-<181.5,222.0>> = 14.300277449185549
 
 	* y (U+0079): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268
 
@@ -4015,7 +3958,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* Eogonek (U+0118): L<<149.0,359.0>--<148.0,30.0>> 
 
 	* And OE (U+0152): L<<390.0,359.0>--<389.0,30.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedExtraLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedExtraLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -4028,14 +3971,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4052,7 +3987,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4062,7 +3997,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -4072,7 +4007,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4080,12 +4017,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -4126,16 +4063,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* rupee-tamil (U+0BF9): L<<459.0,167.0>--<459.0,167.0>> -> L<<459.0,167.0>--<459.0,167.0>> 
+	* uni0BF0 (U+0BF0): L<<219.0,127.0>--<220.0,133.0>> -> L<<220.0,133.0>--<307.0,545.0>> 
 
-	* And ten-tamil (U+0BF0): L<<219.0,127.0>--<220.0,133.0>> -> L<<220.0,133.0>--<307.0,545.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<459.0,167.0>--<459.0,167.0>> -> L<<459.0,167.0>--<459.0,167.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
 	* four (U+0034): B<<333.5,591.0>-<343.0,630.0>-<351.0,659.0>>/B<<351.0,659.0>-<343.0,643.0>-<327.5,619.5>> = 11.142889858339293 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -4148,14 +4085,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4172,7 +4101,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4182,7 +4111,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -4192,7 +4121,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4200,12 +4131,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -4246,7 +4177,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<442.0,418.0>--<374.0,96.0>> -> L<<374.0,96.0>--<365.0,54.0>> [code: found-colinear-vectors]
+	* uni0BB4 (U+0BB4): L<<442.0,418.0>--<374.0,96.0>> -> L<<374.0,96.0>--<365.0,54.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -4389,7 +4320,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* Euro (U+20AC): L<<154.0,306.0>--<291.0,305.0>> 
 
 	* And OE (U+0152): L<<422.0,355.0>--<421.0,38.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -4402,14 +4333,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4426,7 +4349,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4436,7 +4359,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -4446,7 +4369,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4454,12 +4379,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -4482,11 +4407,11 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* section (U+00A7): X=77.0,Y=1.0 (should be at baseline 0?)
 
-	* twosuperior (U+00B2): X=319.0,Y=796.5 (should be at cap-height 795?)
+	* uni00B2 (U+00B2): X=319.0,Y=796.5 (should be at cap-height 795?)
 
-	* threesuperior (U+00B3): X=163.0,Y=794.5 (should be at cap-height 795?)
+	* uni00B3 (U+00B3): X=163.0,Y=794.5 (should be at cap-height 795?)
 
-	* threesuperior (U+00B3): X=329.5,Y=796.5 (should be at cap-height 795?)
+	* uni00B3 (U+00B3): X=329.5,Y=796.5 (should be at cap-height 795?)
 
 	* yacute (U+00FD): X=207.0,Y=-2.0 (should be at baseline 0?)
 
@@ -4500,9 +4425,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<416.0,418.0>--<343.0,74.0>> -> L<<343.0,74.0>--<336.0,40.0>> 
+	* uni0BB4 (U+0BB4): L<<416.0,418.0>--<343.0,74.0>> -> L<<343.0,74.0>--<336.0,40.0>> 
 
-	* And ten-tamil (U+0BF0): L<<227.0,130.0>--<236.0,175.0>> -> L<<236.0,175.0>--<316.0,549.0>> [code: found-colinear-vectors]
+	* And uni0BF0 (U+0BF0): L<<227.0,130.0>--<236.0,175.0>> -> L<<236.0,175.0>--<316.0,549.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -4595,7 +4520,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<331.0,332.0>--<207.0,333.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedMediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedMediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -4608,14 +4533,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4632,7 +4549,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4642,7 +4559,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -4652,7 +4569,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4660,12 +4579,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -4678,7 +4597,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<392.0,100.0>--<384.0,63.0>> -> L<<384.0,63.0>--<383.0,56.0>> [code: found-colinear-vectors]
+	* uni0BB4 (U+0BB4): L<<392.0,100.0>--<384.0,63.0>> -> L<<384.0,63.0>--<383.0,56.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -4791,7 +4710,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
 	* M (U+004D): L<<551.0,115.0>--<551.0,630.0>>/L<<551.0,630.0>--<391.0,0.0>> = 14.250032697803595 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedSemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedSemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -4804,14 +4723,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4828,7 +4739,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4838,7 +4749,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -4848,7 +4759,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4856,12 +4769,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -4886,9 +4799,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=373.0,Y=1.5 (should be at baseline 0?)
 
-	* twosuperior (U+00B2): X=270.0,Y=824.0 (should be at cap-height 825?)
+	* uni00B2 (U+00B2): X=270.0,Y=824.0 (should be at cap-height 825?)
 
-	* threesuperior (U+00B3): X=274.0,Y=824.0 (should be at cap-height 825?)
+	* uni00B3 (U+00B3): X=274.0,Y=824.0 (should be at cap-height 825?)
 
 	* Atilde (U+00C3): X=258.5,Y=824.5 (should be at cap-height 825?)
 
@@ -4902,9 +4815,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* five-tamil (U+0BEB): L<<536.0,192.0>--<533.0,181.0>> -> L<<533.0,181.0>--<495.0,0.0>> 
+	* uni0BEB (U+0BEB): L<<536.0,192.0>--<533.0,181.0>> -> L<<533.0,181.0>--<495.0,0.0>> 
 
-	* And rupee-tamil (U+0BF9): L<<532.0,192.0>--<530.0,181.0>> -> L<<530.0,181.0>--<492.0,0.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<532.0,192.0>--<530.0,181.0>> -> L<<530.0,181.0>--<492.0,0.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -5049,7 +4962,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* And 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraCondensedThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraCondensedThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -5062,14 +4975,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-semi-ve
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5086,7 +4991,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5096,7 +5001,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -5106,7 +5011,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5114,12 +5021,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -5160,7 +5067,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<272.0,23.0>--<276.0,42.0>> -> L<<276.0,42.0>--<277.0,47.0>> [code: found-colinear-vectors]
+	* uni0BB4 (U+0BB4): L<<272.0,23.0>--<276.0,42.0>> -> L<<276.0,42.0>--<277.0,47.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -5283,14 +5190,12 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
+	* vutamil
+	* vuutamil and kssiitamil
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5307,7 +5212,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5317,7 +5222,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -5327,7 +5232,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5335,12 +5242,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -5381,7 +5288,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* five-tamil (U+0BEB): L<<586.0,175.0>--<584.0,165.0>> -> L<<584.0,165.0>--<581.0,151.0>> [code: found-colinear-vectors]
+	* uni0BEB (U+0BEB): L<<586.0,175.0>--<584.0,165.0>> -> L<<584.0,165.0>--<581.0,151.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -5415,14 +5322,22 @@ But got:  "NotoSerifTamilItalic-Italic" [code: bad-entry]
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
+	* tuutamil
+	* lutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* nyutamil
+	* ciitamil
+	* tutamil
+	* llluutamil
+	* vutamil and 35 more.
 
 Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5439,7 +5354,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5449,7 +5364,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -5459,7 +5374,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5467,12 +5384,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -5513,7 +5430,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* rupee-tamil (U+0BF9): L<<664.0,197.0>--<659.0,171.0>> -> L<<659.0,171.0>--<652.0,138.0>> [code: found-colinear-vectors]
+	* uni0BF9 (U+0BF9): L<<664.0,197.0>--<659.0,171.0>> -> L<<659.0,171.0>--<652.0,138.0>> [code: found-colinear-vectors]
 </div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-Light.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
@@ -5528,15 +5445,15 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
 	* vutamil
+	* llliitamil
+	* vuutamil
 	* nyiitamil
-	* lluutamil
-	* nnniitamil
-	* llutamil
-	* nnuutamil
-	* kssatamil
-	* lliitamil
 	* ssiitamil
-	* uni0BF8 and 8 more.
+	* llutamil
+	* kssatamil
+	* nniitamil
+	* uni0BF5
+	* lliitamil and 8 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -5643,14 +5560,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
+	* vutamil
+	* vuutamil
+	* nyiitamil
+	* ssiitamil
+	* llutamil
+	* kssatamil
+	* nniitamil
+	* uni0BF5
+	* lliitamil
+	* kssiitamil and 7 more.
 
 Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5667,7 +5592,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5677,7 +5602,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -5687,7 +5612,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5695,12 +5622,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -5741,7 +5668,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<465.0,74.0>--<463.0,64.0>> -> L<<463.0,64.0>--<458.0,40.0>> [code: found-colinear-vectors]
+	* uni0BB4 (U+0BB4): L<<465.0,74.0>--<463.0,64.0>> -> L<<463.0,64.0>--<458.0,40.0>> [code: found-colinear-vectors]
 </div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
@@ -5755,16 +5682,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* vutamil
-	* uni0B86
-	* nyiitamil
-	* riitamil
-	* uni0B94
-	* uni0BF9
+	* tuutamil
+	* lutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
 	* nyutamil
-	* lluutamil
-	* nnniitamil
-	* llutamil and 41 more.
+	* ciitamil
+	* tutamil
+	* llluutamil and 41 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -5872,7 +5799,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<408.0,339.0>--<251.0,340.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-MediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-MediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -5881,19 +5808,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* four
+	* tuutamil
+	* lutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
+	* nyutamil
+	* ciitamil
+	* tutamil
+	* llluutamil and 40 more.
+
+Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5910,7 +5840,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5920,7 +5850,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -5930,7 +5860,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5938,12 +5870,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -5984,19 +5916,19 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<576.0,395.0>--<515.0,103.0>> -> L<<515.0,103.0>--<505.0,56.0>>
+	* uni0BB4 (U+0BB4): L<<576.0,395.0>--<515.0,103.0>> -> L<<515.0,103.0>--<505.0,56.0>>
 
-	* rupee-tamil (U+0BF9): L<<684.0,195.0>--<678.0,167.0>> -> L<<678.0,167.0>--<673.0,142.0>> 
+	* uni0BF0 (U+0BF0): L<<334.0,158.0>--<347.0,216.0>> -> L<<347.0,216.0>--<419.0,556.0>> 
 
-	* And ten-tamil (U+0BF0): L<<334.0,158.0>--<347.0,216.0>> -> L<<347.0,216.0>--<419.0,556.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<684.0,195.0>--<678.0,167.0>> -> L<<678.0,167.0>--<673.0,142.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
-	* fourinferior (U+2084): B<<186.5,219.5>-<192.0,238.0>-<197.0,257.0>>/B<<197.0,257.0>-<192.0,248.0>-<181.5,235.0>> = 14.311041262606366 
+	* uni2074 (U+2074): B<<276.5,705.5>-<282.0,724.0>-<287.0,743.0>>/B<<287.0,743.0>-<282.0,734.0>-<271.5,721.0>> = 14.311041262606366 
 
-	* And foursuperior (U+2074): B<<276.5,705.5>-<282.0,724.0>-<287.0,743.0>>/B<<287.0,743.0>-<282.0,734.0>-<271.5,721.0>> = 14.311041262606366 [code: found-jaggy-segments]
+	* And uni2084 (U+2084): B<<186.5,219.5>-<192.0,238.0>-<197.0,257.0>>/B<<197.0,257.0>-<192.0,248.0>-<181.5,235.0>> = 14.311041262606366 [code: found-jaggy-segments]
 </div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
@@ -6010,16 +5942,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* vutamil
-	* uni0B86
-	* nyiitamil
-	* uni0B94
-	* uni0BF9
+	* tuutamil
+	* lutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
 	* nyutamil
-	* lluutamil
-	* nnniitamil
-	* llutamil
-	* nnuutamil and 35 more.
+	* ciitamil
+	* tutamil
+	* llluutamil
+	* vutamil and 35 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -6123,16 +6055,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* vutamil
-	* uni0B86
-	* nyiitamil
-	* riitamil
-	* uni0B94
-	* uni0BF9
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
 	* nyutamil
-	* nguutamil
-	* lluutamil
-	* nnniitamil and 49 more.
+	* uni0BF4
+	* ciitamil and 49 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -6238,7 +6170,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* h (U+0068): L<<104.0,119.0>--<103.0,648.0>> 
 
 	* And h (U+0068): L<<233.0,313.0>--<234.0,115.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -6247,19 +6179,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* four
+	* cuutamil
+	* tuutamil
+	* lutamil
+	* rruutamil
+	* nnnutamil
+	* uni0BF7
+	* luutamil
+	* kutamil
+	* kuutamil
+	* nyutamil and 48 more.
+
+Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -6276,7 +6211,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -6286,7 +6221,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -6296,7 +6231,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -6304,12 +6241,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -6350,19 +6287,19 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* five-tamil (U+0BEB): L<<697.0,199.0>--<689.0,164.0>> -> L<<689.0,164.0>--<686.0,147.0>>
+	* uni0BB4 (U+0BB4): L<<602.0,397.0>--<542.0,112.0>> -> L<<542.0,112.0>--<531.0,58.0>>
 
-	* llla-tamil (U+0BB4): L<<602.0,397.0>--<542.0,112.0>> -> L<<542.0,112.0>--<531.0,58.0>> 
+	* uni0BEB (U+0BEB): L<<697.0,199.0>--<689.0,164.0>> -> L<<689.0,164.0>--<686.0,147.0>> 
 
-	* And rupee-tamil (U+0BF9): L<<710.0,193.0>--<702.0,159.0>> -> L<<702.0,159.0>--<700.0,147.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<710.0,193.0>--<702.0,159.0>> -> L<<702.0,159.0>--<700.0,147.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
-	* fourinferior (U+2084): B<<193.5,218.0>-<199.0,235.0>-<204.0,254.0>>/B<<204.0,254.0>-<199.0,245.0>-<190.5,234.5>> = 14.311041262606366 
+	* uni2074 (U+2074): B<<283.5,703.0>-<289.0,720.0>-<294.0,739.0>>/B<<294.0,739.0>-<289.0,730.0>-<280.5,719.5>> = 14.311041262606366 
 
-	* And foursuperior (U+2074): B<<283.5,703.0>-<289.0,720.0>-<294.0,739.0>>/B<<294.0,739.0>-<289.0,730.0>-<280.5,719.5>> = 14.311041262606366 [code: found-jaggy-segments]
+	* And uni2084 (U+2084): B<<193.5,218.0>-<199.0,235.0>-<204.0,254.0>>/B<<204.0,254.0>-<199.0,245.0>-<190.5,234.5>> = 14.311041262606366 [code: found-jaggy-segments]
 </div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensed.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
@@ -6599,7 +6536,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<425.0,335.0>--<276.0,336.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedBlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedBlackItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -6612,14 +6549,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -6636,7 +6565,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -6646,7 +6575,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -6656,7 +6585,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -6664,12 +6595,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -6855,7 +6786,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* h (U+0068): L<<237.0,310.0>--<238.0,117.0>> 
 
 	* And sterling (U+00A3): L<<400.0,341.0>--<253.0,342.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiCondensedBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -6868,14 +6799,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -6892,7 +6815,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -6902,7 +6825,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -6912,7 +6835,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -6920,12 +6845,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -6966,7 +6891,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<524.0,117.0>--<521.0,105.0>> -> L<<521.0,105.0>--<512.0,61.0>> [code: found-colinear-vectors]
+	* uni0BB4 (U+0BB4): L<<524.0,117.0>--<521.0,105.0>> -> L<<521.0,105.0>--<512.0,61.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -6976,13 +6901,13 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* four (U+0034): B<<336.5,521.0>-<349.0,574.0>-<363.0,620.0>>/B<<363.0,620.0>-<350.0,597.0>-<331.5,568.5>> = 12.54837593909866
 
-	* fourinferior (U+2084): B<<194.5,213.5>-<200.0,232.0>-<206.0,251.0>>/B<<206.0,251.0>-<200.0,241.0>-<192.0,231.5>> = 13.438188158350664
-
-	* foursuperior (U+2074): B<<286.5,698.5>-<292.0,717.0>-<298.0,736.0>>/B<<298.0,736.0>-<292.0,726.0>-<284.0,716.5>> = 13.438188158350664
-
 	* k (U+006B): B<<234.0,288.5>-<233.0,269.0>-<232.0,267.0>>/L<<232.0,267.0>--<348.0,409.0>> = 12.680383491819796
 
-	* kcommaaccent (U+0137): B<<234.0,288.5>-<233.0,269.0>-<232.0,267.0>>/L<<232.0,267.0>--<348.0,409.0>> = 12.680383491819796
+	* uni0137 (U+0137): B<<234.0,288.5>-<233.0,269.0>-<232.0,267.0>>/L<<232.0,267.0>--<348.0,409.0>> = 12.680383491819796
+
+	* uni2074 (U+2074): B<<286.5,698.5>-<292.0,717.0>-<298.0,736.0>>/B<<298.0,736.0>-<292.0,726.0>-<284.0,716.5>> = 13.438188158350664
+
+	* uni2084 (U+2084): B<<194.5,213.5>-<200.0,232.0>-<206.0,251.0>>/B<<206.0,251.0>-<200.0,241.0>-<192.0,231.5>> = 13.438188158350664
 
 	* y (U+0079): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972
 
@@ -7125,7 +7050,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* sterling (U+00A3): L<<414.0,338.0>--<265.0,339.0>> 
 
 	* And uni0B8A (U+0B8A): L<<1227.0,452.0>--<1226.0,573.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiCondensedExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedExtraBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -7138,14 +7063,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -7162,7 +7079,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -7172,7 +7089,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -7182,7 +7099,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -7190,12 +7109,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -7236,7 +7155,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* rupee-tamil (U+0BF9): L<<674.0,170.0>--<670.0,152.0>> -> L<<670.0,152.0>--<638.0,0.0>> [code: found-colinear-vectors]
+	* uni0BF9 (U+0BF9): L<<674.0,170.0>--<670.0,152.0>> -> L<<670.0,152.0>--<638.0,0.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -7381,7 +7300,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* Eogonek (U+0118): L<<175.0,359.0>--<174.0,30.0>> 
 
 	* And Euro (U+20AC): L<<318.0,272.0>--<153.0,273.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedExtraLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensedExtraLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -7394,14 +7313,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -7418,7 +7329,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -7428,7 +7339,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -7438,7 +7349,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -7446,12 +7359,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -7487,7 +7400,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* And 38 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -7500,14 +7413,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -7524,7 +7429,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -7534,7 +7439,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -7544,7 +7449,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -7552,12 +7459,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -7598,25 +7505,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* ca-tamil (U+0B9A): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
+	* uni0B95 (U+0B95): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
 
-	* four-tamil (U+0BEA): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
+	* uni0B9A (U+0B9A): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
 
-	* ka-tamil (U+0B95): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
+	* uni0BA4 (U+0BA4): L<<219.0,317.0>--<224.0,317.0>> -> L<<224.0,317.0>--<357.0,317.0>>
 
-	* llla-tamil (U+0BB4): L<<514.0,402.0>--<449.0,96.0>> -> L<<449.0,96.0>--<440.0,54.0>>
+	* uni0BB4 (U+0BB4): L<<514.0,402.0>--<449.0,96.0>> -> L<<449.0,96.0>--<440.0,54.0>>
 
-	* nine-tamil (U+0BEF): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
+	* uni0BE7 (U+0BE7): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
 
-	* one-tamil (U+0BE7): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
+	* uni0BEA (U+0BEA): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
 
-	* onethousand-tamil (U+0BF2): L<<212.0,317.0>--<217.0,317.0>> -> L<<217.0,317.0>--<350.0,317.0>>
+	* uni0BEC (U+0BEC): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
 
-	* rupee-tamil (U+0BF9): L<<609.0,204.0>--<602.0,170.0>> -> L<<602.0,170.0>--<598.0,152.0>>
+	* uni0BEF (U+0BEF): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
 
-	* six-tamil (U+0BEC): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>> 
+	* uni0BF2 (U+0BF2): L<<212.0,317.0>--<217.0,317.0>> -> L<<217.0,317.0>--<350.0,317.0>> 
 
-	* And ta-tamil (U+0BA4): L<<219.0,317.0>--<224.0,317.0>> -> L<<224.0,317.0>--<357.0,317.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<609.0,204.0>--<602.0,170.0>> -> L<<602.0,170.0>--<598.0,152.0>> [code: found-colinear-vectors]
 </div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedLight.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
@@ -7745,7 +7652,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* Emacron (U+0112): L<<194.0,355.0>--<193.0,38.0>> 
 
 	* And Eogonek (U+0118): L<<194.0,355.0>--<193.0,38.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiCondensedLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedLightItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -7758,14 +7665,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -7782,7 +7681,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -7792,7 +7691,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -7802,7 +7701,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -7810,12 +7711,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -7846,7 +7747,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=424.0,Y=0.5 (should be at baseline 0?)
 
-	* twosuperior (U+00B2): X=194.0,Y=808.0 (should be at cap-height 806?) 
+	* uni00B2 (U+00B2): X=194.0,Y=808.0 (should be at cap-height 806?) 
 
 	* And 30 more.
 
@@ -7856,7 +7757,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* llla-tamil (U+0BB4): L<<420.0,74.0>--<416.0,55.0>> -> L<<416.0,55.0>--<413.0,40.0>> [code: found-colinear-vectors]
+	* uni0BB4 (U+0BB4): L<<420.0,74.0>--<416.0,55.0>> -> L<<416.0,55.0>--<413.0,40.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -7971,7 +7872,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* uni0B99 (U+0B99): B<<579.0,87.0>-<550.0,64.0>-<518.0,56.0>>/L<<518.0,56.0>--<753.0,56.0>> = 14.036243467926484 
 
 	* And uni0BE9 (U+0BE9): B<<577.5,87.0>-<548.0,64.0>-<516.0,56.0>>/L<<516.0,56.0>--<809.0,56.0>> = 14.036243467926484 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiCondensedMediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedMediumItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -7984,14 +7885,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -8008,7 +7901,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -8018,7 +7911,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -8028,7 +7921,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -8036,12 +7931,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -8082,25 +7977,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* ca-tamil (U+0B9A): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
+	* uni0B95 (U+0B95): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
 
-	* four-tamil (U+0BEA): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
+	* uni0B9A (U+0B9A): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
 
-	* ka-tamil (U+0B95): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
+	* uni0BA4 (U+0BA4): L<<222.0,321.0>--<225.0,321.0>> -> L<<225.0,321.0>--<357.0,321.0>>
 
-	* llla-tamil (U+0BB4): L<<533.0,404.0>--<470.0,102.0>> -> L<<470.0,102.0>--<460.0,56.0>>
+	* uni0BB4 (U+0BB4): L<<533.0,404.0>--<470.0,102.0>> -> L<<470.0,102.0>--<460.0,56.0>>
 
-	* nine-tamil (U+0BEF): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
+	* uni0BE7 (U+0BE7): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
 
-	* one-tamil (U+0BE7): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
+	* uni0BEA (U+0BEA): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
 
-	* onethousand-tamil (U+0BF2): L<<219.0,321.0>--<222.0,321.0>> -> L<<222.0,321.0>--<353.0,321.0>>
+	* uni0BEC (U+0BEC): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
 
-	* rupee-tamil (U+0BF9): L<<625.0,199.0>--<618.0,168.0>> -> L<<618.0,168.0>--<615.0,153.0>>
+	* uni0BEF (U+0BEF): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
 
-	* six-tamil (U+0BEC): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>> 
+	* uni0BF2 (U+0BF2): L<<219.0,321.0>--<222.0,321.0>> -> L<<222.0,321.0>--<353.0,321.0>> 
 
-	* And ta-tamil (U+0BA4): L<<222.0,321.0>--<225.0,321.0>> -> L<<225.0,321.0>--<357.0,321.0>> [code: found-colinear-vectors]
+	* And uni0BF9 (U+0BF9): L<<625.0,199.0>--<618.0,168.0>> -> L<<618.0,168.0>--<615.0,153.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -8215,7 +8110,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* h (U+0068): L<<219.0,314.0>--<220.0,114.0>> 
 
 	* And sterling (U+00A3): L<<389.0,339.0>--<244.0,340.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiCondensedSemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedSemiBoldItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -8228,14 +8123,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -8252,7 +8139,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -8262,7 +8149,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -8272,7 +8159,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -8280,12 +8169,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -8326,25 +8215,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* ca-tamil (U+0B9A): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
+	* uni0B95 (U+0B95): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
 
-	* five-tamil (U+0BEB): L<<638.0,198.0>--<632.0,168.0>> -> L<<632.0,168.0>--<629.0,154.0>>
+	* uni0B9A (U+0B9A): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
 
-	* four-tamil (U+0BEA): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
+	* uni0BA4 (U+0BA4): L<<226.0,325.0>--<227.0,325.0>> -> L<<227.0,325.0>--<356.0,325.0>>
 
-	* ka-tamil (U+0B95): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
+	* uni0BB4 (U+0BB4): L<<495.0,109.0>--<489.0,81.0>> -> L<<489.0,81.0>--<485.0,58.0>>
 
-	* llla-tamil (U+0BB4): L<<495.0,109.0>--<489.0,81.0>> -> L<<489.0,81.0>--<485.0,58.0>>
+	* uni0BE7 (U+0BE7): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
 
-	* nine-tamil (U+0BEF): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
+	* uni0BEA (U+0BEA): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
 
-	* one-tamil (U+0BE7): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
+	* uni0BEB (U+0BEB): L<<638.0,198.0>--<632.0,168.0>> -> L<<632.0,168.0>--<629.0,154.0>>
 
-	* onethousand-tamil (U+0BF2): L<<227.0,325.0>--<228.0,325.0>> -> L<<228.0,325.0>--<357.0,325.0>>
+	* uni0BEC (U+0BEC): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
 
-	* six-tamil (U+0BEC): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>> 
+	* uni0BEF (U+0BEF): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>> 
 
-	* And ta-tamil (U+0BA4): L<<226.0,325.0>--<227.0,325.0>> -> L<<227.0,325.0>--<356.0,325.0>> [code: found-colinear-vectors]
+	* And uni0BF2 (U+0BF2): L<<227.0,325.0>--<228.0,325.0>> -> L<<228.0,325.0>--<357.0,325.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -8469,7 +8358,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* exclam (U+0021): L<<139.0,714.0>--<136.0,167.0>> 
 
 	* And exclamdown (U+00A1): L<<112.0,-177.0>--<115.0,370.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -8482,14 +8371,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -8506,7 +8387,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -8516,7 +8397,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -8526,7 +8407,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -8534,12 +8417,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -8693,7 +8576,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* exclam (U+0021): L<<149.0,714.0>--<146.0,167.0>> 
 
 	* And exclamdown (U+00A1): L<<123.0,-177.0>--<126.0,370.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-ThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-ThinItalic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with IndexError: list index out of range
@@ -8702,14 +8585,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Glyph names are all valid? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames">com.google.fonts/check/valid_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** The following glyph names do not comply with naming conventions: a-tamil, aa-tamil, aaMatra-tamil, ai-tamil, aiMatra-tamil, anudatta-deva, anusvara-tamil, anusvara-tamil.alt, asabove-tamil, au-tamil and 142 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-
- A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -8719,7 +8594,7 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- nbspace
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -8729,7 +8604,7 @@ Use -F or --full-lists to disable shortening of long lists.
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: softhyphen	Contours detected: 1	Expected: 0
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -8739,7 +8614,9 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
 	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -8747,12 +8624,12 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra-tamil (U+0BBE), aulengthmark-tamil (U+0BD7), candrabinduhalant-deva (U+A8F3), iMatra-tamil (U+0BBF), iMatra-tamil.alt01 (unencoded), iMatra-tamil.alt02 (unencoded), uMatra-tamil (U+0BC1), uMatra-tamil.alt01 (unencoded), uMatra-tamil.alt02 (unencoded), uuMatra-tamil (U+0BC2), uuMatra-tamil.alt01 (unencoded) and uuMatra-tamil.alt02 (unencoded) [code: spacing-mark-glyphs]
+	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
@@ -8953,7 +8830,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 74 | 175 | 712 | 8789 | 487 | 6058 | 0 |
+| 74 | 139 | 715 | 8789 | 487 | 6091 | 0 |
 | 0% | 1% | 4% | 54% | 3% | 37% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
