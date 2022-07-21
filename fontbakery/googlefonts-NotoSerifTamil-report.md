@@ -27,16 +27,16 @@ Fontbakery version: 0.8.9
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni0BD0
-	* ttuutamil
-	* ngiitamil
-	* nnniitamil
-	* jiitamil
-	* nguutamil
-	* uni0B8A
-	* nnuutamil
-	* shiitamil
-	* uni0BEC and 74 more.
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BB8
+	* uni0BF6
+	* shriitamil
+	* nniitamil and 74 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -179,16 +179,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni0BD0
-	* ttuutamil
-	* ngiitamil
-	* nnniitamil
-	* jiitamil
-	* nguutamil
-	* uni0B8A
-	* nnuutamil
-	* shiitamil
-	* uni0BEC and 75 more.
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BB8
+	* uni0BF6
+	* shriitamil
+	* nniitamil and 75 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -309,16 +309,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nguutamil
-	* uni0B8A
-	* nnuutamil
-	* shiitamil
-	* nyutamil
-	* llliitamil
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BB8
+	* uni0BF6
 	* shriitamil
-	* uni0BEE
-	* uni0BF4 and 53 more.
+	* nniitamil and 53 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -446,16 +446,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni0BD0
-	* nnniitamil
-	* nguutamil
-	* nnuutamil
-	* shiitamil
-	* nyutamil
-	* llliitamil
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BF6
 	* shriitamil
-	* kuutamil
-	* uni0BEE and 54 more.
+	* nniitamil
+	* lllutamil and 54 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -2665,16 +2665,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni0BD0
-	* nnniitamil
-	* jiitamil
-	* nguutamil
-	* uni0B8A
-	* nnuutamil
-	* shiitamil
-	* nyutamil
-	* llliitamil
-	* shriitamil and 60 more.
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BB8
+	* uni0BF6
+	* shriitamil
+	* nniitamil and 60 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -2809,16 +2809,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni0BD0
-	* ttuutamil
-	* nnniitamil
-	* jiitamil
-	* nguutamil
-	* uni0B8A
-	* nnuutamil
-	* shiitamil
-	* nyutamil
-	* llliitamil and 64 more.
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BB8
+	* uni0BF6
+	* shriitamil
+	* nniitamil and 64 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -5194,8 +5194,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* kssiitamil
-	* vutamil and vuutamil
+	* vutamil
+	* kssiitamil and vuutamil
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5310,16 +5310,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nnuutamil
-	* nyutamil
-	* llliitamil
-	* shriitamil
-	* uni0BCC
-	* uni0BD7
-	* uni0BEE
 	* uni0BB4
-	* uni0BF6 and 35 more.
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kssatamil
+	* uni0BF6
+	* shriitamil
+	* nniitamil
+	* uni0BB3
+	* nnutamil and 35 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -5421,16 +5421,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nnuutamil
-	* llliitamil
+	* ssiitamil
+	* kssatamil
 	* shriitamil
-	* uni0BF5
+	* nniitamil
+	* nnutamil
+	* nnuutamil
 	* lliitamil
-	* uni0BF8
-	* nyiitamil
-	* llutamil
-	* ssiitamil and 8 more.
+	* vutamil
+	* uni0BF2
+	* uni0BF8 and 8 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -5541,16 +5541,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nnuutamil
+	* ssiitamil
+	* kssatamil
 	* shriitamil
-	* uni0BB7
-	* uni0BF5
+	* nniitamil
+	* nnutamil
+	* nnuutamil
 	* lliitamil
+	* vutamil
 	* uni0BF8
-	* nyiitamil
-	* llutamil
-	* ssiitamil and 7 more.
+	* lluutamil and 7 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -5659,16 +5659,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nnuutamil
-	* shiitamil
-	* nyutamil
-	* llliitamil
-	* shriitamil
-	* uni0BCC
-	* uni0BEE
 	* uni0BB4
-	* uni0BF6 and 41 more.
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BF6
+	* shriitamil
+	* nniitamil
+	* lllutamil and 41 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -5789,16 +5789,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nnuutamil
-	* nyutamil
-	* llliitamil
-	* shriitamil
-	* uni0BCC
-	* uni0BEE
 	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
 	* uni0BF6
-	* uni0BB7 and 40 more.
+	* shriitamil
+	* nniitamil
+	* lllutamil and 40 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -5919,16 +5919,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nnuutamil
-	* nyutamil
-	* llliitamil
-	* shriitamil
-	* uni0BCC
-	* uni0BD7
-	* uni0BEE
 	* uni0BB4
-	* uni0BF6 and 35 more.
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kssatamil
+	* uni0BF6
+	* shriitamil
+	* nniitamil
+	* uni0BB3
+	* nnutamil and 35 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -6032,16 +6032,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nguutamil
-	* nnuutamil
-	* shiitamil
-	* nyutamil
-	* llliitamil
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BF6
 	* shriitamil
-	* uni0BEE
-	* uni0BF4
-	* uni0BB4 and 49 more.
+	* nniitamil
+	* lllutamil and 49 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -6160,16 +6160,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* nnniitamil
-	* nnuutamil
-	* shiitamil
-	* nyutamil
-	* llliitamil
+	* uni0BB4
+	* uni0BA3
+	* tutamil
+	* ssiitamil
+	* kutamil
+	* kssatamil
+	* uni0BF6
 	* shriitamil
-	* kuutamil
-	* uni0BEE
-	* uni0BF4
-	* uni0BB4 and 48 more.
+	* nniitamil
+	* lllutamil and 48 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>

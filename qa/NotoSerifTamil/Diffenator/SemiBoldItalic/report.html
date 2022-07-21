@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+	.box-title{
+	  width: 100%;
+	  float: left;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	  display: block;
+	  font-weight: 700;
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari */        
+	  -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+	  user-select: none; /* Standard */
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+	  width: 50px;
+	  display: block;
+	  padding: 10px;
+	}
+	.tooltip {
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 10pt;
+	line-height: 13pt;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1000;
+	}
+	.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+	.tooltip:hover .tooltiptext {
+	visibility: visible;
+	}
+	           /* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-before{
+                color: red;
+                cursor: text;
+            }
+            .attrib-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .before .cell .after {
+            	display:  none;
+            }
+            .after .cell .before {
+            	display:  none;
+            }
+            .both .cell .before {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .after {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+
+	  
+	    @font-face { font-family: before; src: url(before.ttf); }
+	  
+
+	  
+	    @font-face { font-family: after; src: url(after.ttf); }
+	  
+
+	  
+
+	  
+	    .before { font-family: before; }
+	  
+
+	  
+	    .after { font-family: after; }
+	  
+
+	  
+	
+.cell{
+  position: relative;
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div id="font-toggle">Before</div>
+     </div>
+    
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     
+<div class="node" >
+head
+  <div class="node" style="display:none">
+  checkSumAdjustment
+    <span class="attrib-before">1604718273</span> <span class="attrib-after">1603320497</span>
+  </div>
+  <div class="node" style="display:none">
+  modified
+    <span class="attrib-before">3740555237</span> <span class="attrib-after">3741254125</span>
+  </div>
+</div>
+    </div>
+	    
+       </div>
+    
+    </div>
+
+    
+    <div class="box">
+      <div class="box-title">Fea</div>
+      
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        table.diff {font-family:Courier; border:medium;}
+        .diff_header {background-color:#e0e0e0}
+        td.diff_header {text-align:right}
+        .diff_next {background-color:#c0c0c0}
+        .diff_add {background-color:#aaffaa}
+        .diff_chg {background-color:#ffff77}
+        .diff_sub {background-color:#ffaaaa}
+    </style>
+</head>
+
+<body>
+    
+    <table class="diff" id="difflib_chg_to102__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to102__0">f</a></td><td class="diff_header" id="from102_1">1</td><td nowrap="nowrap">languagesystem&nbsp;DFLT&nbsp;dflt;</td><td class="diff_next"><a href="#difflib_chg_to102__0">f</a></td><td class="diff_header" id="to102_1">1</td><td nowrap="nowrap">languagesystem&nbsp;DFLT&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_2">2</td><td nowrap="nowrap">languagesystem&nbsp;latn&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_2">2</td><td nowrap="nowrap">languagesystem&nbsp;latn&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_3">3</td><td nowrap="nowrap">languagesystem&nbsp;taml&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_3">3</td><td nowrap="nowrap">languagesystem&nbsp;taml&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_4">4</td><td nowrap="nowrap">languagesystem&nbsp;tml2&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_4">4</td><td nowrap="nowrap">languagesystem&nbsp;tml2&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to102__0"></td><td class="diff_header" id="from102_5">5</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_5">5</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_6">6</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td><td class="diff_next"></td><td class="diff_header" id="to102_6">6</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_7">7</td><td nowrap="nowrap">}&nbsp;GDEF;</td><td class="diff_next"></td><td class="diff_header" id="to102_7">7</td><td nowrap="nowrap">}&nbsp;GDEF;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_8">8</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_8">8</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_9">9</td><td nowrap="nowrap">@class1&nbsp;=&nbsp;[uni0B95&nbsp;uni0B9A&nbsp;uni0BA4&nbsp;uni0BA8&nbsp;uni0BAA&nbsp;uni0BAE&nbsp;uni0BB0&nbsp;uni0BB4];</td><td class="diff_next"></td><td class="diff_header" id="to102_9">9</td><td nowrap="nowrap">@class1&nbsp;=&nbsp;[uni0B95&nbsp;uni0B9A&nbsp;uni0BA4&nbsp;uni0BA8&nbsp;uni0BAA&nbsp;uni0BAE&nbsp;uni0BB0&nbsp;uni0BB4];</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to102__1">n</a></td><td class="diff_header" id="from102_10">10</td><td nowrap="nowrap">@markFilteringSet110<span class="diff_chg">5</span>&nbsp;=&nbsp;[uni0BBF&nbsp;uni0BC0&nbsp;uni0BC1&nbsp;uni0BC2];</td><td class="diff_next"><a href="#difflib_chg_to102__1">n</a></td><td class="diff_header" id="to102_10">10</td><td nowrap="nowrap">@markFilteringSet110<span class="diff_chg">9</span>&nbsp;=&nbsp;[uni0BBF&nbsp;uni0BC0&nbsp;uni0BC1&nbsp;uni0BC2];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_11">11</td><td nowrap="nowrap">@class2&nbsp;=&nbsp;[uni0B9C&nbsp;uni0BAE&nbsp;uni0BB1&nbsp;uni0BB4&nbsp;uni0BB6&nbsp;uni0BB9];</td><td class="diff_next"></td><td class="diff_header" id="to102_11">11</td><td nowrap="nowrap">@class2&nbsp;=&nbsp;[uni0B9C&nbsp;uni0BAE&nbsp;uni0BB1&nbsp;uni0BB4&nbsp;uni0BB6&nbsp;uni0BB9];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_12">12</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_12">12</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_13">13</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution1&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_13">13</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution1&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_14">14</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to102_14">14</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_15">15</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_15">15</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_16">16</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BCD&nbsp;uni0BB7&nbsp;by&nbsp;kssatamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_16">16</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BCD&nbsp;uni0BB7&nbsp;by&nbsp;kssatamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_17">17</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;uni0BCD&nbsp;uni0BB0&nbsp;uni0BC0&nbsp;by&nbsp;shriitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_17">17</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;uni0BCD&nbsp;uni0BB0&nbsp;uni0BC0&nbsp;by&nbsp;shriitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_18">18</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB6&nbsp;uni0BCD&nbsp;uni0BB0&nbsp;uni0BC0&nbsp;by&nbsp;shriitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_18">18</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB6&nbsp;uni0BCD&nbsp;uni0BB0&nbsp;uni0BC0&nbsp;by&nbsp;shriitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_19">19</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to102_19">19</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_20">20</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_20">20</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_21">21</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution2&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_21">21</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution2&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_22">22</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to102_22">22</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_23">23</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_23">23</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_24">24</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;1&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_24">24</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;1&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_25">25</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;u11301&nbsp;doubleSvaritavedic&nbsp;by&nbsp;candrabindu_1CDA_tamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_25">25</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;u11301&nbsp;doubleSvaritavedic&nbsp;by&nbsp;candrabindu_1CDA_tamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_26">26</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;u11301&nbsp;uni0951&nbsp;by&nbsp;candrabindu_0951_tamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_26">26</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;u11301&nbsp;uni0951&nbsp;by&nbsp;candrabindu_0951_tamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_27">27</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution2;</td><td class="diff_next"></td><td class="diff_header" id="to102_27">27</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_28">28</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_28">28</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_29">29</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution4&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_29">29</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution4&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_30">30</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to102_30">30</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_31">31</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_31">31</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_32">32</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;3&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_32">32</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;3&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_33">33</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B82&nbsp;by&nbsp;uni0B82.alt;</td><td class="diff_next"></td><td class="diff_header" id="to102_33">33</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B82&nbsp;by&nbsp;uni0B82.alt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_34">34</td><td nowrap="nowrap">}&nbsp;SingleSubstitution4;</td><td class="diff_next"></td><td class="diff_header" id="to102_34">34</td><td nowrap="nowrap">}&nbsp;SingleSubstitution4;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_35">35</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_35">35</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_36">36</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB3&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_36">36</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB3&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_37">37</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to102_37">37</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_38">38</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_38">38</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_39">39</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;2&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_39">39</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;2&nbsp;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to102__1"></td><td class="diff_header" id="from102_40">40</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class1&nbsp;[uni0BBF&nbsp;uni0BBF.alt01&nbsp;uni0BBF.alt02]&nbsp;uni0B82'&nbsp;lookup&nbsp;SingleSubs</td><td class="diff_next"></td><td class="diff_header" id="to102_40">40</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class1&nbsp;[uni0BBF&nbsp;uni0BBF.alt01&nbsp;uni0BBF.alt02]&nbsp;uni0B82'&nbsp;lookup&nbsp;SingleSubs</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">titution4;</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">titution4;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_41">41</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB3;</td><td class="diff_next"></td><td class="diff_header" id="to102_41">41</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB3;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_42">42</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_42">42</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_43">43</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution5&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_43">43</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution5&nbsp;{</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to102__2">n</a></td><td class="diff_header" id="from102_44">44</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">5</span>;</td><td class="diff_next"><a href="#difflib_chg_to102__2">n</a></td><td class="diff_header" id="to102_44">44</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">9</span>;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_45">45</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_45">45</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_46">46</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;4&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_46">46</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;4&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_47">47</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9A&nbsp;uni0BC0&nbsp;by&nbsp;ciitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_47">47</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9A&nbsp;uni0BC0&nbsp;by&nbsp;ciitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_48">48</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9A&nbsp;uni0BC1&nbsp;by&nbsp;cutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_48">48</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9A&nbsp;uni0BC1&nbsp;by&nbsp;cutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_49">49</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9A&nbsp;uni0BC2&nbsp;by&nbsp;cuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_49">49</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9A&nbsp;uni0BC2&nbsp;by&nbsp;cuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_50">50</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB9&nbsp;uni0BC0&nbsp;by&nbsp;hiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_50">50</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB9&nbsp;uni0BC0&nbsp;by&nbsp;hiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_51">51</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9C&nbsp;uni0BC0&nbsp;by&nbsp;jiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_51">51</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9C&nbsp;uni0BC0&nbsp;by&nbsp;jiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_52">52</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BC0&nbsp;by&nbsp;kiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_52">52</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BC0&nbsp;by&nbsp;kiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_53">53</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BC1&nbsp;by&nbsp;kutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_53">53</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BC1&nbsp;by&nbsp;kutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_54">54</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BC2&nbsp;by&nbsp;kuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_54">54</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B95&nbsp;uni0BC2&nbsp;by&nbsp;kuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_55">55</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;kssatamil&nbsp;uni0BC0&nbsp;by&nbsp;kssiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_55">55</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;kssatamil&nbsp;uni0BC0&nbsp;by&nbsp;kssiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_56">56</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BBF&nbsp;by&nbsp;litamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_56">56</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BBF&nbsp;by&nbsp;litamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_57">57</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BC0&nbsp;by&nbsp;liitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_57">57</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BC0&nbsp;by&nbsp;liitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_58">58</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BC1&nbsp;by&nbsp;lutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_58">58</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BC1&nbsp;by&nbsp;lutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_59">59</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BC2&nbsp;by&nbsp;luutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_59">59</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB2&nbsp;uni0BC2&nbsp;by&nbsp;luutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_60">60</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB3&nbsp;uni0BC0&nbsp;by&nbsp;lliitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_60">60</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB3&nbsp;uni0BC0&nbsp;by&nbsp;lliitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_61">61</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB3&nbsp;uni0BC1&nbsp;by&nbsp;llutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_61">61</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB3&nbsp;uni0BC1&nbsp;by&nbsp;llutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_62">62</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB3&nbsp;uni0BC2&nbsp;by&nbsp;lluutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_62">62</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB3&nbsp;uni0BC2&nbsp;by&nbsp;lluutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_63">63</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB4&nbsp;uni0BC0&nbsp;by&nbsp;llliitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_63">63</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB4&nbsp;uni0BC0&nbsp;by&nbsp;llliitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_64">64</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB4&nbsp;uni0BC1&nbsp;by&nbsp;lllutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_64">64</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB4&nbsp;uni0BC1&nbsp;by&nbsp;lllutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_65">65</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB4&nbsp;uni0BC2&nbsp;by&nbsp;llluutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_65">65</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB4&nbsp;uni0BC2&nbsp;by&nbsp;llluutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_66">66</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAE&nbsp;uni0BC0&nbsp;by&nbsp;miitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_66">66</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAE&nbsp;uni0BC0&nbsp;by&nbsp;miitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_67">67</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAE&nbsp;uni0BC1&nbsp;by&nbsp;mutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_67">67</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAE&nbsp;uni0BC1&nbsp;by&nbsp;mutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_68">68</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAE&nbsp;uni0BC2&nbsp;by&nbsp;muutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_68">68</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAE&nbsp;uni0BC2&nbsp;by&nbsp;muutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_69">69</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA8&nbsp;uni0BC0&nbsp;by&nbsp;niitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_69">69</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA8&nbsp;uni0BC0&nbsp;by&nbsp;niitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_70">70</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA8&nbsp;uni0BC1&nbsp;by&nbsp;nutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_70">70</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA8&nbsp;uni0BC1&nbsp;by&nbsp;nutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_71">71</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA8&nbsp;uni0BC2&nbsp;by&nbsp;nuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_71">71</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA8&nbsp;uni0BC2&nbsp;by&nbsp;nuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_72">72</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B99&nbsp;uni0BC0&nbsp;by&nbsp;ngiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_72">72</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B99&nbsp;uni0BC0&nbsp;by&nbsp;ngiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_73">73</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B99&nbsp;uni0BC1&nbsp;by&nbsp;ngutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_73">73</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B99&nbsp;uni0BC1&nbsp;by&nbsp;ngutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_74">74</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B99&nbsp;uni0BC2&nbsp;by&nbsp;nguutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_74">74</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B99&nbsp;uni0BC2&nbsp;by&nbsp;nguutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_75">75</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA3&nbsp;uni0BC0&nbsp;by&nbsp;nniitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_75">75</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA3&nbsp;uni0BC0&nbsp;by&nbsp;nniitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_76">76</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA3&nbsp;uni0BC1&nbsp;by&nbsp;nnutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_76">76</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA3&nbsp;uni0BC1&nbsp;by&nbsp;nnutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_77">77</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA3&nbsp;uni0BC2&nbsp;by&nbsp;nnuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_77">77</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA3&nbsp;uni0BC2&nbsp;by&nbsp;nnuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_78">78</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA9&nbsp;uni0BC0&nbsp;by&nbsp;nnniitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_78">78</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA9&nbsp;uni0BC0&nbsp;by&nbsp;nnniitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_79">79</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA9&nbsp;uni0BC1&nbsp;by&nbsp;nnnutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_79">79</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA9&nbsp;uni0BC1&nbsp;by&nbsp;nnnutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_80">80</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA9&nbsp;uni0BC2&nbsp;by&nbsp;nnnuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_80">80</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA9&nbsp;uni0BC2&nbsp;by&nbsp;nnnuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_81">81</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9E&nbsp;uni0BC0&nbsp;by&nbsp;nyiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_81">81</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9E&nbsp;uni0BC0&nbsp;by&nbsp;nyiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_82">82</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9E&nbsp;uni0BC1&nbsp;by&nbsp;nyutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_82">82</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9E&nbsp;uni0BC1&nbsp;by&nbsp;nyutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_83">83</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9E&nbsp;uni0BC2&nbsp;by&nbsp;nyuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_83">83</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9E&nbsp;uni0BC2&nbsp;by&nbsp;nyuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_84">84</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAA&nbsp;uni0BC0&nbsp;by&nbsp;piitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_84">84</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAA&nbsp;uni0BC0&nbsp;by&nbsp;piitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_85">85</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAA&nbsp;uni0BC1&nbsp;by&nbsp;putamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_85">85</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAA&nbsp;uni0BC1&nbsp;by&nbsp;putamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_86">86</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAA&nbsp;uni0BC2&nbsp;by&nbsp;puutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_86">86</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAA&nbsp;uni0BC2&nbsp;by&nbsp;puutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_87">87</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB0&nbsp;uni0BC0&nbsp;by&nbsp;riitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_87">87</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB0&nbsp;uni0BC0&nbsp;by&nbsp;riitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_88">88</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB0&nbsp;uni0BC1&nbsp;by&nbsp;rutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_88">88</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB0&nbsp;uni0BC1&nbsp;by&nbsp;rutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_89">89</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB0&nbsp;uni0BC2&nbsp;by&nbsp;ruutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_89">89</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB0&nbsp;uni0BC2&nbsp;by&nbsp;ruutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_90">90</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB1&nbsp;uni0BC0&nbsp;by&nbsp;rriitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_90">90</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB1&nbsp;uni0BC0&nbsp;by&nbsp;rriitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_91">91</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB1&nbsp;uni0BC1&nbsp;by&nbsp;rrutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_91">91</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB1&nbsp;uni0BC1&nbsp;by&nbsp;rrutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_92">92</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB1&nbsp;uni0BC2&nbsp;by&nbsp;rruutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_92">92</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB1&nbsp;uni0BC2&nbsp;by&nbsp;rruutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_93">93</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;uni0BBF&nbsp;by&nbsp;sitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_93">93</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;uni0BBF&nbsp;by&nbsp;sitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_94">94</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;uni0BC0&nbsp;by&nbsp;siitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_94">94</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;uni0BC0&nbsp;by&nbsp;siitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_95">95</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB6&nbsp;uni0BC0&nbsp;by&nbsp;shiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_95">95</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB6&nbsp;uni0BC0&nbsp;by&nbsp;shiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_96">96</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB7&nbsp;uni0BC0&nbsp;by&nbsp;ssiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_96">96</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB7&nbsp;uni0BC0&nbsp;by&nbsp;ssiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_97">97</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA4&nbsp;uni0BC0&nbsp;by&nbsp;tiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_97">97</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA4&nbsp;uni0BC0&nbsp;by&nbsp;tiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_98">98</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA4&nbsp;uni0BC1&nbsp;by&nbsp;tutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_98">98</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA4&nbsp;uni0BC1&nbsp;by&nbsp;tutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_99">99</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA4&nbsp;uni0BC2&nbsp;by&nbsp;tuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_99">99</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BA4&nbsp;uni0BC2&nbsp;by&nbsp;tuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_100">100</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BBF&nbsp;by&nbsp;ttitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_100">100</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BBF&nbsp;by&nbsp;ttitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_101">101</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BC0&nbsp;by&nbsp;ttiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_101">101</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BC0&nbsp;by&nbsp;ttiitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_102">102</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BC1&nbsp;by&nbsp;ttutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_102">102</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BC1&nbsp;by&nbsp;ttutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_103">103</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BC2&nbsp;by&nbsp;ttuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_103">103</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0B9F&nbsp;uni0BC2&nbsp;by&nbsp;ttuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_104">104</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB5&nbsp;uni0BC0&nbsp;by&nbsp;viitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_104">104</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB5&nbsp;uni0BC0&nbsp;by&nbsp;viitamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_105">105</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB5&nbsp;uni0BC1&nbsp;by&nbsp;vutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_105">105</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB5&nbsp;uni0BC1&nbsp;by&nbsp;vutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_106">106</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB5&nbsp;uni0BC2&nbsp;by&nbsp;vuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_106">106</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB5&nbsp;uni0BC2&nbsp;by&nbsp;vuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_107">107</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAF&nbsp;uni0BC0&nbsp;by&nbsp;yiitamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_107">107</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAF&nbsp;uni0BC0&nbsp;by&nbsp;yiitamil;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to102__2"></td><td class="diff_header" id="from102_108">108</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAF&nbsp;uni0BC1&nbsp;by&nbsp;yutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_108">108</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAF&nbsp;uni0BC1&nbsp;by&nbsp;yutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_109">109</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAF&nbsp;uni0BC2&nbsp;by&nbsp;yuutamil;</td><td class="diff_next"></td><td class="diff_header" id="to102_109">109</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BAF&nbsp;uni0BC2&nbsp;by&nbsp;yuutamil;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_110">110</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution5;</td><td class="diff_next"></td><td class="diff_header" id="to102_110">110</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution5;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_111">111</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_111">111</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_112">112</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution8&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_112">112</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution8&nbsp;{</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to102__3">n</a></td><td class="diff_header" id="from102_113">113</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">5</span>;</td><td class="diff_next"><a href="#difflib_chg_to102__3">n</a></td><td class="diff_header" id="to102_113">113</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">9</span>;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_114">114</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_114">114</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_115">115</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;7&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_115">115</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;7&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_116">116</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BBF&nbsp;by&nbsp;uni0BBF.alt02;</td><td class="diff_next"></td><td class="diff_header" id="to102_116">116</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BBF&nbsp;by&nbsp;uni0BBF.alt02;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to102__3"></td><td class="diff_header" id="from102_117">117</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC1&nbsp;by&nbsp;uni0BC1.alt02;</td><td class="diff_next"></td><td class="diff_header" id="to102_117">117</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC1&nbsp;by&nbsp;uni0BC1.alt02;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_118">118</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC2&nbsp;by&nbsp;uni0BC2.alt02;</td><td class="diff_next"></td><td class="diff_header" id="to102_118">118</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC2&nbsp;by&nbsp;uni0BC2.alt02;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_119">119</td><td nowrap="nowrap">}&nbsp;SingleSubstitution8;</td><td class="diff_next"></td><td class="diff_header" id="to102_119">119</td><td nowrap="nowrap">}&nbsp;SingleSubstitution8;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_120">120</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_120">120</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_121">121</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution7&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_121">121</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution7&nbsp;{</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to102__4">n</a></td><td class="diff_header" id="from102_122">122</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">5</span>;</td><td class="diff_next"><a href="#difflib_chg_to102__4">n</a></td><td class="diff_header" id="to102_122">122</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">9</span>;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_123">123</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_123">123</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_124">124</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;6&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_124">124</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;6&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_125">125</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BBF&nbsp;by&nbsp;uni0BBF.alt01;</td><td class="diff_next"></td><td class="diff_header" id="to102_125">125</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BBF&nbsp;by&nbsp;uni0BBF.alt01;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to102__4"></td><td class="diff_header" id="from102_126">126</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC1&nbsp;by&nbsp;uni0BC1.alt01;</td><td class="diff_next"></td><td class="diff_header" id="to102_126">126</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC1&nbsp;by&nbsp;uni0BC1.alt01;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_127">127</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC2&nbsp;by&nbsp;uni0BC2.alt01;</td><td class="diff_next"></td><td class="diff_header" id="to102_127">127</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BC2&nbsp;by&nbsp;uni0BC2.alt01;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_128">128</td><td nowrap="nowrap">}&nbsp;SingleSubstitution7;</td><td class="diff_next"></td><td class="diff_header" id="to102_128">128</td><td nowrap="nowrap">}&nbsp;SingleSubstitution7;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_129">129</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_129">129</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_130">130</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB6&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_130">130</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB6&nbsp;{</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to102__top">t</a></td><td class="diff_header" id="from102_131">131</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">5</span>;</td><td class="diff_next"><a href="#difflib_chg_to102__top">t</a></td><td class="diff_header" id="to102_131">131</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;UseMarkFilteringSet&nbsp;@markFilteringSet110<span class="diff_chg">9</span>;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_132">132</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_132">132</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_133">133</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;5&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_133">133</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;5&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_134">134</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class2&nbsp;uni0BBF'&nbsp;lookup&nbsp;SingleSubstitution7;</td><td class="diff_next"></td><td class="diff_header" id="to102_134">134</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class2&nbsp;uni0BBF'&nbsp;lookup&nbsp;SingleSubstitution7;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_135">135</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;[uni0BC1&nbsp;uni0BC2]'&nbsp;lookup&nbsp;SingleSubstitution7;</td><td class="diff_next"></td><td class="diff_header" id="to102_135">135</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uni0BB8&nbsp;[uni0BC1&nbsp;uni0BC2]'&nbsp;lookup&nbsp;SingleSubstitution7;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_136">136</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;[kssatamil&nbsp;uni0BB7]&nbsp;[uni0BBF&nbsp;uni0BC1&nbsp;uni0BC2]'&nbsp;lookup&nbsp;SingleSubstitution</td><td class="diff_next"></td><td class="diff_header" id="to102_136">136</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;[kssatamil&nbsp;uni0BB7]&nbsp;[uni0BBF&nbsp;uni0BC1&nbsp;uni0BC2]'&nbsp;lookup&nbsp;SingleSubstitution</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">8;</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">8;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_137">137</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB6;</td><td class="diff_next"></td><td class="diff_header" id="to102_137">137</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB6;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_138">138</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_138">138</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_139">139</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution9&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_139">139</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution9&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_140">140</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to102_140">140</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_141">141</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_141">141</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_142">142</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;8&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_142">142</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;8&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_143">143</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;four&nbsp;by&nbsp;uni2074;</td><td class="diff_next"></td><td class="diff_header" id="to102_143">143</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;four&nbsp;by&nbsp;uni2074;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_144">144</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;three&nbsp;by&nbsp;uni00B3;</td><td class="diff_next"></td><td class="diff_header" id="to102_144">144</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;three&nbsp;by&nbsp;uni00B3;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_145">145</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;two&nbsp;by&nbsp;uni00B2;</td><td class="diff_next"></td><td class="diff_header" id="to102_145">145</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;two&nbsp;by&nbsp;uni00B2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_146">146</td><td nowrap="nowrap">}&nbsp;SingleSubstitution9;</td><td class="diff_next"></td><td class="diff_header" id="to102_146">146</td><td nowrap="nowrap">}&nbsp;SingleSubstitution9;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_147">147</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_147">147</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_148">148</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution10&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_148">148</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution10&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_149">149</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to102_149">149</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_150">150</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to102_150">150</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_151">151</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;9&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to102_151">151</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;9&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_152">152</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;four&nbsp;by&nbsp;uni2084;</td><td class="diff_next"></td><td class="diff_header" id="to102_152">152</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;four&nbsp;by&nbsp;uni2084;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_153">153</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;three&nbsp;by&nbsp;uni2083;</td><td class="diff_next"></td><td class="diff_header" id="to102_153">153</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;three&nbsp;by&nbsp;uni2083;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_154">154</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;two&nbsp;by&nbsp;uni2082;</td><td class="diff_next"></td><td class="diff_header" id="to102_154">154</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;two&nbsp;by&nbsp;uni2082;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_155">155</td><td nowrap="nowrap">}&nbsp;SingleSubstitution10;</td><td class="diff_next"></td><td class="diff_header" id="to102_155">155</td><td nowrap="nowrap">}&nbsp;SingleSubstitution10;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_156">156</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_156">156</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_157">157</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_157">157</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_158">158</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to102_158">158</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_159">159</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_159">159</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_160">160</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td><td class="diff_next"></td><td class="diff_header" id="to102_160">160</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_161">161</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_161">161</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_162">162</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_162">162</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_163">163</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_163">163</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_164">164</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_164">164</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_165">165</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td><td class="diff_next"></td><td class="diff_header" id="to102_165">165</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_166">166</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_166">166</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_167">167</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td><td class="diff_next"></td><td class="diff_header" id="to102_167">167</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_168">168</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_168">168</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_169">169</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_169">169</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_170">170</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_170">170</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_171">171</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_171">171</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_172">172</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td><td class="diff_next"></td><td class="diff_header" id="to102_172">172</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_173">173</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_173">173</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_174">174</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td><td class="diff_next"></td><td class="diff_header" id="to102_174">174</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_175">175</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_175">175</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_176">176</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_176">176</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_177">177</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_177">177</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_178">178</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_178">178</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_179">179</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td><td class="diff_next"></td><td class="diff_header" id="to102_179">179</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_180">180</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_180">180</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_181">181</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td><td class="diff_next"></td><td class="diff_header" id="to102_181">181</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_182">182</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_182">182</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_183">183</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_183">183</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_184">184</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_184">184</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_185">185</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_185">185</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_186">186</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to102_186">186</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_187">187</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_187">187</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_188">188</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td><td class="diff_next"></td><td class="diff_header" id="to102_188">188</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_189">189</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_189">189</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_190">190</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_190">190</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_191">191</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_191">191</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_192">192</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_192">192</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_193">193</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td><td class="diff_next"></td><td class="diff_header" id="to102_193">193</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_194">194</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_194">194</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_195">195</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td><td class="diff_next"></td><td class="diff_header" id="to102_195">195</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_196">196</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_196">196</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_197">197</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_197">197</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_198">198</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_198">198</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_199">199</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_199">199</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_200">200</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td><td class="diff_next"></td><td class="diff_header" id="to102_200">200</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_201">201</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_201">201</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_202">202</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td><td class="diff_next"></td><td class="diff_header" id="to102_202">202</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_203">203</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_203">203</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_204">204</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_204">204</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_205">205</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_205">205</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_206">206</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_206">206</td><td nowrap="nowrap">feature&nbsp;abvs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_207">207</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td><td class="diff_next"></td><td class="diff_header" id="to102_207">207</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_208">208</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_208">208</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_209">209</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td><td class="diff_next"></td><td class="diff_header" id="to102_209">209</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_210">210</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_210">210</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_211">211</td><td nowrap="nowrap">}&nbsp;abvs;</td><td class="diff_next"></td><td class="diff_header" id="to102_211">211</td><td nowrap="nowrap">}&nbsp;abvs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_212">212</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_212">212</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_213">213</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_213">213</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_214">214</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to102_214">214</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_215">215</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_215">215</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_216">216</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to102_216">216</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_217">217</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_217">217</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_218">218</td><td nowrap="nowrap">}&nbsp;akhn;</td><td class="diff_next"></td><td class="diff_header" id="to102_218">218</td><td nowrap="nowrap">}&nbsp;akhn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_219">219</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_219">219</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_220">220</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_220">220</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_221">221</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td><td class="diff_next"></td><td class="diff_header" id="to102_221">221</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_222">222</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_222">222</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_223">223</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to102_223">223</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_224">224</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_224">224</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_225">225</td><td nowrap="nowrap">}&nbsp;akhn;</td><td class="diff_next"></td><td class="diff_header" id="to102_225">225</td><td nowrap="nowrap">}&nbsp;akhn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_226">226</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_226">226</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_227">227</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_227">227</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_228">228</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td><td class="diff_next"></td><td class="diff_header" id="to102_228">228</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_229">229</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_229">229</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_230">230</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to102_230">230</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_231">231</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_231">231</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_232">232</td><td nowrap="nowrap">}&nbsp;akhn;</td><td class="diff_next"></td><td class="diff_header" id="to102_232">232</td><td nowrap="nowrap">}&nbsp;akhn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_233">233</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_233">233</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_234">234</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_234">234</td><td nowrap="nowrap">feature&nbsp;akhn&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_235">235</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td><td class="diff_next"></td><td class="diff_header" id="to102_235">235</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_236">236</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_236">236</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_237">237</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to102_237">237</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_238">238</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_238">238</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_239">239</td><td nowrap="nowrap">}&nbsp;akhn;</td><td class="diff_next"></td><td class="diff_header" id="to102_239">239</td><td nowrap="nowrap">}&nbsp;akhn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_240">240</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_240">240</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_241">241</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_241">241</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_242">242</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to102_242">242</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_243">243</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_243">243</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_244">244</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td><td class="diff_next"></td><td class="diff_header" id="to102_244">244</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_245">245</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_245">245</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_246">246</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_246">246</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_247">247</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_247">247</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_248">248</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_248">248</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_249">249</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td><td class="diff_next"></td><td class="diff_header" id="to102_249">249</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_250">250</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_250">250</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_251">251</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td><td class="diff_next"></td><td class="diff_header" id="to102_251">251</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_252">252</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_252">252</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_253">253</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_253">253</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_254">254</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_254">254</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_255">255</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_255">255</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_256">256</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td><td class="diff_next"></td><td class="diff_header" id="to102_256">256</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_257">257</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_257">257</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_258">258</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td><td class="diff_next"></td><td class="diff_header" id="to102_258">258</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_259">259</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_259">259</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_260">260</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_260">260</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_261">261</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_261">261</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_262">262</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_262">262</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_263">263</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td><td class="diff_next"></td><td class="diff_header" id="to102_263">263</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_264">264</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_264">264</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_265">265</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td><td class="diff_next"></td><td class="diff_header" id="to102_265">265</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;LigatureSubstitution5;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_266">266</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_266">266</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_267">267</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_267">267</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_268">268</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_268">268</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_269">269</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_269">269</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_270">270</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to102_270">270</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_271">271</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_271">271</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_272">272</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td><td class="diff_next"></td><td class="diff_header" id="to102_272">272</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_273">273</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_273">273</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_274">274</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_274">274</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_275">275</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_275">275</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_276">276</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_276">276</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_277">277</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td><td class="diff_next"></td><td class="diff_header" id="to102_277">277</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_278">278</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_278">278</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_279">279</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td><td class="diff_next"></td><td class="diff_header" id="to102_279">279</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_280">280</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_280">280</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_281">281</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_281">281</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_282">282</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_282">282</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_283">283</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_283">283</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_284">284</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td><td class="diff_next"></td><td class="diff_header" id="to102_284">284</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_285">285</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_285">285</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_286">286</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td><td class="diff_next"></td><td class="diff_header" id="to102_286">286</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_287">287</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_287">287</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_288">288</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_288">288</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_289">289</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_289">289</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_290">290</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_290">290</td><td nowrap="nowrap">feature&nbsp;psts&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_291">291</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td><td class="diff_next"></td><td class="diff_header" id="to102_291">291</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_292">292</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_292">292</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_293">293</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td><td class="diff_next"></td><td class="diff_header" id="to102_293">293</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB6;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_294">294</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_294">294</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_295">295</td><td nowrap="nowrap">}&nbsp;psts;</td><td class="diff_next"></td><td class="diff_header" id="to102_295">295</td><td nowrap="nowrap">}&nbsp;psts;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_296">296</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_296">296</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_297">297</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_297">297</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_298">298</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to102_298">298</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_299">299</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_299">299</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_300">300</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td><td class="diff_next"></td><td class="diff_header" id="to102_300">300</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_301">301</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_301">301</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_302">302</td><td nowrap="nowrap">}&nbsp;subs;</td><td class="diff_next"></td><td class="diff_header" id="to102_302">302</td><td nowrap="nowrap">}&nbsp;subs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_303">303</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_303">303</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_304">304</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_304">304</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_305">305</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td><td class="diff_next"></td><td class="diff_header" id="to102_305">305</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_306">306</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_306">306</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_307">307</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td><td class="diff_next"></td><td class="diff_header" id="to102_307">307</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_308">308</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_308">308</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_309">309</td><td nowrap="nowrap">}&nbsp;subs;</td><td class="diff_next"></td><td class="diff_header" id="to102_309">309</td><td nowrap="nowrap">}&nbsp;subs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_310">310</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_310">310</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_311">311</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_311">311</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_312">312</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td><td class="diff_next"></td><td class="diff_header" id="to102_312">312</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_313">313</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_313">313</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_314">314</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td><td class="diff_next"></td><td class="diff_header" id="to102_314">314</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_315">315</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_315">315</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_316">316</td><td nowrap="nowrap">}&nbsp;subs;</td><td class="diff_next"></td><td class="diff_header" id="to102_316">316</td><td nowrap="nowrap">}&nbsp;subs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_317">317</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_317">317</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_318">318</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_318">318</td><td nowrap="nowrap">feature&nbsp;subs&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_319">319</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td><td class="diff_next"></td><td class="diff_header" id="to102_319">319</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_320">320</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_320">320</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_321">321</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td><td class="diff_next"></td><td class="diff_header" id="to102_321">321</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution10;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_322">322</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_322">322</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_323">323</td><td nowrap="nowrap">}&nbsp;subs;</td><td class="diff_next"></td><td class="diff_header" id="to102_323">323</td><td nowrap="nowrap">}&nbsp;subs;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_324">324</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_324">324</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_325">325</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_325">325</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_326">326</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td><td class="diff_next"></td><td class="diff_header" id="to102_326">326</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_327">327</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_327">327</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_328">328</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td><td class="diff_next"></td><td class="diff_header" id="to102_328">328</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_329">329</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_329">329</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_330">330</td><td nowrap="nowrap">}&nbsp;sups;</td><td class="diff_next"></td><td class="diff_header" id="to102_330">330</td><td nowrap="nowrap">}&nbsp;sups;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_331">331</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_331">331</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_332">332</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_332">332</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_333">333</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td><td class="diff_next"></td><td class="diff_header" id="to102_333">333</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;latn;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_334">334</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_334">334</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_335">335</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td><td class="diff_next"></td><td class="diff_header" id="to102_335">335</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_336">336</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_336">336</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_337">337</td><td nowrap="nowrap">}&nbsp;sups;</td><td class="diff_next"></td><td class="diff_header" id="to102_337">337</td><td nowrap="nowrap">}&nbsp;sups;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_338">338</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_338">338</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_339">339</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_339">339</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_340">340</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td><td class="diff_next"></td><td class="diff_header" id="to102_340">340</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;taml;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_341">341</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_341">341</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_342">342</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td><td class="diff_next"></td><td class="diff_header" id="to102_342">342</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_343">343</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_343">343</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_344">344</td><td nowrap="nowrap">}&nbsp;sups;</td><td class="diff_next"></td><td class="diff_header" id="to102_344">344</td><td nowrap="nowrap">}&nbsp;sups;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_345">345</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_345">345</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_346">346</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to102_346">346</td><td nowrap="nowrap">feature&nbsp;sups&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_347">347</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td><td class="diff_next"></td><td class="diff_header" id="to102_347">347</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;tml2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_348">348</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to102_348">348</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_349">349</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td><td class="diff_next"></td><td class="diff_header" id="to102_349">349</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution9;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_350">350</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_350">350</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_351">351</td><td nowrap="nowrap">}&nbsp;sups;</td><td class="diff_next"></td><td class="diff_header" id="to102_351">351</td><td nowrap="nowrap">}&nbsp;sups;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from102_352">352</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to102_352">352</td><td nowrap="nowrap"></td></tr>
+        </tbody>
+    </table>
+    <table class="diff" summary="Legends">
+        <tr> <th colspan="2"> Legends </th> </tr>
+        <tr> <td> <table border="" summary="Colors">
+                      <tr><th> Colors </th> </tr>
+                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>
+                      <tr><td class="diff_chg">Changed</td> </tr>
+                      <tr><td class="diff_sub">Deleted</td> </tr>
+                  </table></td>
+             <td> <table border="" summary="Links">
+                      <tr><th colspan="2"> Links </th> </tr>
+                      <tr><td>(f)irst change</td> </tr>
+                      <tr><td>(n)ext change</td> </tr>
+                      <tr><td>(t)op</td> </tr>
+                  </table></td> </tr>
+    </table>
+</body>
+
+</html>
+    </div>
+    
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "before"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	  items = document.getElementsByClassName("box");
+	  console.log("Click from "+POSITION)
+	  
+	  if (POSITION === "before") {
+	  POSITION = "after"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("before", "after")
+            item.lastElementChild.className = item.lastElementChild.className.replace("before", "after")
+	    fontToggle.textContent = "After"
+	  }
+	  } else if (POSITION === "after") {
+	  POSITION = "both"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("after", "both")
+            item.lastElementChild.className = item.lastElementChild.className.replace("after", "both")
+	    fontToggle.textContent = "Both"
+	  }
+
+	  } else {
+	  POSITION = "before"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("both", "before")
+            item.lastElementChild.className = item.lastElementChild.className.replace("both", "before")
+	    fontToggle.textContent = "Before"
+	  }
+	}
+	}
+	fontToggle.addEventListener("click", switchFonts);
+	</script>
+    <script>
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    </script>
+</html>
