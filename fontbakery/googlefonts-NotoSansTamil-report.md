@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.9
+Fontbakery version: 0.8.10
 
 <details><summary><b>[4] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
 
@@ -131,11 +131,7 @@ Noto Sans Tamil UI Thin: -293 [code: descent-mismatch]
 
 
 * 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[13] NotoSansTamil-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansTamil-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -147,16 +143,16 @@ Noto Sans Tamil UI Thin: -293 [code: descent-mismatch]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* llaiivowelsigntamil
-	* ootamil
-	* vaprehalftamil
-	* mauuvowelsigntamil
-	* yearsigntamil
-	* ssatamil
-	* seventamil
-	* japrehalftamil
-	* yauvowelsigntamil
-	* itamil and 118 more.
+	* aatamil
+	* aivowelsigntamil
+	* asabovesigntamil
+	* atamil
+	* aulengthmarktamil
+	* autamil
+	* auvowelsigntamil
+	* caiivowelsigntamil
+	* caprehalftamil
+	* catamil and 118 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -175,25 +171,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -228,13 +224,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -274,11 +263,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* rupeesigntamil (U+0BF9): L<<372.0,0.0>--<373.0,480.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansTamil-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansTamil-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -290,16 +275,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* llaiivowelsigntamil
-	* ootamil
-	* mauuvowelsigntamil
-	* yearsigntamil
-	* ssatamil
-	* seventamil
-	* japrehalftamil
-	* yauvowelsigntamil
-	* itamil
-	* autamil and 110 more.
+	* aatamil
+	* aivowelsigntamil
+	* asabovesigntamil
+	* atamil
+	* aulengthmarktamil
+	* autamil
+	* auvowelsigntamil
+	* caiivowelsigntamil
+	* caprehalftamil
+	* catamil and 110 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -311,25 +296,25 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -364,13 +349,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -438,11 +416,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* hundredtamil (U+0BF1): L<<80.0,0.0>--<79.0,360.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansTamil-ExtraBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansTamil-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -454,16 +428,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* llaiivowelsigntamil
-	* ootamil
-	* vaprehalftamil
-	* mauuvowelsigntamil
-	* yearsigntamil
-	* ssatamil
-	* seventamil
-	* japrehalftamil
-	* yauvowelsigntamil
-	* itamil and 117 more.
+	* aatamil
+	* aivowelsigntamil
+	* asabovesigntamil
+	* atamil
+	* aulengthmarktamil
+	* autamil
+	* auvowelsigntamil
+	* caiivowelsigntamil
+	* caprehalftamil
+	* catamil and 117 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -482,25 +456,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -535,13 +509,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -579,11 +546,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* rupeesigntamil (U+0BF9): L<<371.0,0.0>--<372.0,483.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSansTamil-ExtraLight.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSansTamil-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -595,8 +558,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* tchatamil
-	* tchaiivowelsigntamil and tchaprehalftamil
+	* tchaiivowelsigntamil
+	* tchaprehalftamil and tchatamil
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -613,25 +576,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -666,23 +629,12 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
 	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+11303 [code: non-mark-chars]
-</div></details><br></div></details><details><summary><b>[11] NotoSansTamil-Light.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSansTamil-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -694,16 +646,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* ssatamil
+	* asabovesigntamil
 	* itamil
-	* nnauvowelsigntamil
-	* tchatamil
-	* nyauuvowelsigntamil
-	* nyauvowelsigntamil
-	* tchaiivowelsigntamil
-	* nnnauuvowelsigntamil
+	* kauuvowelsigntamil
+	* nnaiivowelsigntamil
 	* nnauuvowelsigntamil
-	* tauuvowelsigntamil and 8 more.
+	* nnauvowelsigntamil
+	* nnnauuvowelsigntamil
+	* nnnauvowelsigntamil
+	* nyauuvowelsigntamil
+	* nyauvowelsigntamil and 8 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -722,25 +674,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -775,23 +727,12 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
 	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+11303 [code: non-mark-chars]
-</div></details><br></div></details><details><summary><b>[12] NotoSansTamil-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansTamil-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -803,16 +744,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* llaiivowelsigntamil
-	* mauuvowelsigntamil
-	* ssatamil
-	* itamil
+	* aatamil
+	* aivowelsigntamil
+	* asabovesigntamil
+	* atamil
 	* autamil
-	* nnauvowelsigntamil
-	* creditsigntamil
-	* tchatamil
-	* rrauuvowelsigntamil
-	* saiivowelsigntamil and 72 more.
+	* auvowelsigntamil
+	* caiivowelsigntamil
+	* caprehalftamil
+	* catamil
+	* cauuvowelsigntamil and 72 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -831,25 +772,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -884,13 +825,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -902,11 +836,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* hundredtamil (U+0BF1): L<<86.0,0.0>--<85.0,354.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSansTamil-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSansTamil-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -1470,16 +1400,16 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* mauuvowelsigntamil
-	* ssatamil
-	* itamil
-	* nnauvowelsigntamil
-	* creditsigntamil
-	* tchatamil
-	* rrauuvowelsigntamil
-	* nyauuvowelsigntamil
-	* thousandtamil
-	* onetamil and 48 more.
+	* aatamil
+	* aivowelsigntamil
+	* asabovesigntamil
+	* atamil
+	* caiivowelsigntamil
+	* caprehalftamil
+	* catamil
+	* cauuvowelsigntamil
+	* cauvowelsigntamil
+	* creditsigntamil and 48 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -1491,25 +1421,25 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -1544,23 +1474,12 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
 	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+11303 [code: non-mark-chars]
-</div></details><br></div></details><details><summary><b>[14] NotoSansTamil-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansTamil-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -1572,16 +1491,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* llaiivowelsigntamil
-	* mauuvowelsigntamil
-	* yearsigntamil
-	* ssatamil
-	* yauvowelsigntamil
-	* itamil
+	* aatamil
+	* aivowelsigntamil
+	* asabovesigntamil
+	* atamil
+	* aulengthmarktamil
 	* autamil
-	* nnauvowelsigntamil
-	* creditsigntamil
-	* tchatamil and 89 more.
+	* auvowelsigntamil
+	* caiivowelsigntamil
+	* caprehalftamil
+	* catamil and 89 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -1600,25 +1519,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -1653,13 +1572,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -1727,11 +1639,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* hundredtamil (U+0BF1): L<<83.0,0.0>--<82.0,357.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] NotoSansTamil-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] NotoSansTamil-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1063, but got 870 instead [code: ascent]
@@ -1748,25 +1656,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -1801,13 +1709,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -1825,11 +1726,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* exclamdown (U+00A1): L<<122.0,354.0>--<124.0,-186.0>> 
 
 	* And exclamdown (U+00A1): L<<96.0,-186.0>--<98.0,354.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSansTamilUI-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansTamilUI-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -1853,25 +1750,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -1906,13 +1803,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -1952,11 +1842,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* rupeesigntamil (U+0BF9): L<<372.0,51.0>--<373.0,531.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSansTamilUI-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansTamilUI-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -1973,25 +1859,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2026,13 +1912,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2100,11 +1979,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* hundredtamil (U+0BF1): L<<80.0,51.0>--<79.0,411.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansTamilUI-ExtraBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansTamilUI-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -2128,25 +2003,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2181,13 +2056,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2253,11 +2121,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* rupeesigntamil (U+0BF9): L<<371.0,51.0>--<372.0,534.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSansTamilUI-ExtraLight.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSansTamilUI-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -2281,25 +2145,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2334,13 +2198,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2374,11 +2231,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* And 85 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[10] NotoSansTamilUI-Light.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] NotoSansTamilUI-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -2402,25 +2255,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2455,23 +2308,12 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
 	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+11303 [code: non-mark-chars]
-</div></details><br></div></details><details><summary><b>[12] NotoSansTamilUI-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansTamilUI-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -2495,25 +2337,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2548,13 +2390,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2594,11 +2429,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* hundredtamil (U+0BF1): L<<86.0,51.0>--<85.0,405.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] NotoSansTamilUI-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] NotoSansTamilUI-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -2615,25 +2446,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2668,13 +2499,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2708,11 +2532,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* And 58 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[13] NotoSansTamilUI-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansTamilUI-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -2736,25 +2556,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2789,13 +2609,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2863,11 +2676,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* hundredtamil (U+0BF1): L<<83.0,51.0>--<82.0,408.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSansTamilUI-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansTamilUI-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 322, but got 293 instead. [code: descent]
@@ -2891,25 +2700,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -2944,13 +2753,6 @@ The following glyphs do not have the recommended number of contours:
 	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2996,10 +2798,18 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* exclamdown (U+00A1): L<<122.0,405.0>--<124.0,-135.0>> 
 
 	* And exclamdown (U+00A1): L<<96.0,-135.0>--<98.0,405.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[9] NotoSansTamil[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSansTamil[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
-* 💔 **ERROR** Failed with IndexError: list index out of range
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check a font's STAT table contains compulsory Axis Values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT">com.google.fonts/check/STAT</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check variable font instances (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fvar_instances">com.google.fonts/check/fvar_instances</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
@@ -3008,10 +2818,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.tamil": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to either 2 or 17, and its postScriptNameID value is set to 6. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/fvar.html#com.adobe.fonts/check/varfont/valid_default_instance_nameids">com.adobe.fonts/check/varfont/valid_default_instance_nameids</a>)</summary><div>
-
-
-* 🔥 **FAIL** 'Regular' instance has the same coordinates as the default instance; its subfamilyNameID should be either 2 or 17, instead of 292. [code: invalid-default-instance-subfamily-nameid:292]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -3021,25 +2827,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- slash
+	- asciicircum
 
-	- minus
-
-	- eight
-
-	- six
-
-	- quotesingle
-
-	- numbersign
+	- asciitilde
 
 	- asterisk
 
-	- percent
+	- backslash
 
-	- quotedblleft
+	- bar
 
-	- braceright 
+	- braceleft
+
+	- braceright
+
+	- bracketleft
+
+	- bracketright
+
+	- colon 
 
 	- And 34 more.
 
@@ -3049,27 +2855,18 @@ Use -F or --full-lists to disable shortening of long lists.
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsigntamil (U+0BBE), anusvaratamil (U+0B82), aulengthmarktamil (U+0BD7), ivowelsign1tamil (unencoded), ivowelsign2tamil (unencoded), ivowelsign3tamil (unencoded), ivowelsign4tamil (unencoded), ivowelsigntamil (U+0BBF), u11303 (U+11303), uuvowelsignalttamil (unencoded) and 3 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 anusvaratamil (U+0B82) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+11303 [code: non-mark-chars]
+	 iivowelsigntamil (U+0BC0) and viramatamil (U+0BCD) [code: mark-chars]
 </div></details><br></div></details>
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 19 | 44 | 163 | 2126 | 116 | 1727 | 0 |
+| 3 | 43 | 144 | 2067 | 116 | 1670 | 0 |
 | 0% | 1% | 4% | 51% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
