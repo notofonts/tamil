@@ -6,3 +6,4 @@ includeSubsets:
   name: GF_Latin_Core
 sources:
 - NotoSansTamil.glyphs
+buildUIVF: true
