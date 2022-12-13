@@ -1,4 +1,4 @@
-buildVariable: true
+buildVariable: false
 familyName: Noto Sans Tamil Supplement
 googleFonts: true
 includeSubsets:
