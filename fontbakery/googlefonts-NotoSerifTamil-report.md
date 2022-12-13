@@ -119,7 +119,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* questiondown (U+00BF): X=480.5,Y=-1.0 (should be at baseline 0?) 
 
-	* And 38 more.
+	* And 36 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -267,7 +267,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* p (U+0070): X=337.5,Y=1.5 (should be at baseline 0?) 
 
-	* And 40 more.
+	* And 38 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -386,7 +386,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Ocircumflex (U+00D4): X=392.0,Y=861.0 (should be at cap-height 863?) 
 
-	* And 29 more.
+	* And 28 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -519,7 +519,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Ocircumflex (U+00D4): X=392.0,Y=861.0 (should be at cap-height 863?) 
 
-	* And 22 more.
+	* And 21 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -655,7 +655,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Agrave (U+00C0): X=257.0,Y=817.5 (should be at cap-height 819?) 
 
-	* And 75 more.
+	* And 73 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedBlack.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
@@ -1213,7 +1213,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Agrave (U+00C0): X=230.0,Y=846.0 (should be at cap-height 848?) 
 
-	* And 50 more.
+	* And 49 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -1335,7 +1335,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* j (U+006A): X=86.0,Y=1.0 (should be at baseline 0?) 
 
-	* And 52 more.
+	* And 51 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -1675,7 +1675,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* paragraph (U+00B6): X=226.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 83 more.
+	* And 81 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -2019,7 +2019,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Otilde (U+00D5): X=279.5,Y=824.5 (should be at cap-height 825?) 
 
-	* And 36 more.
+	* And 35 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -2121,7 +2121,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Otilde (U+00D5): X=279.5,Y=824.5 (should be at cap-height 825?) 
 
-	* And 45 more.
+	* And 44 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -2227,7 +2227,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* atilde (U+00E3): X=230.5,Y=0.5 (should be at baseline 0?) 
 
-	* And 27 more.
+	* And 25 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedSemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
@@ -2323,7 +2323,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* atilde (U+00E3): X=230.5,Y=0.5 (should be at baseline 0?) 
 
-	* And 24 more.
+	* And 22 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -2669,7 +2669,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* yacute (U+00FD): X=353.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 34 more.
+	* And 32 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -2809,7 +2809,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* p (U+0070): X=265.0,Y=-1.5 (should be at baseline 0?) 
 
-	* And 37 more.
+	* And 35 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -3297,7 +3297,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Ecircumflex (U+00CA): X=142.5,Y=829.0 (should be at cap-height 831?) 
 
-	* And 39 more.
+	* And 38 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -3421,7 +3421,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Ecircumflex (U+00CA): X=142.5,Y=829.0 (should be at cap-height 831?) 
 
-	* And 38 more.
+	* And 37 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -5563,7 +5563,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=78.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 46 more.
+	* And 44 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -5689,7 +5689,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=78.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 55 more.
+	* And 53 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -6502,7 +6502,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Ntilde (U+00D1): X=208.5,Y=853.0 (should be at cap-height 851?) 
 
-	* And 60 more.
+	* And 59 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -6632,7 +6632,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Aring (U+00C5): X=276.0,Y=850.0 (should be at cap-height 851?) 
 
-	* And 50 more.
+	* And 49 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -7578,7 +7578,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* y (U+0079): X=238.0,Y=-1.0 (should be at baseline 0?) 
 
-	* And 63 more.
+	* And 62 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -7682,7 +7682,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Acircumflex (U+00C2): X=223.0,Y=829.0 (should be at cap-height 831?) 
 
-	* And 64 more.
+	* And 63 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -7808,7 +7808,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* acircumflex (U+00E2): X=248.0,Y=0.5 (should be at baseline 0?) 
 
-	* And 31 more.
+	* And 30 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -7912,7 +7912,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* adieresis (U+00E4): X=248.0,Y=0.5 (should be at baseline 0?) 
 
-	* And 21 more.
+	* And 20 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -8364,7 +8364,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* sterling (U+00A3): B<<192.0,89.0>-<173.0,58.0>-<145.0,40.0>>/L<<145.0,40.0>--<149.0,42.0>> = 6.170175095029526 
 
 	* And three (U+0033): B<<417.0,440.0>-<372.0,385.0>-<280.0,375.0>>/B<<280.0,375.0>-<313.0,372.0>-<343.0,353.0>> = 11.397876809426648 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-Italic[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-Italic[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -8381,10 +8381,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
+
+
+* 🔥 **FAIL** name id 261 missing from name table
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking with ots-sanitize. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ots">com.google.fonts/check/ots</a>)</summary><div>
+
+
+* ⚠ **WARN** ots-sanitize passed this file, however warnings were printed:
+
+ERROR: STAT: Invalid nameID: 261
+ERROR: Table discarded
+ [code: ots-sanitize-warn]
 </div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
@@ -8515,7 +8527,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 6 | 131 | 714 | 8347 | 487 | 6018 | 0 |
+| 6 | 132 | 715 | 8347 | 487 | 6016 | 0 |
 | 0% | 1% | 5% | 53% | 3% | 38% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
