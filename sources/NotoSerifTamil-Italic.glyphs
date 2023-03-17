@@ -75,14 +75,6 @@ name = openTypeNameVersion;
 value = "Version 2.003";
 },
 {
-name = styleMapFamilyName;
-value = "Noto Serif Tamil Light";
-},
-{
-name = styleMapStyleName;
-value = italic;
-},
-{
 name = codePageRanges;
 value = (
 1252
@@ -337,30 +329,12 @@ zerowidthspace
 );
 },
 {
-name = "Axis Mappings";
-value = {
-wdth = {
-70 = 62.5;
-79 = 75;
-89 = 87.5;
-100 = 100;
-};
-wght = {
-28 = 100;
-42 = 200;
-64 = 300;
-94 = 400;
-110 = 500;
-130 = 600;
-152 = 700;
-175 = 800;
-194 = 900;
-};
-};
-},
-{
 name = "Disable Last Change";
 value = 1;
+},
+{
+name = "Variable Font Origin";
+value = "3D393FC6-9CB8-4206-8472-2903A20747A6";
 },
 {
 name = license;
