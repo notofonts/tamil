@@ -7,5 +7,5 @@ includeSubsets:
 - from: Noto Serif
   name: GF_Latin_Core
 sources:
-- NotoSerifTamil.designspace
-- NotoSerifTamil-Italic.designspace
+- NotoSerifTamil.glyphs
+- NotoSerifTamil-Italic.glyphs
