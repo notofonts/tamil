@@ -1,0 +1,2838 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Text</title>
+    
+    <style type="text/css">
+    
+        html{
+	  font-family: sans-serif;
+	}
+	.box-title{
+	  width: 100%;
+	  float: left;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+		float: left;
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	  display: block;
+	  font-weight: 700;
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari */        
+	  -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+	  user-select: none; /* Standard */
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+	  width: 50px;
+	  display: block;
+	  padding: 10px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensed.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedThin.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedMedium.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-Black.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedBlack.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedSemiBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-Medium.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-Thin.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedBlack.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-Condensed.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedMedium.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-Thin.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedExtraLight.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedSemiBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-Regular.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-Regular.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedExtraBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedExtraLight.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedExtraLight.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-Black.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedExtraLight.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedExtraBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedSemiBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedBlack.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedThin.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedExtraBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-Bold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensed.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedLight.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedLight.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensed.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensed.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedMedium.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedLight.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedSemiBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedThin.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedExtraBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-Light.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedSemiBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-Medium.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedExtraLight.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedBlack.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-Bold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-Light.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedMedium.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraCondensedExtraBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-ExtraLight.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedExtraBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedLight.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedMedium.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-Condensed.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedThin.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-CondensedMedium.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedLight.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraLight.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedExtraLight.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedBold.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedBlack.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedLight.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-ExtraCondensedThin.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-SemiCondensedBlack.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamilUI-SemiCondensedSemiBold.ttf);
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil-CondensedThin.ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil[wght].ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200 700;
+    font-stretch: 62% 100%;
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSansTamil[wdth,wght].ttf);
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100 900;
+    font-stretch: 62% 100%;
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedThin.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedBlack.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedBlack.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-Light.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedLight.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-Bold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedMedium.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedExtraBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-Black.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedMedium.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-Regular.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedExtraBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedExtraLight.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedMedium.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedSemiBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedLight.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-Thin.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedMedium.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-Condensed.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedThin.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedSemiBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedLight.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedSemiBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedExtraLight.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedExtraBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedThin.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-Regular.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedLight.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensed.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedExtraBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedExtraBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedExtraLight.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedExtraBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedSemiBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedBlack.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedExtraLight.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-Thin.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedThin.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-Medium.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraLight.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedMedium.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-Black.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensed.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedLight.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensedMedium.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedThin.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-Light.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedSemiBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-Condensed.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedLight.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedBlack.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedExtraLight.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-CondensedExtraLight.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedBlack.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensed.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-CondensedSemiBold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraCondensedBold.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-ExtraLight.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-ExtraCondensedThin.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-SemiCondensed.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamil-Medium.ttf);
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-SemiCondensedBlack.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSansTamilUI-Bold.ttf);
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-Thin{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-Medium{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Black{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-Black{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-SemiBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Medium{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Thin{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-Black{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-Medium{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Thin{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-ExtraLight{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-SemiBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Regular{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Regular{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-ExtraBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-ExtraLight{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-ExtraLight{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Black{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-ExtraLight{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-ExtraBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-Bold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-SemiBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-Black{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-Thin{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-ExtraBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Bold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-Light{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-Bold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-Light{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-Medium{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-Light{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-SemiBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-Thin{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-ExtraBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Light{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-SemiBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Medium{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraLight{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-Bold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-Black{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Bold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-Bold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Light{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-Medium{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-Bold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraCondensed-ExtraBold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-ExtraLight{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-Light{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-Medium{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-Thin{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-Condensed-Medium{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-Light{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraLight{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-ExtraLight{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-Bold{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-Black{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-Light{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-ExtraCondensed-Thin{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-SemiCondensed-Black{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-UI-SemiCondensed-SemiBold{
+    font-family: "old Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Condensed-Thin{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .old-Noto-Sans-Tamil-Black{
+    font-family: "old Noto Sans Tamil";
+    font-weight: 900.0;
+    font-stretch: 100.0%;
+    font-style: normal;
+}
+	  
+
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-Thin{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-Black{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-Bold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-Black{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Light{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-Light{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-Bold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Bold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-Medium{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-ExtraBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Black{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-Medium{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Regular{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-ExtraBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-ExtraLight{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-Medium{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-Bold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-SemiBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-Light{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Thin{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-Medium{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-Thin{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-SemiBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-Light{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-SemiBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-ExtraLight{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-ExtraBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-Thin{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-Bold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Regular{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-Light{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-ExtraBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-ExtraLight{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-ExtraBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-SemiBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-Black{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-ExtraLight{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Thin{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-Thin{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Medium{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraLight{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-Medium{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 500;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Black{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-Light{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed-Medium{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-Bold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-Thin{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 100;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Light{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 300;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-SemiBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 600;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-Light{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 300;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 800;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-Black{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 900;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraLight{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 200;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraBold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 800;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Condensed-ExtraLight{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-Black{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 400;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Condensed-SemiBold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 600;
+    font-stretch: 75%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraCondensed-Bold{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 700;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-ExtraLight{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 200;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-ExtraCondensed-Thin{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 100;
+    font-stretch: 62.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-SemiCondensed{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 400;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-Medium{
+    font-family: "new Noto Sans Tamil";
+    font-weight: 500;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-SemiCondensed-Black{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 900;
+    font-stretch: 87.5%;
+    font-style: normal;
+}
+	  
+	    .new-Noto-Sans-Tamil-UI-Bold{
+    font-family: "new Noto Sans Tamil UI";
+    font-weight: 700;
+    font-stretch: 100%;
+    font-style: normal;
+}
+	  
+
+	  
+	
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div id="font-toggle">old</div>
+     </div>
+    
+    <div id="content">
+	<h2>
+<b>Text</b>
+</h2>
+	
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Regular 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Regular" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Regular 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Regular" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraCondensed-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraCondensed-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-Condensed-Medium 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-Condensed-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-ExtraLight 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-Bold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-Light 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-Light" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-ExtraCondensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-ExtraCondensed-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-SemiCondensed-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-SemiCondensed-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-UI-SemiCondensed-SemiBold 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-UI-SemiCondensed-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Condensed-Thin 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Condensed-Thin" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Noto-Sans-Tamil-Black 20pt</div>
+	<div class="box-text old-Noto-Sans-Tamil-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " திசெம்பர் மாதம் 10ஆம் தேதி, ஐக்கிய நாடுகள் பொதுச்சபை, மனித உரிமை பற்றிய உலகப் ஏற்றுச் அப்பிரகடனம் மேல்வரும் பக்கங்களில் முற்றுமுழுதாகத் அந்தஸ்துக் காரணமாக எவ்வித அங்கீகரித்தலே இகழ்தலும், ஒரு குறிக்கோளாக கூடிய இப்பொழுது:பொதுச்சபையானதுசமூகத்தின் பிறக்கின்றனர்; — ஓர் குற்றஞ்சாட்டப்படும் ஊதியம் ஈடுபடுவதற்கும் – ' 360 ‐ / ‘‘ = ~ 50 ? ?] [ |</div>
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	  items = document.getElementsByClassName("box");
+	  console.log("Click from "+POSITION)
+	  
+	  if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("old", "new")
+            item.lastElementChild.className = item.lastElementChild.className.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("new", "old")
+            item.lastElementChild.className = item.lastElementChild.className.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    
+	// break text so that no reflow happens
+async function breakText() {
+	boxContent = document.getElementsByClassName("box-text")
+	for (let box of boxContent) {
+		switchFonts()
+		await sleep(1)
+		break1 = getLineBreaks(box)
+		switchFonts()
+		await sleep(1)
+		break2 = getLineBreaks(box)
+
+		if (break1.length >= break2.length) {
+		breaks = break1
+		} else {
+		breaks = break2
+		}
+		insertBreaks(box, breaks)
+		box.style.whiteSpace = "pre"
+		console.log("set to pre")
+	}
+	}
+
+function getLineBreaks(elem) {
+	const nodes = grabTextNodes(elem);
+	for (const node of nodes) { // each node is a big block of text
+		let rangeIndex = 1;
+		let textIndex = 0;
+		let nodeText = node.textContent;
+		const textLength = nodeText.length;
+
+		linebreaks = []
+		prevTop = 0;
+		while (rangeIndex <= textLength) {
+			const range = document.createRange();
+			range.setStart(node, rangeIndex-1);
+			range.setEnd(node, rangeIndex)
+			currentTop = range.getBoundingClientRect().top
+		if (currentTop > prevTop) {
+			linebreaks.push(rangeIndex-2)
+		}
+		rangeIndex += 1;
+		prevTop = currentTop
+		}
+	}
+	return linebreaks
+}
+
+function grabTextNodes(elem) {
+	const walker = document.createTreeWalker(elem, NodeFilter.SHOW_TEXT, null);
+	const nodes = [];
+	while (walker.nextNode()) {
+		nodes.push(walker.currentNode);
+	}
+	return nodes;
+}
+
+	function sleep(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+function insertBreaks(node, breaks) {
+	console.log(node, breaks)
+	newText = ""
+	currentText = node.textContent
+	for (i=0; i<currentText.length; i++) {
+		if (breaks.includes(i)) {
+		newText += "<br>"
+		} else {
+		newText += currentText[i]
+		}
+	}
+	node.innerHTML = newText
+}
+
+	if (fontToggle !== null) {
+		breakText()
+}
+
+	
+
+
+    </script>
+</html>

@@ -1,24 +1,35 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.10
+Fontbakery version: 0.8.11
 
 <details><summary><b>[3] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
 
 
 * 🔥 **FAIL** Not all fonts passed in the command line are in the same directory. This may lead to bad results as the tool will interpret all font files as belonging to a single font family. The detected directories are: ['fonts/NotoSerifTamil/googlefonts/ttf', 'fonts/NotoSerifTamil/googlefonts/variable-ttf'] [code: single-directory]
-</div></details><details><summary>🔥 <b>FAIL:</b> Fonts have consistent PANOSE proportion? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/family/panose_proportion">com.google.fonts/check/family/panose_proportion</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Check that OS/2.fsSelection bold & italic settings are unique for each NameID1 (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.adobe.fonts/check/family/bold_italic_unique_for_nameid1">com.adobe.fonts/check/family/bold_italic_unique_for_nameid1</a>)</summary><div>
 
 
-* 🔥 **FAIL** PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><details><summary>🔥 <b>FAIL:</b> Verify that each group of fonts with the same nameID 1 has maximum of 4 fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/family/max_4_fonts_per_family_name">com.adobe.fonts/check/family/max_4_fonts_per_family_name</a>)</summary><div>
+* 🔥 **FAIL** Family 'Noto Serif Tamil' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=True [code: unique-fsselection]
+* 🔥 **FAIL** Family 'Noto Serif Tamil' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=False [code: unique-fsselection]
+</div></details><details><summary>🔥 <b>FAIL:</b> Verify that each group of fonts with the same nameID 1 has maximum of 4 fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/family/max_4_fonts_per_family_name">com.adobe.fonts/check/family/max_4_fonts_per_family_name</a>)</summary><div>
 
 
 * 🔥 **FAIL** Family 'Noto Serif Tamil' has 6 fonts (should be 4 or fewer). [code: too-many]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] NotoSerifTamil-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -56,7 +67,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -75,20 +85,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -119,7 +126,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* questiondown (U+00BF): X=480.5,Y=-1.0 (should be at baseline 0?) 
 
-	* And 36 more.
+	* 36 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -137,7 +144,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni0BEC (U+0BEC): L<<253.0,348.0>--<259.0,348.0>> -> L<<259.0,348.0>--<391.0,348.0>> 
 
-	* And uni0BEF (U+0BEF): L<<253.0,348.0>--<259.0,348.0>> -> L<<259.0,348.0>--<391.0,348.0>> [code: found-colinear-vectors]
+	* uni0BEF (U+0BEF): L<<253.0,348.0>--<259.0,348.0>> -> L<<259.0,348.0>--<391.0,348.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -155,18 +162,28 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* ydieresis (U+00FF): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 
 
-	* And ygrave (U+1EF3): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 [code: found-jaggy-segments]
+	* ygrave (U+1EF3): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<454.0,335.0>--<295.0,336.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-BlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-BlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -204,7 +221,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -223,20 +239,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -267,7 +280,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* p (U+0070): X=337.5,Y=1.5 (should be at baseline 0?) 
 
-	* And 38 more.
+	* 38 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -287,12 +300,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* ydieresis (U+00FF): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 
 
-	* And ygrave (U+1EF3): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* ygrave (U+1EF3): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -323,7 +346,6 @@ Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -342,20 +364,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -386,7 +405,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Ocircumflex (U+00D4): X=392.0,Y=861.0 (should be at cap-height 863?) 
 
-	* And 28 more.
+	* 28 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -410,7 +429,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* ydieresis (U+00FF): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 
 
-	* And ygrave (U+1EF3): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 [code: found-jaggy-segments]
+	* ygrave (U+1EF3): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
@@ -420,12 +439,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* h (U+0068): L<<252.0,309.0>--<253.0,118.0>> 
 
-	* And sterling (U+00A3): L<<428.0,346.0>--<270.0,347.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-BoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* sterling (U+00A3): L<<428.0,346.0>--<270.0,347.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-BoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -456,7 +485,6 @@ Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -475,20 +503,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -519,7 +544,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Ocircumflex (U+00D4): X=392.0,Y=861.0 (should be at cap-height 863?) 
 
-	* And 21 more.
+	* 21 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -545,7 +570,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni0BEF (U+0BEF): L<<250.0,331.0>--<253.0,331.0>> -> L<<253.0,331.0>--<391.0,331.0>> 
 
-	* And uni0BF2 (U+0BF2): L<<256.0,331.0>--<259.0,331.0>> -> L<<259.0,331.0>--<397.0,331.0>> [code: found-colinear-vectors]
+	* uni0BF2 (U+0BF2): L<<256.0,331.0>--<259.0,331.0>> -> L<<259.0,331.0>--<397.0,331.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -561,2014 +586,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* ydieresis (U+00FF): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 
 
-	* And ygrave (U+1EF3): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-Condensed.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
+	* ygrave (U+1EF3): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[15] NotoSerifTamil-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-Regular.ttf. Got NotoSerifTamil-Condensed.ttf. [code: bad-filename]
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed' / SUBFAMILY_NAME = 'Regular'
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=447.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=49.5,Y=-2.0 (should be at baseline 0?)
-
-	* g (U+0067): X=441.0,Y=552.5 (should be at x-height 554?)
-
-	* y (U+0079): X=222.0,Y=-1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=286.0,Y=2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* section (U+00A7): X=81.0,Y=1.0 (should be at baseline 0?)
-
-	* paragraph (U+00B6): X=226.0,Y=2.0 (should be at baseline 0?)
-
-	* paragraph (U+00B6): X=412.0,Y=2.0 (should be at baseline 0?)
-
-	* Agrave (U+00C0): X=257.0,Y=817.5 (should be at cap-height 819?) 
-
-	* And 73 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedBlack.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-Black.ttf. Got NotoSerifTamil-CondensedBlack.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Black' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* J (U+004A): X=105.0,Y=-1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=280.0,Y=-2.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=465.0,Y=2.0 (should be at baseline 0?)
-
-	* bracketleft (U+005B): X=258.0,Y=2.0 (should be at baseline 0?)
-
-	* bracketright (U+005D): X=143.0,Y=2.0 (should be at baseline 0?)
-
-	* p (U+0070): X=248.5,Y=-1.5 (should be at baseline 0?)
-
-	* t (U+0074): X=325.0,Y=0.5 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=288.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=411.5,Y=2.0 (should be at baseline 0?)
-
-	* Adieresis (U+00C4): X=376.0,Y=854.0 (should be at cap-height 855?) 
-
-	* And 52 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<578.0,121.0>--<578.0,605.0>>/L<<578.0,605.0>--<426.0,0.0>> = 14.103073662556335
-
-	* uni2074 (U+2074): B<<167.0,713.0>-<167.0,730.0>-<170.0,749.0>>/B<<170.0,749.0>-<165.0,736.0>-<160.0,724.5>> = 12.064884410525359
-
-	* uni2084 (U+2084): B<<167.0,228.0>-<167.0,245.0>-<170.0,264.0>>/B<<170.0,264.0>-<165.0,251.0>-<160.0,239.5>> = 12.064884410525359
-
-	* y (U+0079): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792
-
-	* yacute (U+00FD): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792
-
-	* ycircumflex (U+0177): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792
-
-	* ydieresis (U+00FF): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792 
-
-	* And ygrave (U+1EF3): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* sterling (U+00A3): L<<399.0,334.0>--<258.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedBlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-BlackItalic.ttf. Got NotoSerifTamil-CondensedBlackItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Black' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* exclam (U+0021): X=208.5,Y=1.5 (should be at baseline 0?)
-
-	* period (U+002E): X=163.5,Y=1.5 (should be at baseline 0?)
-
-	* colon (U+003A): X=175.5,Y=1.5 (should be at baseline 0?)
-
-	* question (U+003F): X=231.5,Y=1.5 (should be at baseline 0?)
-
-	* J (U+004A): X=105.0,Y=-1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=280.0,Y=-2.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=465.0,Y=2.0 (should be at baseline 0?)
-
-	* bracketright (U+005D): X=82.0,Y=2.0 (should be at baseline 0?)
-
-	* p (U+0070): X=248.5,Y=-1.5 (should be at baseline 0?)
-
-	* t (U+0074): X=325.0,Y=0.5 (should be at baseline 0?) 
-
-	* And 58 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<578.0,121.0>--<578.0,605.0>>/L<<578.0,605.0>--<426.0,0.0>> = 14.103073662556335
-
-	* four (U+0034): B<<318.0,512.5>-<330.0,566.0>-<344.0,613.0>>/B<<344.0,613.0>-<329.0,583.0>-<309.5,549.5>> = 9.977712620150543
-
-	* y (U+0079): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792
-
-	* yacute (U+00FD): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792
-
-	* ycircumflex (U+0177): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792
-
-	* ydieresis (U+00FF): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792 
-
-	* And ygrave (U+1EF3): B<<296.5,179.5>-<302.0,151.0>-<303.0,132.0>>/B<<303.0,132.0>-<308.0,175.0>-<316.0,206.0>> = 9.645302119321792 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-Bold.ttf. Got NotoSerifTamil-CondensedBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed' / SUBFAMILY_NAME = 'Bold'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* Q (U+0051): X=429.0,Y=-1.0 (should be at baseline 0?)
-
-	* j (U+006A): X=89.0,Y=-2.0 (should be at baseline 0?)
-
-	* t (U+0074): X=106.0,Y=562.0 (should be at x-height 564?)
-
-	* t (U+0074): X=293.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=486.5,Y=842.0 (should be at cap-height 841?)
-
-	* Ntilde (U+00D1): X=509.5,Y=842.0 (should be at cap-height 841?)
-
-	* Otilde (U+00D5): X=501.5,Y=842.0 (should be at cap-height 841?)
-
-	* ij (U+0133): X=398.0,Y=-2.0 (should be at baseline 0?)
-
-	* Eng (U+014A): X=527.0,Y=2.0 (should be at baseline 0?) 
-
-	* And 20 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<252.0,526.5>-<253.0,575.0>-<256.0,621.0>>/B<<256.0,621.0>-<250.0,601.0>-<237.0,573.0>> = 12.967847234833151
-
-	* uni2074 (U+2074): B<<175.5,715.5>-<176.0,733.0>-<178.0,752.0>>/B<<178.0,752.0>-<174.0,741.0>-<169.0,730.5>> = 13.974100564405422 
-
-	* And uni2084 (U+2084): B<<175.5,230.5>-<176.0,248.0>-<178.0,267.0>>/B<<178.0,267.0>-<174.0,256.0>-<169.0,245.5>> = 13.974100564405422 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* h (U+0068): L<<223.0,312.0>--<224.0,116.0>> 
-
-	* And sterling (U+00A3): L<<375.0,337.0>--<238.0,338.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-BoldItalic.ttf. Got NotoSerifTamil-CondensedBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed' / SUBFAMILY_NAME = 'Bold Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* Q (U+0051): X=429.0,Y=-1.0 (should be at baseline 0?)
-
-	* j (U+006A): X=89.0,Y=-2.0 (should be at baseline 0?)
-
-	* t (U+0074): X=106.0,Y=562.0 (should be at x-height 564?)
-
-	* t (U+0074): X=293.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=486.5,Y=842.0 (should be at cap-height 841?)
-
-	* Ntilde (U+00D1): X=509.5,Y=842.0 (should be at cap-height 841?)
-
-	* Otilde (U+00D5): X=501.5,Y=842.0 (should be at cap-height 841?)
-
-	* ij (U+0133): X=398.0,Y=-2.0 (should be at baseline 0?)
-
-	* Eng (U+014A): X=527.0,Y=2.0 (should be at baseline 0?) 
-
-	* And 22 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<322.0,61.0>--<331.0,102.0>> -> L<<331.0,102.0>--<333.0,113.0>>
-
-	* uni0BB7 (U+0BB7): L<<1286.0,315.0>--<1285.0,311.0>> -> L<<1285.0,311.0>--<1284.0,308.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<603.0,187.0>--<599.0,169.0>> -> L<<599.0,169.0>--<563.0,0.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<324.5,522.5>-<337.0,575.0>-<350.0,622.0>>/B<<350.0,622.0>-<338.0,597.0>-<321.0,568.5>> = 10.179788083863368 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-ExtraBold.ttf. Got NotoSerifTamil-CondensedExtraBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed ExtraBold' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* five (U+0035): X=291.5,Y=1.0 (should be at baseline 0?)
-
-	* J (U+004A): X=268.0,Y=-2.0 (should be at baseline 0?)
-
-	* bracketleft (U+005B): X=243.0,Y=-2.0 (should be at baseline 0?)
-
-	* bracketright (U+005D): X=142.0,Y=-2.0 (should be at baseline 0?)
-
-	* a (U+0061): X=228.5,Y=-2.0 (should be at baseline 0?)
-
-	* f (U+0066): X=95.0,Y=571.0 (should be at x-height 572?)
-
-	* j (U+006A): X=86.0,Y=1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=311.0,Y=-0.5 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=291.5,Y=-2.0 (should be at baseline 0?)
-
-	* Agrave (U+00C0): X=230.0,Y=846.0 (should be at cap-height 848?) 
-
-	* And 49 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* uni2074 (U+2074): B<<170.5,714.0>-<171.0,731.0>-<173.0,750.0>>/B<<173.0,750.0>-<169.0,738.0>-<164.0,727.0>> = 12.425942865427455
-
-	* uni2084 (U+2084): B<<170.5,229.0>-<171.0,246.0>-<173.0,265.0>>/B<<173.0,265.0>-<169.0,253.0>-<164.0,242.0>> = 12.425942865427455
-
-	* y (U+0079): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124
-
-	* yacute (U+00FD): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124
-
-	* ycircumflex (U+0177): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124
-
-	* ydieresis (U+00FF): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124 
-
-	* And ygrave (U+1EF3): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* h (U+0068): L<<241.0,308.0>--<242.0,119.0>> 
-
-	* And sterling (U+00A3): L<<388.0,335.0>--<249.0,336.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedExtraBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-ExtraBoldItalic.ttf. Got NotoSerifTamil-CondensedExtraBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed ExtraBold' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* exclam (U+0021): X=195.0,Y=1.0 (should be at baseline 0?)
-
-	* period (U+002E): X=153.0,Y=1.0 (should be at baseline 0?)
-
-	* colon (U+003A): X=163.5,Y=1.0 (should be at baseline 0?)
-
-	* question (U+003F): X=225.0,Y=1.0 (should be at baseline 0?)
-
-	* J (U+004A): X=268.0,Y=-2.0 (should be at baseline 0?)
-
-	* bracketleft (U+005B): X=208.0,Y=-1.0 (should be at baseline 0?)
-
-	* bracketright (U+005D): X=83.0,Y=-1.0 (should be at baseline 0?)
-
-	* a (U+0061): X=228.5,Y=-2.0 (should be at baseline 0?)
-
-	* f (U+0066): X=95.0,Y=571.0 (should be at x-height 572?)
-
-	* j (U+006A): X=86.0,Y=1.0 (should be at baseline 0?) 
-
-	* And 51 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BF0 (U+0BF0): L<<314.0,136.0>--<325.0,185.0>> -> L<<325.0,185.0>--<407.0,572.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<612.0,175.0>--<610.0,167.0>> -> L<<610.0,167.0>--<575.0,0.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<321.0,517.0>-<333.0,570.0>-<347.0,617.0>>/B<<347.0,617.0>-<333.0,589.0>-<314.5,558.0>> = 9.977712620150543
-
-	* y (U+0079): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124
-
-	* yacute (U+00FD): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124
-
-	* ycircumflex (U+0177): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124
-
-	* ydieresis (U+00FF): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124 
-
-	* And ygrave (U+1EF3): B<<288.5,172.0>-<294.0,142.0>-<296.0,122.0>>/B<<296.0,122.0>-<299.0,145.0>-<303.5,166.0>> = 13.142001108672124 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-ExtraLight.ttf. Got NotoSerifTamil-CondensedExtraLight.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed ExtraLight' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenleft (U+0028): X=146.5,Y=-2.0 (should be at baseline 0?)
-
-	* parenright (U+0029): X=110.5,Y=-2.0 (should be at baseline 0?)
-
-	* comma (U+002C): X=84.5,Y=2.0 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=97.0,Y=2.0 (should be at baseline 0?)
-
-	* G (U+0047): X=411.5,Y=-0.5 (should be at baseline 0?)
-
-	* a (U+0061): X=213.0,Y=543.0 (should be at x-height 545?)
-
-	* b (U+0062): X=279.0,Y=544.0 (should be at x-height 545?)
-
-	* c (U+0063): X=223.0,Y=543.0 (should be at x-height 545?)
-
-	* d (U+0064): X=219.0,Y=544.0 (should be at x-height 545?)
-
-	* e (U+0065): X=220.0,Y=543.0 (should be at x-height 545?) 
-
-	* And 78 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<425.0,359.0>--<423.0,30.0>>
-
-	* E (U+0045): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Eacute (U+00C9): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Ecaron (U+011A): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Ecircumflex (U+00CA): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Edieresis (U+00CB): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Edotaccent (U+0116): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Egrave (U+00C8): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Emacron (U+0112): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Eogonek (U+0118): L<<161.0,359.0>--<160.0,30.0>>
-
-	* Euro (U+20AC): L<<147.0,303.0>--<301.0,302.0>> 
-
-	* And OE (U+0152): L<<422.0,359.0>--<420.0,30.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-CondensedExtraLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-ExtraLightItalic.ttf. Got NotoSerifTamil-CondensedExtraLightItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed ExtraLight' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=411.5,Y=-0.5 (should be at baseline 0?)
-
-	* a (U+0061): X=213.0,Y=543.0 (should be at x-height 545?)
-
-	* b (U+0062): X=279.0,Y=544.0 (should be at x-height 545?)
-
-	* c (U+0063): X=223.0,Y=543.0 (should be at x-height 545?)
-
-	* d (U+0064): X=219.0,Y=544.0 (should be at x-height 545?)
-
-	* e (U+0065): X=220.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=211.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=408.5,Y=545.5 (should be at x-height 545?)
-
-	* h (U+0068): X=272.0,Y=543.0 (should be at x-height 545?)
-
-	* m (U+006D): X=281.0,Y=543.0 (should be at x-height 545?) 
-
-	* And 74 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-Italic.ttf. Got NotoSerifTamil-CondensedItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* comma (U+002C): X=61.0,Y=1.5 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=76.0,Y=1.5 (should be at baseline 0?)
-
-	* G (U+0047): X=447.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=49.5,Y=-2.0 (should be at baseline 0?)
-
-	* g (U+0067): X=441.0,Y=552.5 (should be at x-height 554?)
-
-	* y (U+0079): X=222.0,Y=-1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=286.0,Y=2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* section (U+00A7): X=81.0,Y=1.0 (should be at baseline 0?)
-
-	* paragraph (U+00B6): X=226.0,Y=2.0 (should be at baseline 0?) 
-
-	* And 81 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<476.0,411.0>--<410.0,96.0>> -> L<<410.0,96.0>--<401.0,54.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<559.0,210.0>--<550.0,168.0>> -> L<<550.0,168.0>--<549.0,164.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<332.5,536.0>-<345.0,588.0>-<359.0,634.0>>/B<<359.0,634.0>-<349.0,616.0>-<335.0,593.5>> = 12.127091034930073 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-Light.ttf. Got NotoSerifTamil-CondensedLight.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Light' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* g (U+0067): X=422.5,Y=548.5 (should be at x-height 549?)
-
-	* t (U+0074): X=260.0,Y=1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=226.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=297.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=391.0,Y=0.5 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=75.0,Y=798.0 (should be at cap-height 800?)
-
-	* yacute (U+00FD): X=226.0,Y=-1.0 (should be at baseline 0?)
-
-	* ydieresis (U+00FF): X=226.0,Y=-1.0 (should be at baseline 0?)
-
-	* Edotaccent (U+0116): X=269.0,Y=799.0 (should be at cap-height 800?)
-
-	* Edotaccent (U+0116): X=269.0,Y=799.0 (should be at cap-height 800?) 
-
-	* And 24 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0B95 (U+0B95): L<<203.0,309.0>--<205.0,309.0>> -> L<<205.0,309.0>--<340.0,309.0>>
-
-	* uni0B9A (U+0B9A): L<<203.0,309.0>--<206.0,309.0>> -> L<<206.0,309.0>--<340.0,309.0>>
-
-	* uni0BA4 (U+0BA4): L<<203.0,309.0>--<206.0,309.0>> -> L<<206.0,309.0>--<340.0,309.0>>
-
-	* uni0BE7 (U+0BE7): L<<203.0,309.0>--<204.0,309.0>> -> L<<204.0,309.0>--<340.0,309.0>>
-
-	* uni0BEA (U+0BEA): L<<203.0,309.0>--<206.0,309.0>> -> L<<206.0,309.0>--<340.0,309.0>>
-
-	* uni0BEC (U+0BEC): L<<203.0,309.0>--<205.0,309.0>> -> L<<205.0,309.0>--<340.0,309.0>>
-
-	* uni0BEF (U+0BEF): L<<203.0,309.0>--<206.0,309.0>> -> L<<206.0,309.0>--<340.0,309.0>> 
-
-	* And uni0BF2 (U+0BF2): L<<184.0,309.0>--<187.0,309.0>> -> L<<187.0,309.0>--<321.0,309.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<451.0,355.0>--<450.0,38.0>>
-
-	* OE (U+0152): L<<454.0,355.0>--<453.0,38.0>> 
-
-	* And uni0BB2 (U+0BB2): L<<469.0,156.0>--<468.0,328.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-LightItalic.ttf. Got NotoSerifTamil-CondensedLightItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Light' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* g (U+0067): X=422.5,Y=548.5 (should be at x-height 549?)
-
-	* t (U+0074): X=260.0,Y=1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=226.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=297.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=391.0,Y=0.5 (should be at baseline 0?)
-
-	* yacute (U+00FD): X=226.0,Y=-1.0 (should be at baseline 0?)
-
-	* ydieresis (U+00FF): X=226.0,Y=-1.0 (should be at baseline 0?)
-
-	* Edotaccent (U+0116): X=269.0,Y=799.0 (should be at cap-height 800?)
-
-	* Edotaccent (U+0116): X=269.0,Y=799.0 (should be at cap-height 800?)
-
-	* lacute (U+013A): X=98.0,Y=799.0 (should be at cap-height 800?) 
-
-	* And 21 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<450.0,408.0>--<380.0,74.0>> -> L<<380.0,74.0>--<373.0,40.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<343.0,567.0>-<354.0,613.0>-<366.0,652.0>>/B<<366.0,652.0>-<354.0,631.0>-<333.0,601.0>> = 12.642152327889828 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedMedium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-Medium.ttf. Got NotoSerifTamil-CondensedMedium.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Medium' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=457.0,Y=2.0 (should be at baseline 0?)
-
-	* a (U+0061): X=231.0,Y=1.5 (should be at baseline 0?)
-
-	* t (U+0074): X=92.0,Y=559.0 (should be at x-height 557?)
-
-	* y (U+0079): X=220.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=164.0,Y=824.0 (should be at cap-height 825?)
-
-	* uni00B3 (U+00B3): X=162.0,Y=823.0 (should be at cap-height 825?)
-
-	* Atilde (U+00C3): X=268.5,Y=824.5 (should be at cap-height 825?)
-
-	* Ntilde (U+00D1): X=298.5,Y=824.5 (should be at cap-height 825?)
-
-	* Otilde (U+00D5): X=279.5,Y=824.5 (should be at cap-height 825?) 
-
-	* And 35 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* sterling (U+00A3): L<<354.0,334.0>--<220.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedMediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-MediumItalic.ttf. Got NotoSerifTamil-CondensedMediumItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Medium' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=457.0,Y=2.0 (should be at baseline 0?)
-
-	* a (U+0061): X=231.0,Y=1.5 (should be at baseline 0?)
-
-	* t (U+0074): X=92.0,Y=559.0 (should be at x-height 557?)
-
-	* y (U+0079): X=220.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=271.0,Y=824.0 (should be at cap-height 825?)
-
-	* uni00B3 (U+00B3): X=278.0,Y=824.0 (should be at cap-height 825?)
-
-	* Atilde (U+00C3): X=268.5,Y=824.5 (should be at cap-height 825?)
-
-	* Ntilde (U+00D1): X=298.5,Y=824.5 (should be at cap-height 825?)
-
-	* Otilde (U+00D5): X=279.5,Y=824.5 (should be at cap-height 825?) 
-
-	* And 44 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<330.5,532.0>-<343.0,584.0>-<357.0,631.0>>/B<<357.0,631.0>-<346.0,611.0>-<331.0,587.0>> = 12.223455186045594
-
-	* uni2074 (U+2074): B<<269.5,703.5>-<276.0,728.0>-<281.0,746.0>>/B<<281.0,746.0>-<276.0,737.0>-<266.0,724.0>> = 13.530493102322872 
-
-	* And uni2084 (U+2084): B<<180.5,218.5>-<187.0,243.0>-<192.0,261.0>>/B<<192.0,261.0>-<187.0,252.0>-<177.0,239.0>> = 13.530493102322872 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-CondensedSemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-SemiBold.ttf. Got NotoSerifTamil-CondensedSemiBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed SemiBold' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* a (U+0061): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=247.0,Y=834.0 (should be at cap-height 832?)
-
-	* Aring (U+00C5): X=323.0,Y=831.0 (should be at cap-height 832?)
-
-	* Ntilde (U+00D1): X=273.0,Y=834.0 (should be at cap-height 832?)
-
-	* Otilde (U+00D5): X=260.0,Y=834.0 (should be at cap-height 832?)
-
-	* agrave (U+00E0): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* aacute (U+00E1): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* acircumflex (U+00E2): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* atilde (U+00E3): X=230.5,Y=0.5 (should be at baseline 0?) 
-
-	* And 25 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-CondensedSemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-SemiBoldItalic.ttf. Got NotoSerifTamil-CondensedSemiBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed SemiBold' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* a (U+0061): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=295.0,Y=-2.0 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=247.0,Y=834.0 (should be at cap-height 832?)
-
-	* Aring (U+00C5): X=323.0,Y=831.0 (should be at cap-height 832?)
-
-	* Ntilde (U+00D1): X=273.0,Y=834.0 (should be at cap-height 832?)
-
-	* Otilde (U+00D5): X=260.0,Y=834.0 (should be at cap-height 832?)
-
-	* agrave (U+00E0): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* aacute (U+00E1): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* acircumflex (U+00E2): X=230.5,Y=0.5 (should be at baseline 0?)
-
-	* atilde (U+00E3): X=230.5,Y=0.5 (should be at baseline 0?) 
-
-	* And 22 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BF0 (U+0BF0): L<<287.0,140.0>--<297.0,188.0>> -> L<<297.0,188.0>--<376.0,560.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<327.5,528.0>-<340.0,580.0>-<354.0,627.0>>/B<<354.0,627.0>-<342.0,604.0>-<326.0,578.0>> = 10.965473019790362 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedThin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-Thin.ttf. Got NotoSerifTamil-CondensedThin.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Thin' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* comma (U+002C): X=82.5,Y=1.5 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=95.5,Y=1.5 (should be at baseline 0?)
-
-	* G (U+0047): X=401.5,Y=-1.5 (should be at baseline 0?)
-
-	* b (U+0062): X=270.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=218.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=356.0,Y=544.0 (should be at x-height 542?)
-
-	* g (U+0067): X=328.5,Y=540.0 (should be at x-height 542?)
-
-	* g (U+0067): X=400.0,Y=543.5 (should be at x-height 542?)
-
-	* r (U+0072): X=262.0,Y=544.0 (should be at x-height 542?)
-
-	* s (U+0073): X=179.0,Y=541.0 (should be at x-height 542?) 
-
-	* And 38 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<408.0,362.0>--<406.0,25.0>>
-
-	* E (U+0045): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Eacute (U+00C9): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Ecaron (U+011A): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Ecircumflex (U+00CA): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Edieresis (U+00CB): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Edotaccent (U+0116): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Egrave (U+00C8): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Emacron (U+0112): L<<149.0,362.0>--<148.0,25.0>>
-
-	* Eogonek (U+0118): L<<149.0,362.0>--<148.0,25.0>> 
-
-	* And 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-CondensedThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilCondensed-ThinItalic.ttf. Got NotoSerifTamil-CondensedThinItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil Condensed Thin' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenright (U+0029): X=65.5,Y=0.5 (should be at baseline 0?)
-
-	* G (U+0047): X=401.5,Y=-1.5 (should be at baseline 0?)
-
-	* b (U+0062): X=270.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=218.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=356.0,Y=544.0 (should be at x-height 542?)
-
-	* g (U+0067): X=328.5,Y=540.0 (should be at x-height 542?)
-
-	* g (U+0067): X=400.0,Y=543.5 (should be at x-height 542?)
-
-	* r (U+0072): X=262.0,Y=544.0 (should be at x-height 542?)
-
-	* s (U+0073): X=179.0,Y=541.0 (should be at x-height 542?)
-
-	* y (U+0079): X=231.0,Y=-2.0 (should be at baseline 0?) 
-
-	* And 32 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<356.0,604.5>-<365.0,643.0>-<373.0,673.0>>/B<<373.0,673.0>-<366.0,660.0>-<348.5,636.0>> = 13.369338587868798 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -2606,7 +639,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -2625,20 +657,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2669,7 +698,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* yacute (U+00FD): X=353.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 32 more.
+	* 32 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -2697,18 +726,28 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* ydieresis (U+00FF): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 
 
-	* And ygrave (U+1EF3): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 [code: found-jaggy-segments]
+	* ygrave (U+1EF3): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<442.0,340.0>--<284.0,341.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -2746,7 +785,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -2765,20 +803,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2809,7 +844,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* p (U+0070): X=265.0,Y=-1.5 (should be at baseline 0?) 
 
-	* And 35 more.
+	* 35 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -2831,7 +866,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni0BEF (U+0BEF): L<<257.0,340.0>--<258.0,340.0>> -> L<<258.0,340.0>--<395.0,340.0>> 
 
-	* And uni0BF2 (U+0BF2): L<<264.0,340.0>--<264.0,340.0>> -> L<<264.0,340.0>--<401.0,340.0>> [code: found-colinear-vectors]
+	* uni0BF2 (U+0BF2): L<<264.0,340.0>--<264.0,340.0>> -> L<<264.0,340.0>--<401.0,340.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -2847,2070 +882,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* ydieresis (U+00FF): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 
 
-	* And ygrave (U+1EF3): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-ExtraCondensed.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
+	* ygrave (U+1EF3): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-Regular.ttf. Got NotoSerifTamil-ExtraCondensed.ttf. [code: bad-filename]
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed' / SUBFAMILY_NAME = 'Regular'
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=417.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=44.5,Y=-1.0 (should be at baseline 0?)
-
-	* g (U+0067): X=410.5,Y=552.5 (should be at x-height 554?)
-
-	* sterling (U+00A3): X=272.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=49.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=365.5,Y=1.5 (should be at baseline 0?)
-
-	* section (U+00A7): X=72.0,Y=1.0 (should be at baseline 0?)
-
-	* paragraph (U+00B6): X=209.0,Y=2.0 (should be at baseline 0?)
-
-	* paragraph (U+00B6): X=383.0,Y=2.0 (should be at baseline 0?)
-
-	* Adieresis (U+00C4): X=324.5,Y=816.5 (should be at cap-height 815?) 
-
-	* And 51 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedBlack.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-Black.ttf. Got NotoSerifTamil-ExtraCondensedBlack.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Black' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* five (U+0035): X=274.0,Y=0.5 (should be at baseline 0?)
-
-	* J (U+004A): X=100.0,Y=-2.0 (should be at baseline 0?)
-
-	* J (U+004A): X=267.0,Y=-1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=439.0,Y=1.0 (should be at baseline 0?)
-
-	* p (U+0070): X=235.0,Y=1.5 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=271.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=387.0,Y=2.0 (should be at baseline 0?)
-
-	* Aacute (U+00C1): X=439.5,Y=847.0 (should be at cap-height 846?)
-
-	* Aring (U+00C5): X=262.0,Y=848.0 (should be at cap-height 846?)
-
-	* Aring (U+00C5): X=404.0,Y=848.0 (should be at cap-height 846?) 
-
-	* And 24 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<312.0,0.0>--<165.0,609.0>>/L<<165.0,609.0>--<165.0,119.0>> = 13.570434385161475
-
-	* M (U+004D): L<<545.0,120.0>--<545.0,608.0>>/L<<545.0,608.0>--<406.0,0.0>> = 12.877560320753728
-
-	* W (U+0057): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wacute (U+1E82): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wcircumflex (U+0174): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wdieresis (U+1E84): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wgrave (U+1E80): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* uni2074 (U+2074): B<<157.5,714.0>-<158.0,731.0>-<160.0,750.0>>/B<<160.0,750.0>-<156.0,737.0>-<151.0,726.0>> = 11.093723011557817
-
-	* uni2084 (U+2084): B<<157.5,229.0>-<158.0,246.0>-<160.0,265.0>>/B<<160.0,265.0>-<156.0,252.0>-<151.0,241.0>> = 11.093723011557817
-
-	* y (U+0079): B<<280.0,176.5>-<285.0,147.0>-<286.0,127.0>>/B<<286.0,127.0>-<290.0,173.0>-<299.0,206.0>> = 7.832145954222035 
-
-	* And 4 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* sterling (U+00A3): L<<375.0,334.0>--<242.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedBlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-BlackItalic.ttf. Got NotoSerifTamil-ExtraCondensedBlackItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Black' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* exclam (U+0021): X=198.5,Y=1.5 (should be at baseline 0?)
-
-	* period (U+002E): X=156.0,Y=1.5 (should be at baseline 0?)
-
-	* colon (U+003A): X=167.5,Y=1.5 (should be at baseline 0?)
-
-	* question (U+003F): X=218.5,Y=1.5 (should be at baseline 0?)
-
-	* J (U+004A): X=100.0,Y=-2.0 (should be at baseline 0?)
-
-	* J (U+004A): X=267.0,Y=-1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=439.0,Y=1.0 (should be at baseline 0?)
-
-	* bracketleft (U+005B): X=219.0,Y=2.0 (should be at baseline 0?)
-
-	* bracketright (U+005D): X=77.0,Y=1.0 (should be at baseline 0?)
-
-	* p (U+0070): X=235.0,Y=1.5 (should be at baseline 0?) 
-
-	* And 27 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BEB (U+0BEB): L<<589.0,174.0>--<587.0,166.0>> -> L<<587.0,166.0>--<552.0,0.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<312.0,0.0>--<165.0,609.0>>/L<<165.0,609.0>--<165.0,119.0>> = 13.570434385161475
-
-	* M (U+004D): L<<545.0,120.0>--<545.0,608.0>>/L<<545.0,608.0>--<406.0,0.0>> = 12.877560320753728
-
-	* W (U+0057): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wacute (U+1E82): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wcircumflex (U+0174): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wdieresis (U+1E84): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* Wgrave (U+1E80): B<<313.5,228.0>-<319.0,198.0>-<321.0,177.0>>/B<<321.0,177.0>-<326.0,209.0>-<335.0,241.0>> = 14.320991181525747
-
-	* four (U+0034): B<<310.5,514.5>-<323.0,568.0>-<336.0,614.0>>/B<<336.0,614.0>-<315.0,568.0>-<284.5,516.5>> = 8.756975167062405
-
-	* y (U+0079): B<<280.0,176.5>-<285.0,147.0>-<286.0,127.0>>/B<<286.0,127.0>-<290.0,173.0>-<299.0,206.0>> = 7.832145954222035
-
-	* yacute (U+00FD): B<<280.0,176.5>-<285.0,147.0>-<286.0,127.0>>/B<<286.0,127.0>-<290.0,173.0>-<299.0,206.0>> = 7.832145954222035 
-
-	* And 3 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-Bold.ttf. Got NotoSerifTamil-ExtraCondensedBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed' / SUBFAMILY_NAME = 'Bold'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* Q (U+0051): X=403.0,Y=-2.0 (should be at baseline 0?)
-
-	* t (U+0074): X=100.0,Y=563.0 (should be at x-height 565?)
-
-	* sterling (U+00A3): X=271.5,Y=-1.5 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=378.0,Y=1.5 (should be at baseline 0?)
-
-	* Agrave (U+00C0): X=337.0,Y=829.0 (should be at cap-height 831?)
-
-	* Acircumflex (U+00C2): X=195.5,Y=829.0 (should be at cap-height 831?)
-
-	* Acircumflex (U+00C2): X=429.0,Y=829.0 (should be at cap-height 831?)
-
-	* Aring (U+00C5): X=313.0,Y=829.0 (should be at cap-height 831?)
-
-	* Egrave (U+00C8): X=309.0,Y=829.0 (should be at cap-height 831?)
-
-	* Ecircumflex (U+00CA): X=142.5,Y=829.0 (should be at cap-height 831?) 
-
-	* And 38 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<549.0,117.0>--<549.0,623.0>>/L<<549.0,623.0>--<396.0,0.0>> = 13.797963717016383
-
-	* four (U+0034): B<<235.0,529.0>-<236.0,576.0>-<239.0,622.0>>/B<<239.0,622.0>-<229.0,590.0>-<210.0,545.5>> = 13.622627637100871
-
-	* uni2074 (U+2074): B<<161.5,718.5>-<162.0,737.0>-<164.0,756.0>>/B<<164.0,756.0>-<160.0,745.0>-<155.0,733.0>> = 13.974100564405422
-
-	* uni2084 (U+2084): B<<161.5,233.5>-<162.0,252.0>-<164.0,271.0>>/B<<164.0,271.0>-<160.0,260.0>-<155.0,248.0>> = 13.974100564405422
-
-	* y (U+0079): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108
-
-	* yacute (U+00FD): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108
-
-	* ycircumflex (U+0177): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108
-
-	* ydieresis (U+00FF): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108 
-
-	* And ygrave (U+1EF3): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* sterling (U+00A3): L<<352.0,333.0>--<224.0,334.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-BoldItalic.ttf. Got NotoSerifTamil-ExtraCondensedBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed' / SUBFAMILY_NAME = 'Bold Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* Q (U+0051): X=403.0,Y=-2.0 (should be at baseline 0?)
-
-	* t (U+0074): X=100.0,Y=563.0 (should be at x-height 565?)
-
-	* sterling (U+00A3): X=271.5,Y=-1.5 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=378.0,Y=1.5 (should be at baseline 0?)
-
-	* Agrave (U+00C0): X=337.0,Y=829.0 (should be at cap-height 831?)
-
-	* Acircumflex (U+00C2): X=195.5,Y=829.0 (should be at cap-height 831?)
-
-	* Acircumflex (U+00C2): X=429.0,Y=829.0 (should be at cap-height 831?)
-
-	* Aring (U+00C5): X=313.0,Y=829.0 (should be at cap-height 831?)
-
-	* Egrave (U+00C8): X=309.0,Y=829.0 (should be at cap-height 831?)
-
-	* Ecircumflex (U+00CA): X=142.5,Y=829.0 (should be at cap-height 831?) 
-
-	* And 37 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<289.0,61.0>--<295.0,87.0>> -> L<<295.0,87.0>--<299.0,109.0>>
-
-	* uni0BEB (U+0BEB): L<<559.0,187.0>--<554.0,167.0>> -> L<<554.0,167.0>--<519.0,0.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<546.0,187.0>--<541.0,167.0>> -> L<<541.0,167.0>--<506.0,0.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<549.0,117.0>--<549.0,623.0>>/L<<549.0,623.0>--<396.0,0.0>> = 13.797963717016383
-
-	* four (U+0034): B<<313.5,524.5>-<326.0,577.0>-<339.0,623.0>>/B<<339.0,623.0>-<328.0,598.0>-<311.5,569.0>> = 7.968741183351293
-
-	* y (U+0079): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108
-
-	* yacute (U+00FD): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108
-
-	* ycircumflex (U+0177): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108
-
-	* ydieresis (U+00FF): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108 
-
-	* And ygrave (U+1EF3): B<<261.0,163.5>-<268.0,130.0>-<270.0,108.0>>/B<<270.0,108.0>-<274.0,133.0>-<278.5,156.5>> = 14.284705828557108 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-ExtraBold.ttf. Got NotoSerifTamil-ExtraCondensedExtraBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed ExtraBold' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* five (U+0035): X=273.5,Y=1.5 (should be at baseline 0?)
-
-	* J (U+004A): X=253.0,Y=-2.0 (should be at baseline 0?)
-
-	* f (U+0066): X=89.0,Y=573.0 (should be at x-height 571?)
-
-	* t (U+0074): X=293.5,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=271.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=382.5,Y=1.5 (should be at baseline 0?)
-
-	* questiondown (U+00BF): X=313.0,Y=2.0 (should be at baseline 0?)
-
-	* IJ (U+0132): X=612.0,Y=-2.0 (should be at baseline 0?)
-
-	* Eng (U+014A): X=507.0,Y=2.0 (should be at baseline 0?)
-
-	* tcaron (U+0165): X=293.5,Y=-1.0 (should be at baseline 0?) 
-
-	* And 13 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<315.0,0.0>--<163.0,615.0>>/L<<163.0,615.0>--<163.0,118.0>> = 13.882694656125755
-
-	* M (U+004D): L<<547.0,119.0>--<547.0,615.0>>/L<<547.0,615.0>--<401.0,0.0>> = 13.354706479230135
-
-	* four (U+0034): B<<227.0,522.5>-<228.0,565.0>-<232.0,612.0>>/B<<232.0,612.0>-<220.0,576.0>-<203.0,534.5>> = 13.570434385161448
-
-	* y (U+0079): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268
-
-	* yacute (U+00FD): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268
-
-	* ycircumflex (U+0177): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268
-
-	* ydieresis (U+00FF): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268 
-
-	* And ygrave (U+1EF3): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* sterling (U+00A3): L<<365.0,334.0>--<234.0,335.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedExtraBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-ExtraBoldItalic.ttf. Got NotoSerifTamil-ExtraCondensedExtraBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed ExtraBold' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* period (U+002E): X=145.5,Y=1.0 (should be at baseline 0?)
-
-	* J (U+004A): X=253.0,Y=-2.0 (should be at baseline 0?)
-
-	* bracketright (U+005D): X=77.0,Y=-2.0 (should be at baseline 0?)
-
-	* f (U+0066): X=89.0,Y=573.0 (should be at x-height 571?)
-
-	* t (U+0074): X=293.5,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=271.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=382.5,Y=1.5 (should be at baseline 0?)
-
-	* IJ (U+0132): X=612.0,Y=-2.0 (should be at baseline 0?)
-
-	* Eng (U+014A): X=507.0,Y=2.0 (should be at baseline 0?)
-
-	* tcaron (U+0165): X=293.5,Y=-1.0 (should be at baseline 0?) 
-
-	* And 10 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BEB (U+0BEB): L<<575.0,180.0>--<572.0,165.0>> -> L<<572.0,165.0>--<537.0,0.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<315.0,0.0>--<163.0,615.0>>/L<<163.0,615.0>--<163.0,118.0>> = 13.882694656125755
-
-	* M (U+004D): L<<547.0,119.0>--<547.0,615.0>>/L<<547.0,615.0>--<401.0,0.0>> = 13.354706479230135
-
-	* four (U+0034): B<<312.0,519.0>-<324.0,572.0>-<337.0,618.0>>/B<<337.0,618.0>-<318.0,575.0>-<289.5,527.0>> = 8.057986873656278
-
-	* uni2074 (U+2074): B<<287.0,692.0>-<294.0,716.0>-<300.0,734.0>>/B<<300.0,734.0>-<291.0,720.0>-<280.5,707.0>> = 14.300277449185549
-
-	* uni2084 (U+2084): B<<188.0,207.0>-<195.0,231.0>-<201.0,249.0>>/B<<201.0,249.0>-<192.0,235.0>-<181.5,222.0>> = 14.300277449185549
-
-	* y (U+0079): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268
-
-	* yacute (U+00FD): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268
-
-	* ycircumflex (U+0177): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268
-
-	* ydieresis (U+00FF): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268 
-
-	* And ygrave (U+1EF3): B<<271.5,170.5>-<277.0,139.0>-<279.0,118.0>>/B<<279.0,118.0>-<282.0,142.0>-<285.5,163.5>> = 12.565348379907268 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-ExtraLight.ttf. Got NotoSerifTamil-ExtraCondensedExtraLight.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed ExtraLight' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=379.5,Y=-0.5 (should be at baseline 0?)
-
-	* a (U+0061): X=197.0,Y=543.0 (should be at x-height 545?)
-
-	* b (U+0062): X=258.0,Y=544.0 (should be at x-height 545?)
-
-	* c (U+0063): X=205.0,Y=543.0 (should be at x-height 545?)
-
-	* d (U+0064): X=202.0,Y=544.0 (should be at x-height 545?)
-
-	* e (U+0065): X=203.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=194.0,Y=543.0 (should be at x-height 545?)
-
-	* h (U+0068): X=251.0,Y=543.0 (should be at x-height 545?)
-
-	* m (U+006D): X=260.0,Y=543.0 (should be at x-height 545?)
-
-	* m (U+006D): X=492.0,Y=543.0 (should be at x-height 545?) 
-
-	* And 42 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* uni2074 (U+2074): B<<173.5,730.5>-<174.0,753.0>-<175.0,773.0>>/B<<175.0,773.0>-<173.0,765.0>-<166.0,749.5>> = 11.173838241814705 
-
-	* And uni2084 (U+2084): B<<173.5,245.5>-<174.0,268.0>-<175.0,288.0>>/B<<175.0,288.0>-<173.0,280.0>-<166.0,264.5>> = 11.173838241814705 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<392.0,359.0>--<390.0,30.0>>
-
-	* E (U+0045): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Eacute (U+00C9): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Ecaron (U+011A): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Ecircumflex (U+00CA): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Edieresis (U+00CB): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Edotaccent (U+0116): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Egrave (U+00C8): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Emacron (U+0112): L<<149.0,359.0>--<148.0,30.0>>
-
-	* Eogonek (U+0118): L<<149.0,359.0>--<148.0,30.0>> 
-
-	* And OE (U+0152): L<<390.0,359.0>--<389.0,30.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedExtraLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-ExtraLightItalic.ttf. Got NotoSerifTamil-ExtraCondensedExtraLightItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed ExtraLight' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenright (U+0029): X=68.0,Y=-1.5 (should be at baseline 0?)
-
-	* G (U+0047): X=379.5,Y=-0.5 (should be at baseline 0?)
-
-	* a (U+0061): X=197.0,Y=543.0 (should be at x-height 545?)
-
-	* b (U+0062): X=258.0,Y=544.0 (should be at x-height 545?)
-
-	* c (U+0063): X=205.0,Y=543.0 (should be at x-height 545?)
-
-	* d (U+0064): X=202.0,Y=544.0 (should be at x-height 545?)
-
-	* e (U+0065): X=203.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=194.0,Y=543.0 (should be at x-height 545?)
-
-	* h (U+0068): X=251.0,Y=543.0 (should be at x-height 545?)
-
-	* m (U+006D): X=260.0,Y=543.0 (should be at x-height 545?) 
-
-	* And 46 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BF0 (U+0BF0): L<<219.0,127.0>--<220.0,133.0>> -> L<<220.0,133.0>--<307.0,545.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<459.0,167.0>--<459.0,167.0>> -> L<<459.0,167.0>--<459.0,167.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<333.5,591.0>-<343.0,630.0>-<351.0,659.0>>/B<<351.0,659.0>-<343.0,643.0>-<327.5,619.5>> = 11.142889858339293 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-Italic.ttf. Got NotoSerifTamil-ExtraCondensedItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenright (U+0029): X=60.5,Y=1.0 (should be at baseline 0?)
-
-	* G (U+0047): X=417.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=44.5,Y=-1.0 (should be at baseline 0?)
-
-	* g (U+0067): X=410.5,Y=552.5 (should be at x-height 554?)
-
-	* sterling (U+00A3): X=272.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=49.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=365.5,Y=1.5 (should be at baseline 0?)
-
-	* section (U+00A7): X=72.0,Y=1.0 (should be at baseline 0?)
-
-	* paragraph (U+00B6): X=209.0,Y=2.0 (should be at baseline 0?)
-
-	* paragraph (U+00B6): X=383.0,Y=2.0 (should be at baseline 0?) 
-
-	* And 54 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<442.0,418.0>--<374.0,96.0>> -> L<<374.0,96.0>--<365.0,54.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<318.5,537.0>-<331.0,589.0>-<344.0,635.0>>/B<<344.0,635.0>-<335.0,617.0>-<321.5,594.0>> = 10.784297867562527 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-Light.ttf. Got NotoSerifTamil-ExtraCondensedLight.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Light' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* g (U+0067): X=390.0,Y=548.5 (should be at x-height 549?)
-
-	* g (U+0067): X=102.5,Y=-0.5 (should be at baseline 0?)
-
-	* y (U+0079): X=207.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=272.0,Y=-2.0 (should be at baseline 0?)
-
-	* section (U+00A7): X=77.0,Y=1.0 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=143.0,Y=794.0 (should be at cap-height 795?)
-
-	* uni00B2 (U+00B2): X=224.0,Y=795.5 (should be at cap-height 795?)
-
-	* uni00B3 (U+00B3): X=65.5,Y=797.0 (should be at cap-height 795?)
-
-	* uni00B3 (U+00B3): X=227.5,Y=796.5 (should be at cap-height 795?)
-
-	* yacute (U+00FD): X=207.0,Y=-2.0 (should be at baseline 0?) 
-
-	* And 16 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* uni2074 (U+2074): B<<170.5,728.0>-<171.0,750.0>-<173.0,770.0>>/B<<173.0,770.0>-<170.0,761.0>-<163.0,746.5>> = 12.724355685422335 
-
-	* And uni2084 (U+2084): B<<170.5,243.0>-<171.0,265.0>-<173.0,285.0>>/B<<173.0,285.0>-<170.0,276.0>-<163.0,261.5>> = 12.724355685422335 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<419.0,355.0>--<418.0,38.0>>
-
-	* E (U+0045): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Eacute (U+00C9): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Ecaron (U+011A): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Ecircumflex (U+00CA): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Edieresis (U+00CB): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Edotaccent (U+0116): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Egrave (U+00C8): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Emacron (U+0112): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Eogonek (U+0118): L<<169.0,355.0>--<168.0,38.0>>
-
-	* Euro (U+20AC): L<<154.0,306.0>--<291.0,305.0>> 
-
-	* And OE (U+0152): L<<422.0,355.0>--<421.0,38.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-LightItalic.ttf. Got NotoSerifTamil-ExtraCondensedLightItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Light' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* g (U+0067): X=390.0,Y=548.5 (should be at x-height 549?)
-
-	* g (U+0067): X=102.5,Y=-0.5 (should be at baseline 0?)
-
-	* y (U+0079): X=207.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=272.0,Y=-2.0 (should be at baseline 0?)
-
-	* section (U+00A7): X=77.0,Y=1.0 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=319.0,Y=796.5 (should be at cap-height 795?)
-
-	* uni00B3 (U+00B3): X=163.0,Y=794.5 (should be at cap-height 795?)
-
-	* uni00B3 (U+00B3): X=329.5,Y=796.5 (should be at cap-height 795?)
-
-	* yacute (U+00FD): X=207.0,Y=-2.0 (should be at baseline 0?)
-
-	* ydieresis (U+00FF): X=207.0,Y=-2.0 (should be at baseline 0?) 
-
-	* And 18 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<416.0,418.0>--<343.0,74.0>> -> L<<343.0,74.0>--<336.0,40.0>> 
-
-	* And uni0BF0 (U+0BF0): L<<227.0,130.0>--<236.0,175.0>> -> L<<236.0,175.0>--<316.0,549.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<327.0,568.5>-<338.0,613.0>-<348.0,649.0>>/B<<348.0,649.0>-<338.0,628.0>-<319.5,599.5>> = 9.939234065117335 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-ExtraCondensedMedium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-Medium.ttf. Got NotoSerifTamil-ExtraCondensedMedium.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Medium' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* uni2074 (U+2074): B<<165.5,723.5>-<166.0,744.0>-<168.0,763.0>>/B<<168.0,763.0>-<164.0,752.0>-<158.0,739.0>> = 13.974100564405422 
-
-	* And uni2084 (U+2084): B<<165.5,238.5>-<166.0,259.0>-<168.0,278.0>>/B<<168.0,278.0>-<164.0,267.0>-<158.0,254.0>> = 13.974100564405422 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* sterling (U+00A3): L<<331.0,332.0>--<207.0,333.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-ExtraCondensedMediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-MediumItalic.ttf. Got NotoSerifTamil-ExtraCondensedMediumItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Medium' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<392.0,100.0>--<384.0,63.0>> -> L<<384.0,63.0>--<383.0,56.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<317.0,533.0>-<329.0,585.0>-<343.0,632.0>>/B<<343.0,632.0>-<333.0,611.0>-<319.0,587.0>> = 8.876006504944176 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-ExtraCondensedSemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-SemiBold.ttf. Got NotoSerifTamil-ExtraCondensedSemiBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed SemiBold' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=439.0,Y=2.0 (should be at baseline 0?)
-
-	* g (U+0067): X=260.0,Y=1.0 (should be at baseline 0?)
-
-	* g (U+0067): X=169.0,Y=1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=93.0,Y=562.0 (should be at x-height 561?)
-
-	* sterling (U+00A3): X=271.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=373.0,Y=1.5 (should be at baseline 0?)
-
-	* uni00B3 (U+00B3): X=154.0,Y=824.0 (should be at cap-height 825?)
-
-	* Atilde (U+00C3): X=258.5,Y=824.5 (should be at cap-height 825?)
-
-	* Ntilde (U+00D1): X=283.5,Y=824.5 (should be at cap-height 825?)
-
-	* Otilde (U+00D5): X=271.5,Y=824.5 (should be at cap-height 825?) 
-
-	* And 25 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<551.0,115.0>--<551.0,630.0>>/L<<551.0,630.0>--<391.0,0.0>> = 14.250032697803595 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedSemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-SemiBoldItalic.ttf. Got NotoSerifTamil-ExtraCondensedSemiBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed SemiBold' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=439.0,Y=2.0 (should be at baseline 0?)
-
-	* g (U+0067): X=260.0,Y=1.0 (should be at baseline 0?)
-
-	* g (U+0067): X=169.0,Y=1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=93.0,Y=562.0 (should be at x-height 561?)
-
-	* sterling (U+00A3): X=271.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=373.0,Y=1.5 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=270.0,Y=824.0 (should be at cap-height 825?)
-
-	* uni00B3 (U+00B3): X=274.0,Y=824.0 (should be at cap-height 825?)
-
-	* Atilde (U+00C3): X=258.5,Y=824.5 (should be at cap-height 825?)
-
-	* Ntilde (U+00D1): X=283.5,Y=824.5 (should be at cap-height 825?) 
-
-	* And 21 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BEB (U+0BEB): L<<536.0,192.0>--<533.0,181.0>> -> L<<533.0,181.0>--<495.0,0.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<532.0,192.0>--<530.0,181.0>> -> L<<530.0,181.0>--<492.0,0.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* M (U+004D): L<<551.0,115.0>--<551.0,630.0>>/L<<551.0,630.0>--<391.0,0.0>> = 14.250032697803595 
-
-	* And four (U+0034): B<<315.0,529.0>-<327.0,581.0>-<341.0,628.0>>/B<<341.0,628.0>-<330.0,605.0>-<315.0,578.5>> = 8.972626614896358 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedThin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-Thin.ttf. Got NotoSerifTamil-ExtraCondensedThin.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Thin' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=369.5,Y=-1.0 (should be at baseline 0?)
-
-	* b (U+0062): X=248.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=202.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=324.0,Y=544.0 (should be at x-height 542?)
-
-	* f (U+0066): X=221.0,Y=772.0 (should be at cap-height 771?)
-
-	* g (U+0067): X=301.0,Y=541.0 (should be at x-height 542?)
-
-	* g (U+0067): X=365.5,Y=543.5 (should be at x-height 542?)
-
-	* r (U+0072): X=243.0,Y=544.0 (should be at x-height 542?)
-
-	* s (U+0073): X=164.0,Y=541.0 (should be at x-height 542?)
-
-	* sterling (U+00A3): X=272.5,Y=-2.0 (should be at baseline 0?) 
-
-	* And 31 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* uni2074 (U+2074): B<<175.0,732.0>-<176.0,755.0>-<177.0,775.0>>/B<<177.0,775.0>-<175.0,768.0>-<167.5,751.5>> = 13.08299067481109 
-
-	* And uni2084 (U+2084): B<<175.0,247.0>-<176.0,270.0>-<177.0,290.0>>/B<<177.0,290.0>-<175.0,283.0>-<167.5,266.5>> = 13.08299067481109 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<375.0,362.0>--<373.0,25.0>>
-
-	* E (U+0045): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Eacute (U+00C9): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Ecaron (U+011A): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Ecircumflex (U+00CA): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Edieresis (U+00CB): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Edotaccent (U+0116): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Egrave (U+00C8): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Emacron (U+0112): L<<137.0,362.0>--<135.0,25.0>>
-
-	* Eogonek (U+0118): L<<137.0,362.0>--<135.0,25.0>> 
-
-	* And 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraCondensedThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilExtraCondensed-ThinItalic.ttf. Got NotoSerifTamil-ExtraCondensedThinItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil ExtraCondensed Thin' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=369.5,Y=-1.0 (should be at baseline 0?)
-
-	* b (U+0062): X=248.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=202.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=324.0,Y=544.0 (should be at x-height 542?)
-
-	* f (U+0066): X=221.0,Y=772.0 (should be at cap-height 771?)
-
-	* g (U+0067): X=301.0,Y=541.0 (should be at x-height 542?)
-
-	* g (U+0067): X=365.5,Y=543.5 (should be at x-height 542?)
-
-	* r (U+0072): X=243.0,Y=544.0 (should be at x-height 542?)
-
-	* s (U+0073): X=164.0,Y=541.0 (should be at x-height 542?)
-
-	* sterling (U+00A3): X=272.5,Y=-2.0 (should be at baseline 0?) 
-
-	* And 31 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<272.0,23.0>--<276.0,42.0>> -> L<<276.0,42.0>--<277.0,47.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<337.5,606.0>-<346.0,642.0>-<353.0,665.0>>/B<<353.0,665.0>-<346.0,652.0>-<333.0,632.5>> = 11.373242701859299 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -4937,7 +924,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -4956,20 +942,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5000,7 +983,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* m (U+006D): X=330.0,Y=543.0 (should be at x-height 545?) 
 
-	* And 43 more.
+	* 43 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -5009,11 +992,21 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
 	* eth (U+00F0): B<<356.5,474.5>-<399.0,456.0>-<423.0,417.0>>/B<<423.0,417.0>-<401.0,487.0>-<370.5,540.5>> = 14.160313822966648 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-ExtraLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-ExtraLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5041,7 +1034,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5060,20 +1052,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5104,7 +1093,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* m (U+006D): X=330.0,Y=543.0 (should be at x-height 545?) 
 
-	* And 45 more.
+	* 45 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -5120,12 +1109,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* eth (U+00F0): B<<356.5,474.5>-<399.0,456.0>-<423.0,417.0>>/B<<423.0,417.0>-<401.0,487.0>-<370.5,540.5>> = 14.160313822966648 
 
-	* And three (U+0033): B<<427.5,442.5>-<381.0,387.0>-<288.0,375.0>>/B<<288.0,375.0>-<323.0,372.0>-<354.0,353.0>> = 12.251471813680151 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* three (U+0033): B<<427.5,442.5>-<381.0,387.0>-<288.0,375.0>>/B<<288.0,375.0>-<323.0,372.0>-<354.0,353.0>> = 12.251471813680151 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5156,7 +1155,6 @@ Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5175,20 +1173,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5219,7 +1214,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Gbreve (U+011E): X=519.0,Y=1.5 (should be at baseline 0?) 
 
-	* And 18 more.
+	* 18 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -5228,11 +1223,21 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
 	* uni0BF9 (U+0BF9): L<<664.0,197.0>--<659.0,171.0>> -> L<<659.0,171.0>--<652.0,138.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5270,7 +1275,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5289,20 +1293,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5333,7 +1334,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* aring (U+00E5): X=267.0,Y=814.0 (should be at cap-height 812?) 
 
-	* And 29 more.
+	* 29 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -5343,12 +1344,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* question (U+003F): L<<200.0,201.0>--<199.0,346.0>> 
 
-	* And questiondown (U+00BF): L<<203.0,215.0>--<204.0,333.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-LightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* questiondown (U+00BF): L<<203.0,215.0>--<204.0,333.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-LightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5386,7 +1397,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5405,20 +1415,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5449,7 +1456,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* ydieresis (U+00FF): X=269.0,Y=-1.0 (should be at baseline 0?) 
 
-	* And 25 more.
+	* 25 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -5458,11 +1465,21 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
 	* uni0BB4 (U+0BB4): L<<465.0,74.0>--<463.0,64.0>> -> L<<463.0,64.0>--<458.0,40.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5500,7 +1517,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5519,20 +1535,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5563,7 +1576,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=78.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 44 more.
+	* 44 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -5577,18 +1590,28 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni2074 (U+2074): B<<198.5,706.5>-<200.0,725.0>-<202.0,743.0>>/B<<202.0,743.0>-<199.0,735.0>-<194.5,726.5>> = 14.21585347367354 
 
-	* And uni2084 (U+2084): B<<198.5,221.5>-<200.0,240.0>-<202.0,258.0>>/B<<202.0,258.0>-<199.0,250.0>-<194.5,241.5>> = 14.21585347367354 [code: found-jaggy-segments]
+	* uni2084 (U+2084): B<<198.5,221.5>-<200.0,240.0>-<202.0,258.0>>/B<<202.0,258.0>-<199.0,250.0>-<194.5,241.5>> = 14.21585347367354 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<408.0,339.0>--<251.0,340.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-MediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-MediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5626,7 +1649,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5645,20 +1667,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5689,7 +1708,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=78.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 53 more.
+	* 53 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -5701,7 +1720,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni0BF0 (U+0BF0): L<<334.0,158.0>--<347.0,216.0>> -> L<<347.0,216.0>--<419.0,556.0>> 
 
-	* And uni0BF9 (U+0BF9): L<<684.0,195.0>--<678.0,167.0>> -> L<<678.0,167.0>--<673.0,142.0>> [code: found-colinear-vectors]
+	* uni0BF9 (U+0BF9): L<<684.0,195.0>--<678.0,167.0>> -> L<<678.0,167.0>--<673.0,142.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -5709,12 +1728,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni2074 (U+2074): B<<276.5,705.5>-<282.0,724.0>-<287.0,743.0>>/B<<287.0,743.0>-<282.0,734.0>-<271.5,721.0>> = 14.311041262606366 
 
-	* And uni2084 (U+2084): B<<186.5,219.5>-<192.0,238.0>-<197.0,257.0>>/B<<197.0,257.0>-<192.0,248.0>-<181.5,235.0>> = 14.311041262606366 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* uni2084 (U+2084): B<<186.5,219.5>-<192.0,238.0>-<197.0,257.0>>/B<<197.0,257.0>-<192.0,248.0>-<181.5,235.0>> = 14.311041262606366 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5745,7 +1774,6 @@ Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5764,20 +1792,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5808,7 +1833,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* Gbreve (U+011E): X=519.0,Y=1.5 (should be at baseline 0?) 
 
-	* And 17 more.
+	* 17 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -5818,12 +1843,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni0B99 (U+0B99): B<<630.5,86.0>-<598.0,62.0>-<560.0,54.0>>/L<<560.0,54.0>--<832.0,54.0>> = 11.888658039627968 
 
-	* And uni0BE9 (U+0BE9): B<<630.5,86.0>-<598.0,62.0>-<560.0,54.0>>/L<<560.0,54.0>--<884.0,54.0>> = 11.888658039627968 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* uni0BE9 (U+0BE9): B<<630.5,86.0>-<598.0,62.0>-<560.0,54.0>>/L<<560.0,54.0>--<884.0,54.0>> = 11.888658039627968 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5861,7 +1896,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -5880,20 +1914,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -5924,7 +1955,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* yacute (U+00FD): X=343.0,Y=-2.0 (should be at baseline 0?) 
 
-	* And 29 more.
+	* 29 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -5934,7 +1965,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni0B99 (U+0B99): B<<649.5,86.5>-<618.0,65.0>-<586.0,58.0>>/L<<586.0,58.0>--<838.0,58.0>> = 12.33908727832618 
 
-	* And uni0BE9 (U+0BE9): B<<643.5,86.5>-<612.0,65.0>-<580.0,58.0>>/L<<580.0,58.0>--<905.0,58.0>> = 12.33908727832618 [code: found-jaggy-segments]
+	* uni0BE9 (U+0BE9): B<<643.5,86.5>-<612.0,65.0>-<580.0,58.0>>/L<<580.0,58.0>--<905.0,58.0>> = 12.33908727832618 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
@@ -5942,12 +1973,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* h (U+0068): L<<104.0,119.0>--<103.0,648.0>> 
 
-	* And h (U+0068): L<<233.0,313.0>--<234.0,115.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* h (U+0068): L<<233.0,313.0>--<234.0,115.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[14] NotoSerifTamil-SemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -5985,7 +2026,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -6004,20 +2044,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -6048,7 +2085,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* ydieresis (U+00FF): X=254.0,Y=-2.0 (should be at baseline 0?) 
 
-	* And 28 more.
+	* 28 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -6060,7 +2097,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni0BEB (U+0BEB): L<<697.0,199.0>--<689.0,164.0>> -> L<<689.0,164.0>--<686.0,147.0>> 
 
-	* And uni0BF9 (U+0BF9): L<<710.0,193.0>--<702.0,159.0>> -> L<<702.0,159.0>--<700.0,147.0>> [code: found-colinear-vectors]
+	* uni0BF9 (U+0BF9): L<<710.0,193.0>--<702.0,159.0>> -> L<<702.0,159.0>--<700.0,147.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -6068,2104 +2105,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* uni2074 (U+2074): B<<283.5,703.0>-<289.0,720.0>-<294.0,739.0>>/B<<294.0,739.0>-<289.0,730.0>-<280.5,719.5>> = 14.311041262606366 
 
-	* And uni2084 (U+2084): B<<193.5,218.0>-<199.0,235.0>-<204.0,254.0>>/B<<204.0,254.0>-<199.0,245.0>-<190.5,234.5>> = 14.311041262606366 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-SemiCondensed.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
+	* uni2084 (U+2084): B<<193.5,218.0>-<199.0,235.0>-<204.0,254.0>>/B<<204.0,254.0>-<199.0,245.0>-<190.5,234.5>> = 14.311041262606366 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-Regular.ttf. Got NotoSerifTamil-SemiCondensed.ttf. [code: bad-filename]
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed' / SUBFAMILY_NAME = 'Regular'
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* comma (U+002C): X=105.5,Y=-1.0 (should be at baseline 0?)
-
-	* three (U+0033): X=312.5,Y=1.0 (should be at baseline 0?)
-
-	* nine (U+0039): X=128.5,Y=1.5 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=120.0,Y=-1.0 (should be at baseline 0?)
-
-	* G (U+0047): X=481.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=149.0,Y=2.0 (should be at baseline 0?)
-
-	* y (U+0079): X=241.0,Y=1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=309.0,Y=-1.0 (should be at baseline 0?)
-
-	* section (U+00A7): X=90.0,Y=2.0 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=174.0,Y=825.0 (should be at cap-height 824?) 
-
-	* And 33 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedBlack.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-Black.ttf. Got NotoSerifTamil-SemiCondensedBlack.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Black' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* five (U+0035): X=309.0,Y=-1.0 (should be at baseline 0?)
-
-	* J (U+004A): X=299.0,Y=1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=298.0,Y=-2.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=494.0,Y=2.0 (should be at baseline 0?)
-
-	* t (U+0074): X=345.0,Y=1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=308.0,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=438.5,Y=2.0 (should be at baseline 0?)
-
-	* Acircumflex (U+00C2): X=376.0,Y=862.0 (should be at cap-height 864?)
-
-	* Atilde (U+00C3): X=190.0,Y=864.5 (should be at cap-height 864?)
-
-	* Ecircumflex (U+00CA): X=299.0,Y=862.0 (should be at cap-height 864?) 
-
-	* And 32 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0B9A (U+0B9A): L<<233.0,345.0>--<234.0,345.0>> -> L<<234.0,345.0>--<357.0,345.0>>
-
-	* uni0BA4 (U+0BA4): L<<233.0,345.0>--<237.0,345.0>> -> L<<237.0,345.0>--<356.0,345.0>>
-
-	* uni0BEA (U+0BEA): L<<233.0,345.0>--<234.0,345.0>> -> L<<234.0,345.0>--<357.0,345.0>>
-
-	* uni0BEC (U+0BEC): L<<233.0,345.0>--<234.0,345.0>> -> L<<234.0,345.0>--<357.0,345.0>>
-
-	* uni0BEF (U+0BEF): L<<233.0,345.0>--<234.0,345.0>> -> L<<234.0,345.0>--<357.0,345.0>> 
-
-	* And uni0BF2 (U+0BF2): L<<245.0,345.0>--<248.0,345.0>> -> L<<248.0,345.0>--<369.0,345.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* y (U+0079): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511
-
-	* yacute (U+00FD): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511
-
-	* ycircumflex (U+0177): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511
-
-	* ydieresis (U+00FF): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511 
-
-	* And ygrave (U+1EF3): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* sterling (U+00A3): L<<425.0,335.0>--<276.0,336.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensedBlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-BlackItalic.ttf. Got NotoSerifTamil-SemiCondensedBlackItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Black' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* exclam (U+0021): X=220.5,Y=1.5 (should be at baseline 0?)
-
-	* period (U+002E): X=173.0,Y=1.5 (should be at baseline 0?)
-
-	* three (U+0033): X=317.5,Y=2.0 (should be at baseline 0?)
-
-	* colon (U+003A): X=185.5,Y=1.5 (should be at baseline 0?)
-
-	* question (U+003F): X=245.5,Y=1.5 (should be at baseline 0?)
-
-	* J (U+004A): X=299.0,Y=1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=298.0,Y=-2.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=494.0,Y=2.0 (should be at baseline 0?)
-
-	* t (U+0074): X=345.0,Y=1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=308.0,Y=-2.0 (should be at baseline 0?) 
-
-	* And 40 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<327.0,510.5>-<339.0,564.0>-<353.0,611.0>>/B<<353.0,611.0>-<337.0,583.0>-<316.0,550.0>> = 13.157542740014756
-
-	* y (U+0079): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511
-
-	* yacute (U+00FD): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511
-
-	* ycircumflex (U+0177): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511
-
-	* ydieresis (U+00FF): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511 
-
-	* And ygrave (U+1EF3): B<<315.5,183.0>-<321.0,155.0>-<322.0,137.0>>/B<<322.0,137.0>-<325.0,159.0>-<328.5,176.0>> = 10.944996138289511 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-Bold.ttf. Got NotoSerifTamil-SemiCondensedBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed' / SUBFAMILY_NAME = 'Bold'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* Q (U+0051): X=457.0,Y=-1.0 (should be at baseline 0?)
-
-	* a (U+0061): X=246.5,Y=-1.0 (should be at baseline 0?)
-
-	* j (U+006A): X=94.0,Y=-1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=112.0,Y=562.0 (should be at x-height 564?)
-
-	* t (U+0074): X=312.0,Y=-1.5 (should be at baseline 0?)
-
-	* y (U+0079): X=325.0,Y=2.0 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=183.5,Y=853.0 (should be at cap-height 851?)
-
-	* Aring (U+00C5): X=276.0,Y=850.0 (should be at cap-height 851?)
-
-	* Aring (U+00C5): X=434.5,Y=850.0 (should be at cap-height 851?)
-
-	* Ntilde (U+00D1): X=208.5,Y=853.0 (should be at cap-height 851?) 
-
-	* And 59 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BF8 (U+0BF8): L<<1587.0,61.0>--<1587.0,61.0>> -> L<<1587.0,61.0>--<1596.0,61.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* eogonek (U+0119): B<<244.5,-58.5>-<269.0,-26.0>-<303.0,-9.0>>/B<<303.0,-9.0>-<299.0,-10.0>-<294.5,-10.0>> = 12.528807709151492
-
-	* k (U+006B): B<<234.0,288.5>-<233.0,269.0>-<232.0,267.0>>/L<<232.0,267.0>--<348.0,409.0>> = 12.680383491819796
-
-	* uni0137 (U+0137): B<<234.0,288.5>-<233.0,269.0>-<232.0,267.0>>/L<<232.0,267.0>--<348.0,409.0>> = 12.680383491819796
-
-	* y (U+0079): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972
-
-	* yacute (U+00FD): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972
-
-	* ycircumflex (U+0177): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972
-
-	* ydieresis (U+00FF): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972 
-
-	* And ygrave (U+1EF3): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* h (U+0068): L<<237.0,310.0>--<238.0,117.0>> 
-
-	* And sterling (U+00A3): L<<400.0,341.0>--<253.0,342.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-BoldItalic.ttf. Got NotoSerifTamil-SemiCondensedBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed' / SUBFAMILY_NAME = 'Bold Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* three (U+0033): X=296.0,Y=2.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=457.0,Y=-1.0 (should be at baseline 0?)
-
-	* a (U+0061): X=246.5,Y=-1.0 (should be at baseline 0?)
-
-	* j (U+006A): X=94.0,Y=-1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=112.0,Y=562.0 (should be at x-height 564?)
-
-	* t (U+0074): X=312.0,Y=-1.5 (should be at baseline 0?)
-
-	* y (U+0079): X=325.0,Y=2.0 (should be at baseline 0?)
-
-	* braceleft (U+007B): X=235.5,Y=1.0 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=183.5,Y=853.0 (should be at cap-height 851?)
-
-	* Aring (U+00C5): X=276.0,Y=850.0 (should be at cap-height 851?) 
-
-	* And 49 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<524.0,117.0>--<521.0,105.0>> -> L<<521.0,105.0>--<512.0,61.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* eogonek (U+0119): B<<244.5,-58.5>-<269.0,-26.0>-<303.0,-9.0>>/B<<303.0,-9.0>-<299.0,-10.0>-<294.5,-10.0>> = 12.528807709151492
-
-	* four (U+0034): B<<336.5,521.0>-<349.0,574.0>-<363.0,620.0>>/B<<363.0,620.0>-<350.0,597.0>-<331.5,568.5>> = 12.54837593909866
-
-	* k (U+006B): B<<234.0,288.5>-<233.0,269.0>-<232.0,267.0>>/L<<232.0,267.0>--<348.0,409.0>> = 12.680383491819796
-
-	* uni0137 (U+0137): B<<234.0,288.5>-<233.0,269.0>-<232.0,267.0>>/L<<232.0,267.0>--<348.0,409.0>> = 12.680383491819796
-
-	* uni2074 (U+2074): B<<286.5,698.5>-<292.0,717.0>-<298.0,736.0>>/B<<298.0,736.0>-<292.0,726.0>-<284.0,716.5>> = 13.438188158350664
-
-	* uni2084 (U+2084): B<<194.5,213.5>-<200.0,232.0>-<206.0,251.0>>/B<<206.0,251.0>-<200.0,241.0>-<192.0,231.5>> = 13.438188158350664
-
-	* y (U+0079): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972
-
-	* yacute (U+00FD): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972
-
-	* ycircumflex (U+0177): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972
-
-	* ydieresis (U+00FF): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972 
-
-	* And ygrave (U+1EF3): B<<299.0,162.5>-<305.0,135.0>-<307.0,114.0>>/B<<307.0,114.0>-<310.0,137.0>-<317.0,162.0>> = 12.871740002177972 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-SemiCondensedExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-ExtraBold.ttf. Got NotoSerifTamil-SemiCondensedExtraBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed ExtraBold' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* five (U+0035): X=310.5,Y=0.5 (should be at baseline 0?)
-
-	* J (U+004A): X=113.0,Y=-2.0 (should be at baseline 0?)
-
-	* J (U+004A): X=283.0,Y=-1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=478.0,Y=1.0 (should be at baseline 0?)
-
-	* p (U+0070): X=249.5,Y=2.0 (should be at baseline 0?)
-
-	* t (U+0074): X=330.0,Y=-0.5 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=187.5,Y=859.5 (should be at cap-height 858?)
-
-	* Ntilde (U+00D1): X=207.5,Y=859.5 (should be at cap-height 858?)
-
-	* Otilde (U+00D5): X=204.5,Y=859.5 (should be at cap-height 858?)
-
-	* Abreve (U+0102): X=229.0,Y=858.5 (should be at cap-height 858?) 
-
-	* And 21 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BF8 (U+0BF8): L<<1615.0,67.0>--<1615.0,67.0>> -> L<<1615.0,67.0>--<1622.0,67.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* V (U+0056): B<<362.0,227.5>-<369.0,194.0>-<372.0,169.0>>/B<<372.0,169.0>-<375.0,192.0>-<383.0,222.0>> = 14.274181383803418
-
-	* y (U+0079): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212
-
-	* yacute (U+00FD): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212
-
-	* ycircumflex (U+0177): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212
-
-	* ydieresis (U+00FF): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212 
-
-	* And ygrave (U+1EF3): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* h (U+0068): L<<256.0,306.0>--<257.0,121.0>>
-
-	* sterling (U+00A3): L<<414.0,338.0>--<265.0,339.0>> 
-
-	* And uni0B8A (U+0B8A): L<<1227.0,452.0>--<1226.0,573.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedExtraBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-ExtraBoldItalic.ttf. Got NotoSerifTamil-SemiCondensedExtraBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed ExtraBold' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* exclam (U+0021): X=206.0,Y=1.0 (should be at baseline 0?)
-
-	* period (U+002E): X=162.0,Y=1.0 (should be at baseline 0?)
-
-	* three (U+0033): X=308.0,Y=2.0 (should be at baseline 0?)
-
-	* colon (U+003A): X=173.0,Y=1.0 (should be at baseline 0?)
-
-	* question (U+003F): X=239.0,Y=1.0 (should be at baseline 0?)
-
-	* J (U+004A): X=113.0,Y=-2.0 (should be at baseline 0?)
-
-	* J (U+004A): X=283.0,Y=-1.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=478.0,Y=1.0 (should be at baseline 0?)
-
-	* bracketleft (U+005B): X=218.0,Y=1.0 (should be at baseline 0?)
-
-	* p (U+0070): X=249.5,Y=2.0 (should be at baseline 0?) 
-
-	* And 25 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BF9 (U+0BF9): L<<674.0,170.0>--<670.0,152.0>> -> L<<670.0,152.0>--<638.0,0.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* V (U+0056): B<<362.0,227.5>-<369.0,194.0>-<372.0,169.0>>/B<<372.0,169.0>-<375.0,192.0>-<383.0,222.0>> = 14.274181383803418
-
-	* four (U+0034): B<<331.5,515.5>-<344.0,569.0>-<358.0,615.0>>/B<<358.0,615.0>-<343.0,589.0>-<323.0,558.0>> = 13.05412630470225
-
-	* y (U+0079): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212
-
-	* yacute (U+00FD): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212
-
-	* ycircumflex (U+0177): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212
-
-	* ydieresis (U+00FF): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212 
-
-	* And ygrave (U+1EF3): B<<308.0,173.5>-<314.0,146.0>-<315.0,126.0>>/B<<315.0,126.0>-<318.0,149.0>-<323.0,169.5>> = 10.293813197284212 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensedExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-ExtraLight.ttf. Got NotoSerifTamil-SemiCondensedExtraLight.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed ExtraLight' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* comma (U+002C): X=92.5,Y=1.0 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=105.5,Y=1.0 (should be at baseline 0?)
-
-	* G (U+0047): X=447.0,Y=-1.0 (should be at baseline 0?)
-
-	* a (U+0061): X=230.0,Y=543.0 (should be at x-height 545?)
-
-	* b (U+0062): X=302.0,Y=544.0 (should be at x-height 545?)
-
-	* c (U+0063): X=243.0,Y=543.0 (should be at x-height 545?)
-
-	* d (U+0064): X=237.0,Y=544.0 (should be at x-height 545?)
-
-	* e (U+0065): X=240.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=230.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=446.0,Y=545.5 (should be at x-height 545?) 
-
-	* And 45 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<461.0,359.0>--<460.0,30.0>>
-
-	* E (U+0045): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Eacute (U+00C9): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Ecaron (U+011A): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Ecircumflex (U+00CA): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Edieresis (U+00CB): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Edotaccent (U+0116): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Egrave (U+00C8): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Emacron (U+0112): L<<175.0,359.0>--<174.0,30.0>>
-
-	* Eogonek (U+0118): L<<175.0,359.0>--<174.0,30.0>> 
-
-	* And Euro (U+20AC): L<<318.0,272.0>--<153.0,273.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil-SemiCondensedExtraLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-ExtraLightItalic.ttf. Got NotoSerifTamil-SemiCondensedExtraLightItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed ExtraLight' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenleft (U+0028): X=65.5,Y=1.0 (should be at baseline 0?)
-
-	* G (U+0047): X=447.0,Y=-1.0 (should be at baseline 0?)
-
-	* a (U+0061): X=230.0,Y=543.0 (should be at x-height 545?)
-
-	* b (U+0062): X=302.0,Y=544.0 (should be at x-height 545?)
-
-	* c (U+0063): X=243.0,Y=543.0 (should be at x-height 545?)
-
-	* d (U+0064): X=237.0,Y=544.0 (should be at x-height 545?)
-
-	* e (U+0065): X=240.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=230.0,Y=543.0 (should be at x-height 545?)
-
-	* g (U+0067): X=446.0,Y=545.5 (should be at x-height 545?)
-
-	* h (U+0068): X=296.0,Y=543.0 (should be at x-height 545?) 
-
-	* And 38 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensedItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-Italic.ttf. Got NotoSerifTamil-SemiCondensedItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenright (U+0029): X=66.0,Y=-0.5 (should be at baseline 0?)
-
-	* comma (U+002C): X=64.5,Y=1.5 (should be at baseline 0?)
-
-	* three (U+0033): X=269.0,Y=2.0 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=82.0,Y=1.5 (should be at baseline 0?)
-
-	* G (U+0047): X=481.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=149.0,Y=2.0 (should be at baseline 0?)
-
-	* y (U+0079): X=241.0,Y=1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=309.0,Y=-1.0 (should be at baseline 0?)
-
-	* section (U+00A7): X=90.0,Y=2.0 (should be at baseline 0?)
-
-	* Atilde (U+00C3): X=280.5,Y=824.5 (should be at cap-height 824?) 
-
-	* And 35 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0B95 (U+0B95): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
-
-	* uni0B9A (U+0B9A): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
-
-	* uni0BA4 (U+0BA4): L<<219.0,317.0>--<224.0,317.0>> -> L<<224.0,317.0>--<357.0,317.0>>
-
-	* uni0BB4 (U+0BB4): L<<514.0,402.0>--<449.0,96.0>> -> L<<449.0,96.0>--<440.0,54.0>>
-
-	* uni0BE7 (U+0BE7): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
-
-	* uni0BEA (U+0BEA): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
-
-	* uni0BEC (U+0BEC): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
-
-	* uni0BEF (U+0BEF): L<<219.0,317.0>--<223.0,317.0>> -> L<<223.0,317.0>--<356.0,317.0>>
-
-	* uni0BF2 (U+0BF2): L<<212.0,317.0>--<217.0,317.0>> -> L<<217.0,317.0>--<350.0,317.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<609.0,204.0>--<602.0,170.0>> -> L<<602.0,170.0>--<598.0,152.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-Light.ttf. Got NotoSerifTamil-SemiCondensedLight.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Light' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* g (U+0067): X=458.0,Y=548.5 (should be at x-height 549?)
-
-	* g (U+0067): X=119.0,Y=1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=278.0,Y=1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=247.0,Y=-1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=297.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=324.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=71.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=424.0,Y=0.5 (should be at baseline 0?)
-
-	* yacute (U+00FD): X=247.0,Y=-1.0 (should be at baseline 0?)
-
-	* yacute (U+00FD): X=297.0,Y=-1.0 (should be at baseline 0?) 
-
-	* And 26 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BE7 (U+0BE7): L<<219.0,309.0>--<224.0,309.0>> -> L<<224.0,309.0>--<377.0,309.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* E (U+0045): L<<194.0,355.0>--<193.0,38.0>>
-
-	* Eacute (U+00C9): L<<194.0,355.0>--<193.0,38.0>>
-
-	* Ecaron (U+011A): L<<194.0,355.0>--<193.0,38.0>>
-
-	* Ecircumflex (U+00CA): L<<194.0,355.0>--<193.0,38.0>>
-
-	* Edieresis (U+00CB): L<<194.0,355.0>--<193.0,38.0>>
-
-	* Edotaccent (U+0116): L<<194.0,355.0>--<193.0,38.0>>
-
-	* Egrave (U+00C8): L<<194.0,355.0>--<193.0,38.0>>
-
-	* Emacron (U+0112): L<<194.0,355.0>--<193.0,38.0>> 
-
-	* And Eogonek (U+0118): L<<194.0,355.0>--<193.0,38.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedLightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-LightItalic.ttf. Got NotoSerifTamil-SemiCondensedLightItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Light' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenleft (U+0028): X=71.5,Y=-2.0 (should be at baseline 0?)
-
-	* g (U+0067): X=458.0,Y=548.5 (should be at x-height 549?)
-
-	* g (U+0067): X=119.0,Y=1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=278.0,Y=1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=247.0,Y=-1.0 (should be at baseline 0?)
-
-	* y (U+0079): X=297.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=324.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=71.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=424.0,Y=0.5 (should be at baseline 0?)
-
-	* uni00B2 (U+00B2): X=194.0,Y=808.0 (should be at cap-height 806?) 
-
-	* And 30 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0BB4 (U+0BB4): L<<420.0,74.0>--<416.0,55.0>> -> L<<416.0,55.0>--<413.0,40.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<361.5,566.0>-<373.0,613.0>-<385.0,656.0>>/B<<385.0,656.0>-<377.0,642.0>-<363.0,622.5>> = 14.15207035767584 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensedMedium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-Medium.ttf. Got NotoSerifTamil-SemiCondensedMedium.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Medium' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* comma (U+002C): X=108.0,Y=-1.0 (should be at baseline 0?)
-
-	* three (U+0033): X=314.5,Y=1.0 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=121.0,Y=-1.0 (should be at baseline 0?)
-
-	* G (U+0047): X=490.5,Y=2.0 (should be at baseline 0?)
-
-	* a (U+0061): X=250.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=293.0,Y=2.0 (should be at baseline 0?)
-
-	* g (U+0067): X=196.0,Y=2.0 (should be at baseline 0?)
-
-	* q (U+0071): X=376.5,Y=1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=97.0,Y=556.0 (should be at x-height 557?)
-
-	* y (U+0079): X=238.0,Y=-1.0 (should be at baseline 0?) 
-
-	* And 62 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* uni0B99 (U+0B99): B<<579.0,87.0>-<550.0,64.0>-<518.0,56.0>>/L<<518.0,56.0>--<753.0,56.0>> = 14.036243467926484 
-
-	* And uni0BE9 (U+0BE9): B<<577.5,87.0>-<548.0,64.0>-<516.0,56.0>>/L<<516.0,56.0>--<809.0,56.0>> = 14.036243467926484 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedMediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-MediumItalic.ttf. Got NotoSerifTamil-SemiCondensedMediumItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Medium' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* three (U+0033): X=276.5,Y=2.0 (should be at baseline 0?)
-
-	* G (U+0047): X=490.5,Y=2.0 (should be at baseline 0?)
-
-	* a (U+0061): X=250.5,Y=1.5 (should be at baseline 0?)
-
-	* g (U+0067): X=293.0,Y=2.0 (should be at baseline 0?)
-
-	* g (U+0067): X=196.0,Y=2.0 (should be at baseline 0?)
-
-	* q (U+0071): X=376.5,Y=1.0 (should be at baseline 0?)
-
-	* t (U+0074): X=97.0,Y=556.0 (should be at x-height 557?)
-
-	* y (U+0079): X=238.0,Y=-1.0 (should be at baseline 0?)
-
-	* Agrave (U+00C0): X=351.0,Y=829.0 (should be at cap-height 831?)
-
-	* Acircumflex (U+00C2): X=223.0,Y=829.0 (should be at cap-height 831?) 
-
-	* And 63 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0B95 (U+0B95): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
-
-	* uni0B9A (U+0B9A): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
-
-	* uni0BA4 (U+0BA4): L<<222.0,321.0>--<225.0,321.0>> -> L<<225.0,321.0>--<357.0,321.0>>
-
-	* uni0BB4 (U+0BB4): L<<533.0,404.0>--<470.0,102.0>> -> L<<470.0,102.0>--<460.0,56.0>>
-
-	* uni0BE7 (U+0BE7): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
-
-	* uni0BEA (U+0BEA): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
-
-	* uni0BEC (U+0BEC): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
-
-	* uni0BEF (U+0BEF): L<<221.0,321.0>--<224.0,321.0>> -> L<<224.0,321.0>--<356.0,321.0>>
-
-	* uni0BF2 (U+0BF2): L<<219.0,321.0>--<222.0,321.0>> -> L<<222.0,321.0>--<353.0,321.0>> 
-
-	* And uni0BF9 (U+0BF9): L<<625.0,199.0>--<618.0,168.0>> -> L<<618.0,168.0>--<615.0,153.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<345.5,531.5>-<358.0,584.0>-<372.0,630.0>>/B<<372.0,630.0>-<361.0,611.0>-<345.0,587.0>> = 13.141069757715401 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensedSemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-SemiBold.ttf. Got NotoSerifTamil-SemiCondensedSemiBold.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed SemiBold' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* comma (U+002C): X=111.0,Y=-2.0 (should be at baseline 0?)
-
-	* three (U+0033): X=318.0,Y=1.0 (should be at baseline 0?)
-
-	* semicolon (U+003B): X=121.5,Y=-2.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=439.0,Y=-2.0 (should be at baseline 0?)
-
-	* a (U+0061): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* t (U+0074): X=104.0,Y=559.0 (should be at x-height 560?)
-
-	* y (U+0079): X=319.0,Y=1.0 (should be at baseline 0?)
-
-	* agrave (U+00E0): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* aacute (U+00E1): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* acircumflex (U+00E2): X=248.0,Y=0.5 (should be at baseline 0?) 
-
-	* And 30 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* h (U+0068): L<<219.0,314.0>--<220.0,114.0>> 
-
-	* And sterling (U+00A3): L<<389.0,339.0>--<244.0,340.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedSemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-SemiBoldItalic.ttf. Got NotoSerifTamil-SemiCondensedSemiBoldItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed SemiBold' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* three (U+0033): X=286.0,Y=2.0 (should be at baseline 0?)
-
-	* Q (U+0051): X=439.0,Y=-2.0 (should be at baseline 0?)
-
-	* a (U+0061): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* t (U+0074): X=104.0,Y=559.0 (should be at x-height 560?)
-
-	* y (U+0079): X=319.0,Y=1.0 (should be at baseline 0?)
-
-	* agrave (U+00E0): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* aacute (U+00E1): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* acircumflex (U+00E2): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* atilde (U+00E3): X=248.0,Y=0.5 (should be at baseline 0?)
-
-	* adieresis (U+00E4): X=248.0,Y=0.5 (should be at baseline 0?) 
-
-	* And 20 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni0B95 (U+0B95): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
-
-	* uni0B9A (U+0B9A): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
-
-	* uni0BA4 (U+0BA4): L<<226.0,325.0>--<227.0,325.0>> -> L<<227.0,325.0>--<356.0,325.0>>
-
-	* uni0BB4 (U+0BB4): L<<495.0,109.0>--<489.0,81.0>> -> L<<489.0,81.0>--<485.0,58.0>>
-
-	* uni0BE7 (U+0BE7): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
-
-	* uni0BEA (U+0BEA): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
-
-	* uni0BEB (U+0BEB): L<<638.0,198.0>--<632.0,168.0>> -> L<<632.0,168.0>--<629.0,154.0>>
-
-	* uni0BEC (U+0BEC): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>>
-
-	* uni0BEF (U+0BEF): L<<225.0,325.0>--<226.0,325.0>> -> L<<226.0,325.0>--<355.0,325.0>> 
-
-	* And uni0BF2 (U+0BF2): L<<227.0,325.0>--<228.0,325.0>> -> L<<228.0,325.0>--<357.0,325.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* four (U+0034): B<<341.5,526.5>-<354.0,579.0>-<368.0,625.0>>/B<<368.0,625.0>-<356.0,604.0>-<338.5,578.0>> = 12.817368232795141 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-SemiCondensedThin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-Thin.ttf. Got NotoSerifTamil-SemiCondensedThin.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Thin' / SUBFAMILY_NAME = 'Regular'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=438.0,Y=-1.5 (should be at baseline 0?)
-
-	* b (U+0062): X=294.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=236.0,Y=543.0 (should be at x-height 542?)
-
-	* d (U+0064): X=392.0,Y=543.0 (should be at x-height 542?)
-
-	* g (U+0067): X=438.5,Y=544.0 (should be at x-height 542?)
-
-	* r (U+0072): X=283.0,Y=544.0 (should be at x-height 542?)
-
-	* y (U+0079): X=282.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=329.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=424.5,Y=-1.0 (should be at baseline 0?)
-
-	* Aring (U+00C5): X=186.0,Y=782.0 (should be at cap-height 784?) 
-
-	* And 39 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* eth (U+00F0): B<<326.0,470.0>-<366.0,450.0>-<389.0,410.0>>/B<<389.0,410.0>-<366.0,485.0>-<338.5,540.0>> = 12.849870866504741 [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* AE (U+00C6): L<<444.0,362.0>--<443.0,25.0>>
-
-	* OE (U+0152): L<<436.0,362.0>--<435.0,25.0>>
-
-	* exclam (U+0021): L<<139.0,714.0>--<136.0,167.0>> 
-
-	* And exclamdown (U+00A1): L<<112.0,-177.0>--<115.0,370.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-SemiCondensedThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "NotoSerifTamilSemiCondensed-ThinItalic.ttf. Got NotoSerifTamil-SemiCondensedThinItalic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
-
-
-* ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
- FONT_FAMILY_NAME = 'Noto Serif Tamil SemiCondensed Thin' / SUBFAMILY_NAME = 'Italic'
-
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- uni00A0.1
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0BBE, U+0BBF, U+0BC1, U+0BC2, U+0BD7 and U+A8F3 [code: non-mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* G (U+0047): X=438.0,Y=-1.5 (should be at baseline 0?)
-
-	* b (U+0062): X=294.0,Y=544.0 (should be at x-height 542?)
-
-	* d (U+0064): X=236.0,Y=543.0 (should be at x-height 542?)
-
-	* d (U+0064): X=392.0,Y=543.0 (should be at x-height 542?)
-
-	* g (U+0067): X=438.5,Y=544.0 (should be at x-height 542?)
-
-	* r (U+0072): X=283.0,Y=544.0 (should be at x-height 542?)
-
-	* y (U+0079): X=282.0,Y=-1.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=329.5,Y=-2.0 (should be at baseline 0?)
-
-	* sterling (U+00A3): X=424.5,Y=-1.0 (should be at baseline 0?)
-
-	* Aring (U+00C5): X=186.0,Y=782.0 (should be at cap-height 784?) 
-
-	* And 35 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* eth (U+00F0): B<<326.0,470.0>-<366.0,450.0>-<389.0,410.0>>/B<<389.0,410.0>-<366.0,485.0>-<338.5,540.0>> = 12.849870866504741 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -8187,7 +2142,6 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -8206,20 +2160,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -8250,7 +2201,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=362.5,Y=-1.5 (should be at baseline 0?) 
 
-	* And 32 more.
+	* 32 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -8260,7 +2211,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* eth (U+00F0): B<<385.5,450.5>-<412.0,431.0>-<428.0,400.0>>/B<<428.0,400.0>-<403.0,480.0>-<371.5,537.5>> = 9.945547575071476 
 
-	* And sterling (U+00A3): B<<192.0,89.0>-<173.0,58.0>-<145.0,40.0>>/L<<145.0,40.0>--<149.0,42.0>> = 6.170175095029526 [code: found-jaggy-segments]
+	* sterling (U+00A3): B<<192.0,89.0>-<173.0,58.0>-<145.0,40.0>>/L<<145.0,40.0>--<149.0,42.0>> = 6.170175095029526 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
@@ -8268,12 +2219,22 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* exclam (U+0021): L<<149.0,714.0>--<146.0,167.0>> 
 
-	* And exclamdown (U+00A1): L<<123.0,-177.0>--<126.0,370.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[9] NotoSerifTamil-ThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+	* exclamdown (U+00A1): L<<123.0,-177.0>--<126.0,370.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[11] NotoSerifTamil-ThinItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -8288,7 +2249,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
@@ -8307,20 +2267,17 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -8351,7 +2308,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* sterling (U+00A3): X=464.5,Y=-0.5 (should be at baseline 0?) 
 
-	* And 23 more.
+	* 23 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -8363,8 +2320,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* sterling (U+00A3): B<<192.0,89.0>-<173.0,58.0>-<145.0,40.0>>/L<<145.0,40.0>--<149.0,42.0>> = 6.170175095029526 
 
-	* And three (U+0033): B<<417.0,440.0>-<372.0,385.0>-<280.0,375.0>>/B<<280.0,375.0>-<313.0,372.0>-<343.0,353.0>> = 11.397876809426648 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil-Italic[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+	* three (U+0033): B<<417.0,440.0>-<372.0,385.0>-<280.0,375.0>>/B<<280.0,375.0>-<313.0,372.0>-<343.0,353.0>> = 11.397876809426648 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifTamil-Italic[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -8376,27 +2333,30 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
+
+
+* 🔥 **FAIL** Version number 2.0030059814453125 is equal to version on Google Fonts.
+* 🔥 **FAIL** Version number 2.0030059814453125 is equal to version on Google Fonts GitHub repo.
+</div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** name id 261 missing from name table
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Checking with ots-sanitize. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ots">com.google.fonts/check/ots</a>)</summary><div>
-
-
-* ⚠ **WARN** ots-sanitize passed this file, however warnings were printed:
-
-ERROR: STAT: Invalid nameID: 261
-ERROR: Table discarded
- [code: ots-sanitize-warn]
 </div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
@@ -8404,18 +2364,15 @@ ERROR: Table discarded
 
 	- uni00A0.1
  [code: unreachable-glyphs]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -8446,10 +2403,10 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* G (U+0047): X=519.0,Y=1.5 (should be at baseline 0?) 
 
-	* And 49 more.
+	* 49 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[10] NotoSerifTamil[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSerifTamil[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -8461,11 +2418,21 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1178, but got 1069 instead [code: ascent]
 * 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 635, but got 492 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -8477,18 +2444,15 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	- uni00A0.1
  [code: unreachable-glyphs]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 uni0BBE (U+0BBE), uni0BBF (U+0BBF), uni0BBF.alt01 (unencoded), uni0BBF.alt02 (unencoded), uni0BC1 (U+0BC1), uni0BC1.alt01 (unencoded), uni0BC1.alt02 (unencoded), uni0BC2 (U+0BC2), uni0BC2.alt01 (unencoded), uni0BC2.alt02 (unencoded), uni0BD7 (U+0BD7) and uniA8F3 (U+A8F3) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B) and 5 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -8519,16 +2483,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* s (U+0073): X=123.0,Y=2.0 (should be at baseline 0?) 
 
-	* And 50 more.
+	* 50 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><br></div></details>
+
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 6 | 132 | 715 | 8347 | 487 | 6016 | 0 |
-| 0% | 1% | 5% | 53% | 3% | 38% | 0% |
+| 6 | 64 | 198 | 2243 | 123 | 1902 | 0 |
+| 0% | 1% | 4% | 49% | 3% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

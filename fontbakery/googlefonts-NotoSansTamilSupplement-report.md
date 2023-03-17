@@ -1,8 +1,18 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.10
+Fontbakery version: 0.8.11
 
-<details><summary><b>[5] NotoSansTamilSupplement-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
+<details><summary><b>[8] NotoSansTamilSupplement-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+
+
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+</div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
@@ -30,19 +40,29 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
+
+
+* ⚠ **WARN** The most common width is 572 among a set of 6 math glyphs.
+The following math glyphs have a different width, though:
+
+Width = 322:
+minus
+ [code: width-outliers]
 </div></details><br></div></details>
+
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 5 | 111 | 7 | 104 | 0 |
-| 0% | 0% | 2% | 49% | 3% | 46% | 0% |
+| 0 | 2 | 6 | 116 | 7 | 111 | 0 |
+| 0% | 1% | 2% | 48% | 3% | 46% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
