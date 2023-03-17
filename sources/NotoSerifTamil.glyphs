@@ -1,5 +1,5 @@
 {
-.appVersion = "1296";
+.appVersion = "3180";
 classes = (
 {
 code = "iMatra-tamil iiMatra-tamil uMatra-tamil uuMatra-tamil";
@@ -66,30 +66,6 @@ value = (
 45,
 57
 );
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
 },
 {
 name = openTypeNameVersion;
@@ -361,27 +337,51 @@ zerowidthspace
 name = "Axis Mappings";
 value = {
 wdth = {
-"100.0" = 100;
-"62.5" = 70;
-"75.0" = 79;
-"87.5" = 89;
+70 = 62.5;
+79 = 75;
+89 = 87.5;
+100 = 100;
 };
 wght = {
-"100.0" = 28;
-"200.0" = 42;
-"300.0" = 64;
-"400.0" = 94;
-"500.0" = 110;
-"600.0" = 130;
-"700.0" = 152;
-"800.0" = 175;
-"900.0" = 194;
+28 = 100;
+42 = 200;
+64 = 300;
+94 = 400;
+110 = 500;
+130 = 600;
+152 = 700;
+175 = 800;
+194 = 900;
 };
 };
 },
 {
 name = "Disable Last Change";
 value = 1;
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+},
+{
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
+{
+name = trademark;
+value = "Noto is a trademark of Google Inc.";
+},
+{
+name = description;
+value = "Designed by Monotype design team.";
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
+name = versionString;
+value = "Version 2.003";
 },
 {
 name = Axes;
@@ -409,7 +409,7 @@ code = "languagesystem DFLT dflt;\012languagesystem latn dflt;\012languagesystem
 name = Languagesystems;
 },
 {
-code = "table GDEF {\012  # automatic\012  GlyphClassDef\012    [a-tamil aa-tamil i-tamil ii-tamil u-tamil uu-tamil e-tamil ee-tamil ai-tamil o-tamil oo-tamil au-tamil oMatra-tamil ooMatra-tamil auMatra-tamil ka-tamil nga-tamil ca-tamil nya-tamil tta-tamil nna-tamil ta-tamil na-tamil pa-tamil ma-tamil ya-tamil ra-tamil la-tamil va-tamil llla-tamil lla-tamil rra-tamil nnna-tamil ja-tamil sha-tamil ssa-tamil sa-tamil ha-tamil kssa-tamil seven-tamil month-tamil year-tamil credit-tamil number-tamil dottedCircle tti-tamil li-tamil si-tamil kii-tamil ngii-tamil cii-tamil nyii-tamil ttii-tamil nnii-tamil tii-tamil nii-tamil pii-tamil mii-tamil yii-tamil rii-tamil lii-tamil vii-tamil lllii-tamil llii-tamil rrii-tamil nnnii-tamil jii-tamil shii-tamil ssii-tamil sii-tamil hii-tamil kssii-tamil ku-tamil ngu-tamil cu-tamil nyu-tamil ttu-tamil nnu-tamil tu-tamil nu-tamil pu-tamil mu-tamil yu-tamil ru-tamil lu-tamil vu-tamil lllu-tamil llu-tamil rru-tamil nnnu-tamil kuu-tamil nguu-tamil cuu-tamil nyuu-tamil ttuu-tamil nnuu-tamil tuu-tamil nuu-tamil puu-tamil muu-tamil yuu-tamil ruu-tamil luu-tamil vuu-tamil llluu-tamil lluu-tamil rruu-tamil nnnuu-tamil shrii-tamil], # Base\012    , # Liga\012    [aaMatra-tamil iMatra-tamil iiMatra-tamil uMatra-tamil uuMatra-tamil aulengthmark-tamil anusvara-tamil halant-tamil iMatra-tamil.alt01 iMatra-tamil.alt02   uMatra-tamil.alt01 uMatra-tamil.alt02 uuMatra-tamil.alt01 uuMatra-tamil.alt02 udatta-deva anudatta-deva doubleSvarita-vedic u11301 u1133B nukta-grantha candrabinduhalant-deva candrabindu_0951_tamil candrabindu_1CDA_tamil anusvara-tamil.alt], # Mark\012    ;\012} GDEF;\012";
+code = "";
 name = "<anonymous>";
 }
 );
@@ -580,11 +580,15 @@ value = "536";
 );
 descender = -477;
 horizontalStems = (
-24
+24,
+0,
+0
 );
 id = "B9BAA477-AC00-41F5-873D-D03D7AD3C433";
 verticalStems = (
-28
+28,
+0,
+0
 );
 weight = Light;
 weightValue = 28;
@@ -735,12 +739,14 @@ value = "536";
 descender = -547;
 horizontalStems = (
 54,
-90
+90,
+0
 );
 id = "D3EA08CA-27AC-4041-9CDE-8C39489C921C";
 verticalStems = (
 61,
-93
+93,
+0
 );
 weightValue = 94;
 xHeight = 554;
@@ -890,12 +896,14 @@ value = "536";
 descender = -597;
 horizontalStems = (
 61,
-122
+122,
+0
 );
 id = "6525706B-2ED0-4F51-A466-C79C9F0D855A";
 verticalStems = (
 70,
-161
+161,
+0
 );
 weight = SemiBold;
 weightValue = 152;
@@ -1046,12 +1054,14 @@ value = "536";
 descender = -635;
 horizontalStems = (
 69,
-157
+157,
+0
 );
 id = "DB00C563-D9ED-4234-8230-88DFFBF56BAD";
 verticalStems = (
 86,
-197
+197,
+0
 );
 weight = Bold;
 weightValue = 194;
@@ -1202,11 +1212,14 @@ value = "536";
 descender = -438;
 horizontalStems = (
 23,
-30
+30,
+0
 );
 id = "5A888C56-A915-4019-8CEA-AFD77EBC0903";
 verticalStems = (
-29
+29,
+0,
+0
 );
 weight = Light;
 weightValue = 28;
@@ -1359,12 +1372,14 @@ value = "536";
 descender = -523;
 horizontalStems = (
 54,
-90
+90,
+0
 );
 id = "08F935B0-92DE-4692-85BF-2B23B5078C15";
 verticalStems = (
 61,
-128
+128,
+0
 );
 weightValue = 94;
 width = Condensed;
@@ -1516,12 +1531,14 @@ value = "536";
 descender = -370;
 horizontalStems = (
 62,
-121
+121,
+0
 );
 id = "FC77071B-C743-4DEF-9CC8-C09755F537EA";
 verticalStems = (
 85,
-145
+145,
+0
 );
 weight = SemiBold;
 weightValue = 152;
@@ -1895,7 +1912,6 @@ vertWidth = 0;
 width = 625;
 }
 );
-note = "";
 },
 {
 glyphname = CR;
@@ -1941,7 +1957,6 @@ vertWidth = 0;
 width = 260;
 }
 );
-note = "";
 unicode = 000D;
 },
 {
@@ -1988,7 +2003,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 0000;
 },
 {
@@ -7968,7 +7982,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 0952;
 script = tamil;
 category = Mark;
@@ -11567,7 +11580,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 005E;
 },
 {
@@ -11878,7 +11890,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 007E;
 },
 {
@@ -12126,7 +12137,6 @@ width = 419;
 }
 );
 leftKerningGroup = quoteright;
-note = "";
 rightKerningGroup = P;
 unicode = 002A;
 },
@@ -15119,7 +15129,6 @@ vertWidth = 0;
 width = 240;
 }
 );
-note = "";
 unicode = 005C;
 },
 {
@@ -15254,7 +15263,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 007C;
 },
 {
@@ -15645,7 +15653,6 @@ vertWidth = 0;
 width = 376;
 }
 );
-note = "";
 rightKerningGroup = parenleft;
 unicode = 007B;
 },
@@ -16038,7 +16045,6 @@ width = 376;
 }
 );
 leftKerningGroup = parenright;
-note = "";
 unicode = 007D;
 },
 {
@@ -16253,7 +16259,6 @@ vertWidth = 0;
 width = 379;
 }
 );
-note = "";
 rightKerningGroup = parenleft;
 unicode = 005B;
 },
@@ -16470,7 +16475,6 @@ width = 379;
 }
 );
 leftKerningGroup = parenright;
-note = "";
 unicode = 005D;
 },
 {
@@ -17240,7 +17244,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 script = tamil;
 category = Mark;
 subCategory = Nonspacing;
@@ -17417,7 +17420,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 script = tamil;
 category = Mark;
 subCategory = Nonspacing;
@@ -19170,7 +19172,6 @@ width = 265;
 }
 );
 leftKerningGroup = colon;
-note = "";
 rightKerningGroup = colon;
 unicode = 003A;
 },
@@ -19403,7 +19404,6 @@ width = 273;
 }
 );
 leftKerningGroup = period;
-note = "";
 rightKerningGroup = comma;
 unicode = 002C;
 },
@@ -21999,7 +21999,6 @@ vertWidth = 0;
 width = 294;
 }
 );
-note = "";
 unicode = 0964;
 userData = {
 com.typemytype.robofont.layerData = {
@@ -23051,7 +23050,6 @@ vertWidth = 0;
 width = 547;
 }
 );
-note = "";
 unicode = 0965;
 userData = {
 com.typemytype.robofont.layerData = {
@@ -23935,7 +23933,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 00F7;
 },
 {
@@ -26351,7 +26348,6 @@ vertWidth = 0;
 width = 594;
 }
 );
-note = "";
 unicode = 25CC;
 userData = {
 com.schriftgestaltung.Glyphs.ColorIndex = 6;
@@ -27175,9 +27171,14 @@ unicode = 0B8E;
 },
 {
 glyphname = "eMatra-tamil";
-production = uni0BC6;
 layers = (
 {
+anchors = (
+{
+name = nukta;
+position = "{405, 0}";
+}
+);
 layerId = "B9BAA477-AC00-41F5-873D-D03D7AD3C433";
 paths = (
 {
@@ -27230,6 +27231,12 @@ vertWidth = 0;
 width = 811;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{439, 0}";
+}
+);
 layerId = "D3EA08CA-27AC-4041-9CDE-8C39489C921C";
 paths = (
 {
@@ -27282,6 +27289,12 @@ vertWidth = 0;
 width = 878;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{452, 0}";
+}
+);
 layerId = "6525706B-2ED0-4F51-A466-C79C9F0D855A";
 paths = (
 {
@@ -27334,6 +27347,12 @@ vertWidth = 0;
 width = 905;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{459, 0}";
+}
+);
 layerId = "DB00C563-D9ED-4234-8230-88DFFBF56BAD";
 paths = (
 {
@@ -27386,6 +27405,12 @@ vertWidth = 0;
 width = 919;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{302, 0}";
+}
+);
 layerId = "5A888C56-A915-4019-8CEA-AFD77EBC0903";
 paths = (
 {
@@ -27438,6 +27463,12 @@ vertWidth = 0;
 width = 604;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{324, 0}";
+}
+);
 layerId = "08F935B0-92DE-4692-85BF-2B23B5078C15";
 paths = (
 {
@@ -27490,6 +27521,12 @@ vertWidth = 0;
 width = 649;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{340, 0}";
+}
+);
 layerId = "FC77071B-C743-4DEF-9CC8-C09755F537EA";
 paths = (
 {
@@ -27542,6 +27579,12 @@ vertWidth = 0;
 width = 681;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{350, 0}";
+}
+);
 layerId = "7D76D23B-B1EB-4058-BE82-8D4D6B2869EA";
 paths = (
 {
@@ -27599,6 +27642,8 @@ note = uni0BC6;
 rightKerningGroup = "iMatra-tamil";
 rightMetricsKey = "iMatra-tamil";
 unicode = 0BC6;
+category = Letter;
+subCategory = Other;
 userData = {
 com.typemytype.robofont.layerData = {
 "Regular Nov 6 15, 15:58" = {
@@ -29420,9 +29465,14 @@ width = 1922;
 },
 {
 glyphname = "eeMatra-tamil";
-production = uni0BC7;
 layers = (
 {
+anchors = (
+{
+name = nukta;
+position = "{297, 0}";
+}
+);
 layerId = "B9BAA477-AC00-41F5-873D-D03D7AD3C433";
 paths = (
 {
@@ -29485,6 +29535,12 @@ vertWidth = 0;
 width = 594;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{322, 0}";
+}
+);
 layerId = "D3EA08CA-27AC-4041-9CDE-8C39489C921C";
 paths = (
 {
@@ -29547,6 +29603,12 @@ vertWidth = 0;
 width = 645;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{351, 0}";
+}
+);
 layerId = "6525706B-2ED0-4F51-A466-C79C9F0D855A";
 paths = (
 {
@@ -29609,6 +29671,12 @@ vertWidth = 0;
 width = 702;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{359, 0}";
+}
+);
 layerId = "DB00C563-D9ED-4234-8230-88DFFBF56BAD";
 paths = (
 {
@@ -29671,6 +29739,12 @@ vertWidth = 0;
 width = 718;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{222, 0}";
+}
+);
 layerId = "5A888C56-A915-4019-8CEA-AFD77EBC0903";
 paths = (
 {
@@ -29733,6 +29807,12 @@ vertWidth = 0;
 width = 445;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{246, 0}";
+}
+);
 layerId = "08F935B0-92DE-4692-85BF-2B23B5078C15";
 paths = (
 {
@@ -29795,6 +29875,12 @@ vertWidth = 0;
 width = 492;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{262, 0}";
+}
+);
 layerId = "FC77071B-C743-4DEF-9CC8-C09755F537EA";
 paths = (
 {
@@ -29857,6 +29943,12 @@ vertWidth = 0;
 width = 525;
 },
 {
+anchors = (
+{
+name = nukta;
+position = "{273, 0}";
+}
+);
 layerId = "7D76D23B-B1EB-4058-BE82-8D4D6B2869EA";
 paths = (
 {
@@ -29923,6 +30015,8 @@ leftKerningGroup = "eMatra-tamil";
 note = uni0BC7;
 rightKerningGroup = "eeMatra-tamil";
 unicode = 0BC7;
+category = Letter;
+subCategory = Other;
 userData = {
 com.typemytype.robofont.layerData = {
 "Regular Nov 6 15, 16:31" = {
@@ -31375,7 +31469,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0038;
 },
 {
@@ -32307,7 +32400,6 @@ width = 794;
 }
 );
 leftKerningGroup = period;
-note = "";
 rightKerningGroup = comma;
 unicode = 2026;
 },
@@ -32444,7 +32536,6 @@ width = 1000;
 }
 );
 leftKerningGroup = hyphen;
-note = "";
 rightKerningGroup = hyphen;
 unicode = 2014;
 },
@@ -32581,7 +32672,6 @@ width = 500;
 }
 );
 leftKerningGroup = hyphen;
-note = "";
 rightKerningGroup = hyphen;
 unicode = 2013;
 },
@@ -32789,7 +32879,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 003D;
 },
 {
@@ -33061,7 +33150,6 @@ width = 349;
 }
 );
 leftKerningGroup = exclam;
-note = "";
 rightKerningGroup = exclam;
 unicode = 0021;
 },
@@ -33469,7 +33557,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0035;
 },
 {
@@ -34700,7 +34787,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0034;
 },
 {
@@ -35231,7 +35317,6 @@ vertWidth = 0;
 width = 334;
 }
 );
-note = "";
 unicode = 2084;
 },
 {
@@ -35615,7 +35700,6 @@ vertWidth = 0;
 width = 334;
 }
 );
-note = "";
 unicode = 2074;
 },
 {
@@ -35774,7 +35858,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 003E;
 },
 {
@@ -39641,7 +39724,6 @@ width = 259;
 }
 );
 leftKerningGroup = hyphen;
-note = "";
 rightKerningGroup = hyphen;
 unicode = 002D;
 },
@@ -39730,7 +39812,6 @@ vertWidth = 0;
 width = 259;
 }
 );
-note = "";
 unicode = 2010;
 },
 {
@@ -56647,7 +56728,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 003C;
 },
 {
@@ -62022,6 +62102,10 @@ name = bottom;
 position = "{467, 0}";
 },
 {
+name = imatra;
+position = "{821, 542}";
+},
+{
 name = nukta;
 position = "{467, -286}";
 },
@@ -62032,10 +62116,6 @@ position = "{498, 542}";
 {
 name = vedic;
 position = "{479, 542}";
-},
-{
-name = imatra;
-position = "{821, 542}";
 }
 );
 components = (
@@ -62099,6 +62179,10 @@ name = bottom;
 position = "{462, 0}";
 },
 {
+name = imatra;
+position = "{791, 554}";
+},
+{
 name = nukta;
 position = "{462, -335}";
 },
@@ -62109,10 +62193,6 @@ position = "{498, 554}";
 {
 name = vedic;
 position = "{479, 554}";
-},
-{
-name = imatra;
-position = "{791, 554}";
 }
 );
 components = (
@@ -62176,6 +62256,10 @@ name = bottom;
 position = "{487, 0}";
 },
 {
+name = imatra;
+position = "{906, 563}";
+},
+{
 name = nukta;
 position = "{487, -380}";
 },
@@ -62186,10 +62270,6 @@ position = "{558, 563}";
 {
 name = vedic;
 position = "{503, 563}";
-},
-{
-name = imatra;
-position = "{906, 563}";
 }
 );
 components = (
@@ -62253,6 +62333,10 @@ name = bottom;
 position = "{538, 0}";
 },
 {
+name = imatra;
+position = "{942, 584}";
+},
+{
 name = nukta;
 position = "{537, -395}";
 },
@@ -62263,10 +62347,6 @@ position = "{487, 584}";
 {
 name = vedic;
 position = "{512, 584}";
-},
-{
-name = imatra;
-position = "{942, 584}";
 }
 );
 components = (
@@ -62330,6 +62410,10 @@ name = bottom;
 position = "{325, 0}";
 },
 {
+name = imatra;
+position = "{590, 542}";
+},
+{
 name = nukta;
 position = "{337, -237}";
 },
@@ -62340,10 +62424,6 @@ position = "{364, 542}";
 {
 name = vedic;
 position = "{351, 542}";
-},
-{
-name = imatra;
-position = "{590, 542}";
 }
 );
 components = (
@@ -62407,6 +62487,10 @@ name = bottom;
 position = "{337, 0}";
 },
 {
+name = imatra;
+position = "{610, 554}";
+},
+{
 name = nukta;
 position = "{336, -286}";
 },
@@ -62417,10 +62501,6 @@ position = "{384, 554}";
 {
 name = vedic;
 position = "{359, 554}";
-},
-{
-name = imatra;
-position = "{610, 554}";
 }
 );
 components = (
@@ -62484,6 +62564,10 @@ name = bottom;
 position = "{373, 0}";
 },
 {
+name = imatra;
+position = "{681, 565}";
+},
+{
 name = nukta;
 position = "{377, -309}";
 },
@@ -62494,10 +62578,6 @@ position = "{400, 565}";
 {
 name = vedic;
 position = "{375, 565}";
-},
-{
-name = imatra;
-position = "{681, 565}";
 }
 );
 components = (
@@ -62561,6 +62641,10 @@ name = bottom;
 position = "{389, 0}";
 },
 {
+name = imatra;
+position = "{725, 576}";
+},
+{
 name = nukta;
 position = "{384, -331}";
 },
@@ -62571,10 +62655,6 @@ position = "{411, 576}";
 {
 name = vedic;
 position = "{386, 576}";
-},
-{
-name = imatra;
-position = "{725, 576}";
 }
 );
 components = (
@@ -63356,6 +63436,10 @@ name = bottom;
 position = "{467, 0}";
 },
 {
+name = imatra;
+position = "{821, 542}";
+},
+{
 name = nukta;
 position = "{467, -286}";
 },
@@ -63366,10 +63450,6 @@ position = "{729, 872}";
 {
 name = vedic;
 position = "{479, 542}";
-},
-{
-name = imatra;
-position = "{821, 542}";
 }
 );
 components = (
@@ -63437,6 +63517,10 @@ name = bottom;
 position = "{462, 0}";
 },
 {
+name = imatra;
+position = "{791, 554}";
+},
+{
 name = nukta;
 position = "{462, -335}";
 },
@@ -63447,10 +63531,6 @@ position = "{761, 882}";
 {
 name = vedic;
 position = "{479, 554}";
-},
-{
-name = imatra;
-position = "{791, 554}";
 }
 );
 components = (
@@ -63518,6 +63598,10 @@ name = bottom;
 position = "{487, 0}";
 },
 {
+name = imatra;
+position = "{906, 563}";
+},
+{
 name = nukta;
 position = "{487, -380}";
 },
@@ -63528,10 +63612,6 @@ position = "{846, 904}";
 {
 name = vedic;
 position = "{503, 563}";
-},
-{
-name = imatra;
-position = "{906, 563}";
 }
 );
 components = (
@@ -63599,6 +63679,10 @@ name = bottom;
 position = "{538, 0}";
 },
 {
+name = imatra;
+position = "{942, 584}";
+},
+{
 name = nukta;
 position = "{537, -395}";
 },
@@ -63609,10 +63693,6 @@ position = "{889, 945}";
 {
 name = vedic;
 position = "{512, 584}";
-},
-{
-name = imatra;
-position = "{942, 584}";
 }
 );
 components = (
@@ -63680,6 +63760,10 @@ name = bottom;
 position = "{325, 0}";
 },
 {
+name = imatra;
+position = "{590, 542}";
+},
+{
 name = nukta;
 position = "{337, -237}";
 },
@@ -63690,10 +63774,6 @@ position = "{532, 872}";
 {
 name = vedic;
 position = "{351, 542}";
-},
-{
-name = imatra;
-position = "{590, 542}";
 }
 );
 components = (
@@ -63761,6 +63841,10 @@ name = bottom;
 position = "{337, 0}";
 },
 {
+name = imatra;
+position = "{610, 554}";
+},
+{
 name = nukta;
 position = "{336, -286}";
 },
@@ -63771,10 +63855,6 @@ position = "{575, 875}";
 {
 name = vedic;
 position = "{359, 554}";
-},
-{
-name = imatra;
-position = "{610, 554}";
 }
 );
 components = (
@@ -63842,6 +63922,10 @@ name = bottom;
 position = "{373, 0}";
 },
 {
+name = imatra;
+position = "{681, 565}";
+},
+{
 name = nukta;
 position = "{377, -309}";
 },
@@ -63852,10 +63936,6 @@ position = "{634, 902}";
 {
 name = vedic;
 position = "{375, 565}";
-},
-{
-name = imatra;
-position = "{681, 565}";
 }
 );
 components = (
@@ -63923,6 +64003,10 @@ name = bottom;
 position = "{389, 0}";
 },
 {
+name = imatra;
+position = "{725, 576}";
+},
+{
 name = nukta;
 position = "{384, -331}";
 },
@@ -63933,10 +64017,6 @@ position = "{674, 929}";
 {
 name = vedic;
 position = "{386, 576}";
-},
-{
-name = imatra;
-position = "{725, 576}";
 }
 );
 components = (
@@ -66895,6 +66975,10 @@ name = bottom;
 position = "{798, 0}";
 },
 {
+name = imatra;
+position = "{1325, 542}";
+},
+{
 name = nukta;
 position = "{795, -278}";
 },
@@ -66905,10 +66989,6 @@ position = "{887, 542}";
 {
 name = vedic;
 position = "{818, 542}";
-},
-{
-name = imatra;
-position = "{1325, 542}";
 }
 );
 components = (
@@ -66969,6 +67049,10 @@ name = bottom;
 position = "{831, 0}";
 },
 {
+name = imatra;
+position = "{1389, 554}";
+},
+{
 name = nukta;
 position = "{831, -297}";
 },
@@ -66979,10 +67063,6 @@ position = "{907, 554}";
 {
 name = vedic;
 position = "{821, 554}";
-},
-{
-name = imatra;
-position = "{1389, 554}";
 }
 );
 components = (
@@ -67043,6 +67123,10 @@ name = bottom;
 position = "{869, 0}";
 },
 {
+name = imatra;
+position = "{1374, 563}";
+},
+{
 name = nukta;
 position = "{869, -324}";
 },
@@ -67053,10 +67137,6 @@ position = "{929, 563}";
 {
 name = vedic;
 position = "{875, 563}";
-},
-{
-name = imatra;
-position = "{1374, 563}";
 }
 );
 components = (
@@ -67117,6 +67197,10 @@ name = bottom;
 position = "{1091, 0}";
 },
 {
+name = imatra;
+position = "{1517, 584}";
+},
+{
 name = nukta;
 position = "{1021, -336}";
 },
@@ -67127,10 +67211,6 @@ position = "{1070, 584}";
 {
 name = vedic;
 position = "{1004, 584}";
-},
-{
-name = imatra;
-position = "{1517, 584}";
 }
 );
 components = (
@@ -67191,6 +67271,10 @@ name = bottom;
 position = "{584, 0}";
 },
 {
+name = imatra;
+position = "{963, 542}";
+},
+{
 name = nukta;
 position = "{585, -217}";
 },
@@ -67201,10 +67285,6 @@ position = "{646, 542}";
 {
 name = vedic;
 position = "{595, 542}";
-},
-{
-name = imatra;
-position = "{963, 542}";
 }
 );
 components = (
@@ -67265,6 +67345,10 @@ name = bottom;
 position = "{618, 0}";
 },
 {
+name = imatra;
+position = "{997, 554}";
+},
+{
 name = nukta;
 position = "{619, -254}";
 },
@@ -67275,10 +67359,6 @@ position = "{667, 554}";
 {
 name = vedic;
 position = "{616, 554}";
-},
-{
-name = imatra;
-position = "{997, 554}";
 }
 );
 components = (
@@ -67339,6 +67419,10 @@ name = bottom;
 position = "{725, 0}";
 },
 {
+name = imatra;
+position = "{1102, 565}";
+},
+{
 name = nukta;
 position = "{725, -296}";
 },
@@ -67349,10 +67433,6 @@ position = "{775, 565}";
 {
 name = vedic;
 position = "{723, 565}";
-},
-{
-name = imatra;
-position = "{1102, 565}";
 }
 );
 components = (
@@ -67413,6 +67493,10 @@ name = bottom;
 position = "{792, 0}";
 },
 {
+name = imatra;
+position = "{1168, 576}";
+},
+{
 name = nukta;
 position = "{792, -336}";
 },
@@ -67423,10 +67507,6 @@ position = "{843, 576}";
 {
 name = vedic;
 position = "{791, 576}";
-},
-{
-name = imatra;
-position = "{1168, 576}";
 }
 );
 components = (
@@ -68500,6 +68580,10 @@ name = bottom;
 position = "{926, 0}";
 },
 {
+name = imatra;
+position = "{1453, 542}";
+},
+{
 name = nukta;
 position = "{872, -278}";
 },
@@ -68510,10 +68594,6 @@ position = "{961, 542}";
 {
 name = vedic;
 position = "{946, 542}";
-},
-{
-name = imatra;
-position = "{1453, 542}";
 }
 );
 components = (
@@ -68592,6 +68672,10 @@ name = bottom;
 position = "{954, 0}";
 },
 {
+name = imatra;
+position = "{1585, 554}";
+},
+{
 name = nukta;
 position = "{954, -297}";
 },
@@ -68602,10 +68686,6 @@ position = "{1112, 554}";
 {
 name = vedic;
 position = "{917, 554}";
-},
-{
-name = imatra;
-position = "{1585, 554}";
 }
 );
 components = (
@@ -68684,6 +68764,10 @@ name = bottom;
 position = "{1003, 0}";
 },
 {
+name = imatra;
+position = "{1612, 563}";
+},
+{
 name = nukta;
 position = "{1003, -325}";
 },
@@ -68694,10 +68778,6 @@ position = "{1182, 563}";
 {
 name = vedic;
 position = "{994, 563}";
-},
-{
-name = imatra;
-position = "{1612, 563}";
 }
 );
 components = (
@@ -68776,6 +68856,10 @@ name = bottom;
 position = "{1327, 0}";
 },
 {
+name = imatra;
+position = "{1753, 584}";
+},
+{
 name = nukta;
 position = "{1166, -336}";
 },
@@ -68786,10 +68870,6 @@ position = "{1326, 584}";
 {
 name = vedic;
 position = "{1230, 584}";
-},
-{
-name = imatra;
-position = "{1753, 584}";
 }
 );
 components = (
@@ -68868,6 +68948,10 @@ name = bottom;
 position = "{678, 0}";
 },
 {
+name = imatra;
+position = "{1066, 542}";
+},
+{
 name = nukta;
 position = "{653, -217}";
 },
@@ -68878,10 +68962,6 @@ position = "{719, 542}";
 {
 name = vedic;
 position = "{685, 542}";
-},
-{
-name = imatra;
-position = "{1066, 542}";
 }
 );
 components = (
@@ -68960,6 +69040,10 @@ name = bottom;
 position = "{690, 0}";
 },
 {
+name = imatra;
+position = "{1134, 554}";
+},
+{
 name = nukta;
 position = "{691, -254}";
 },
@@ -68970,10 +69054,6 @@ position = "{810, 554}";
 {
 name = vedic;
 position = "{673, 554}";
-},
-{
-name = imatra;
-position = "{1134, 554}";
 }
 );
 components = (
@@ -69052,6 +69132,10 @@ name = bottom;
 position = "{935, 0}";
 },
 {
+name = imatra;
+position = "{1259, 565}";
+},
+{
 name = nukta;
 position = "{832, -265}";
 },
@@ -69062,10 +69146,6 @@ position = "{942, 565}";
 {
 name = vedic;
 position = "{866, 565}";
-},
-{
-name = imatra;
-position = "{1259, 565}";
 }
 );
 components = (
@@ -69144,6 +69224,10 @@ name = bottom;
 position = "{1088, 0}";
 },
 {
+name = imatra;
+position = "{1337, 576}";
+},
+{
 name = nukta;
 position = "{920, -275}";
 },
@@ -69154,10 +69238,6 @@ position = "{1026, 576}";
 {
 name = vedic;
 position = "{988, 576}";
-},
-{
-name = imatra;
-position = "{1337, 576}";
 }
 );
 components = (
@@ -74160,7 +74240,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 2212;
 },
 {
@@ -76333,7 +76412,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 00D7;
 },
 {
@@ -78724,6 +78802,10 @@ name = bottom;
 position = "{522, 0}";
 },
 {
+name = imatra;
+position = "{580, 542}";
+},
+{
 name = nukta;
 position = "{522, 0}";
 },
@@ -78734,10 +78816,6 @@ position = "{893, 872}";
 {
 name = vedic;
 position = "{510, 542}";
-},
-{
-name = imatra;
-position = "{580, 542}";
 }
 );
 components = (
@@ -78803,6 +78881,10 @@ name = bottom;
 position = "{512, 0}";
 },
 {
+name = imatra;
+position = "{578, 554}";
+},
+{
 name = nukta;
 position = "{512, 0}";
 },
@@ -78813,10 +78895,6 @@ position = "{877, 882}";
 {
 name = vedic;
 position = "{504, 554}";
-},
-{
-name = imatra;
-position = "{578, 554}";
 }
 );
 components = (
@@ -78882,6 +78960,10 @@ name = bottom;
 position = "{548, 0}";
 },
 {
+name = imatra;
+position = "{588, 563}";
+},
+{
 name = nukta;
 position = "{548, 0}";
 },
@@ -78892,10 +78974,6 @@ position = "{907, 904}";
 {
 name = vedic;
 position = "{545, 563}";
-},
-{
-name = imatra;
-position = "{588, 563}";
 }
 );
 components = (
@@ -78961,6 +79039,10 @@ name = bottom;
 position = "{572, 0}";
 },
 {
+name = imatra;
+position = "{630, 584}";
+},
+{
 name = nukta;
 position = "{572, 0}";
 },
@@ -78971,10 +79053,6 @@ position = "{935, 945}";
 {
 name = vedic;
 position = "{578, 584}";
-},
-{
-name = imatra;
-position = "{630, 584}";
 }
 );
 components = (
@@ -79040,6 +79118,10 @@ name = bottom;
 position = "{380, 0}";
 },
 {
+name = imatra;
+position = "{422, 542}";
+},
+{
 name = nukta;
 position = "{380, 0}";
 },
@@ -79050,10 +79132,6 @@ position = "{640, 872}";
 {
 name = vedic;
 position = "{373, 542}";
-},
-{
-name = imatra;
-position = "{422, 542}";
 }
 );
 components = (
@@ -79119,6 +79197,10 @@ name = bottom;
 position = "{386, 0}";
 },
 {
+name = imatra;
+position = "{424, 554}";
+},
+{
 name = nukta;
 position = "{386, 0}";
 },
@@ -79129,10 +79211,6 @@ position = "{634, 882}";
 {
 name = vedic;
 position = "{382, 554}";
-},
-{
-name = imatra;
-position = "{424, 554}";
 }
 );
 components = (
@@ -79198,6 +79276,10 @@ name = bottom;
 position = "{416, 0}";
 },
 {
+name = imatra;
+position = "{460, 565}";
+},
+{
 name = nukta;
 position = "{416, 0}";
 },
@@ -79208,10 +79290,6 @@ position = "{680, 906}";
 {
 name = vedic;
 position = "{419, 565}";
-},
-{
-name = imatra;
-position = "{460, 565}";
 }
 );
 components = (
@@ -79277,6 +79355,10 @@ name = bottom;
 position = "{434, 0}";
 },
 {
+name = imatra;
+position = "{483, 576}";
+},
+{
 name = nukta;
 position = "{434, 0}";
 },
@@ -79287,10 +79369,6 @@ position = "{709, 929}";
 {
 name = vedic;
 position = "{442, 576}";
-},
-{
-name = imatra;
-position = "{483, 576}";
 }
 );
 components = (
@@ -83608,7 +83686,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0039;
 },
 {
@@ -101401,7 +101478,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 1133C;
 script = tamil;
 category = Mark;
@@ -102557,7 +102633,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0023;
 },
 {
@@ -116020,7 +116095,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0031;
 },
 {
@@ -121868,7 +121942,6 @@ vertWidth = 0;
 width = 367;
 }
 );
-note = "";
 rightKerningGroup = parenleft;
 unicode = 0028;
 },
@@ -122085,7 +122158,6 @@ width = 367;
 }
 );
 leftKerningGroup = parenright;
-note = "";
 unicode = 0029;
 },
 {
@@ -122764,7 +122836,6 @@ vertWidth = 0;
 width = 761;
 }
 );
-note = "";
 unicode = 0025;
 },
 {
@@ -122964,7 +123035,6 @@ width = 273;
 }
 );
 leftKerningGroup = period;
-note = "";
 rightKerningGroup = comma;
 unicode = 002E;
 },
@@ -122979,6 +123049,10 @@ name = bottom;
 position = "{440, 0}";
 },
 {
+name = imatra;
+position = "{751, 542}";
+},
+{
 name = nukta;
 position = "{440, 0}";
 },
@@ -122989,10 +123063,6 @@ position = "{741, 870}";
 {
 name = vedic;
 position = "{441, 542}";
-},
-{
-name = imatra;
-position = "{751, 542}";
 }
 );
 components = (
@@ -123058,6 +123128,10 @@ name = bottom;
 position = "{460, 0}";
 },
 {
+name = imatra;
+position = "{791, 554}";
+},
+{
 name = nukta;
 position = "{460, 0}";
 },
@@ -123068,10 +123142,6 @@ position = "{751, 882}";
 {
 name = vedic;
 position = "{448, 554}";
-},
-{
-name = imatra;
-position = "{791, 554}";
 }
 );
 components = (
@@ -123137,6 +123207,10 @@ name = bottom;
 position = "{475, 0}";
 },
 {
+name = imatra;
+position = "{866, 563}";
+},
+{
 name = nukta;
 position = "{475, 0}";
 },
@@ -123147,10 +123221,6 @@ position = "{770, 904}";
 {
 name = vedic;
 position = "{473, 563}";
-},
-{
-name = imatra;
-position = "{866, 563}";
 }
 );
 components = (
@@ -123216,6 +123286,10 @@ name = bottom;
 position = "{492, 0}";
 },
 {
+name = imatra;
+position = "{933, 584}";
+},
+{
 name = nukta;
 position = "{492, 0}";
 },
@@ -123226,10 +123300,6 @@ position = "{808, 945}";
 {
 name = vedic;
 position = "{500, 584}";
-},
-{
-name = imatra;
-position = "{933, 584}";
 }
 );
 components = (
@@ -123295,6 +123365,10 @@ name = bottom;
 position = "{326, 0}";
 },
 {
+name = imatra;
+position = "{550, 542}";
+},
+{
 name = nukta;
 position = "{326, 0}";
 },
@@ -123305,10 +123379,6 @@ position = "{536, 872}";
 {
 name = vedic;
 position = "{325, 542}";
-},
-{
-name = imatra;
-position = "{550, 542}";
 }
 );
 components = (
@@ -123374,6 +123444,10 @@ name = bottom;
 position = "{342, 0}";
 },
 {
+name = imatra;
+position = "{599, 554}";
+},
+{
 name = nukta;
 position = "{342, 0}";
 },
@@ -123384,10 +123458,6 @@ position = "{543, 882}";
 {
 name = vedic;
 position = "{337, 554}";
-},
-{
-name = imatra;
-position = "{599, 554}";
 }
 );
 components = (
@@ -123453,6 +123523,10 @@ name = bottom;
 position = "{361, 0}";
 },
 {
+name = imatra;
+position = "{668, 565}";
+},
+{
 name = nukta;
 position = "{361, 0}";
 },
@@ -123463,10 +123537,6 @@ position = "{590, 906}";
 {
 name = vedic;
 position = "{365, 565}";
-},
-{
-name = imatra;
-position = "{668, 565}";
 }
 );
 components = (
@@ -123532,6 +123602,10 @@ name = bottom;
 position = "{374, 0}";
 },
 {
+name = imatra;
+position = "{712, 576}";
+},
+{
 name = nukta;
 position = "{374, 0}";
 },
@@ -123542,10 +123616,6 @@ position = "{619, 929}";
 {
 name = vedic;
 position = "{383, 576}";
-},
-{
-name = imatra;
-position = "{712, 576}";
 }
 );
 components = (
@@ -124104,7 +124174,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 002B;
 },
 {
@@ -126056,7 +126125,6 @@ vertWidth = 0;
 width = 490;
 }
 );
-note = "";
 unicode = 003F;
 },
 {
@@ -126264,7 +126332,6 @@ width = 486;
 }
 );
 leftKerningGroup = quotesingle;
-note = "";
 rightKerningGroup = quotesingle;
 unicode = 0022;
 },
@@ -126665,7 +126732,6 @@ width = 432;
 }
 );
 leftKerningGroup = quoteleft;
-note = "";
 rightKerningGroup = quoteleft;
 unicode = 201C;
 },
@@ -127066,7 +127132,6 @@ width = 432;
 }
 );
 leftKerningGroup = quoteright;
-note = "";
 rightKerningGroup = quoteright;
 unicode = 201D;
 },
@@ -127299,7 +127364,6 @@ width = 252;
 }
 );
 leftKerningGroup = quoteleft;
-note = "";
 rightKerningGroup = quoteleft;
 unicode = 2018;
 },
@@ -127532,7 +127596,6 @@ width = 252;
 }
 );
 leftKerningGroup = quoteright;
-note = "";
 rightKerningGroup = quoteright;
 unicode = 2019;
 },
@@ -127669,7 +127732,6 @@ width = 286;
 }
 );
 leftKerningGroup = quotesingle;
-note = "";
 rightKerningGroup = quotesingle;
 unicode = 0027;
 },
@@ -134092,7 +134154,6 @@ vertWidth = 0;
 width = 425;
 }
 );
-note = "";
 unicode = 20B9;
 },
 {
@@ -138179,7 +138240,6 @@ width = 265;
 }
 );
 leftKerningGroup = colon;
-note = "";
 rightKerningGroup = colon;
 unicode = 003B;
 },
@@ -138379,7 +138439,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0037;
 },
 {
@@ -146837,7 +146896,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0036;
 },
 {
@@ -147946,7 +148004,6 @@ width = 240;
 }
 );
 leftKerningGroup = slash;
-note = "";
 rightKerningGroup = slash;
 unicode = 002F;
 },
@@ -148035,7 +148092,6 @@ vertWidth = 0;
 width = 259;
 }
 );
-note = "";
 unicode = 00AD;
 userData = {
 com.schriftgestaltung.Glyphs.ColorIndex = 3;
@@ -148085,7 +148141,6 @@ vertWidth = 0;
 width = 260;
 }
 );
-note = "";
 unicode = 0020;
 },
 {
@@ -152876,7 +152931,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0033;
 },
 {
@@ -153350,7 +153404,6 @@ vertWidth = 0;
 width = 333;
 }
 );
-note = "";
 unicode = 2083;
 },
 {
@@ -153822,7 +153875,6 @@ vertWidth = 0;
 width = 333;
 }
 );
-note = "";
 unicode = 00B3;
 },
 {
@@ -162857,7 +162909,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0032;
 },
 {
@@ -163955,7 +164006,6 @@ vertWidth = 0;
 width = 333;
 }
 );
-note = "";
 unicode = 2082;
 },
 {
@@ -164315,7 +164365,6 @@ vertWidth = 0;
 width = 333;
 }
 );
-note = "";
 unicode = 00B2;
 },
 {
@@ -166470,7 +166519,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 11301;
 script = tamil;
 category = Mark;
@@ -166720,7 +166768,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 1133B;
 script = tamil;
 category = Mark;
@@ -168505,7 +168552,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 0951;
 script = tamil;
 category = Mark;
@@ -168643,7 +168689,6 @@ vertWidth = 0;
 width = 382;
 }
 );
-note = "";
 unicode = 005F;
 },
 {
@@ -168690,7 +168735,6 @@ vertWidth = 0;
 width = 260;
 }
 );
-note = "";
 unicode = 00A0;
 },
 {
@@ -174191,6 +174235,10 @@ name = bottom;
 position = "{573, 0}";
 },
 {
+name = imatra;
+position = "{999, 542}";
+},
+{
 name = nukta;
 position = "{573, 0}";
 },
@@ -174201,10 +174249,6 @@ position = "{931, 872}";
 {
 name = vedic;
 position = "{576, 542}";
-},
-{
-name = imatra;
-position = "{999, 542}";
 }
 );
 components = (
@@ -174270,6 +174314,10 @@ name = bottom;
 position = "{607, 0}";
 },
 {
+name = imatra;
+position = "{974, 554}";
+},
+{
 name = nukta;
 position = "{610, 0}";
 },
@@ -174280,10 +174328,6 @@ position = "{934, 882}";
 {
 name = vedic;
 position = "{567, 554}";
-},
-{
-name = imatra;
-position = "{974, 554}";
 }
 );
 components = (
@@ -174349,6 +174393,10 @@ name = bottom;
 position = "{629, 0}";
 },
 {
+name = imatra;
+position = "{994, 563}";
+},
+{
 name = nukta;
 position = "{629, 0}";
 },
@@ -174359,10 +174407,6 @@ position = "{1000, 904}";
 {
 name = vedic;
 position = "{610, 563}";
-},
-{
-name = imatra;
-position = "{994, 563}";
 }
 );
 components = (
@@ -174428,6 +174472,10 @@ name = bottom;
 position = "{627, 0}";
 },
 {
+name = imatra;
+position = "{1013, 584}";
+},
+{
 name = nukta;
 position = "{627, 0}";
 },
@@ -174438,10 +174486,6 @@ position = "{1026, 945}";
 {
 name = vedic;
 position = "{638, 584}";
-},
-{
-name = imatra;
-position = "{1013, 584}";
 }
 );
 components = (
@@ -174507,6 +174551,10 @@ name = bottom;
 position = "{425, 0}";
 },
 {
+name = imatra;
+position = "{718, 542}";
+},
+{
 name = nukta;
 position = "{425, 0}";
 },
@@ -174517,10 +174565,6 @@ position = "{701, 872}";
 {
 name = vedic;
 position = "{426, 542}";
-},
-{
-name = imatra;
-position = "{718, 542}";
 }
 );
 components = (
@@ -174586,6 +174630,10 @@ name = bottom;
 position = "{457, 0}";
 },
 {
+name = imatra;
+position = "{710, 554}";
+},
+{
 name = nukta;
 position = "{456, 0}";
 },
@@ -174596,10 +174644,6 @@ position = "{710, 882}";
 {
 name = vedic;
 position = "{433, 554}";
-},
-{
-name = imatra;
-position = "{710, 554}";
 }
 );
 components = (
@@ -174665,6 +174709,10 @@ name = bottom;
 position = "{462, 0}";
 },
 {
+name = imatra;
+position = "{737, 565}";
+},
+{
 name = nukta;
 position = "{475, 0}";
 },
@@ -174675,10 +174723,6 @@ position = "{751, 906}";
 {
 name = vedic;
 position = "{472, 565}";
-},
-{
-name = imatra;
-position = "{737, 565}";
 }
 );
 components = (
@@ -174744,6 +174788,10 @@ name = bottom;
 position = "{510, 0}";
 },
 {
+name = imatra;
+position = "{754, 576}";
+},
+{
 name = nukta;
 position = "{505, 0}";
 },
@@ -174754,10 +174802,6 @@ position = "{778, 929}";
 {
 name = vedic;
 position = "{483, 576}";
-},
-{
-name = imatra;
-position = "{754, 576}";
 }
 );
 components = (
@@ -175957,7 +176001,6 @@ vertWidth = 0;
 width = 282;
 }
 );
-note = "";
 unicode = 11303;
 script = tamil;
 category = Mark;
@@ -177282,6 +177325,10 @@ name = bottom;
 position = "{573, 0}";
 },
 {
+name = imatra;
+position = "{999, 542}";
+},
+{
 name = nukta;
 position = "{573, 0}";
 },
@@ -177292,10 +177339,6 @@ position = "{579, 542}";
 {
 name = vedic;
 position = "{542, 542}";
-},
-{
-name = imatra;
-position = "{999, 542}";
 }
 );
 components = (
@@ -177325,6 +177368,10 @@ name = bottom;
 position = "{577, 0}";
 },
 {
+name = imatra;
+position = "{974, 554}";
+},
+{
 name = nukta;
 position = "{565, 0}";
 },
@@ -177335,10 +177382,6 @@ position = "{647, 554}";
 {
 name = vedic;
 position = "{558, 554}";
-},
-{
-name = imatra;
-position = "{974, 554}";
 }
 );
 components = (
@@ -177368,6 +177411,10 @@ name = bottom;
 position = "{610, 0}";
 },
 {
+name = imatra;
+position = "{994, 563}";
+},
+{
 name = nukta;
 position = "{571, 0}";
 },
@@ -177378,10 +177425,6 @@ position = "{610, 563}";
 {
 name = vedic;
 position = "{591, 563}";
-},
-{
-name = imatra;
-position = "{994, 563}";
 }
 );
 components = (
@@ -177411,6 +177454,10 @@ name = bottom;
 position = "{639, 0}";
 },
 {
+name = imatra;
+position = "{1013, 584}";
+},
+{
 name = nukta;
 position = "{554, 0}";
 },
@@ -177421,10 +177468,6 @@ position = "{660, 584}";
 {
 name = vedic;
 position = "{612, 584}";
-},
-{
-name = imatra;
-position = "{1013, 584}";
 }
 );
 components = (
@@ -177454,6 +177497,10 @@ name = bottom;
 position = "{409, 0}";
 },
 {
+name = imatra;
+position = "{718, 542}";
+},
+{
 name = nukta;
 position = "{407, 0}";
 },
@@ -177464,10 +177511,6 @@ position = "{431, 542}";
 {
 name = vedic;
 position = "{398, 542}";
-},
-{
-name = imatra;
-position = "{718, 542}";
 }
 );
 components = (
@@ -177497,6 +177540,10 @@ name = bottom;
 position = "{432, 0}";
 },
 {
+name = imatra;
+position = "{710, 554}";
+},
+{
 name = nukta;
 position = "{415, 0}";
 },
@@ -177507,10 +177554,6 @@ position = "{458, 554}";
 {
 name = vedic;
 position = "{418, 554}";
-},
-{
-name = imatra;
-position = "{710, 554}";
 }
 );
 components = (
@@ -177540,6 +177583,10 @@ name = bottom;
 position = "{465, 0}";
 },
 {
+name = imatra;
+position = "{737, 565}";
+},
+{
 name = nukta;
 position = "{410, 0}";
 },
@@ -177550,10 +177597,6 @@ position = "{488, 565}";
 {
 name = vedic;
 position = "{445, 565}";
-},
-{
-name = imatra;
-position = "{737, 565}";
 }
 );
 components = (
@@ -177583,6 +177626,10 @@ name = bottom;
 position = "{485, 0}";
 },
 {
+name = imatra;
+position = "{754, 576}";
+},
+{
 name = nukta;
 position = "{408, 0}";
 },
@@ -177593,10 +177640,6 @@ position = "{507, 576}";
 {
 name = vedic;
 position = "{462, 576}";
-},
-{
-name = imatra;
-position = "{754, 576}";
 }
 );
 components = (
@@ -178255,6 +178298,10 @@ name = bottom;
 position = "{573, 0}";
 },
 {
+name = imatra;
+position = "{999, 542}";
+},
+{
 name = nukta;
 position = "{573, -363}";
 },
@@ -178265,10 +178312,6 @@ position = "{579, 542}";
 {
 name = vedic;
 position = "{638, 542}";
-},
-{
-name = imatra;
-position = "{999, 542}";
 }
 );
 components = (
@@ -178341,6 +178384,10 @@ name = bottom;
 position = "{615, 0}";
 },
 {
+name = imatra;
+position = "{974, 554}";
+},
+{
 name = nukta;
 position = "{615, -387}";
 },
@@ -178351,10 +178398,6 @@ position = "{663, 554}";
 {
 name = vedic;
 position = "{677, 554}";
-},
-{
-name = imatra;
-position = "{974, 554}";
 }
 );
 components = (
@@ -178427,6 +178470,10 @@ name = bottom;
 position = "{714, 0}";
 },
 {
+name = imatra;
+position = "{994, 563}";
+},
+{
 name = nukta;
 position = "{714, -436}";
 },
@@ -178437,10 +178484,6 @@ position = "{699, 563}";
 {
 name = vedic;
 position = "{737, 563}";
-},
-{
-name = imatra;
-position = "{994, 563}";
 }
 );
 components = (
@@ -178513,6 +178556,10 @@ name = bottom;
 position = "{741, 0}";
 },
 {
+name = imatra;
+position = "{1013, 584}";
+},
+{
 name = nukta;
 position = "{756, -474}";
 },
@@ -178523,10 +178570,6 @@ position = "{660, 584}";
 {
 name = vedic;
 position = "{817, 584}";
-},
-{
-name = imatra;
-position = "{1013, 584}";
 }
 );
 components = (
@@ -178599,6 +178642,10 @@ name = bottom;
 position = "{424, 0}";
 },
 {
+name = imatra;
+position = "{718, 542}";
+},
+{
 name = nukta;
 position = "{434, -294}";
 },
@@ -178609,10 +178656,6 @@ position = "{434, 542}";
 {
 name = vedic;
 position = "{470, 542}";
-},
-{
-name = imatra;
-position = "{718, 542}";
 }
 );
 components = (
@@ -178685,6 +178728,10 @@ name = bottom;
 position = "{453, 0}";
 },
 {
+name = imatra;
+position = "{710, 554}";
+},
+{
 name = nukta;
 position = "{452, -341}";
 },
@@ -178695,10 +178742,6 @@ position = "{494, 554}";
 {
 name = vedic;
 position = "{512, 554}";
-},
-{
-name = imatra;
-position = "{710, 554}";
 }
 );
 components = (
@@ -178771,6 +178814,10 @@ name = bottom;
 position = "{523, 0}";
 },
 {
+name = imatra;
+position = "{737, 565}";
+},
+{
 name = nukta;
 position = "{527, -362}";
 },
@@ -178781,10 +178828,6 @@ position = "{484, 565}";
 {
 name = vedic;
 position = "{586, 565}";
-},
-{
-name = imatra;
-position = "{737, 565}";
 }
 );
 components = (
@@ -178857,6 +178900,10 @@ name = bottom;
 position = "{568, 0}";
 },
 {
+name = imatra;
+position = "{754, 576}";
+},
+{
 name = nukta;
 position = "{575, -381}";
 },
@@ -178867,10 +178914,6 @@ position = "{477, 576}";
 {
 name = vedic;
 position = "{633, 576}";
-},
-{
-name = imatra;
-position = "{754, 576}";
 }
 );
 components = (
@@ -183675,6 +183718,10 @@ name = bottom;
 position = "{465, 0}";
 },
 {
+name = imatra;
+position = "{802, 542}";
+},
+{
 name = nukta;
 position = "{465, 0}";
 },
@@ -183685,10 +183732,6 @@ position = "{794, 872}";
 {
 name = vedic;
 position = "{472, 542}";
-},
-{
-name = imatra;
-position = "{802, 542}";
 }
 );
 components = (
@@ -183754,6 +183797,10 @@ name = bottom;
 position = "{512, 0}";
 },
 {
+name = imatra;
+position = "{869, 554}";
+},
+{
 name = nukta;
 position = "{512, 0}";
 },
@@ -183764,10 +183811,6 @@ position = "{831, 882}";
 {
 name = vedic;
 position = "{495, 554}";
-},
-{
-name = imatra;
-position = "{869, 554}";
 }
 );
 components = (
@@ -183833,6 +183876,10 @@ name = bottom;
 position = "{559, 0}";
 },
 {
+name = imatra;
+position = "{965, 563}";
+},
+{
 name = nukta;
 position = "{559, 0}";
 },
@@ -183843,10 +183890,6 @@ position = "{885, 904}";
 {
 name = vedic;
 position = "{540, 563}";
-},
-{
-name = imatra;
-position = "{965, 563}";
 }
 );
 components = (
@@ -183912,6 +183955,10 @@ name = bottom;
 position = "{606, 0}";
 },
 {
+name = imatra;
+position = "{1068, 584}";
+},
+{
 name = nukta;
 position = "{606, 0}";
 },
@@ -183922,10 +183969,6 @@ position = "{935, 945}";
 {
 name = vedic;
 position = "{567, 584}";
-},
-{
-name = imatra;
-position = "{1068, 584}";
 }
 );
 components = (
@@ -183991,6 +184034,10 @@ name = bottom;
 position = "{347, 0}";
 },
 {
+name = imatra;
+position = "{590, 542}";
+},
+{
 name = nukta;
 position = "{347, 0}";
 },
@@ -184001,10 +184048,6 @@ position = "{577, 872}";
 {
 name = vedic;
 position = "{349, 542}";
-},
-{
-name = imatra;
-position = "{590, 542}";
 }
 );
 components = (
@@ -184070,6 +184113,10 @@ name = bottom;
 position = "{390, 0}";
 },
 {
+name = imatra;
+position = "{661, 554}";
+},
+{
 name = nukta;
 position = "{390, 0}";
 },
@@ -184080,10 +184127,6 @@ position = "{612, 882}";
 {
 name = vedic;
 position = "{377, 554}";
-},
-{
-name = imatra;
-position = "{661, 554}";
 }
 );
 components = (
@@ -184149,6 +184192,10 @@ name = bottom;
 position = "{438, 0}";
 },
 {
+name = imatra;
+position = "{760, 565}";
+},
+{
 name = nukta;
 position = "{438, 0}";
 },
@@ -184159,10 +184206,6 @@ position = "{674, 906}";
 {
 name = vedic;
 position = "{411, 565}";
-},
-{
-name = imatra;
-position = "{760, 565}";
 }
 );
 components = (
@@ -184228,6 +184271,10 @@ name = bottom;
 position = "{467, 0}";
 },
 {
+name = imatra;
+position = "{822, 576}";
+},
+{
 name = nukta;
 position = "{467, 0}";
 },
@@ -184238,10 +184285,6 @@ position = "{713, 929}";
 {
 name = vedic;
 position = "{432, 576}";
-},
-{
-name = imatra;
-position = "{822, 576}";
 }
 );
 components = (
@@ -187781,7 +187824,6 @@ vertWidth = 0;
 width = 466;
 }
 );
-note = "";
 unicode = 0030;
 },
 {
@@ -188647,7 +188689,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 200D;
 userData = {
 com.schriftgestaltung.Glyphs.ColorIndex = 6;
@@ -189328,7 +189369,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 200C;
 userData = {
 com.schriftgestaltung.Glyphs.ColorIndex = 6;
@@ -189591,7 +189631,6 @@ vertWidth = 0;
 width = 0;
 }
 );
-note = "";
 unicode = 200B;
 },
 {
@@ -191424,6 +191463,9 @@ value = "instance_ufos/NotoSerifTamil-Thin.ufo";
 }
 );
 interpolationWeight = 28;
+instanceInterpolations = {
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 1;
+};
 linkStyle = Thin;
 name = Thin;
 weightClass = Thin;
@@ -191455,6 +191497,10 @@ value = "instance_ufos/NotoSerifTamil-ExtraLight.ufo";
 }
 );
 interpolationWeight = 42;
+instanceInterpolations = {
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.78788;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.21212;
+};
 linkStyle = ExtraLight;
 name = ExtraLight;
 weightClass = ExtraLight;
@@ -191486,6 +191532,10 @@ value = "instance_ufos/NotoSerifTamil-Light.ufo";
 }
 );
 interpolationWeight = 64;
+instanceInterpolations = {
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.45455;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.54545;
+};
 linkStyle = Light;
 name = Light;
 weightClass = Light;
@@ -191517,8 +191567,10 @@ value = "instance_ufos/NotoSerifTamil-Regular.ufo";
 }
 );
 interpolationWeight = 94;
+instanceInterpolations = {
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 1;
+};
 name = Regular;
-weightClass = Normal;
 },
 {
 customParameters = (
@@ -191547,6 +191599,10 @@ value = "instance_ufos/NotoSerifTamil-Medium.ufo";
 }
 );
 interpolationWeight = 110;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.27586;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.72414;
+};
 linkStyle = Medium;
 name = Medium;
 weightClass = Medium;
@@ -191578,9 +191634,13 @@ value = "instance_ufos/NotoSerifTamil-SemiBold.ufo";
 }
 );
 interpolationWeight = 130;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.62069;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.37931;
+};
 linkStyle = SemiBold;
 name = SemiBold;
-weightClass = DemiBold;
+weightClass = SemiBold;
 },
 {
 customParameters = (
@@ -191609,6 +191669,9 @@ value = "instance_ufos/NotoSerifTamil-Bold.ufo";
 }
 );
 interpolationWeight = 152;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 1;
+};
 isBold = 1;
 name = Bold;
 weightClass = Bold;
@@ -191640,6 +191703,10 @@ value = "instance_ufos/NotoSerifTamil-ExtraBold.ufo";
 }
 );
 interpolationWeight = 175;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.45238;
+"DB00C563-D9ED-4234-8230-88DFFBF56BAD" = 0.54762;
+};
 linkStyle = ExtraBold;
 name = ExtraBold;
 weightClass = ExtraBold;
@@ -191671,6 +191738,9 @@ value = "instance_ufos/NotoSerifTamil-Black.ufo";
 }
 );
 interpolationWeight = 194;
+instanceInterpolations = {
+"DB00C563-D9ED-4234-8230-88DFFBF56BAD" = 1;
+};
 linkStyle = Black;
 name = Black;
 weightClass = Black;
@@ -191703,6 +191773,10 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedThin.ufo";
 );
 interpolationWeight = 28;
 interpolationWidth = 89;
+instanceInterpolations = {
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.36667;
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.63333;
+};
 linkStyle = "SemiCondensed Thin";
 name = "SemiCondensed Thin";
 weightClass = Thin;
@@ -191736,6 +191810,12 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedExtraLight.ufo";
 );
 interpolationWeight = 42;
 interpolationWidth = 89;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.07778;
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.28889;
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.49899;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.13434;
+};
 linkStyle = "SemiCondensed ExtraLight";
 name = "SemiCondensed ExtraLight";
 weightClass = ExtraLight;
@@ -191769,6 +191849,12 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedLight.ufo";
 );
 interpolationWeight = 64;
 interpolationWidth = 89;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.2;
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.16667;
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.28788;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.34545;
+};
 linkStyle = "SemiCondensed Light";
 name = "SemiCondensed Light";
 weightClass = Light;
@@ -191802,9 +191888,12 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensed.ufo";
 );
 interpolationWeight = 94;
 interpolationWidth = 89;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.36667;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.63333;
+};
 linkStyle = SemiCondensed;
 name = SemiCondensed;
-weightClass = Normal;
 widthClass = SemiCondensed;
 },
 {
@@ -191835,6 +191924,12 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedMedium.ufo";
 );
 interpolationWeight = 110;
 interpolationWidth = 89;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.26552;
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.17471;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.45862;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.10115;
+};
 linkStyle = "SemiCondensed Medium";
 name = "SemiCondensed Medium";
 weightClass = Medium;
@@ -191868,9 +191963,15 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedSemiBold.ufo";
 );
 interpolationWeight = 130;
 interpolationWidth = 89;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.13908;
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.3931;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.24023;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.22759;
+};
 linkStyle = "SemiCondensed SemiBold";
 name = "SemiCondensed SemiBold";
-weightClass = DemiBold;
+weightClass = SemiBold;
 widthClass = SemiCondensed;
 },
 {
@@ -191901,6 +192002,10 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedBold.ufo";
 );
 interpolationWeight = 152;
 interpolationWidth = 89;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.63333;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.36667;
+};
 isBold = 1;
 linkStyle = SemiCondensed;
 name = "SemiCondensed Bold";
@@ -191935,6 +192040,12 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedExtraBold.ufo";
 );
 interpolationWeight = 175;
 interpolationWidth = 89;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.28651;
+"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = 0.20079;
+"DB00C563-D9ED-4234-8230-88DFFBF56BAD" = 0.34683;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.16587;
+};
 linkStyle = "SemiCondensed ExtraBold";
 name = "SemiCondensed ExtraBold";
 weightClass = ExtraBold;
@@ -191968,6 +192079,10 @@ value = "instance_ufos/NotoSerifTamil-SemiCondensedBlack.ufo";
 );
 interpolationWeight = 194;
 interpolationWidth = 89;
+instanceInterpolations = {
+"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = 0.36667;
+"DB00C563-D9ED-4234-8230-88DFFBF56BAD" = 0.63333;
+};
 linkStyle = "SemiCondensed Black";
 name = "SemiCondensed Black";
 weightClass = Black;
@@ -192001,6 +192116,10 @@ value = "instance_ufos/NotoSerifTamil-CondensedThin.ufo";
 );
 interpolationWeight = 28;
 interpolationWidth = 79;
+instanceInterpolations = {
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.7;
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.3;
+};
 linkStyle = "Condensed Thin";
 name = "Condensed Thin";
 weightClass = Thin;
@@ -192034,6 +192153,12 @@ value = "instance_ufos/NotoSerifTamil-CondensedExtraLight.ufo";
 );
 interpolationWeight = 42;
 interpolationWidth = 79;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.14848;
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.55152;
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.23636;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.06364;
+};
 linkStyle = "Condensed ExtraLight";
 name = "Condensed ExtraLight";
 weightClass = ExtraLight;
@@ -192067,6 +192192,12 @@ value = "instance_ufos/NotoSerifTamil-CondensedLight.ufo";
 );
 interpolationWeight = 64;
 interpolationWidth = 79;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.38182;
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.31818;
+"B9BAA477-AC00-41F5-873D-D03D7AD3C433" = 0.13636;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.16364;
+};
 linkStyle = "Condensed Light";
 name = "Condensed Light";
 weightClass = Light;
@@ -192100,9 +192231,12 @@ value = "instance_ufos/NotoSerifTamil-Condensed.ufo";
 );
 interpolationWeight = 94;
 interpolationWidth = 79;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.7;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.3;
+};
 linkStyle = Condensed;
 name = Condensed;
-weightClass = Normal;
 widthClass = Condensed;
 },
 {
@@ -192133,6 +192267,12 @@ value = "instance_ufos/NotoSerifTamil-CondensedMedium.ufo";
 );
 interpolationWeight = 110;
 interpolationWidth = 79;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.5069;
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.08276;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.21724;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.1931;
+};
 linkStyle = "Condensed Medium";
 name = "Condensed Medium";
 weightClass = Medium;
@@ -192166,9 +192306,15 @@ value = "instance_ufos/NotoSerifTamil-CondensedSemiBold.ufo";
 );
 interpolationWeight = 130;
 interpolationWidth = 79;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.26552;
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.18621;
+"D3EA08CA-27AC-4041-9CDE-8C39489C921C" = 0.11379;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.43448;
+};
 linkStyle = "Condensed SemiBold";
 name = "Condensed SemiBold";
-weightClass = DemiBold;
+weightClass = SemiBold;
 widthClass = Condensed;
 },
 {
@@ -192199,6 +192345,10 @@ value = "instance_ufos/NotoSerifTamil-CondensedBold.ufo";
 );
 interpolationWeight = 152;
 interpolationWidth = 79;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.3;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.7;
+};
 isBold = 1;
 linkStyle = Condensed;
 name = "Condensed Bold";
@@ -192233,6 +192383,12 @@ value = "instance_ufos/NotoSerifTamil-CondensedExtraBold.ufo";
 );
 interpolationWeight = 175;
 interpolationWidth = 79;
+instanceInterpolations = {
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = 0.13571;
+"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = 0.38333;
+"DB00C563-D9ED-4234-8230-88DFFBF56BAD" = 0.16429;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.31667;
+};
 linkStyle = "Condensed ExtraBold";
 name = "Condensed ExtraBold";
 weightClass = ExtraBold;
@@ -192266,6 +192422,10 @@ value = "instance_ufos/NotoSerifTamil-CondensedBlack.ufo";
 );
 interpolationWeight = 194;
 interpolationWidth = 79;
+instanceInterpolations = {
+"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = 0.7;
+"DB00C563-D9ED-4234-8230-88DFFBF56BAD" = 0.3;
+};
 linkStyle = "Condensed Black";
 name = "Condensed Black";
 weightClass = Black;
@@ -192299,6 +192459,9 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedThin.ufo";
 );
 interpolationWeight = 28;
 interpolationWidth = 70;
+instanceInterpolations = {
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 1;
+};
 linkStyle = "ExtraCondensed Thin";
 name = "ExtraCondensed Thin";
 weightClass = Thin;
@@ -192332,6 +192495,10 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedExtraLight.ufo";
 );
 interpolationWeight = 42;
 interpolationWidth = 70;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.21212;
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.78788;
+};
 linkStyle = "ExtraCondensed ExtraLight";
 name = "ExtraCondensed ExtraLight";
 weightClass = ExtraLight;
@@ -192365,6 +192532,10 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedLight.ufo";
 );
 interpolationWeight = 64;
 interpolationWidth = 70;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.54545;
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = 0.45455;
+};
 linkStyle = "ExtraCondensed Light";
 name = "ExtraCondensed Light";
 weightClass = Light;
@@ -192398,9 +192569,11 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensed.ufo";
 );
 interpolationWeight = 94;
 interpolationWidth = 70;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 1;
+};
 linkStyle = ExtraCondensed;
 name = ExtraCondensed;
-weightClass = Normal;
 widthClass = "Extra Condensed";
 },
 {
@@ -192431,6 +192604,10 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedMedium.ufo";
 );
 interpolationWeight = 110;
 interpolationWidth = 70;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.72414;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.27586;
+};
 linkStyle = "ExtraCondensed Medium";
 name = "ExtraCondensed Medium";
 weightClass = Medium;
@@ -192464,9 +192641,13 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedSemiBold.ufo";
 );
 interpolationWeight = 130;
 interpolationWidth = 70;
+instanceInterpolations = {
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = 0.37931;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.62069;
+};
 linkStyle = "ExtraCondensed SemiBold";
 name = "ExtraCondensed SemiBold";
-weightClass = DemiBold;
+weightClass = SemiBold;
 widthClass = "Extra Condensed";
 },
 {
@@ -192497,6 +192678,9 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedBold.ufo";
 );
 interpolationWeight = 152;
 interpolationWidth = 70;
+instanceInterpolations = {
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 1;
+};
 isBold = 1;
 linkStyle = ExtraCondensed;
 name = "ExtraCondensed Bold";
@@ -192531,6 +192715,10 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedExtraBold.ufo";
 );
 interpolationWeight = 175;
 interpolationWidth = 70;
+instanceInterpolations = {
+"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = 0.54762;
+"FC77071B-C743-4DEF-9CC8-C09755F537EA" = 0.45238;
+};
 linkStyle = "ExtraCondensed ExtraBold";
 name = "ExtraCondensed ExtraBold";
 weightClass = ExtraBold;
@@ -192564,6 +192752,9 @@ value = "instance_ufos/NotoSerifTamil-ExtraCondensedBlack.ufo";
 );
 interpolationWeight = 194;
 interpolationWidth = 70;
+instanceInterpolations = {
+"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = 1;
+};
 linkStyle = "ExtraCondensed Black";
 name = "ExtraCondensed Black";
 weightClass = Black;
@@ -192571,1181 +192762,6 @@ widthClass = "Extra Condensed";
 }
 );
 kerning = {
-"08F935B0-92DE-4692-85BF-2B23B5078C15" = {
-"@MMK_L_aa-tamil" = {
-"@MMK_R_T" = -43.9453;
-"@MMK_R_debit-tamil" = 19.5312;
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_eMatra-tamil" = -14.6484;
-"@MMK_R_eeMatra-tamil" = -29.2969;
-"@MMK_R_exclam" = -9.76562;
-"@MMK_R_hyphen" = -34.1797;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_parenright" = 9.76562;
-"@MMK_R_quoteright" = -43.9453;
-"@MMK_R_quotesingle" = -58.5938;
-"@MMK_R_rupee-tamil" = -14.6484;
-"@MMK_R_slash" = 39.0625;
-"ta-tamil" = -4.88281;
-"tuu-tamil" = 19.5312;
-};
-"@MMK_L_ai-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_u-tamil" = -14.6484;
-};
-"@MMK_L_ca-tamil" = {
-"@MMK_R_a-tamil" = -9.76562;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_period" = -29.2969;
-"@MMK_R_u-tamil" = -29.2969;
-bracketright = 63.4766;
-parenright = 68.3594;
-question = 39.0625;
-quotedbl = 48.8281;
-quotedblright = 29.2969;
-};
-"@MMK_L_e-tamil" = {
-"@MMK_R_a-tamil" = -48.8281;
-"@MMK_R_ai-tamil" = -9.76562;
-"@MMK_R_e-tamil" = -24.4141;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_ka-tamil" = -43.9453;
-"@MMK_R_nya-tamil" = -29.2969;
-"@MMK_R_o-tamil" = -34.1797;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_rra-tamil" = -24.4141;
-"@MMK_R_slash" = -9.76562;
-"@MMK_R_u-tamil" = -43.9453;
-"@MMK_R_visarga-tamil" = -58.5938;
-};
-"@MMK_L_five-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-};
-"@MMK_L_hyphen" = {
-"@MMK_R_a-tamil" = -14.6484;
-};
-"@MMK_L_ka-tamil" = {
-"@MMK_R_T" = -34.1797;
-"@MMK_R_eeMatra-tamil" = -19.5312;
-"@MMK_R_i-tamil" = -9.76562;
-"@MMK_R_quoteright" = -39.0625;
-"@MMK_R_quotesingle" = -19.5312;
-"eeMatra-tamil" = -24.4141;
-};
-"@MMK_L_kuu-tamil" = {
-"@MMK_R_T" = -24.4141;
-"@MMK_R_eMatra-tamil" = -39.0625;
-"@MMK_R_eeMatra-tamil" = -39.0625;
-"@MMK_R_quotesingle" = -58.5938;
-};
-"@MMK_L_la-tamil" = {
-"@MMK_R_T" = -9.76562;
-"@MMK_R_a-tamil" = -9.76562;
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_hyphen" = 19.5312;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_u-tamil" = -9.76562;
-};
-"@MMK_L_lii-tamil" = {
-"@MMK_R_T" = 29.2969;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_eeMatra-tamil" = 4.88281;
-"@MMK_R_hyphen" = -14.6484;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 34.1797;
-"@MMK_R_rra-tamil" = -19.5312;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_ma-tamil" = {
-"@MMK_R_T" = -14.6484;
-"@MMK_R_eMatra-tamil" = -9.76562;
-"@MMK_R_eeMatra-tamil" = -4.88281;
-"@MMK_R_u-tamil" = -9.76562;
-question = 29.2969;
-};
-"@MMK_L_month-tamil" = {
-"@MMK_R_T" = 83.0078;
-"@MMK_R_a-tamil" = -87.8906;
-"@MMK_R_colon" = 39.0625;
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_eMatra-tamil" = 39.0625;
-"@MMK_R_eeMatra-tamil" = 39.0625;
-"@MMK_R_exclam" = 73.2422;
-"@MMK_R_i-tamil" = 39.0625;
-"@MMK_R_ka-tamil" = -24.4141;
-"@MMK_R_parenright" = 97.6562;
-"@MMK_R_period" = -19.5312;
-"@MMK_R_quoteright" = 97.6562;
-"@MMK_R_quotesingle" = 97.6562;
-"@MMK_R_u-tamil" = -14.6484;
-};
-"@MMK_L_number-tamil" = {
-"@MMK_R_T" = 58.5938;
-"@MMK_R_a-tamil" = -24.4141;
-"@MMK_R_ka-tamil" = -19.5312;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_period" = -48.8281;
-"@MMK_R_quoteright" = 58.5938;
-"@MMK_R_quotesingle" = 58.5938;
-};
-"@MMK_L_o-tamil" = {
-"@MMK_R_quoteright" = -19.5312;
-"@MMK_R_quotesingle" = -24.4141;
-};
-"@MMK_L_quoteleft" = {
-"@MMK_R_a-tamil" = -180.664;
-"@MMK_R_e-tamil" = -19.5312;
-"@MMK_R_ka-tamil" = -68.3594;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -19.5312;
-"@MMK_R_om-tamil" = -19.5312;
-"@MMK_R_u-tamil" = -53.7109;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_quotesingle" = {
-"@MMK_R_a-tamil" = -195.312;
-"@MMK_R_e-tamil" = -24.4141;
-"@MMK_R_ka-tamil" = -63.4766;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -24.4141;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_u-tamil" = -29.2969;
-"@MMK_R_visarga-tamil" = -48.8281;
-};
-"@MMK_L_sha-tamil" = {
-"@MMK_R_a-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -29.2969;
-};
-"@MMK_L_shrii-tamil" = {
-"@MMK_R_T" = 43.9453;
-"@MMK_R_a-tamil" = 29.2969;
-"@MMK_R_eeMatra-tamil" = 19.5312;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_quoteright" = 39.0625;
-"@MMK_R_quotesingle" = 58.5938;
-};
-"@MMK_L_ssa-tamil" = {
-"@MMK_R_T" = -19.5312;
-"@MMK_R_quotesingle" = -19.5312;
-};
-"@MMK_L_ten-tamil" = {
-"@MMK_R_a-tamil" = -4.88281;
-};
-"@MMK_L_tti-tamil" = {
-"@MMK_R_T" = -24.4141;
-"@MMK_R_a-tamil" = 48.8281;
-"@MMK_R_eeMatra-tamil" = -19.5312;
-"@MMK_R_quoteright" = -58.5938;
-"@MMK_R_quotesingle" = -58.5938;
-"@MMK_R_u-tamil" = 34.1797;
-};
-"@MMK_L_ttuu-tamil" = {
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_rra-tamil" = -9.76562;
-};
-"@MMK_L_u-tamil" = {
-"@MMK_R_T" = -14.6484;
-"@MMK_R_a-tamil" = 24.4141;
-"@MMK_R_eMatra-tamil" = -19.5312;
-"@MMK_R_eeMatra-tamil" = -29.2969;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_quoteright" = -53.7109;
-"@MMK_R_quotesingle" = -58.5938;
-};
-"@MMK_L_uMatra-tamil" = {
-"@MMK_R_a-tamil" = -53.7109;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_period" = -9.76562;
-};
-"@MMK_L_uu-tamil" = {
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_quoteright" = -9.76562;
-"@MMK_R_quotesingle" = -9.76562;
-};
-"@MMK_L_uuMatra-tamil" = {
-"@MMK_R_a-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_parenright" = -19.5312;
-"@MMK_R_period" = -9.76562;
-"@MMK_R_u-tamil" = -9.76562;
-"@MMK_R_visarga-tamil" = -19.5312;
-};
-"@MMK_L_visarga-tamil" = {
-"@MMK_R_T" = -24.4141;
-"@MMK_R_quoteright" = -34.1797;
-"@MMK_R_quotesingle" = -48.8281;
-};
-"hii-tamil" = {
-"@MMK_R_T" = 39.0625;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_quoteright" = 24.4141;
-"@MMK_R_quotesingle" = 43.9453;
-};
-"jii-tamil" = {
-"@MMK_R_T" = 53.7109;
-"@MMK_R_eMatra-tamil" = 29.2969;
-"@MMK_R_parenright" = 83.0078;
-"@MMK_R_quoteright" = 48.8281;
-"@MMK_R_quotesingle" = 63.4766;
-};
-"llii-tamil" = {
-"@MMK_R_T" = 43.9453;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_parenright" = 78.125;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 48.8281;
-};
-"lllii-tamil" = {
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_parenright" = 48.8281;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 19.5312;
-};
-"mii-tamil" = {
-"@MMK_R_eMatra-tamil" = 9.76562;
-"@MMK_R_parenright" = 48.8281;
-"@MMK_R_quoteright" = 19.5312;
-"@MMK_R_quotesingle" = 34.1797;
-};
-"ngii-tamil" = {
-"@MMK_R_parenright" = 29.2969;
-};
-"nnii-tamil" = {
-braceright = 43.9453;
-bracketright = 43.9453;
-parenright = 53.7109;
-question = 58.5938;
-quotedbl = 53.7109;
-quotedblright = 34.1797;
-};
-"nnnii-tamil" = {
-"@MMK_R_parenright" = 43.9453;
-"@MMK_R_quotesingle" = 24.4141;
-};
-"pii-tamil" = {
-"@MMK_R_T" = 14.6484;
-"@MMK_R_parenright" = 29.2969;
-"@MMK_R_quotesingle" = 14.6484;
-};
-"rii-tamil" = {
-"@MMK_R_T" = 63.4766;
-"@MMK_R_eMatra-tamil" = 29.2969;
-"@MMK_R_parenright" = 78.125;
-"@MMK_R_quoteright" = 48.8281;
-"@MMK_R_quotesingle" = 68.3594;
-};
-"rrii-tamil" = {
-"@MMK_R_T" = 34.1797;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_quoteright" = 19.5312;
-"@MMK_R_quotesingle" = 43.9453;
-};
-"vii-tamil" = {
-"@MMK_R_parenright" = 29.2969;
-"@MMK_R_quotesingle" = 19.5312;
-};
-"yii-tamil" = {
-"@MMK_R_parenright" = 43.9453;
-"@MMK_R_quotesingle" = 24.4141;
-};
-};
-"5A888C56-A915-4019-8CEA-AFD77EBC0903" = {
-"@MMK_L_aa-tamil" = {
-"@MMK_R_T" = -39.0625;
-"@MMK_R_debit-tamil" = 19.5312;
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_eMatra-tamil" = -14.6484;
-"@MMK_R_eeMatra-tamil" = -29.2969;
-"@MMK_R_exclam" = -9.76562;
-"@MMK_R_hyphen" = -34.1797;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_parenright" = 9.76562;
-"@MMK_R_quoteright" = -43.9453;
-"@MMK_R_quotesingle" = -29.2969;
-"@MMK_R_rupee-tamil" = -14.6484;
-"@MMK_R_slash" = 39.0625;
-"ta-tamil" = -4.88281;
-"tuu-tamil" = 19.5312;
-};
-"@MMK_L_ai-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_u-tamil" = -14.6484;
-};
-"@MMK_L_ca-tamil" = {
-"@MMK_R_a-tamil" = -9.76562;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_period" = -29.2969;
-"@MMK_R_u-tamil" = -29.2969;
-braceright = 43.9453;
-bracketright = 78.125;
-parenright = 78.125;
-question = 48.8281;
-quotedbl = 73.2422;
-quotedblright = 34.1797;
-};
-"@MMK_L_e-tamil" = {
-"@MMK_R_a-tamil" = -48.8281;
-"@MMK_R_ai-tamil" = -9.76562;
-"@MMK_R_e-tamil" = -24.4141;
-"@MMK_R_eMatra-tamil" = 14.6484;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_ka-tamil" = -43.9453;
-"@MMK_R_nya-tamil" = -29.2969;
-"@MMK_R_o-tamil" = -34.1797;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_rra-tamil" = -24.4141;
-"@MMK_R_slash" = -9.76562;
-"@MMK_R_u-tamil" = -43.9453;
-"@MMK_R_visarga-tamil" = -58.5938;
-"eeMatra-tamil" = 14.6484;
-};
-"@MMK_L_five-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-};
-"@MMK_L_hyphen" = {
-"@MMK_R_a-tamil" = -14.6484;
-};
-"@MMK_L_ka-tamil" = {
-"@MMK_R_T" = -14.6484;
-"@MMK_R_eeMatra-tamil" = -19.5312;
-"@MMK_R_i-tamil" = -9.76562;
-"@MMK_R_quoteright" = -29.2969;
-"@MMK_R_quotesingle" = -19.5312;
-"eeMatra-tamil" = -9.76562;
-quotedbl = 19.5312;
-};
-"@MMK_L_kuu-tamil" = {
-"@MMK_R_T" = -24.4141;
-"@MMK_R_eMatra-tamil" = -39.0625;
-"@MMK_R_eeMatra-tamil" = -39.0625;
-"@MMK_R_quotesingle" = -58.5938;
-};
-"@MMK_L_la-tamil" = {
-"@MMK_R_a-tamil" = -9.76562;
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_hyphen" = 19.5312;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_u-tamil" = -9.76562;
-};
-"@MMK_L_lii-tamil" = {
-"@MMK_R_T" = 29.2969;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_eeMatra-tamil" = 4.88281;
-"@MMK_R_hyphen" = -14.6484;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_parenright" = 39.0625;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 34.1797;
-"@MMK_R_rra-tamil" = -19.5312;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_ma-tamil" = {
-"@MMK_R_T" = -14.6484;
-"@MMK_R_eeMatra-tamil" = -4.88281;
-"@MMK_R_u-tamil" = -9.76562;
-};
-"@MMK_L_month-tamil" = {
-"@MMK_R_T" = 83.0078;
-"@MMK_R_a-tamil" = -87.8906;
-"@MMK_R_colon" = 39.0625;
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_eMatra-tamil" = 39.0625;
-"@MMK_R_eeMatra-tamil" = 39.0625;
-"@MMK_R_exclam" = 73.2422;
-"@MMK_R_i-tamil" = 39.0625;
-"@MMK_R_ka-tamil" = -24.4141;
-"@MMK_R_parenright" = 97.6562;
-"@MMK_R_period" = -19.5312;
-"@MMK_R_quoteright" = 97.6562;
-"@MMK_R_quotesingle" = 97.6562;
-"@MMK_R_u-tamil" = -14.6484;
-};
-"@MMK_L_number-tamil" = {
-"@MMK_R_T" = 58.5938;
-"@MMK_R_a-tamil" = -24.4141;
-"@MMK_R_ka-tamil" = -19.5312;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_period" = -48.8281;
-"@MMK_R_quoteright" = 58.5938;
-"@MMK_R_quotesingle" = 58.5938;
-};
-"@MMK_L_o-tamil" = {
-"@MMK_R_quoteright" = -19.5312;
-"@MMK_R_quotesingle" = -24.4141;
-};
-"@MMK_L_quoteleft" = {
-"@MMK_R_a-tamil" = -180.664;
-"@MMK_R_e-tamil" = -19.5312;
-"@MMK_R_ka-tamil" = -68.3594;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -19.5312;
-"@MMK_R_om-tamil" = -19.5312;
-"@MMK_R_u-tamil" = -53.7109;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_quotesingle" = {
-"@MMK_R_a-tamil" = -195.312;
-"@MMK_R_e-tamil" = -24.4141;
-"@MMK_R_ka-tamil" = -53.7109;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -24.4141;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_u-tamil" = -29.2969;
-"@MMK_R_visarga-tamil" = -48.8281;
-};
-"@MMK_L_sha-tamil" = {
-"@MMK_R_a-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -29.2969;
-};
-"@MMK_L_shrii-tamil" = {
-"@MMK_R_T" = 43.9453;
-"@MMK_R_a-tamil" = 29.2969;
-"@MMK_R_eeMatra-tamil" = 19.5312;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_quoteright" = 39.0625;
-"@MMK_R_quotesingle" = 58.5938;
-};
-"@MMK_L_ssa-tamil" = {
-"@MMK_R_T" = -19.5312;
-"@MMK_R_quotesingle" = -19.5312;
-};
-"@MMK_L_ten-tamil" = {
-"@MMK_R_a-tamil" = -4.88281;
-};
-"@MMK_L_tti-tamil" = {
-"@MMK_R_T" = -24.4141;
-"@MMK_R_a-tamil" = 48.8281;
-"@MMK_R_eeMatra-tamil" = -19.5312;
-"@MMK_R_quoteright" = -58.5938;
-"@MMK_R_quotesingle" = -58.5938;
-"@MMK_R_u-tamil" = 34.1797;
-};
-"@MMK_L_ttuu-tamil" = {
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_rra-tamil" = -9.76562;
-};
-"@MMK_L_u-tamil" = {
-"@MMK_R_T" = -14.6484;
-"@MMK_R_a-tamil" = 24.4141;
-"@MMK_R_eMatra-tamil" = -19.5312;
-"@MMK_R_eeMatra-tamil" = -29.2969;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_quoteright" = -53.7109;
-"@MMK_R_quotesingle" = -58.5938;
-};
-"@MMK_L_uMatra-tamil" = {
-"@MMK_R_a-tamil" = -53.7109;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_period" = -9.76562;
-};
-"@MMK_L_uu-tamil" = {
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_quoteright" = -9.76562;
-"@MMK_R_quotesingle" = -9.76562;
-};
-"@MMK_L_uuMatra-tamil" = {
-"@MMK_R_a-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_parenright" = -19.5312;
-"@MMK_R_period" = -9.76562;
-"@MMK_R_u-tamil" = -9.76562;
-"@MMK_R_visarga-tamil" = -19.5312;
-};
-"@MMK_L_visarga-tamil" = {
-"@MMK_R_T" = -24.4141;
-"@MMK_R_quoteright" = -34.1797;
-"@MMK_R_quotesingle" = -48.8281;
-};
-"hii-tamil" = {
-"@MMK_R_T" = 39.0625;
-"@MMK_R_parenright" = 39.0625;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 39.0625;
-};
-"jii-tamil" = {
-"@MMK_R_T" = 43.9453;
-"@MMK_R_parenright" = 53.7109;
-"@MMK_R_quotesingle" = 58.5938;
-};
-"llii-tamil" = {
-"@MMK_R_T" = 48.8281;
-"@MMK_R_parenright" = 83.0078;
-"@MMK_R_quoteright" = 43.9453;
-"@MMK_R_quotesingle" = 73.2422;
-"eeMatra-tamil" = 43.9453;
-};
-"lllii-tamil" = {
-"@MMK_R_T" = 9.76562;
-"@MMK_R_eMatra-tamil" = 14.6484;
-"@MMK_R_parenright" = 34.1797;
-"@MMK_R_quotesingle" = 34.1797;
-};
-"mii-tamil" = {
-"@MMK_R_T" = 4.88281;
-"@MMK_R_parenright" = 19.5312;
-"@MMK_R_quotesingle" = 24.4141;
-};
-"ngii-tamil" = {
-"@MMK_R_T" = 43.9453;
-"@MMK_R_parenright" = 43.9453;
-"@MMK_R_quotesingle" = 43.9453;
-};
-"nnii-tamil" = {
-"@MMK_R_T" = 39.0625;
-"@MMK_R_parenright" = 97.6562;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 78.125;
-};
-"nnnii-tamil" = {
-"@MMK_R_T" = 39.0625;
-"@MMK_R_parenright" = 43.9453;
-"@MMK_R_quoteright" = 19.5312;
-"@MMK_R_quotesingle" = 48.8281;
-};
-"pii-tamil" = {
-"@MMK_R_T" = 19.5312;
-"@MMK_R_parenright" = 39.0625;
-"@MMK_R_quotesingle" = 48.8281;
-};
-"rii-tamil" = {
-"@MMK_R_T" = 48.8281;
-"@MMK_R_eMatra-tamil" = 14.6484;
-"@MMK_R_parenright" = 78.125;
-"@MMK_R_quoteright" = 43.9453;
-"@MMK_R_quotesingle" = 87.8906;
-};
-"rrii-tamil" = {
-"@MMK_R_T" = 19.5312;
-"@MMK_R_eMatra-tamil" = 4.88281;
-"@MMK_R_parenright" = 39.0625;
-"@MMK_R_quotesingle" = 39.0625;
-};
-"vii-tamil" = {
-"@MMK_R_parenright" = 29.2969;
-"@MMK_R_quotesingle" = 29.2969;
-};
-"yii-tamil" = {
-"@MMK_R_T" = 24.4141;
-"@MMK_R_parenright" = 39.0625;
-"@MMK_R_quotesingle" = 53.7109;
-};
-};
-"6525706B-2ED0-4F51-A466-C79C9F0D855A" = {
-"@MMK_L_aa-tamil" = {
-"@MMK_R_T" = -68.3594;
-"@MMK_R_debit-tamil" = 19.5312;
-"@MMK_R_e-tamil" = -48.8281;
-"@MMK_R_eMatra-tamil" = -73.2422;
-"@MMK_R_eeMatra-tamil" = -63.4766;
-"@MMK_R_exclam" = -39.0625;
-"@MMK_R_hyphen" = -34.1797;
-"@MMK_R_ka-tamil" = -34.1797;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -29.2969;
-"@MMK_R_parenright" = 9.76562;
-"@MMK_R_quoteright" = -141.60201;
-"@MMK_R_quotesingle" = -141.60201;
-"@MMK_R_rupee-tamil" = -24.4141;
-"@MMK_R_ya-tamil" = -29.2969;
-"lu-tamil" = 9.76562;
-"luu-tamil" = -9.76562;
-slash = 39.0625;
-"ta-tamil" = -4.88281;
-};
-"@MMK_L_ai-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_u-tamil" = -14.6484;
-};
-"@MMK_L_ca-tamil" = {
-"@MMK_R_a-tamil" = -34.1797;
-"@MMK_R_ka-tamil" = -19.5312;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_period" = -29.2969;
-"@MMK_R_u-tamil" = -29.2969;
-braceright = 48.8281;
-bracketright = 48.8281;
-parenright = 53.7109;
-};
-"@MMK_L_e-tamil" = {
-"@MMK_R_a-tamil" = -29.2969;
-"@MMK_R_ai-tamil" = -9.76562;
-"@MMK_R_e-tamil" = -19.5312;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_ka-tamil" = -34.1797;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_o-tamil" = -24.4141;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_u-tamil" = -14.6484;
-"@MMK_R_visarga-tamil" = -29.2969;
-slash = -9.76562;
-};
-"@MMK_L_five-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-};
-"@MMK_L_hyphen" = {
-"@MMK_R_a-tamil" = -14.6484;
-};
-"@MMK_L_ka-tamil" = {
-"@MMK_R_T" = -48.8281;
-"@MMK_R_a-tamil" = 39.0625;
-"@MMK_R_ai-tamil" = -19.5312;
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_eMatra-tamil" = -24.4141;
-"@MMK_R_eeMatra-tamil" = -29.2969;
-"@MMK_R_exclam" = -43.9453;
-"@MMK_R_i-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -39.0625;
-"@MMK_R_quoteright" = -43.9453;
-"@MMK_R_quotesingle" = -73.2422;
-"eeMatra-tamil" = -48.8281;
-};
-"@MMK_L_kuu-tamil" = {
-"@MMK_R_T" = -58.5938;
-"@MMK_R_eMatra-tamil" = -14.6484;
-"@MMK_R_eeMatra-tamil" = -34.1797;
-"@MMK_R_quotesingle" = -58.5938;
-};
-"@MMK_L_la-tamil" = {
-"@MMK_R_T" = -19.5312;
-"@MMK_R_a-tamil" = -24.4141;
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_exclam" = -29.2969;
-"@MMK_R_hyphen" = 19.5312;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_u-tamil" = -19.5312;
-};
-"@MMK_L_lii-tamil" = {
-"@MMK_R_T" = 39.0625;
-"@MMK_R_a-tamil" = -63.4766;
-"@MMK_R_e-tamil" = -34.1797;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_eeMatra-tamil" = 29.2969;
-"@MMK_R_hyphen" = -14.6484;
-"@MMK_R_ka-tamil" = -29.2969;
-"@MMK_R_nya-tamil" = -39.0625;
-"@MMK_R_o-tamil" = -29.2969;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 34.1797;
-"@MMK_R_rra-tamil" = -19.5312;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_ma-tamil" = {
-"@MMK_R_T" = -19.5312;
-"@MMK_R_a-tamil" = -14.6484;
-"@MMK_R_eMatra-tamil" = -9.76562;
-"@MMK_R_eeMatra-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -19.5312;
-"@MMK_R_quotesingle" = -19.5312;
-"@MMK_R_u-tamil" = -19.5312;
-};
-"@MMK_L_month-tamil" = {
-"@MMK_R_T" = 78.125;
-"@MMK_R_a-tamil" = -122.07;
-"@MMK_R_eMatra-tamil" = 48.8281;
-"@MMK_R_eeMatra-tamil" = 48.8281;
-"@MMK_R_exclam" = 92.7734;
-"@MMK_R_i-tamil" = 39.0625;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_parenright" = 97.6562;
-"@MMK_R_period" = -19.5312;
-"@MMK_R_quoteright" = 97.6562;
-"@MMK_R_quotesingle" = 97.6562;
-"@MMK_R_u-tamil" = -39.0625;
-};
-"@MMK_L_number-tamil" = {
-"@MMK_R_T" = 29.2969;
-"@MMK_R_a-tamil" = -83.0078;
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -29.2969;
-"@MMK_R_period" = -48.8281;
-"@MMK_R_quoteright" = 58.5938;
-"@MMK_R_quotesingle" = 58.5938;
-"@MMK_R_u-tamil" = -53.7109;
-};
-"@MMK_L_o-tamil" = {
-"@MMK_R_T" = -48.8281;
-"@MMK_R_quoteright" = -19.5312;
-"@MMK_R_quotesingle" = -24.4141;
-};
-"@MMK_L_quoteleft" = {
-"@MMK_R_a-tamil" = -268.55499;
-"@MMK_R_e-tamil" = -19.5312;
-"@MMK_R_ka-tamil" = -63.4766;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -19.5312;
-"@MMK_R_om-tamil" = -19.5312;
-"@MMK_R_u-tamil" = -34.1797;
-"@MMK_R_visarga-tamil" = -29.2969;
-};
-"@MMK_L_quotesingle" = {
-"@MMK_R_a-tamil" = -253.90601;
-"@MMK_R_e-tamil" = -24.4141;
-"@MMK_R_ka-tamil" = -83.0078;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -24.4141;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_u-tamil" = -19.5312;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_sha-tamil" = {
-"@MMK_R_a-tamil" = -34.1797;
-"@MMK_R_ka-tamil" = -29.2969;
-};
-"@MMK_L_shrii-tamil" = {
-"@MMK_R_a-tamil" = 29.2969;
-"@MMK_R_eeMatra-tamil" = -14.6484;
-};
-"@MMK_L_ssa-tamil" = {
-"@MMK_R_T" = -19.5312;
-"@MMK_R_quotesingle" = -19.5312;
-};
-"@MMK_L_ten-tamil" = {
-"@MMK_R_a-tamil" = -24.4141;
-};
-"@MMK_L_tti-tamil" = {
-"@MMK_R_T" = -39.0625;
-"@MMK_R_a-tamil" = 48.8281;
-"@MMK_R_eeMatra-tamil" = -19.5312;
-"@MMK_R_exclam" = -19.5312;
-"@MMK_R_quoteright" = -58.5938;
-"@MMK_R_quotesingle" = -58.5938;
-"@MMK_R_u-tamil" = 34.1797;
-};
-"@MMK_L_ttuu-tamil" = {
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_rra-tamil" = -9.76562;
-};
-"@MMK_L_u-tamil" = {
-"@MMK_R_T" = -29.2969;
-"@MMK_R_a-tamil" = 48.8281;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_quoteright" = -19.5312;
-"@MMK_R_quotesingle" = -39.0625;
-};
-"@MMK_L_uMatra-tamil" = {
-"@MMK_R_a-tamil" = -126.953;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_period" = -29.2969;
-};
-"@MMK_L_uu-tamil" = {
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_quoteright" = -9.76562;
-"@MMK_R_quotesingle" = -9.76562;
-};
-"@MMK_L_uuMatra-tamil" = {
-"@MMK_R_a-tamil" = -73.2422;
-"@MMK_R_ai-tamil" = -19.5312;
-"@MMK_R_e-tamil" = -19.5312;
-"@MMK_R_ka-tamil" = -29.2969;
-"@MMK_R_nya-tamil" = -14.6484;
-"@MMK_R_o-tamil" = -19.5312;
-"@MMK_R_parenright" = -19.5312;
-"@MMK_R_period" = -34.1797;
-"@MMK_R_u-tamil" = -39.0625;
-"@MMK_R_visarga-tamil" = -19.5312;
-};
-"@MMK_L_visarga-tamil" = {
-"@MMK_R_T" = -39.0625;
-"@MMK_R_quoteright" = -24.4141;
-"@MMK_R_quotesingle" = -39.0625;
-};
-"hii-tamil" = {
-"@MMK_R_T" = 63.4766;
-"@MMK_R_eMatra-tamil" = 29.2969;
-"@MMK_R_parenright" = 78.125;
-"@MMK_R_quoteright" = 48.8281;
-"@MMK_R_quotesingle" = 39.0625;
-};
-"jii-tamil" = {
-"@MMK_R_T" = 63.4766;
-"@MMK_R_eMatra-tamil" = 34.1797;
-"@MMK_R_parenright" = 102.539;
-"@MMK_R_quoteright" = 58.5938;
-"@MMK_R_quotesingle" = 58.5938;
-};
-"llii-tamil" = {
-"@MMK_R_T" = 43.9453;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_parenright" = 68.3594;
-"@MMK_R_quoteright" = 39.0625;
-"@MMK_R_quotesingle" = 34.1797;
-};
-"lllii-tamil" = {
-"@MMK_R_T" = 39.0625;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_parenright" = 78.125;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 29.2969;
-};
-"mii-tamil" = {
-"@MMK_R_T" = 53.7109;
-"@MMK_R_eMatra-tamil" = 9.76562;
-"@MMK_R_parenright" = 83.0078;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 53.7109;
-};
-"ngii-tamil" = {
-"@MMK_R_parenright" = 29.2969;
-};
-"nnii-tamil" = {
-"@MMK_R_T" = 48.8281;
-"@MMK_R_eMatra-tamil" = 9.76562;
-"@MMK_R_parenright" = 63.4766;
-"@MMK_R_quoteright" = 48.8281;
-"@MMK_R_quotesingle" = 43.9453;
-};
-"nnnii-tamil" = {
-"@MMK_R_T" = 34.1797;
-"@MMK_R_parenright" = 63.4766;
-"@MMK_R_quoteright" = 34.1797;
-"@MMK_R_quotesingle" = 29.2969;
-};
-"pii-tamil" = {
-"@MMK_R_parenright" = 24.4141;
-};
-"rii-tamil" = {
-"@MMK_R_T" = 83.0078;
-"@MMK_R_eMatra-tamil" = 39.0625;
-"@MMK_R_parenright" = 112.305;
-"@MMK_R_quoteright" = 58.5938;
-"@MMK_R_quotesingle" = 78.125;
-};
-"rrii-tamil" = {
-"@MMK_R_T" = 58.5938;
-"@MMK_R_eMatra-tamil" = 34.1797;
-"@MMK_R_parenright" = 83.0078;
-"@MMK_R_quoteright" = 53.7109;
-"@MMK_R_quotesingle" = 48.8281;
-};
-"yii-tamil" = {
-"@MMK_R_parenright" = 43.9453;
-};
-};
-"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = {
-"@MMK_L_aa-tamil" = {
-"@MMK_R_T" = -43.9453;
-"@MMK_R_debit-tamil" = 19.5312;
-"@MMK_R_e-tamil" = -34.1797;
-"@MMK_R_eMatra-tamil" = -73.2422;
-"@MMK_R_eeMatra-tamil" = -73.2422;
-"@MMK_R_exclam" = -14.6484;
-"@MMK_R_hyphen" = -34.1797;
-"@MMK_R_ka-tamil" = -19.5312;
-"@MMK_R_o-tamil" = -29.2969;
-"@MMK_R_parenright" = 9.76562;
-"@MMK_R_quoteright" = -141.60201;
-"@MMK_R_quotesingle" = -141.60201;
-"@MMK_R_rupee-tamil" = -24.4141;
-"@MMK_R_slash" = 39.0625;
-"ta-tamil" = -4.88281;
-"tuu-tamil" = 19.5312;
-};
-"@MMK_L_ai-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_u-tamil" = -14.6484;
-};
-"@MMK_L_ca-tamil" = {
-"@MMK_R_a-tamil" = -34.1797;
-"@MMK_R_ka-tamil" = -19.5312;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_period" = -29.2969;
-"@MMK_R_u-tamil" = -29.2969;
-braceright = 58.5938;
-bracketright = 48.8281;
-parenright = 58.5938;
-question = 19.5312;
-};
-"@MMK_L_e-tamil" = {
-"@MMK_R_a-tamil" = -19.5312;
-"@MMK_R_ai-tamil" = -9.76562;
-"@MMK_R_e-tamil" = -4.88281;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_nya-tamil" = -9.76562;
-"@MMK_R_o-tamil" = -14.6484;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_rra-tamil" = -9.76562;
-"@MMK_R_slash" = -9.76562;
-"@MMK_R_u-tamil" = -14.6484;
-"@MMK_R_visarga-tamil" = -29.2969;
-};
-"@MMK_L_five-tamil" = {
-"@MMK_R_ka-tamil" = -14.6484;
-};
-"@MMK_L_hyphen" = {
-"@MMK_R_a-tamil" = -14.6484;
-};
-"@MMK_L_iiMatra-tamil" = {
-"@MMK_R_T" = 136.71899;
-};
-"@MMK_L_ka-tamil" = {
-"@MMK_R_T" = -63.4766;
-"@MMK_R_a-tamil" = 39.0625;
-"@MMK_R_ai-tamil" = -19.5312;
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_eMatra-tamil" = -24.4141;
-"@MMK_R_eeMatra-tamil" = -43.9453;
-"@MMK_R_exclam" = -29.2969;
-"@MMK_R_i-tamil" = -14.6484;
-"@MMK_R_quoteright" = -43.9453;
-"@MMK_R_quotesingle" = -73.2422;
-"eeMatra-tamil" = -39.0625;
-};
-"@MMK_L_kuu-tamil" = {
-"@MMK_R_T" = -34.1797;
-"@MMK_R_eMatra-tamil" = -39.0625;
-"@MMK_R_eeMatra-tamil" = -39.0625;
-"@MMK_R_quotesingle" = -58.5938;
-};
-"@MMK_L_la-tamil" = {
-"@MMK_R_T" = -14.6484;
-"@MMK_R_a-tamil" = -24.4141;
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_exclam" = -24.4141;
-"@MMK_R_hyphen" = 19.5312;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_quoteright" = -4.88281;
-"@MMK_R_quotesingle" = -4.88281;
-"@MMK_R_u-tamil" = -9.76562;
-};
-"@MMK_L_lii-tamil" = {
-"@MMK_R_T" = 39.0625;
-"@MMK_R_a-tamil" = -48.8281;
-"@MMK_R_e-tamil" = -24.4141;
-"@MMK_R_eMatra-tamil" = 19.5312;
-"@MMK_R_eeMatra-tamil" = 4.88281;
-"@MMK_R_hyphen" = -14.6484;
-"@MMK_R_ka-tamil" = -29.2969;
-"@MMK_R_nya-tamil" = -19.5312;
-"@MMK_R_o-tamil" = -19.5312;
-"@MMK_R_parenright" = 58.5938;
-"@MMK_R_period" = -43.9453;
-"@MMK_R_quoteright" = 29.2969;
-"@MMK_R_quotesingle" = 34.1797;
-"@MMK_R_rra-tamil" = -39.0625;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_ma-tamil" = {
-"@MMK_R_T" = -29.2969;
-"@MMK_R_a-tamil" = -19.5312;
-"@MMK_R_eMatra-tamil" = -9.76562;
-"@MMK_R_eeMatra-tamil" = -14.6484;
-"@MMK_R_quotesingle" = -53.7109;
-"@MMK_R_u-tamil" = -19.5312;
-};
-"@MMK_L_month-tamil" = {
-"@MMK_R_T" = 78.125;
-"@MMK_R_a-tamil" = -107.422;
-"@MMK_R_eMatra-tamil" = 34.1797;
-"@MMK_R_eeMatra-tamil" = 34.1797;
-"@MMK_R_exclam" = 53.7109;
-"@MMK_R_i-tamil" = 39.0625;
-"@MMK_R_ka-tamil" = -14.6484;
-"@MMK_R_parenright" = 97.6562;
-"@MMK_R_period" = -19.5312;
-"@MMK_R_quoteright" = 97.6562;
-"@MMK_R_quotesingle" = 97.6562;
-"@MMK_R_u-tamil" = -43.9453;
-};
-"@MMK_L_number-tamil" = {
-"@MMK_R_T" = 48.8281;
-"@MMK_R_a-tamil" = -58.5938;
-"@MMK_R_e-tamil" = -29.2969;
-"@MMK_R_ka-tamil" = -19.5312;
-"@MMK_R_period" = -48.8281;
-"@MMK_R_quoteright" = 58.5938;
-"@MMK_R_quotesingle" = 58.5938;
-"@MMK_R_u-tamil" = -43.9453;
-};
-"@MMK_L_o-tamil" = {
-"@MMK_R_T" = -39.0625;
-"@MMK_R_quoteright" = -19.5312;
-"@MMK_R_quotesingle" = -24.4141;
-};
-"@MMK_L_quoteleft" = {
-"@MMK_R_a-tamil" = -268.55499;
-"@MMK_R_e-tamil" = -19.5312;
-"@MMK_R_ka-tamil" = -58.5938;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -19.5312;
-"@MMK_R_om-tamil" = -19.5312;
-"@MMK_R_u-tamil" = -34.1797;
-"@MMK_R_visarga-tamil" = -39.0625;
-};
-"@MMK_L_quotesingle" = {
-"@MMK_R_a-tamil" = -253.90601;
-"@MMK_R_e-tamil" = -24.4141;
-"@MMK_R_ka-tamil" = -68.3594;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_o-tamil" = -24.4141;
-"@MMK_R_om-tamil" = -24.4141;
-"@MMK_R_u-tamil" = -19.5312;
-"@MMK_R_visarga-tamil" = -48.8281;
-};
-"@MMK_L_sha-tamil" = {
-"@MMK_R_a-tamil" = -34.1797;
-"@MMK_R_ka-tamil" = -29.2969;
-};
-"@MMK_L_shrii-tamil" = {
-"@MMK_R_a-tamil" = 29.2969;
-"@MMK_R_eMatra-tamil" = -19.5312;
-"@MMK_R_eeMatra-tamil" = -29.2969;
-};
-"@MMK_L_ssa-tamil" = {
-"@MMK_R_T" = -29.2969;
-"@MMK_R_quotesingle" = -19.5312;
-};
-"@MMK_L_ten-tamil" = {
-"@MMK_R_a-tamil" = -24.4141;
-};
-"@MMK_L_tti-tamil" = {
-"@MMK_R_T" = -43.9453;
-"@MMK_R_a-tamil" = 48.8281;
-"@MMK_R_eeMatra-tamil" = -19.5312;
-"@MMK_R_exclam" = -14.6484;
-"@MMK_R_quoteright" = -58.5938;
-"@MMK_R_quotesingle" = -58.5938;
-"@MMK_R_u-tamil" = 34.1797;
-};
-"@MMK_L_ttuu-tamil" = {
-"@MMK_R_e-tamil" = -14.6484;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_rra-tamil" = -9.76562;
-};
-"@MMK_L_u-tamil" = {
-"@MMK_R_a-tamil" = 48.8281;
-"@MMK_R_eMatra-tamil" = -19.5312;
-"@MMK_R_eeMatra-tamil" = -29.2969;
-"@MMK_R_hyphen" = -19.5312;
-"@MMK_R_quoteright" = -34.1797;
-"@MMK_R_quotesingle" = -39.0625;
-};
-"@MMK_L_uMatra-tamil" = {
-"@MMK_R_a-tamil" = -126.953;
-"@MMK_R_ka-tamil" = -9.76562;
-"@MMK_R_period" = -34.1797;
-};
-"@MMK_L_uu-tamil" = {
-"@MMK_R_e-tamil" = -9.76562;
-"@MMK_R_nya-tamil" = -34.1797;
-"@MMK_R_quoteright" = -9.76562;
-"@MMK_R_quotesingle" = -9.76562;
-};
-"@MMK_L_uuMatra-tamil" = {
-"@MMK_R_a-tamil" = -73.2422;
-"@MMK_R_ai-tamil" = -19.5312;
-"@MMK_R_e-tamil" = -19.5312;
-"@MMK_R_ka-tamil" = -43.9453;
-"@MMK_R_nya-tamil" = -24.4141;
-"@MMK_R_o-tamil" = -19.5312;
-"@MMK_R_parenright" = -19.5312;
-"@MMK_R_period" = -34.1797;
-"@MMK_R_u-tamil" = -39.0625;
-"@MMK_R_visarga-tamil" = -19.5312;
-};
-"@MMK_L_visarga-tamil" = {
-"@MMK_R_T" = -39.0625;
-"@MMK_R_exclam" = -24.4141;
-"@MMK_R_quoteright" = -34.1797;
-"@MMK_R_quotesingle" = -48.8281;
-};
-"hii-tamil" = {
-"@MMK_R_T" = 53.7109;
-"@MMK_R_eMatra-tamil" = 29.2969;
-"@MMK_R_parenright" = 102.539;
-"@MMK_R_quoteright" = 48.8281;
-"@MMK_R_quotesingle" = 53.7109;
-};
-"jii-tamil" = {
-"@MMK_R_T" = 83.0078;
-"@MMK_R_eMatra-tamil" = 53.7109;
-"@MMK_R_parenright" = 126.953;
-"@MMK_R_quoteright" = 68.3594;
-"@MMK_R_quotesingle" = 73.2422;
-};
-"llii-tamil" = {
-"@MMK_R_T" = 24.4141;
-"@MMK_R_eMatra-tamil" = 14.6484;
-"@MMK_R_parenright" = 68.3594;
-"@MMK_R_quoteright" = 34.1797;
-"@MMK_R_quotesingle" = 19.5312;
-};
-"lllii-tamil" = {
-"@MMK_R_T" = 53.7109;
-"@MMK_R_eMatra-tamil" = 34.1797;
-"@MMK_R_parenright" = 87.8906;
-"@MMK_R_quoteright" = 48.8281;
-"@MMK_R_quotesingle" = 43.9453;
-};
-"mii-tamil" = {
-"@MMK_R_parenright" = 97.6562;
-"@MMK_R_quoteright" = 34.1797;
-"@MMK_R_quotesingle" = 43.9453;
-question = 34.1797;
-};
-"ngii-tamil" = {
-"@MMK_R_parenright" = 24.4141;
-};
-"nnii-tamil" = {
-braceright = 126.953;
-bracketright = 102.539;
-"eMatra-tamil" = 29.2969;
-"eeMatra-tamil" = 29.2969;
-parenright = 107.422;
-question = 68.3594;
-quotedbl = 63.4766;
-quotedblright = 53.7109;
-};
-"nnnii-tamil" = {
-"@MMK_R_T" = 24.4141;
-"@MMK_R_parenright" = 48.8281;
-};
-"pii-tamil" = {
-"@MMK_R_parenright" = 53.7109;
-};
-"rii-tamil" = {
-"@MMK_R_T" = 83.0078;
-"@MMK_R_eMatra-tamil" = 53.7109;
-"@MMK_R_parenright" = 126.953;
-"@MMK_R_quoteright" = 63.4766;
-quotedbl = 78.125;
-};
-"rrii-tamil" = {
-"@MMK_R_T" = 48.8281;
-"@MMK_R_eMatra-tamil" = 34.1797;
-"@MMK_R_parenright" = 97.6562;
-"@MMK_R_quoteright" = 43.9453;
-"@MMK_R_quotesingle" = 48.8281;
-};
-"shii-tamil" = {
-"@MMK_R_parenright" = 24.4141;
-};
-"vii-tamil" = {
-"@MMK_R_parenright" = 29.2969;
-};
-"yii-tamil" = {
-"@MMK_R_parenright" = 34.1797;
-};
-};
 "B9BAA477-AC00-41F5-873D-D03D7AD3C433" = {
 "@MMK_L_aa-tamil" = {
 "@MMK_R_T" = -43.9453;
@@ -194290,6 +193306,302 @@ quotedblright = 2.44141;
 "@MMK_R_quotesingle" = 39.0625;
 };
 };
+"6525706B-2ED0-4F51-A466-C79C9F0D855A" = {
+"@MMK_L_aa-tamil" = {
+"@MMK_R_T" = -68.3594;
+"@MMK_R_debit-tamil" = 19.5312;
+"@MMK_R_e-tamil" = -48.8281;
+"@MMK_R_eMatra-tamil" = -73.2422;
+"@MMK_R_eeMatra-tamil" = -63.4766;
+"@MMK_R_exclam" = -39.0625;
+"@MMK_R_hyphen" = -34.1797;
+"@MMK_R_ka-tamil" = -34.1797;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -29.2969;
+"@MMK_R_parenright" = 9.76562;
+"@MMK_R_quoteright" = -141.60201;
+"@MMK_R_quotesingle" = -141.60201;
+"@MMK_R_rupee-tamil" = -24.4141;
+"@MMK_R_ya-tamil" = -29.2969;
+"lu-tamil" = 9.76562;
+"luu-tamil" = -9.76562;
+slash = 39.0625;
+"ta-tamil" = -4.88281;
+};
+"@MMK_L_ai-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_u-tamil" = -14.6484;
+};
+"@MMK_L_ca-tamil" = {
+"@MMK_R_a-tamil" = -34.1797;
+"@MMK_R_ka-tamil" = -19.5312;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_period" = -29.2969;
+"@MMK_R_u-tamil" = -29.2969;
+braceright = 48.8281;
+bracketright = 48.8281;
+parenright = 53.7109;
+};
+"@MMK_L_e-tamil" = {
+"@MMK_R_a-tamil" = -29.2969;
+"@MMK_R_ai-tamil" = -9.76562;
+"@MMK_R_e-tamil" = -19.5312;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_ka-tamil" = -34.1797;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_o-tamil" = -24.4141;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_u-tamil" = -14.6484;
+"@MMK_R_visarga-tamil" = -29.2969;
+slash = -9.76562;
+};
+"@MMK_L_five-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+};
+"@MMK_L_hyphen" = {
+"@MMK_R_a-tamil" = -14.6484;
+};
+"@MMK_L_ka-tamil" = {
+"@MMK_R_T" = -48.8281;
+"@MMK_R_a-tamil" = 39.0625;
+"@MMK_R_ai-tamil" = -19.5312;
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_eMatra-tamil" = -24.4141;
+"@MMK_R_eeMatra-tamil" = -29.2969;
+"@MMK_R_exclam" = -43.9453;
+"@MMK_R_i-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -39.0625;
+"@MMK_R_quoteright" = -43.9453;
+"@MMK_R_quotesingle" = -73.2422;
+"eeMatra-tamil" = -48.8281;
+};
+"@MMK_L_kuu-tamil" = {
+"@MMK_R_T" = -58.5938;
+"@MMK_R_eMatra-tamil" = -14.6484;
+"@MMK_R_eeMatra-tamil" = -34.1797;
+"@MMK_R_quotesingle" = -58.5938;
+};
+"@MMK_L_la-tamil" = {
+"@MMK_R_T" = -19.5312;
+"@MMK_R_a-tamil" = -24.4141;
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_exclam" = -29.2969;
+"@MMK_R_hyphen" = 19.5312;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_u-tamil" = -19.5312;
+};
+"@MMK_L_lii-tamil" = {
+"@MMK_R_T" = 39.0625;
+"@MMK_R_a-tamil" = -63.4766;
+"@MMK_R_e-tamil" = -34.1797;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_eeMatra-tamil" = 29.2969;
+"@MMK_R_hyphen" = -14.6484;
+"@MMK_R_ka-tamil" = -29.2969;
+"@MMK_R_nya-tamil" = -39.0625;
+"@MMK_R_o-tamil" = -29.2969;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 34.1797;
+"@MMK_R_rra-tamil" = -19.5312;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_ma-tamil" = {
+"@MMK_R_T" = -19.5312;
+"@MMK_R_a-tamil" = -14.6484;
+"@MMK_R_eMatra-tamil" = -9.76562;
+"@MMK_R_eeMatra-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -19.5312;
+"@MMK_R_quotesingle" = -19.5312;
+"@MMK_R_u-tamil" = -19.5312;
+};
+"@MMK_L_month-tamil" = {
+"@MMK_R_T" = 78.125;
+"@MMK_R_a-tamil" = -122.07;
+"@MMK_R_eMatra-tamil" = 48.8281;
+"@MMK_R_eeMatra-tamil" = 48.8281;
+"@MMK_R_exclam" = 92.7734;
+"@MMK_R_i-tamil" = 39.0625;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_parenright" = 97.6562;
+"@MMK_R_period" = -19.5312;
+"@MMK_R_quoteright" = 97.6562;
+"@MMK_R_quotesingle" = 97.6562;
+"@MMK_R_u-tamil" = -39.0625;
+};
+"@MMK_L_number-tamil" = {
+"@MMK_R_T" = 29.2969;
+"@MMK_R_a-tamil" = -83.0078;
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -29.2969;
+"@MMK_R_period" = -48.8281;
+"@MMK_R_quoteright" = 58.5938;
+"@MMK_R_quotesingle" = 58.5938;
+"@MMK_R_u-tamil" = -53.7109;
+};
+"@MMK_L_o-tamil" = {
+"@MMK_R_T" = -48.8281;
+"@MMK_R_quoteright" = -19.5312;
+"@MMK_R_quotesingle" = -24.4141;
+};
+"@MMK_L_quoteleft" = {
+"@MMK_R_a-tamil" = -268.55499;
+"@MMK_R_e-tamil" = -19.5312;
+"@MMK_R_ka-tamil" = -63.4766;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -19.5312;
+"@MMK_R_om-tamil" = -19.5312;
+"@MMK_R_u-tamil" = -34.1797;
+"@MMK_R_visarga-tamil" = -29.2969;
+};
+"@MMK_L_quotesingle" = {
+"@MMK_R_a-tamil" = -253.90601;
+"@MMK_R_e-tamil" = -24.4141;
+"@MMK_R_ka-tamil" = -83.0078;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -24.4141;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_u-tamil" = -19.5312;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_sha-tamil" = {
+"@MMK_R_a-tamil" = -34.1797;
+"@MMK_R_ka-tamil" = -29.2969;
+};
+"@MMK_L_shrii-tamil" = {
+"@MMK_R_a-tamil" = 29.2969;
+"@MMK_R_eeMatra-tamil" = -14.6484;
+};
+"@MMK_L_ssa-tamil" = {
+"@MMK_R_T" = -19.5312;
+"@MMK_R_quotesingle" = -19.5312;
+};
+"@MMK_L_ten-tamil" = {
+"@MMK_R_a-tamil" = -24.4141;
+};
+"@MMK_L_tti-tamil" = {
+"@MMK_R_T" = -39.0625;
+"@MMK_R_a-tamil" = 48.8281;
+"@MMK_R_eeMatra-tamil" = -19.5312;
+"@MMK_R_exclam" = -19.5312;
+"@MMK_R_quoteright" = -58.5938;
+"@MMK_R_quotesingle" = -58.5938;
+"@MMK_R_u-tamil" = 34.1797;
+};
+"@MMK_L_ttuu-tamil" = {
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_rra-tamil" = -9.76562;
+};
+"@MMK_L_u-tamil" = {
+"@MMK_R_T" = -29.2969;
+"@MMK_R_a-tamil" = 48.8281;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_quoteright" = -19.5312;
+"@MMK_R_quotesingle" = -39.0625;
+};
+"@MMK_L_uMatra-tamil" = {
+"@MMK_R_a-tamil" = -126.953;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_period" = -29.2969;
+};
+"@MMK_L_uu-tamil" = {
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_quoteright" = -9.76562;
+"@MMK_R_quotesingle" = -9.76562;
+};
+"@MMK_L_uuMatra-tamil" = {
+"@MMK_R_a-tamil" = -73.2422;
+"@MMK_R_ai-tamil" = -19.5312;
+"@MMK_R_e-tamil" = -19.5312;
+"@MMK_R_ka-tamil" = -29.2969;
+"@MMK_R_nya-tamil" = -14.6484;
+"@MMK_R_o-tamil" = -19.5312;
+"@MMK_R_parenright" = -19.5312;
+"@MMK_R_period" = -34.1797;
+"@MMK_R_u-tamil" = -39.0625;
+"@MMK_R_visarga-tamil" = -19.5312;
+};
+"@MMK_L_visarga-tamil" = {
+"@MMK_R_T" = -39.0625;
+"@MMK_R_quoteright" = -24.4141;
+"@MMK_R_quotesingle" = -39.0625;
+};
+"hii-tamil" = {
+"@MMK_R_T" = 63.4766;
+"@MMK_R_eMatra-tamil" = 29.2969;
+"@MMK_R_parenright" = 78.125;
+"@MMK_R_quoteright" = 48.8281;
+"@MMK_R_quotesingle" = 39.0625;
+};
+"jii-tamil" = {
+"@MMK_R_T" = 63.4766;
+"@MMK_R_eMatra-tamil" = 34.1797;
+"@MMK_R_parenright" = 102.539;
+"@MMK_R_quoteright" = 58.5938;
+"@MMK_R_quotesingle" = 58.5938;
+};
+"llii-tamil" = {
+"@MMK_R_T" = 43.9453;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_parenright" = 68.3594;
+"@MMK_R_quoteright" = 39.0625;
+"@MMK_R_quotesingle" = 34.1797;
+};
+"lllii-tamil" = {
+"@MMK_R_T" = 39.0625;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_parenright" = 78.125;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 29.2969;
+};
+"mii-tamil" = {
+"@MMK_R_T" = 53.7109;
+"@MMK_R_eMatra-tamil" = 9.76562;
+"@MMK_R_parenright" = 83.0078;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 53.7109;
+};
+"ngii-tamil" = {
+"@MMK_R_parenright" = 29.2969;
+};
+"nnii-tamil" = {
+"@MMK_R_T" = 48.8281;
+"@MMK_R_eMatra-tamil" = 9.76562;
+"@MMK_R_parenright" = 63.4766;
+"@MMK_R_quoteright" = 48.8281;
+"@MMK_R_quotesingle" = 43.9453;
+};
+"nnnii-tamil" = {
+"@MMK_R_T" = 34.1797;
+"@MMK_R_parenright" = 63.4766;
+"@MMK_R_quoteright" = 34.1797;
+"@MMK_R_quotesingle" = 29.2969;
+};
+"pii-tamil" = {
+"@MMK_R_parenright" = 24.4141;
+};
+"rii-tamil" = {
+"@MMK_R_T" = 83.0078;
+"@MMK_R_eMatra-tamil" = 39.0625;
+"@MMK_R_parenright" = 112.305;
+"@MMK_R_quoteright" = 58.5938;
+"@MMK_R_quotesingle" = 78.125;
+};
+"rrii-tamil" = {
+"@MMK_R_T" = 58.5938;
+"@MMK_R_eMatra-tamil" = 34.1797;
+"@MMK_R_parenright" = 83.0078;
+"@MMK_R_quoteright" = 53.7109;
+"@MMK_R_quotesingle" = 48.8281;
+};
+"yii-tamil" = {
+"@MMK_R_parenright" = 43.9453;
+};
+};
 "DB00C563-D9ED-4234-8230-88DFFBF56BAD" = {
 "@MMK_L_aa-tamil" = {
 "@MMK_R_T" = -78.125;
@@ -194593,6 +193905,578 @@ question = 102.539;
 "@MMK_R_parenright" = 34.1797;
 };
 };
+"5A888C56-A915-4019-8CEA-AFD77EBC0903" = {
+"@MMK_L_aa-tamil" = {
+"@MMK_R_T" = -39.0625;
+"@MMK_R_debit-tamil" = 19.5312;
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_eMatra-tamil" = -14.6484;
+"@MMK_R_eeMatra-tamil" = -29.2969;
+"@MMK_R_exclam" = -9.76562;
+"@MMK_R_hyphen" = -34.1797;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_parenright" = 9.76562;
+"@MMK_R_quoteright" = -43.9453;
+"@MMK_R_quotesingle" = -29.2969;
+"@MMK_R_rupee-tamil" = -14.6484;
+"@MMK_R_slash" = 39.0625;
+"ta-tamil" = -4.88281;
+"tuu-tamil" = 19.5312;
+};
+"@MMK_L_ai-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_u-tamil" = -14.6484;
+};
+"@MMK_L_ca-tamil" = {
+"@MMK_R_a-tamil" = -9.76562;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_period" = -29.2969;
+"@MMK_R_u-tamil" = -29.2969;
+braceright = 43.9453;
+bracketright = 78.125;
+parenright = 78.125;
+question = 48.8281;
+quotedbl = 73.2422;
+quotedblright = 34.1797;
+};
+"@MMK_L_e-tamil" = {
+"@MMK_R_a-tamil" = -48.8281;
+"@MMK_R_ai-tamil" = -9.76562;
+"@MMK_R_e-tamil" = -24.4141;
+"@MMK_R_eMatra-tamil" = 14.6484;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_ka-tamil" = -43.9453;
+"@MMK_R_nya-tamil" = -29.2969;
+"@MMK_R_o-tamil" = -34.1797;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_rra-tamil" = -24.4141;
+"@MMK_R_slash" = -9.76562;
+"@MMK_R_u-tamil" = -43.9453;
+"@MMK_R_visarga-tamil" = -58.5938;
+"eeMatra-tamil" = 14.6484;
+};
+"@MMK_L_five-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+};
+"@MMK_L_hyphen" = {
+"@MMK_R_a-tamil" = -14.6484;
+};
+"@MMK_L_ka-tamil" = {
+"@MMK_R_T" = -14.6484;
+"@MMK_R_eeMatra-tamil" = -19.5312;
+"@MMK_R_i-tamil" = -9.76562;
+"@MMK_R_quoteright" = -29.2969;
+"@MMK_R_quotesingle" = -19.5312;
+"eeMatra-tamil" = -9.76562;
+quotedbl = 19.5312;
+};
+"@MMK_L_kuu-tamil" = {
+"@MMK_R_T" = -24.4141;
+"@MMK_R_eMatra-tamil" = -39.0625;
+"@MMK_R_eeMatra-tamil" = -39.0625;
+"@MMK_R_quotesingle" = -58.5938;
+};
+"@MMK_L_la-tamil" = {
+"@MMK_R_a-tamil" = -9.76562;
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_hyphen" = 19.5312;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_u-tamil" = -9.76562;
+};
+"@MMK_L_lii-tamil" = {
+"@MMK_R_T" = 29.2969;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_eeMatra-tamil" = 4.88281;
+"@MMK_R_hyphen" = -14.6484;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_parenright" = 39.0625;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 34.1797;
+"@MMK_R_rra-tamil" = -19.5312;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_ma-tamil" = {
+"@MMK_R_T" = -14.6484;
+"@MMK_R_eeMatra-tamil" = -4.88281;
+"@MMK_R_u-tamil" = -9.76562;
+};
+"@MMK_L_month-tamil" = {
+"@MMK_R_T" = 83.0078;
+"@MMK_R_a-tamil" = -87.8906;
+"@MMK_R_colon" = 39.0625;
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_eMatra-tamil" = 39.0625;
+"@MMK_R_eeMatra-tamil" = 39.0625;
+"@MMK_R_exclam" = 73.2422;
+"@MMK_R_i-tamil" = 39.0625;
+"@MMK_R_ka-tamil" = -24.4141;
+"@MMK_R_parenright" = 97.6562;
+"@MMK_R_period" = -19.5312;
+"@MMK_R_quoteright" = 97.6562;
+"@MMK_R_quotesingle" = 97.6562;
+"@MMK_R_u-tamil" = -14.6484;
+};
+"@MMK_L_number-tamil" = {
+"@MMK_R_T" = 58.5938;
+"@MMK_R_a-tamil" = -24.4141;
+"@MMK_R_ka-tamil" = -19.5312;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_period" = -48.8281;
+"@MMK_R_quoteright" = 58.5938;
+"@MMK_R_quotesingle" = 58.5938;
+};
+"@MMK_L_o-tamil" = {
+"@MMK_R_quoteright" = -19.5312;
+"@MMK_R_quotesingle" = -24.4141;
+};
+"@MMK_L_quoteleft" = {
+"@MMK_R_a-tamil" = -180.664;
+"@MMK_R_e-tamil" = -19.5312;
+"@MMK_R_ka-tamil" = -68.3594;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -19.5312;
+"@MMK_R_om-tamil" = -19.5312;
+"@MMK_R_u-tamil" = -53.7109;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_quotesingle" = {
+"@MMK_R_a-tamil" = -195.312;
+"@MMK_R_e-tamil" = -24.4141;
+"@MMK_R_ka-tamil" = -53.7109;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -24.4141;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_u-tamil" = -29.2969;
+"@MMK_R_visarga-tamil" = -48.8281;
+};
+"@MMK_L_sha-tamil" = {
+"@MMK_R_a-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -29.2969;
+};
+"@MMK_L_shrii-tamil" = {
+"@MMK_R_T" = 43.9453;
+"@MMK_R_a-tamil" = 29.2969;
+"@MMK_R_eeMatra-tamil" = 19.5312;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_quoteright" = 39.0625;
+"@MMK_R_quotesingle" = 58.5938;
+};
+"@MMK_L_ssa-tamil" = {
+"@MMK_R_T" = -19.5312;
+"@MMK_R_quotesingle" = -19.5312;
+};
+"@MMK_L_ten-tamil" = {
+"@MMK_R_a-tamil" = -4.88281;
+};
+"@MMK_L_tti-tamil" = {
+"@MMK_R_T" = -24.4141;
+"@MMK_R_a-tamil" = 48.8281;
+"@MMK_R_eeMatra-tamil" = -19.5312;
+"@MMK_R_quoteright" = -58.5938;
+"@MMK_R_quotesingle" = -58.5938;
+"@MMK_R_u-tamil" = 34.1797;
+};
+"@MMK_L_ttuu-tamil" = {
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_rra-tamil" = -9.76562;
+};
+"@MMK_L_u-tamil" = {
+"@MMK_R_T" = -14.6484;
+"@MMK_R_a-tamil" = 24.4141;
+"@MMK_R_eMatra-tamil" = -19.5312;
+"@MMK_R_eeMatra-tamil" = -29.2969;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_quoteright" = -53.7109;
+"@MMK_R_quotesingle" = -58.5938;
+};
+"@MMK_L_uMatra-tamil" = {
+"@MMK_R_a-tamil" = -53.7109;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_period" = -9.76562;
+};
+"@MMK_L_uu-tamil" = {
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_quoteright" = -9.76562;
+"@MMK_R_quotesingle" = -9.76562;
+};
+"@MMK_L_uuMatra-tamil" = {
+"@MMK_R_a-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_parenright" = -19.5312;
+"@MMK_R_period" = -9.76562;
+"@MMK_R_u-tamil" = -9.76562;
+"@MMK_R_visarga-tamil" = -19.5312;
+};
+"@MMK_L_visarga-tamil" = {
+"@MMK_R_T" = -24.4141;
+"@MMK_R_quoteright" = -34.1797;
+"@MMK_R_quotesingle" = -48.8281;
+};
+"hii-tamil" = {
+"@MMK_R_T" = 39.0625;
+"@MMK_R_parenright" = 39.0625;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 39.0625;
+};
+"jii-tamil" = {
+"@MMK_R_T" = 43.9453;
+"@MMK_R_parenright" = 53.7109;
+"@MMK_R_quotesingle" = 58.5938;
+};
+"llii-tamil" = {
+"@MMK_R_T" = 48.8281;
+"@MMK_R_parenright" = 83.0078;
+"@MMK_R_quoteright" = 43.9453;
+"@MMK_R_quotesingle" = 73.2422;
+"eeMatra-tamil" = 43.9453;
+};
+"lllii-tamil" = {
+"@MMK_R_T" = 9.76562;
+"@MMK_R_eMatra-tamil" = 14.6484;
+"@MMK_R_parenright" = 34.1797;
+"@MMK_R_quotesingle" = 34.1797;
+};
+"mii-tamil" = {
+"@MMK_R_T" = 4.88281;
+"@MMK_R_parenright" = 19.5312;
+"@MMK_R_quotesingle" = 24.4141;
+};
+"ngii-tamil" = {
+"@MMK_R_T" = 43.9453;
+"@MMK_R_parenright" = 43.9453;
+"@MMK_R_quotesingle" = 43.9453;
+};
+"nnii-tamil" = {
+"@MMK_R_T" = 39.0625;
+"@MMK_R_parenright" = 97.6562;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 78.125;
+};
+"nnnii-tamil" = {
+"@MMK_R_T" = 39.0625;
+"@MMK_R_parenright" = 43.9453;
+"@MMK_R_quoteright" = 19.5312;
+"@MMK_R_quotesingle" = 48.8281;
+};
+"pii-tamil" = {
+"@MMK_R_T" = 19.5312;
+"@MMK_R_parenright" = 39.0625;
+"@MMK_R_quotesingle" = 48.8281;
+};
+"rii-tamil" = {
+"@MMK_R_T" = 48.8281;
+"@MMK_R_eMatra-tamil" = 14.6484;
+"@MMK_R_parenright" = 78.125;
+"@MMK_R_quoteright" = 43.9453;
+"@MMK_R_quotesingle" = 87.8906;
+};
+"rrii-tamil" = {
+"@MMK_R_T" = 19.5312;
+"@MMK_R_eMatra-tamil" = 4.88281;
+"@MMK_R_parenright" = 39.0625;
+"@MMK_R_quotesingle" = 39.0625;
+};
+"vii-tamil" = {
+"@MMK_R_parenright" = 29.2969;
+"@MMK_R_quotesingle" = 29.2969;
+};
+"yii-tamil" = {
+"@MMK_R_T" = 24.4141;
+"@MMK_R_parenright" = 39.0625;
+"@MMK_R_quotesingle" = 53.7109;
+};
+};
+"08F935B0-92DE-4692-85BF-2B23B5078C15" = {
+"@MMK_L_aa-tamil" = {
+"@MMK_R_T" = -43.9453;
+"@MMK_R_debit-tamil" = 19.5312;
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_eMatra-tamil" = -14.6484;
+"@MMK_R_eeMatra-tamil" = -29.2969;
+"@MMK_R_exclam" = -9.76562;
+"@MMK_R_hyphen" = -34.1797;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_parenright" = 9.76562;
+"@MMK_R_quoteright" = -43.9453;
+"@MMK_R_quotesingle" = -58.5938;
+"@MMK_R_rupee-tamil" = -14.6484;
+"@MMK_R_slash" = 39.0625;
+"ta-tamil" = -4.88281;
+"tuu-tamil" = 19.5312;
+};
+"@MMK_L_ai-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_u-tamil" = -14.6484;
+};
+"@MMK_L_ca-tamil" = {
+"@MMK_R_a-tamil" = -9.76562;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_period" = -29.2969;
+"@MMK_R_u-tamil" = -29.2969;
+bracketright = 63.4766;
+parenright = 68.3594;
+question = 39.0625;
+quotedbl = 48.8281;
+quotedblright = 29.2969;
+};
+"@MMK_L_e-tamil" = {
+"@MMK_R_a-tamil" = -48.8281;
+"@MMK_R_ai-tamil" = -9.76562;
+"@MMK_R_e-tamil" = -24.4141;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_ka-tamil" = -43.9453;
+"@MMK_R_nya-tamil" = -29.2969;
+"@MMK_R_o-tamil" = -34.1797;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_rra-tamil" = -24.4141;
+"@MMK_R_slash" = -9.76562;
+"@MMK_R_u-tamil" = -43.9453;
+"@MMK_R_visarga-tamil" = -58.5938;
+};
+"@MMK_L_five-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+};
+"@MMK_L_hyphen" = {
+"@MMK_R_a-tamil" = -14.6484;
+};
+"@MMK_L_ka-tamil" = {
+"@MMK_R_T" = -34.1797;
+"@MMK_R_eeMatra-tamil" = -19.5312;
+"@MMK_R_i-tamil" = -9.76562;
+"@MMK_R_quoteright" = -39.0625;
+"@MMK_R_quotesingle" = -19.5312;
+"eeMatra-tamil" = -24.4141;
+};
+"@MMK_L_kuu-tamil" = {
+"@MMK_R_T" = -24.4141;
+"@MMK_R_eMatra-tamil" = -39.0625;
+"@MMK_R_eeMatra-tamil" = -39.0625;
+"@MMK_R_quotesingle" = -58.5938;
+};
+"@MMK_L_la-tamil" = {
+"@MMK_R_T" = -9.76562;
+"@MMK_R_a-tamil" = -9.76562;
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_hyphen" = 19.5312;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_u-tamil" = -9.76562;
+};
+"@MMK_L_lii-tamil" = {
+"@MMK_R_T" = 29.2969;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_eeMatra-tamil" = 4.88281;
+"@MMK_R_hyphen" = -14.6484;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 34.1797;
+"@MMK_R_rra-tamil" = -19.5312;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_ma-tamil" = {
+"@MMK_R_T" = -14.6484;
+"@MMK_R_eMatra-tamil" = -9.76562;
+"@MMK_R_eeMatra-tamil" = -4.88281;
+"@MMK_R_u-tamil" = -9.76562;
+question = 29.2969;
+};
+"@MMK_L_month-tamil" = {
+"@MMK_R_T" = 83.0078;
+"@MMK_R_a-tamil" = -87.8906;
+"@MMK_R_colon" = 39.0625;
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_eMatra-tamil" = 39.0625;
+"@MMK_R_eeMatra-tamil" = 39.0625;
+"@MMK_R_exclam" = 73.2422;
+"@MMK_R_i-tamil" = 39.0625;
+"@MMK_R_ka-tamil" = -24.4141;
+"@MMK_R_parenright" = 97.6562;
+"@MMK_R_period" = -19.5312;
+"@MMK_R_quoteright" = 97.6562;
+"@MMK_R_quotesingle" = 97.6562;
+"@MMK_R_u-tamil" = -14.6484;
+};
+"@MMK_L_number-tamil" = {
+"@MMK_R_T" = 58.5938;
+"@MMK_R_a-tamil" = -24.4141;
+"@MMK_R_ka-tamil" = -19.5312;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_period" = -48.8281;
+"@MMK_R_quoteright" = 58.5938;
+"@MMK_R_quotesingle" = 58.5938;
+};
+"@MMK_L_o-tamil" = {
+"@MMK_R_quoteright" = -19.5312;
+"@MMK_R_quotesingle" = -24.4141;
+};
+"@MMK_L_quoteleft" = {
+"@MMK_R_a-tamil" = -180.664;
+"@MMK_R_e-tamil" = -19.5312;
+"@MMK_R_ka-tamil" = -68.3594;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -19.5312;
+"@MMK_R_om-tamil" = -19.5312;
+"@MMK_R_u-tamil" = -53.7109;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_quotesingle" = {
+"@MMK_R_a-tamil" = -195.312;
+"@MMK_R_e-tamil" = -24.4141;
+"@MMK_R_ka-tamil" = -63.4766;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -24.4141;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_u-tamil" = -29.2969;
+"@MMK_R_visarga-tamil" = -48.8281;
+};
+"@MMK_L_sha-tamil" = {
+"@MMK_R_a-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -29.2969;
+};
+"@MMK_L_shrii-tamil" = {
+"@MMK_R_T" = 43.9453;
+"@MMK_R_a-tamil" = 29.2969;
+"@MMK_R_eeMatra-tamil" = 19.5312;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_quoteright" = 39.0625;
+"@MMK_R_quotesingle" = 58.5938;
+};
+"@MMK_L_ssa-tamil" = {
+"@MMK_R_T" = -19.5312;
+"@MMK_R_quotesingle" = -19.5312;
+};
+"@MMK_L_ten-tamil" = {
+"@MMK_R_a-tamil" = -4.88281;
+};
+"@MMK_L_tti-tamil" = {
+"@MMK_R_T" = -24.4141;
+"@MMK_R_a-tamil" = 48.8281;
+"@MMK_R_eeMatra-tamil" = -19.5312;
+"@MMK_R_quoteright" = -58.5938;
+"@MMK_R_quotesingle" = -58.5938;
+"@MMK_R_u-tamil" = 34.1797;
+};
+"@MMK_L_ttuu-tamil" = {
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_rra-tamil" = -9.76562;
+};
+"@MMK_L_u-tamil" = {
+"@MMK_R_T" = -14.6484;
+"@MMK_R_a-tamil" = 24.4141;
+"@MMK_R_eMatra-tamil" = -19.5312;
+"@MMK_R_eeMatra-tamil" = -29.2969;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_quoteright" = -53.7109;
+"@MMK_R_quotesingle" = -58.5938;
+};
+"@MMK_L_uMatra-tamil" = {
+"@MMK_R_a-tamil" = -53.7109;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_period" = -9.76562;
+};
+"@MMK_L_uu-tamil" = {
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_quoteright" = -9.76562;
+"@MMK_R_quotesingle" = -9.76562;
+};
+"@MMK_L_uuMatra-tamil" = {
+"@MMK_R_a-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_parenright" = -19.5312;
+"@MMK_R_period" = -9.76562;
+"@MMK_R_u-tamil" = -9.76562;
+"@MMK_R_visarga-tamil" = -19.5312;
+};
+"@MMK_L_visarga-tamil" = {
+"@MMK_R_T" = -24.4141;
+"@MMK_R_quoteright" = -34.1797;
+"@MMK_R_quotesingle" = -48.8281;
+};
+"hii-tamil" = {
+"@MMK_R_T" = 39.0625;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_quoteright" = 24.4141;
+"@MMK_R_quotesingle" = 43.9453;
+};
+"jii-tamil" = {
+"@MMK_R_T" = 53.7109;
+"@MMK_R_eMatra-tamil" = 29.2969;
+"@MMK_R_parenright" = 83.0078;
+"@MMK_R_quoteright" = 48.8281;
+"@MMK_R_quotesingle" = 63.4766;
+};
+"llii-tamil" = {
+"@MMK_R_T" = 43.9453;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_parenright" = 78.125;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 48.8281;
+};
+"lllii-tamil" = {
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_parenright" = 48.8281;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 19.5312;
+};
+"mii-tamil" = {
+"@MMK_R_eMatra-tamil" = 9.76562;
+"@MMK_R_parenright" = 48.8281;
+"@MMK_R_quoteright" = 19.5312;
+"@MMK_R_quotesingle" = 34.1797;
+};
+"ngii-tamil" = {
+"@MMK_R_parenright" = 29.2969;
+};
+"nnii-tamil" = {
+braceright = 43.9453;
+bracketright = 43.9453;
+parenright = 53.7109;
+question = 58.5938;
+quotedbl = 53.7109;
+quotedblright = 34.1797;
+};
+"nnnii-tamil" = {
+"@MMK_R_parenright" = 43.9453;
+"@MMK_R_quotesingle" = 24.4141;
+};
+"pii-tamil" = {
+"@MMK_R_T" = 14.6484;
+"@MMK_R_parenright" = 29.2969;
+"@MMK_R_quotesingle" = 14.6484;
+};
+"rii-tamil" = {
+"@MMK_R_T" = 63.4766;
+"@MMK_R_eMatra-tamil" = 29.2969;
+"@MMK_R_parenright" = 78.125;
+"@MMK_R_quoteright" = 48.8281;
+"@MMK_R_quotesingle" = 68.3594;
+};
+"rrii-tamil" = {
+"@MMK_R_T" = 34.1797;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_quoteright" = 19.5312;
+"@MMK_R_quotesingle" = 43.9453;
+};
+"vii-tamil" = {
+"@MMK_R_parenright" = 29.2969;
+"@MMK_R_quotesingle" = 19.5312;
+};
+"yii-tamil" = {
+"@MMK_R_parenright" = 43.9453;
+"@MMK_R_quotesingle" = 24.4141;
+};
+};
 "FC77071B-C743-4DEF-9CC8-C09755F537EA" = {
 "@MMK_L_aa-tamil" = {
 "@MMK_R_T" = -63.4766;
@@ -194891,6 +194775,313 @@ quotedblright = 34.1797;
 };
 "yii-tamil" = {
 "@MMK_R_parenright" = 53.7109;
+};
+};
+"7D76D23B-B1EB-4058-BE82-8D4D6B2869EA" = {
+"@MMK_L_aa-tamil" = {
+"@MMK_R_T" = -43.9453;
+"@MMK_R_debit-tamil" = 19.5312;
+"@MMK_R_e-tamil" = -34.1797;
+"@MMK_R_eMatra-tamil" = -73.2422;
+"@MMK_R_eeMatra-tamil" = -73.2422;
+"@MMK_R_exclam" = -14.6484;
+"@MMK_R_hyphen" = -34.1797;
+"@MMK_R_ka-tamil" = -19.5312;
+"@MMK_R_o-tamil" = -29.2969;
+"@MMK_R_parenright" = 9.76562;
+"@MMK_R_quoteright" = -141.60201;
+"@MMK_R_quotesingle" = -141.60201;
+"@MMK_R_rupee-tamil" = -24.4141;
+"@MMK_R_slash" = 39.0625;
+"ta-tamil" = -4.88281;
+"tuu-tamil" = 19.5312;
+};
+"@MMK_L_ai-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_u-tamil" = -14.6484;
+};
+"@MMK_L_ca-tamil" = {
+"@MMK_R_a-tamil" = -34.1797;
+"@MMK_R_ka-tamil" = -19.5312;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_period" = -29.2969;
+"@MMK_R_u-tamil" = -29.2969;
+braceright = 58.5938;
+bracketright = 48.8281;
+parenright = 58.5938;
+question = 19.5312;
+};
+"@MMK_L_e-tamil" = {
+"@MMK_R_a-tamil" = -19.5312;
+"@MMK_R_ai-tamil" = -9.76562;
+"@MMK_R_e-tamil" = -4.88281;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_nya-tamil" = -9.76562;
+"@MMK_R_o-tamil" = -14.6484;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_rra-tamil" = -9.76562;
+"@MMK_R_slash" = -9.76562;
+"@MMK_R_u-tamil" = -14.6484;
+"@MMK_R_visarga-tamil" = -29.2969;
+};
+"@MMK_L_five-tamil" = {
+"@MMK_R_ka-tamil" = -14.6484;
+};
+"@MMK_L_hyphen" = {
+"@MMK_R_a-tamil" = -14.6484;
+};
+"@MMK_L_iiMatra-tamil" = {
+"@MMK_R_T" = 136.71899;
+};
+"@MMK_L_ka-tamil" = {
+"@MMK_R_T" = -63.4766;
+"@MMK_R_a-tamil" = 39.0625;
+"@MMK_R_ai-tamil" = -19.5312;
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_eMatra-tamil" = -24.4141;
+"@MMK_R_eeMatra-tamil" = -43.9453;
+"@MMK_R_exclam" = -29.2969;
+"@MMK_R_i-tamil" = -14.6484;
+"@MMK_R_quoteright" = -43.9453;
+"@MMK_R_quotesingle" = -73.2422;
+"eeMatra-tamil" = -39.0625;
+};
+"@MMK_L_kuu-tamil" = {
+"@MMK_R_T" = -34.1797;
+"@MMK_R_eMatra-tamil" = -39.0625;
+"@MMK_R_eeMatra-tamil" = -39.0625;
+"@MMK_R_quotesingle" = -58.5938;
+};
+"@MMK_L_la-tamil" = {
+"@MMK_R_T" = -14.6484;
+"@MMK_R_a-tamil" = -24.4141;
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_exclam" = -24.4141;
+"@MMK_R_hyphen" = 19.5312;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_quoteright" = -4.88281;
+"@MMK_R_quotesingle" = -4.88281;
+"@MMK_R_u-tamil" = -9.76562;
+};
+"@MMK_L_lii-tamil" = {
+"@MMK_R_T" = 39.0625;
+"@MMK_R_a-tamil" = -48.8281;
+"@MMK_R_e-tamil" = -24.4141;
+"@MMK_R_eMatra-tamil" = 19.5312;
+"@MMK_R_eeMatra-tamil" = 4.88281;
+"@MMK_R_hyphen" = -14.6484;
+"@MMK_R_ka-tamil" = -29.2969;
+"@MMK_R_nya-tamil" = -19.5312;
+"@MMK_R_o-tamil" = -19.5312;
+"@MMK_R_parenright" = 58.5938;
+"@MMK_R_period" = -43.9453;
+"@MMK_R_quoteright" = 29.2969;
+"@MMK_R_quotesingle" = 34.1797;
+"@MMK_R_rra-tamil" = -39.0625;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_ma-tamil" = {
+"@MMK_R_T" = -29.2969;
+"@MMK_R_a-tamil" = -19.5312;
+"@MMK_R_eMatra-tamil" = -9.76562;
+"@MMK_R_eeMatra-tamil" = -14.6484;
+"@MMK_R_quotesingle" = -53.7109;
+"@MMK_R_u-tamil" = -19.5312;
+};
+"@MMK_L_month-tamil" = {
+"@MMK_R_T" = 78.125;
+"@MMK_R_a-tamil" = -107.422;
+"@MMK_R_eMatra-tamil" = 34.1797;
+"@MMK_R_eeMatra-tamil" = 34.1797;
+"@MMK_R_exclam" = 53.7109;
+"@MMK_R_i-tamil" = 39.0625;
+"@MMK_R_ka-tamil" = -14.6484;
+"@MMK_R_parenright" = 97.6562;
+"@MMK_R_period" = -19.5312;
+"@MMK_R_quoteright" = 97.6562;
+"@MMK_R_quotesingle" = 97.6562;
+"@MMK_R_u-tamil" = -43.9453;
+};
+"@MMK_L_number-tamil" = {
+"@MMK_R_T" = 48.8281;
+"@MMK_R_a-tamil" = -58.5938;
+"@MMK_R_e-tamil" = -29.2969;
+"@MMK_R_ka-tamil" = -19.5312;
+"@MMK_R_period" = -48.8281;
+"@MMK_R_quoteright" = 58.5938;
+"@MMK_R_quotesingle" = 58.5938;
+"@MMK_R_u-tamil" = -43.9453;
+};
+"@MMK_L_o-tamil" = {
+"@MMK_R_T" = -39.0625;
+"@MMK_R_quoteright" = -19.5312;
+"@MMK_R_quotesingle" = -24.4141;
+};
+"@MMK_L_quoteleft" = {
+"@MMK_R_a-tamil" = -268.55499;
+"@MMK_R_e-tamil" = -19.5312;
+"@MMK_R_ka-tamil" = -58.5938;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -19.5312;
+"@MMK_R_om-tamil" = -19.5312;
+"@MMK_R_u-tamil" = -34.1797;
+"@MMK_R_visarga-tamil" = -39.0625;
+};
+"@MMK_L_quotesingle" = {
+"@MMK_R_a-tamil" = -253.90601;
+"@MMK_R_e-tamil" = -24.4141;
+"@MMK_R_ka-tamil" = -68.3594;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_o-tamil" = -24.4141;
+"@MMK_R_om-tamil" = -24.4141;
+"@MMK_R_u-tamil" = -19.5312;
+"@MMK_R_visarga-tamil" = -48.8281;
+};
+"@MMK_L_sha-tamil" = {
+"@MMK_R_a-tamil" = -34.1797;
+"@MMK_R_ka-tamil" = -29.2969;
+};
+"@MMK_L_shrii-tamil" = {
+"@MMK_R_a-tamil" = 29.2969;
+"@MMK_R_eMatra-tamil" = -19.5312;
+"@MMK_R_eeMatra-tamil" = -29.2969;
+};
+"@MMK_L_ssa-tamil" = {
+"@MMK_R_T" = -29.2969;
+"@MMK_R_quotesingle" = -19.5312;
+};
+"@MMK_L_ten-tamil" = {
+"@MMK_R_a-tamil" = -24.4141;
+};
+"@MMK_L_tti-tamil" = {
+"@MMK_R_T" = -43.9453;
+"@MMK_R_a-tamil" = 48.8281;
+"@MMK_R_eeMatra-tamil" = -19.5312;
+"@MMK_R_exclam" = -14.6484;
+"@MMK_R_quoteright" = -58.5938;
+"@MMK_R_quotesingle" = -58.5938;
+"@MMK_R_u-tamil" = 34.1797;
+};
+"@MMK_L_ttuu-tamil" = {
+"@MMK_R_e-tamil" = -14.6484;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_rra-tamil" = -9.76562;
+};
+"@MMK_L_u-tamil" = {
+"@MMK_R_a-tamil" = 48.8281;
+"@MMK_R_eMatra-tamil" = -19.5312;
+"@MMK_R_eeMatra-tamil" = -29.2969;
+"@MMK_R_hyphen" = -19.5312;
+"@MMK_R_quoteright" = -34.1797;
+"@MMK_R_quotesingle" = -39.0625;
+};
+"@MMK_L_uMatra-tamil" = {
+"@MMK_R_a-tamil" = -126.953;
+"@MMK_R_ka-tamil" = -9.76562;
+"@MMK_R_period" = -34.1797;
+};
+"@MMK_L_uu-tamil" = {
+"@MMK_R_e-tamil" = -9.76562;
+"@MMK_R_nya-tamil" = -34.1797;
+"@MMK_R_quoteright" = -9.76562;
+"@MMK_R_quotesingle" = -9.76562;
+};
+"@MMK_L_uuMatra-tamil" = {
+"@MMK_R_a-tamil" = -73.2422;
+"@MMK_R_ai-tamil" = -19.5312;
+"@MMK_R_e-tamil" = -19.5312;
+"@MMK_R_ka-tamil" = -43.9453;
+"@MMK_R_nya-tamil" = -24.4141;
+"@MMK_R_o-tamil" = -19.5312;
+"@MMK_R_parenright" = -19.5312;
+"@MMK_R_period" = -34.1797;
+"@MMK_R_u-tamil" = -39.0625;
+"@MMK_R_visarga-tamil" = -19.5312;
+};
+"@MMK_L_visarga-tamil" = {
+"@MMK_R_T" = -39.0625;
+"@MMK_R_exclam" = -24.4141;
+"@MMK_R_quoteright" = -34.1797;
+"@MMK_R_quotesingle" = -48.8281;
+};
+"hii-tamil" = {
+"@MMK_R_T" = 53.7109;
+"@MMK_R_eMatra-tamil" = 29.2969;
+"@MMK_R_parenright" = 102.539;
+"@MMK_R_quoteright" = 48.8281;
+"@MMK_R_quotesingle" = 53.7109;
+};
+"jii-tamil" = {
+"@MMK_R_T" = 83.0078;
+"@MMK_R_eMatra-tamil" = 53.7109;
+"@MMK_R_parenright" = 126.953;
+"@MMK_R_quoteright" = 68.3594;
+"@MMK_R_quotesingle" = 73.2422;
+};
+"llii-tamil" = {
+"@MMK_R_T" = 24.4141;
+"@MMK_R_eMatra-tamil" = 14.6484;
+"@MMK_R_parenright" = 68.3594;
+"@MMK_R_quoteright" = 34.1797;
+"@MMK_R_quotesingle" = 19.5312;
+};
+"lllii-tamil" = {
+"@MMK_R_T" = 53.7109;
+"@MMK_R_eMatra-tamil" = 34.1797;
+"@MMK_R_parenright" = 87.8906;
+"@MMK_R_quoteright" = 48.8281;
+"@MMK_R_quotesingle" = 43.9453;
+};
+"mii-tamil" = {
+"@MMK_R_parenright" = 97.6562;
+"@MMK_R_quoteright" = 34.1797;
+"@MMK_R_quotesingle" = 43.9453;
+question = 34.1797;
+};
+"ngii-tamil" = {
+"@MMK_R_parenright" = 24.4141;
+};
+"nnii-tamil" = {
+braceright = 126.953;
+bracketright = 102.539;
+"eMatra-tamil" = 29.2969;
+"eeMatra-tamil" = 29.2969;
+parenright = 107.422;
+question = 68.3594;
+quotedbl = 63.4766;
+quotedblright = 53.7109;
+};
+"nnnii-tamil" = {
+"@MMK_R_T" = 24.4141;
+"@MMK_R_parenright" = 48.8281;
+};
+"pii-tamil" = {
+"@MMK_R_parenright" = 53.7109;
+};
+"rii-tamil" = {
+"@MMK_R_T" = 83.0078;
+"@MMK_R_eMatra-tamil" = 53.7109;
+"@MMK_R_parenright" = 126.953;
+"@MMK_R_quoteright" = 63.4766;
+quotedbl = 78.125;
+};
+"rrii-tamil" = {
+"@MMK_R_T" = 48.8281;
+"@MMK_R_eMatra-tamil" = 34.1797;
+"@MMK_R_parenright" = 97.6562;
+"@MMK_R_quoteright" = 43.9453;
+"@MMK_R_quotesingle" = 48.8281;
+};
+"shii-tamil" = {
+"@MMK_R_parenright" = 24.4141;
+};
+"vii-tamil" = {
+"@MMK_R_parenright" = 29.2969;
+};
+"yii-tamil" = {
+"@MMK_R_parenright" = 34.1797;
 };
 };
 };

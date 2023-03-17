@@ -1,8 +1,8 @@
 {
-.appVersion = "3109";
+.appVersion = "3180";
 .formatVersion = 3;
 DisplayStrings = (
-"◌"
+"ெே"
 );
 axes = (
 {
@@ -511,7 +511,7 @@ customParameters = (
 name = "Alignment Zones";
 value = (
 {
-pos = "-12";
+pos = -12;
 size = 12;
 }
 );
@@ -558,7 +558,7 @@ customParameters = (
 name = "Alignment Zones";
 value = (
 {
-pos = "-12";
+pos = -12;
 size = 12;
 }
 );
@@ -604,7 +604,7 @@ customParameters = (
 name = "Alignment Zones";
 value = (
 {
-pos = "-12";
+pos = -12;
 size = 12;
 }
 );
@@ -651,7 +651,7 @@ customParameters = (
 name = "Alignment Zones";
 value = (
 {
-pos = "-12";
+pos = -12;
 size = 12;
 }
 );
@@ -698,7 +698,7 @@ customParameters = (
 name = "Alignment Zones";
 value = (
 {
-pos = "-12";
+pos = -12;
 size = 12;
 }
 );
@@ -745,7 +745,7 @@ customParameters = (
 name = "Alignment Zones";
 value = (
 {
-pos = "-12";
+pos = -12;
 size = 12;
 }
 );
@@ -792,7 +792,7 @@ customParameters = (
 name = "Alignment Zones";
 value = (
 {
-pos = "-12";
+pos = -12;
 size = 12;
 }
 );
@@ -27737,6 +27737,12 @@ category = Letter;
 glyphname = evowelsigntamil;
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+pos = (424,-78);
+}
+);
 layerId = UUID0;
 shapes = (
 {
@@ -27804,6 +27810,12 @@ nodes = (
 width = 849;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (450,-78);
+}
+);
 layerId = "4900EB3E-CEE9-4F53-85D9-05D95ABCFDBA";
 shapes = (
 {
@@ -27871,6 +27883,12 @@ nodes = (
 width = 901;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (493,-78);
+}
+);
 layerId = "4BF31C0D-0A66-4B39-96F9-ACB961E601E6";
 shapes = (
 {
@@ -27938,6 +27956,12 @@ nodes = (
 width = 986;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (515,-78);
+}
+);
 layerId = "6732FEC1-CFA6-4586-B452-175C4A015291";
 shapes = (
 {
@@ -28005,6 +28029,12 @@ nodes = (
 width = 1030;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (311,-78);
+}
+);
 layerId = "960C9600-7588-48B9-A77D-42B729BBBC0C";
 shapes = (
 {
@@ -28072,6 +28102,12 @@ nodes = (
 width = 622;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (342,-78);
+}
+);
 layerId = "AA356D29-EBA3-4BA7-B11E-09F9C5534C37";
 shapes = (
 {
@@ -28139,6 +28175,12 @@ nodes = (
 width = 684;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (401,-78);
+}
+);
 layerId = "DB7E4487-AAA8-4905-9B27-B72FA6056893";
 shapes = (
 {
@@ -28214,6 +28256,12 @@ category = Letter;
 glyphname = eevowelsigntamil;
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+pos = (340,-78);
+}
+);
 layerId = UUID0;
 shapes = (
 {
@@ -28293,6 +28341,12 @@ nodes = (
 width = 681;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (360,-78);
+}
+);
 layerId = "4900EB3E-CEE9-4F53-85D9-05D95ABCFDBA";
 shapes = (
 {
@@ -28372,6 +28426,12 @@ nodes = (
 width = 720;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (392,-78);
+}
+);
 layerId = "4BF31C0D-0A66-4B39-96F9-ACB961E601E6";
 shapes = (
 {
@@ -28451,6 +28511,12 @@ nodes = (
 width = 784;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (412,-78);
+}
+);
 layerId = "6732FEC1-CFA6-4586-B452-175C4A015291";
 shapes = (
 {
@@ -28530,6 +28596,12 @@ nodes = (
 width = 825;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (253,-78);
+}
+);
 layerId = "960C9600-7588-48B9-A77D-42B729BBBC0C";
 shapes = (
 {
@@ -28609,6 +28681,12 @@ nodes = (
 width = 507;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (277,-78);
+}
+);
 layerId = "AA356D29-EBA3-4BA7-B11E-09F9C5534C37";
 shapes = (
 {
@@ -28688,6 +28766,12 @@ nodes = (
 width = 555;
 },
 {
+anchors = (
+{
+name = Anchor12;
+pos = (320,-78);
+}
+);
 layerId = "DB7E4487-AAA8-4905-9B27-B72FA6056893";
 shapes = (
 {
