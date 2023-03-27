@@ -68,10 +68,6 @@ value = (
 );
 },
 {
-name = openTypeNameVersion;
-value = "Version 2.004";
-},
-{
 name = codePageRanges;
 value = (
 1252
@@ -355,7 +351,7 @@ value = GOOG;
 },
 {
 name = versionString;
-value = "Version 2.003";
+value = "Version 2.004";
 },
 {
 name = Axes;
@@ -422,10 +418,6 @@ ascender = 1091;
 capHeight = 792;
 customParameters = (
 {
-name = "UFO Filename";
-value = "NotoSerifTamil-Light.ufo";
-},
-{
 name = hheaAscender;
 value = 1069;
 },
@@ -453,11 +445,6 @@ value = (
 );
 },
 {
-name = fsType;
-value = (
-);
-},
-{
 name = typoAscender;
 value = 1069;
 },
@@ -468,49 +455,6 @@ value = -492;
 {
 name = typoLineGap;
 value = 0;
-},
-{
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
 },
 {
 name = styleMapFamilyName;
@@ -628,49 +572,6 @@ name = typoLineGap;
 value = 0;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
-},
-{
 name = styleMapFamilyName;
 value = "Noto Serif Tamil";
 },
@@ -783,49 +684,6 @@ value = -492;
 {
 name = typoLineGap;
 value = 0;
-},
-{
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
 },
 {
 name = styleMapFamilyName;
@@ -943,49 +801,6 @@ name = typoLineGap;
 value = 0;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
-},
-{
 name = styleMapFamilyName;
 value = "Noto Serif Tamil";
 },
@@ -1099,49 +914,6 @@ value = -492;
 {
 name = typoLineGap;
 value = 0;
-},
-{
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
 },
 {
 name = styleMapFamilyName;
@@ -1261,49 +1033,6 @@ name = typoLineGap;
 value = 0;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
-},
-{
 name = styleMapFamilyName;
 value = "Noto Serif Tamil Condensed";
 },
@@ -1418,49 +1147,6 @@ value = -492;
 {
 name = typoLineGap;
 value = 0;
-},
-{
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
 },
 {
 name = styleMapFamilyName;
@@ -1578,49 +1264,6 @@ value = -492;
 {
 name = typoLineGap;
 value = 0;
-},
-{
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-20,
-31,
-32,
-33,
-38,
-45,
-57
-);
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
-},
-{
-name = openTypeNameVersion;
-value = "Version 2.003";
 },
 {
 name = styleMapFamilyName;
