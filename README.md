@@ -32,6 +32,12 @@ repository](https://github.com/notofonts/notofonts.github.io/blob/main/README.md
 
 ## Changes
 
+### v2.004 (2023-03-27)
+
+* Includes UI builds for Noto Sans Tamil
+* Fixes missing kerning (#15)
+* Improves the positioning of nuktas below vowel sign e (#3)
+
 ### v2.003 (2022-06-13)
 
 * Renamed "Noto Serif Tamil Slanted" to "Noto Serif Tamil" as part of family

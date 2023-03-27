@@ -139692,7 +139692,7 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 },
 {
 key = versionString;
-value = "Version 2.003";
+value = "Version 2.004";
 },
 {
 key = vendorID;
@@ -139714,5 +139714,5 @@ name = vStem0;
 );
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 3;
+versionMinor = 4;
 }
