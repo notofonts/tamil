@@ -6,6 +6,7 @@ googleFonts: true
 includeSubsets:
 - from: Noto Serif
   name: GF_Latin_Core
+recipeProvider: noto
 sources:
 - NotoSerifTamil.glyphs
 - NotoSerifTamil-Italic.glyphs

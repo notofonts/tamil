@@ -1,9 +1,10 @@
+buildUIVF: true
 buildVariable: true
 familyName: Noto Sans Tamil
 googleFonts: true
 includeSubsets:
 - from: Noto Sans
   name: GF_Latin_Core
+recipeProvider: noto
 sources:
 - NotoSansTamil.glyphs
-buildUIVF: true
